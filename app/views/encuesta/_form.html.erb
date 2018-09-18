@@ -6195,8 +6195,371 @@
     <div class="alert alert-secondary col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;">MODULO 11. Características e ingresos de la actividad agropecuaria diferente al cultivo de café (para todas las fincas del porductor)
     </div>
 
+<div class="alert alert-secondary col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;">MODULO 11. Características e ingresos de la actividad agropecuaria diferente al cultivo de café (para todas las fincas del porductor)
+    </div>
+
+    <div class="alert alert-success col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h5>Tabla A. 1. ¿Tuvo el año pasado (2017) sembrados cultivos transitorios, permanente, forrajeros o plantaciones forestales?</h5><%= f.select :p11_ta_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_1"}%>
+    </div>
+
+    <div class="continer row col-md-12 alert-success" style="margin-top: 10px; margin-right: 10px; margin-left: 10px;">
+
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">2. ID</th>
+      <th scope="col">3. ¿Cuál cultivo o plantación forestal tuvo sembrado?</th>
+      <th scope="col">4. ¿El cultivo está...?</th>
+      <th scope="col">5. ¿Qué cantidad de plantas tiene el cultivo? (diligencie solo para permanentes)</th>
+      <th scope="col">6. ¿Cuánta es el área sembrada? (ha)</th>
+      <th scope="col">7. Periodo cosechado</th>
+      <th scope="col">8. Producción (kg)</th>
+      <th scope="col">9. Porcentaje de la producción vendido (%)</th>
+      <th scope="col">10. Ingreso total (millones)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_a_2, {class: "form-control", id:"res_p11_ta_a_2"}%></th>
+      <td><%= f.text_field :p11_ta_a_3, {class: "form-control", id:"res_p11_ta_a_3"}%></td>
+      <td><%= f.select :p11_ta_a_4, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_a_4"}%></td>
+      <td><%= f.text_field :p11_ta_a_5, {class: "form-control", id:"res_p11_ta_a_5"}%></td>
+      <td><%= f.text_field :p11_ta_a_6, {class: "form-control", id:"res_p11_ta_a_6"}%></td>
+      <td><%= f.select :p11_ta_a_7, ["Primer semestre", "Segundo semestre", "Ambos semestres", "No cosechó"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_a_7"}%></td>
+      <td><%= f.text_field :p11_ta_a_8, {class: "form-control", id:"res_p11_ta_a_8"}%></td>
+      <td><%= f.text_field :p11_ta_a_9, {class: "form-control", id:"res_p11_ta_a_9"}%></td>
+      <td><%= f.text_field :p11_ta_a_10, {class: "form-control", id:"res_p11_ta_a_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_b_2, {class: "form-control", id:"res_p11_ta_b_2"}%></th>
+      <td><%= f.text_field :p11_ta_b_3, {class: "form-control", id:"res_p11_ta_b_3"}%></td>
+      <td><%= f.select :p11_ta_b_4, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_b_4"}%></td>
+      <td><%= f.text_field :p11_ta_b_5, {class: "form-control", id:"res_p11_ta_b_5"}%></td>
+      <td><%= f.text_field :p11_ta_b_6, {class: "form-control", id:"res_p11_ta_b_6"}%></td>
+      <td><%= f.select :p11_ta_b_7, ["Primer semestre", "Segundo semestre", "Ambos semestres", "No cosechó"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_b_7"}%></td>
+      <td><%= f.text_field :p11_ta_b_8, {class: "form-control", id:"res_p11_ta_b_8"}%></td>
+      <td><%= f.text_field :p11_ta_b_9, {class: "form-control", id:"res_p11_ta_b_9"}%></td>
+      <td><%= f.text_field :p11_ta_b_10, {class: "form-control", id:"res_p11_ta_b_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_c_2, {class: "form-control", id:"res_p11_ta_c_2"}%></th>
+      <td><%= f.text_field :p11_ta_c_3, {class: "form-control", id:"res_p11_ta_c_3"}%></td>
+      <td><%= f.select :p11_ta_c_4, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_c_4"}%></td>
+      <td><%= f.text_field :p11_ta_c_5, {class: "form-control", id:"res_p11_ta_c_5"}%></td>
+      <td><%= f.text_field :p11_ta_c_6, {class: "form-control", id:"res_p11_ta_c_6"}%></td>
+      <td><%= f.select :p11_ta_c_7, ["Primer semestre", "Segundo semestre", "Ambos semestres", "No cosechó"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_c_7"}%></td>
+      <td><%= f.text_field :p11_ta_c_8, {class: "form-control", id:"res_p11_ta_c_8"}%></td>
+      <td><%= f.text_field :p11_ta_c_9, {class: "form-control", id:"res_p11_ta_c_9"}%></td>
+      <td><%= f.text_field :p11_ta_c_10, {class: "form-control", id:"res_p11_ta_c_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_d_2, {class: "form-control", id:"res_p11_ta_d_2"}%></th>
+      <td><%= f.text_field :p11_ta_d_3, {class: "form-control", id:"res_p11_ta_d_3"}%></td>
+      <td><%= f.select :p11_ta_d_4, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_d_4"}%></td>
+      <td><%= f.text_field :p11_ta_d_5, {class: "form-control", id:"res_p11_ta_d_5"}%></td>
+      <td><%= f.text_field :p11_ta_d_6, {class: "form-control", id:"res_p11_ta_d_6"}%></td>
+      <td><%= f.select :p11_ta_d_7, ["Primer semestre", "Segundo semestre", "Ambos semestres", "No cosechó"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_d_7"}%></td>
+      <td><%= f.text_field :p11_ta_d_8, {class: "form-control", id:"res_p11_ta_d_8"}%></td>
+      <td><%= f.text_field :p11_ta_d_9, {class: "form-control", id:"res_p11_ta_d_9"}%></td>
+      <td><%= f.text_field :p11_ta_d_10, {class: "form-control", id:"res_p11_ta_d_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_e_2, {class: "form-control", id:"res_p11_ta_e_2"}%></th>
+      <td><%= f.text_field :p11_ta_e_3, {class: "form-control", id:"res_p11_ta_e_3"}%></td>
+      <td><%= f.select :p11_ta_e_4, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_e_4"}%></td>
+      <td><%= f.text_field :p11_ta_e_5, {class: "form-control", id:"res_p11_ta_e_5"}%></td>
+      <td><%= f.text_field :p11_ta_e_6, {class: "form-control", id:"res_p11_ta_e_6"}%></td>
+      <td><%= f.select :p11_ta_e_7, ["Primer semestre", "Segundo semestre", "Ambos semestres", "No cosechó"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_e_7"}%></td>
+      <td><%= f.text_field :p11_ta_e_8, {class: "form-control", id:"res_p11_ta_e_8"}%></td>
+      <td><%= f.text_field :p11_ta_e_9, {class: "form-control", id:"res_p11_ta_e_9"}%></td>
+      <td><%= f.text_field :p11_ta_e_10, {class: "form-control", id:"res_p11_ta_e_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_f_2, {class: "form-control", id:"res_p11_ta_f_2"}%></th>
+      <td><%= f.text_field :p11_ta_f_3, {class: "form-control", id:"res_p11_ta_f_3"}%></td>
+      <td><%= f.select :p11_ta_f_4, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_f_4"}%></td>
+      <td><%= f.text_field :p11_ta_f_5, {class: "form-control", id:"res_p11_ta_f_5"}%></td>
+      <td><%= f.text_field :p11_ta_f_6, {class: "form-control", id:"res_p11_ta_f_6"}%></td>
+      <td><%= f.select :p11_ta_f_7, ["Primer semestre", "Segundo semestre", "Ambos semestres", "No cosechó"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_f_7"}%></td>
+      <td><%= f.text_field :p11_ta_f_8, {class: "form-control", id:"res_p11_ta_f_8"}%></td>
+      <td><%= f.text_field :p11_ta_f_9, {class: "form-control", id:"res_p11_ta_f_9"}%></td>
+      <td><%= f.text_field :p11_ta_f_10, {class: "form-control", id:"res_p11_ta_f_10"}%></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
 
 
+    <div class="continer row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9">
+      Tabla B. 1. ¿Tuvo el año pasado (2017) pasado ganado bovino (terneros, becerros, novillos, toros, vacas)?
+      </div>
+      <div class="col-md-3">
+      <%= f.select :p11_tb_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_tb_1"}%>
+      </div>
+    </div>
+
+    <div class="continer row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+      <div class="field col-md-4" id="div_p11_tb_2" style="margin-top: 5px;">
+        <%= f.label :p11_tb_2, "2. ¿La orientación de la actividad ganadera ha sido...?" %>
+        <%= f.select :p11_tb_2, ["Doble propósito", "Leche", "Carne: ciclo completo", "Carne: cría, levante", "Carne: ceba", "Genética"],{:include_blank => true}, {class: "form-control", id:"res_p11_tb_2"}%>
+      </div>
+
+      <div class="field col-md-4" id="div_p11_tb_3" style="margin-top: 5px;">3. ¿Cuántos machos de ganado bovino tuvo?
+        <%= f.label :p11_tb_3_a, "a. En total" %>
+        <%= f.text_field :p11_tb_3_a, {class: "form-control", id:"res_p11_tb_3_a"}%>
+        <%= f.label :p11_tb_3_b, "b. Terneros" %>
+        <%= f.text_field :p11_tb_3_b, {class: "form-control", id:"res_p11_tb_3_b"}%>
+        <%= f.label :p11_tb_3_c, "c. Adultos" %>
+        <%= f.text_field :p11_tb_3_c, {class: "form-control", id:"res_p11_tb_3_c"}%>
+        <%= f.label :p11_tb_3_d, "d. Reproductores" %>
+        <%= f.text_field :p11_tb_3_d, {class: "form-control", id:"res_p11_tb_3_d"}%>
+      </div>
+
+      <div class="field col-md-4" id="div_p11_tb_4" style="margin-top: 5px;">4. ¿Cuántas hembras de ganado bovino tuvo?
+        <%= f.label :p11_tb_4_a, "a. En total" %>
+        <%= f.text_field :p11_tb_4_a, {class: "form-control", id:"res_p11_tb_4_a"}%>
+        <%= f.label :p11_tb_4_b, "b. Novillas" %>
+        <%= f.text_field :p11_tb_4_b, {class: "form-control", id:"res_p11_tb_4_b"}%>
+        <%= f.label :p11_tb_4_c, "c. Adultas" %>
+        <%= f.text_field :p11_tb_4_c, {class: "form-control", id:"res_p11_tb_4_c"}%>
+        <%= f.label :p11_tb_4_d, "d. En Ordeño" %>
+        <%= f.text_field :p11_tb_4_d, {class: "form-control", id:"res_p11_tb_4_d"}%>
+      </div>
+
+      <div class="field col-md-4" id="div_p11_tb_5" style="margin-top: 10px;">5. ¿Cuántos ejemplares de ganado bovino vendió en 2017?
+
+        <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"># de animales</th>
+      <th scope="col">Peso prom. (kg)</th>
+      <th scope="col">Ingreso total ($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Machos</th>
+        <td><%= f.text_field :p11_tb_5a_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
+      <td><%= f.text_field :p11_tb_5a_2, {class: "form-control", id:"res_p11_tb_5a_2"}%></td>
+      <td><%= f.text_field :p11_tb_5a_3, {class: "form-control", id:"res_p11_tb_5a_3"}%></td>
+    </tr>
+    <tr>
+      <th scope="row">Hembras</th>
+        <td><%= f.text_field :p11_tb_5b_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
+      <td></td>
+      <td><%= f.text_field :p11_tb_5b_2, {class: "form-control", id:"res_p11_tb_5b_2"}%></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="field col-md-4" id="div_p11_tb_5" style="margin-top: 10px;">6. ¿Cuál fue el ingreso por venta de leche en 2017?
+
+        <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" class="text_center">Millones</th>
+      <th scope="col" class="text_center">No aplica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row"><%= f.text_field :p11_tb_6a, {class: "form-control", id:"res_p11_tb_6a"}%></td>
+      <td class="text-center"><%= f.radio_button :p11_tb_6b, {class: "form-control", id:"res_p11_tb_6a"}%></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="field col-md-4" id="div_p11_tb_7" style="margin-top: 5px;">
+        <%= f.label :p11_tb_7, "7. ¿En cuánta área de su finca realiza las actividades de pastoreo para el ganado bovino relacionado?" %>
+        <%= f.text_field :p11_tb_7, {class: "form-control", id:"res_p11_tb_7"}%><p class="font-italic text-center">(hectáreas)</p>
+      </div>
+    </div>
+
+<div class="continer row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9">
+      Tabla C. 1. ¿Tuvo el año pasado (2017), porcinos (cerdos, marranos) en confinamiento?
+      </div>
+      <div class="col-md-3">
+      <%= f.select :p11_tc_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_tc_1"}%>
+      </div>
+    </div>
+
+    <div class="continer row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+      <div class="field col-md-2" id="div_p11_tc_2" style="margin-top: 5px;">
+        <%= f.label :p11_tc_2, "2. ¿La orientación de la actividad porcícola es?" %>
+        <%= f.select :p11_tc_2, ["Cría", "Levante y ceba", "Ciclo completo", "Genética"],{:include_blank => true}, {class: "form-control", id:"res_p11_tc_2"}%>
+      </div>
+
+      <div class="field col-md-4" id="div_p11_tc_3" style="margin-top: 5px;">3. Respectoalnúmerodecerdos(as)en2017:
+        <%= f.label :p11_tc_3_a, "a. ¿Cuántos machos reproductores tuvo?" %>
+        <%= f.text_field :p11_tc_3_a, {class: "form-control", id:"res_p11_tc_3_a"}%>
+        <%= f.label :p11_tc_3_b, "b. ¿Cuántas hembras gestantes, lactantes y vacías tuvo?" %>
+        <%= f.text_field :p11_tc_3_b, {class: "form-control", id:"res_p11_tc_3_b"}%>
+        <%= f.label :p11_tc_3_c, "c. ¿Cuántas hembras de reemplazo tuvo?" %>
+        <%= f.text_field :p11_tc_3_c, {class: "form-control", id:"res_p11_tc_3_c"}%>
+        <%= f.label :p11_tc_3_d, "d. ¿Cuántas hembras y machos de descarte tuvo?" %>
+        <%= f.text_field :p11_tc_3_d, {class: "form-control", id:"res_p11_tc_3_d"}%>
+      </div>
+
+      <div class="field col-md-4" id="div_p11_tb_5" style="margin-top: 10px;">
+
+        <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"># de animales</th>
+      <th scope="col">Ingreso total ($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">4. ¿Cuántos(as) cerdos(as) destetos vendió en 2017?</td>
+        <td><%= f.text_field :p11_tc_4_a, {class: "form-control", id:"res_p11_tb_4_a"}%></td>
+      <td><%= f.text_field :p11_tc_4_b, {class: "form-control", id:"res_p11_tb_4_b"}%></td>
+    </tr>
+    <tr>
+      <td scope="row">5. ¿Cuántos cerdos cebados vendió en 2017?</td>
+        <td><%= f.text_field :p11_tc_5_a, {class: "form-control", id:"res_p11_tc_5_a"}%></td>
+      <td><%= f.text_field :p11_tc_5_b, {class: "form-control", id:"res_p11_tc_5_b"}%></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="field col-md-2" id="div_p11_tc_6" style="margin-top: 5px;">
+        <%= f.label :p11_tc_6, "6. ¿En cuánta área realiza el confinamiento de los porcinos?" %>
+        <%= f.text_field :p11_tc_6, {class: "form-control", id:"res_p11_tc_6"}%><p class="font-italic text-center">(hectáreas)</p>
+      </div>
+    </div>
+
+<div class="continer row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9">
+      Tabla D. 1. ¿En su finca, el año pasado (2017), se han criado gallinas o engordado pollos en galpones?
+      </div>
+      <div class="col-md-3">
+      <%= f.select :p11_td_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_td_1"}%>
+      </div>
+    </div>
+
+    <div class="continer row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+      <div class="field col-md-2" id="div_p11_tc_2" style="margin-top: 5px;">
+        <%= f.label :p11_td_2, "2. ¿La orientación de la actividad avícola ha sido para...?" %>
+        <%= f.select :p11_td_2, ["Postura", "Engorde", "Genética para producción de huevo", "Genética para pollo de engorde"],{:include_blank => true}, {class: "form-control", id:"res_p11_td_2"}%>
+      </div>
+
+      <div class="field col-md-3" id="div_p11_tc_3" style="margin-top: 5px;">3. Cuantas aves tuvo en el 2017:<p></p>
+        <%= f.label :p11_ts_3_a, "a. Postura" %>
+        <%= f.text_field :p11_td_3_a, {class: "form-control", id:"res_p11_td_3_a"}%><p class="text-center font-italic">(En total)</p>
+        <%= f.label :p11_td_3_b, "b. Engorde" %>
+        <%= f.text_field :p11_td_3_b, {class: "form-control", id:"res_p11_td_3_b"}%><p class="text-center font-italic">(En total)</p>
+      </div>
+
+      <div class="field col-md-4" id="div_p11_tb_5" style="margin-top: 10px;">
+
+        <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"># de animales</th>
+      <th scope="col">Ingreso total ($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">4. ¿Cuántos pollos vendió en 2017?</td>
+        <td><%= f.text_field :p11_td_4_a, {class: "form-control", id:"res_p11_td_4_a"}%></td>
+      <td><%= f.text_field :p11_td_4_b, {class: "form-control", id:"res_p11_td_4_b"}%></td>
+    </tr>
+    <tr>
+      <td scope="row" colspan="2">5. ¿Ingreso por venta de huevos en 2017?</td>
+      <td><%= f.text_field :p11_td_5, {class: "form-control", id:"res_p11_td_5"}%></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+<div class="continer row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9">
+      Tabla E. 1. ¿En su finca, el año pasado (2017) , ha realizado otras actividades pecuarias?
+      </div>
+      <div class="col-md-3">
+      <%= f.select :p11_te_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_1"}%>
+      </div>
+    </div>  
+
+    <div class="continer row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+    <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">
+
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center"></th>
+      <th scope="col" class="text-center"></th>
+      <th scope="col" class="text-center">Especie</th>
+      <th scope="col" class="text-center">Número de animales</th>
+      <th scope="col" class="text-center">Producción en Kg</th>
+      <th scope="col" class="text-center">Ingreso en (Millones)</th>
+      <th scope="col" class="text-center">¿En cuanta área de su finca realiza éstas actividades? (hectáreas)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">2. ¿Ha criado peces, camarones, ostras o langostinos?</th>
+      <td><%= f.select :p11_te_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+
+      <td><%= f.select :p11_te_2a_1, ["Bagre", "Bocachico", "Cachama", "Capaz", "Capitan", "Carpa", "Nicuro", "Pargo rojo", "Sabaleta", "Salmon rosado", "Sardinata", "Tilapia", "Trucha", "Yamu"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2a_2, {class: "form-control", id:"res_p11_te_2a_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2b_1, {class: "form-control", id:"res_p11_te_2b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2b_2, {class: "form-control", id:"res_p11_te_2b_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2c_1, {class: "form-control", id:"res_p11_te_2c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2c_2, {class: "form-control", id:"res_p11_te_2c_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2d_1, {class: "form-control", id:"res_p11_te_2d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2d_2, {class: "form-control", id:"res_p11_te_2d_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2_e, {class: "form-control", id:"res_p11_te_2_e"}%></td>
+    </tr>
+    <tr>
+      <th scope="row">3. ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo)</th>
+      <td><%= f.select :p11_te_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3a_1, {class: "form-control", id:"res_p11_te_3a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3a_2, {class: "form-control", id:"res_p11_te_3a_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3b_1, {class: "form-control", id:"res_p11_te_3b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3b_2, {class: "form-control", id:"res_p11_te_3b_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3c_1, {class: "form-control", id:"res_p11_te_3c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3c_2, {class: "form-control", id:"res_p11_te_3c_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3d_1, {class: "form-control", id:"res_p11_te_3d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3d_2, {class: "form-control", id:"res_p11_te_3d_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3_e, {class: "form-control", id:"res_p11_te_3_e"}%></td>
+    </tr>
+    <tr>
+      <th scope="row">4. ¿Tiene otras especies de animales?</th>
+      <td><%= f.select :p11_te_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+
+      <td><%= f.text_field :p11_te_4a_1, {class: "form-control", id:"res_p11_te_4a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_2, {class: "form-control", id:"res_p11_te_4a_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_3, {class: "form-control", id:"res_p11_te_4a_3"}%></td>
+
+      <td><%= f.text_field :p11_te_4b_1, {class: "form-control", id:"res_p11_te_4b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_2, {class: "form-control", id:"res_p11_te_4b_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_3, {class: "form-control", id:"res_p11_te_4b_3"}%></td>
+
+      <td><%= f.text_field :p11_te_4c_1, {class: "form-control", id:"res_p11_te_4c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4c_2, {class: "form-control", id:"res_p11_te_4c_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4c_3, {class: "form-control", id:"res_p11_te_4c_3"}%></td>
+
+      <td><%= f.text_field :p11_te_4d_1, {class: "form-control", id:"res_p11_te_4d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4d_2, {class: "form-control", id:"res_p11_te_4d_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4d_3, {class: "form-control", id:"res_p11_te_4d_3"}%></td>
+
+      <td><%= f.text_field :p11_te_3_e, {class: "form-control", id:"res_p11_te_3_e"}%></td>
+    </tr>
+  </tbody>
+</table>  
+    </div>
+    </div>
+</div>
+  
         
 
 
