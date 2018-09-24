@@ -1,0 +1,178 @@
+class AddColNuevasPreguntas < ActiveRecord::Migration[5.2]
+  def change
+
+  	add_column :encuesta, :p2_22c, :string
+  	add_column :encuesta, :p4_42c_1, :string
+  	add_column :encuesta, :p4_42c_2, :string
+  	add_column :encuesta, :p4_42c_3, :string
+  	add_column :encuesta, :p4_42c_4, :string
+  	add_column :encuesta, :p4_42c_5, :string
+  	add_column :encuesta, :p4_42c_6, :string
+  	add_column :encuesta, :p4_42c_7, :string
+  	add_column :encuesta, :p4_42c_8, :string
+  	add_column :encuesta, :p4_42co_1, :string
+  	add_column :encuesta, :p4_42co_2, :string
+  	add_column :encuesta, :p4_42co_3, :string
+  	add_column :encuesta, :p4_42co_4, :string
+  	add_column :encuesta, :p4_42co_5, :string
+  	add_column :encuesta, :p4_42co_6, :string
+  	add_column :encuesta, :p4_42co_7, :string
+  	add_column :encuesta, :p4_42co_8, :string
+  	rename_column :encuesta, :p5_43_1_1, :p5_43_1m_1
+  	rename_column :encuesta, :p5_43_1_2, :p5_43_1m_2
+  	rename_column :encuesta, :p5_43_1_3, :p5_43_1m_3
+  	rename_column :encuesta, :p5_43_1_4, :p5_43_1m_4
+  	rename_column :encuesta, :p5_43_1_5, :p5_43_1m_5
+  	rename_column :encuesta, :p5_43_1_6, :p5_43_1m_6
+  	rename_column :encuesta, :p5_43_1_7, :p5_43_1m_7
+  	rename_column :encuesta, :p5_43_1_8, :p5_43_1m_8
+  	rename_column :encuesta, :p5_43_2_1, :p5_43_2m_1
+  	rename_column :encuesta, :p5_43_2_2, :p5_43_2m_2
+  	rename_column :encuesta, :p5_43_2_3, :p5_43_2m_3
+  	rename_column :encuesta, :p5_43_2_4, :p5_43_2m_4
+  	rename_column :encuesta, :p5_43_2_5, :p5_43_2m_5
+  	rename_column :encuesta, :p5_43_2_6, :p5_43_2m_6
+  	rename_column :encuesta, :p5_43_2_7, :p5_43_2m_7
+  	rename_column :encuesta, :p5_43_2_8, :p5_43_2m_8
+  	rename_column :encuesta, :p5_43_3_1, :p5_43_3m_1
+  	rename_column :encuesta, :p5_43_3_2, :p5_43_3m_2
+  	rename_column :encuesta, :p5_43_3_3, :p5_43_3m_3
+  	rename_column :encuesta, :p5_43_3_4, :p5_43_3m_4
+  	rename_column :encuesta, :p5_43_3_5, :p5_43_3m_5
+  	rename_column :encuesta, :p5_43_3_6, :p5_43_3m_6
+  	rename_column :encuesta, :p5_43_3_7, :p5_43_3m_7
+  	rename_column :encuesta, :p5_43_3_8, :p5_43_3m_8
+  	add_column :encuesta, :p5_43_1p_1, :string
+  	add_column :encuesta, :p5_43_1p_2, :string
+  	add_column :encuesta, :p5_43_1p_3, :string
+  	add_column :encuesta, :p5_43_1p_4, :string
+  	add_column :encuesta, :p5_43_1p_5, :string
+  	add_column :encuesta, :p5_43_1p_6, :string
+  	add_column :encuesta, :p5_43_1p_7, :string
+  	add_column :encuesta, :p5_43_1p_8, :string
+  	add_column :encuesta, :p5_43_2p_1, :string
+  	add_column :encuesta, :p5_43_2p_2, :string
+  	add_column :encuesta, :p5_43_2p_3, :string
+  	add_column :encuesta, :p5_43_2p_4, :string
+  	add_column :encuesta, :p5_43_2p_5, :string
+  	add_column :encuesta, :p5_43_2p_6, :string
+  	add_column :encuesta, :p5_43_2p_7, :string
+  	add_column :encuesta, :p5_43_2p_8, :string
+  	add_column :encuesta, :p5_43_3p_1, :string
+  	add_column :encuesta, :p5_43_3p_2, :string
+  	add_column :encuesta, :p5_43_3p_3, :string
+  	add_column :encuesta, :p5_43_3p_4, :string
+  	add_column :encuesta, :p5_43_3p_5, :string
+  	add_column :encuesta, :p5_43_3p_6, :string
+  	add_column :encuesta, :p5_43_3p_7, :string
+  	add_column :encuesta, :p5_43_3p_8, :string
+  	add_column :encuesta, :p6_52b_1, :string
+  	add_column :encuesta, :p6_52b_2, :string
+  	add_column :encuesta, :p6_52b_3, :string
+  	add_column :encuesta, :p6_52b_4, :string
+  	add_column :encuesta, :p6_52b_5, :string
+  	add_column :encuesta, :p6_52b_6, :string
+  	add_column :encuesta, :p6_52b_7, :string
+  	add_column :encuesta, :p6_52b_8, :string
+  	rename_column :encuesta, :p7_66_1, :p7_66a_1
+  	rename_column :encuesta, :p7_66_2, :p7_66a_2
+  	rename_column :encuesta, :p7_66_3, :p7_66a_3
+  	rename_column :encuesta, :p7_66_4, :p7_66a_4
+  	rename_column :encuesta, :p7_66_5, :p7_66a_5
+  	rename_column :encuesta, :p7_66_6, :p7_66a_6
+  	rename_column :encuesta, :p7_66_7, :p7_66a_7
+  	rename_column :encuesta, :p7_66_8, :p7_66a_8
+  	add_column :encuesta, :p7_66b_1, :string
+  	add_column :encuesta, :p7_66b_2, :string
+  	add_column :encuesta, :p7_66b_3, :string
+  	add_column :encuesta, :p7_66b_4, :string
+  	add_column :encuesta, :p7_66b_5, :string
+  	add_column :encuesta, :p7_66b_6, :string
+  	add_column :encuesta, :p7_66b_7, :string
+  	add_column :encuesta, :p7_66b_8, :string
+  	add_column :encuesta, :p7_66c_1, :string
+  	add_column :encuesta, :p7_66c_2, :string
+  	add_column :encuesta, :p7_66c_3, :string
+  	add_column :encuesta, :p7_66c_4, :string
+  	add_column :encuesta, :p7_66c_5, :string
+  	add_column :encuesta, :p7_66c_6, :string
+  	add_column :encuesta, :p7_66c_7, :string
+  	add_column :encuesta, :p7_66c_8, :string
+  	add_column :encuesta, :p7_66d_1, :string
+  	add_column :encuesta, :p7_66d_2, :string
+  	add_column :encuesta, :p7_66d_3, :string
+  	add_column :encuesta, :p7_66d_4, :string
+  	add_column :encuesta, :p7_66d_5, :string
+  	add_column :encuesta, :p7_66d_6, :string
+  	add_column :encuesta, :p7_66d_7, :string
+  	add_column :encuesta, :p7_66d_8, :string
+  	add_column :encuesta, :p7_94_1, :string
+  	add_column :encuesta, :p7_94_2, :string
+  	add_column :encuesta, :p7_94_3, :string
+  	add_column :encuesta, :p7_94_4, :string
+  	add_column :encuesta, :p7_94_5, :string
+  	add_column :encuesta, :p7_94_6, :string
+  	add_column :encuesta, :p7_94_7, :string
+  	add_column :encuesta, :p7_94_8, :string
+  	add_column :encuesta, :p9_11, :string
+  	add_column :encuesta, :p9_12, :string
+  	add_column :encuesta, :p9_13, :string
+  	add_column :encuesta, :p9_14, :string
+  	add_column :encuesta, :p9_14o, :string
+  	add_column :encuesta, :p9_15, :string
+  	add_column :encuesta, :p9_16, :string
+  	add_column :encuesta, :p9_17a_1, :string
+  	add_column :encuesta, :p9_17a_2, :string
+  	add_column :encuesta, :p9_17a_3, :string
+  	add_column :encuesta, :p9_17a_4, :string
+  	add_column :encuesta, :p9_17a_5, :string
+  	add_column :encuesta, :p9_17a_6, :string
+  	add_column :encuesta, :p9_17a_7, :string
+  	add_column :encuesta, :p9_17a_8, :string
+  	add_column :encuesta, :p9_17a_9, :string
+  	add_column :encuesta, :p9_17a_10, :string
+  	add_column :encuesta, :p9_17a_11, :string
+  	add_column :encuesta, :p9_17a_12, :string
+  	add_column :encuesta, :p9_17a_13, :string
+  	add_column :encuesta, :p9_17b_1, :string
+  	add_column :encuesta, :p9_17b_2, :string
+  	add_column :encuesta, :p9_17b_3, :string
+  	add_column :encuesta, :p9_17b_4, :string
+  	add_column :encuesta, :p9_17b_5, :string
+  	add_column :encuesta, :p9_17b_6, :string
+  	add_column :encuesta, :p9_17b_7, :string
+  	add_column :encuesta, :p9_17b_8, :string
+  	add_column :encuesta, :p9_17b_9, :string
+  	add_column :encuesta, :p9_17b_10, :string
+  	add_column :encuesta, :p9_17b_11, :string
+  	add_column :encuesta, :p9_17b_12, :string
+  	add_column :encuesta, :p9_17b_13, :string
+  	add_column :encuesta, :p9_17c_1, :string
+  	add_column :encuesta, :p9_17c_2, :string
+  	add_column :encuesta, :p9_17c_3, :string
+  	add_column :encuesta, :p9_17c_4, :string
+  	add_column :encuesta, :p9_17c_5, :string
+  	add_column :encuesta, :p9_17c_6, :string
+  	add_column :encuesta, :p9_17c_7, :string
+  	add_column :encuesta, :p9_17c_8, :string
+  	add_column :encuesta, :p9_17c_9, :string
+  	add_column :encuesta, :p9_17c_10, :string
+  	add_column :encuesta, :p9_17c_11, :string
+  	add_column :encuesta, :p9_17c_12, :string
+  	add_column :encuesta, :p9_17c_13, :string
+  	add_column :encuesta, :p10_t3_a1_ap, :string
+  	add_column :encuesta, :p10_t3_a1_bp, :string
+
+
+
+
+
+
+
+
+
+
+
+
+  end
+end
