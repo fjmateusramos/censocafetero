@@ -1957,8 +1957,20 @@
 
 <div class="continer row col-md-12">
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<br>
+  <div class="col-md-8" style="margin-top: 20px;">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <div class="btn btn-success btn-lg hidden">
+          <%= f.submit "Guardar Encuesta" , id:"#Guardar_Sin_Internet" , style:"background-image: none;background: transparent; border: none;" , onclick: "guardarsininternet();" %>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">  
+        <a href="https://ancient-sands-58784.herokuapp.com" class="btn btn-primary btn-lg" style="color: #fff;">Guardar Encuesta</a>
+      </div>
+    </div>
+  </div>  
 </div>
 <% end %>
+
+
