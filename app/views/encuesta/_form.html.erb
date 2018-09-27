@@ -225,6 +225,249 @@
 </div>
 
 
+<div class="col-md-12 hidden" id="Seccion_Modulo2">
+  
+  <div class="alert alert-secondary" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;">MODULO 2. Características de la vivienda y servicios del hogar del productor (la ubicación de la vivienda corresponde al sitio de residencia habitual)
+  </div>
+
+  <div class="row col-md-12">
+    <div class="field col-md-2" id="div_p2_13">
+      <%= f.label :p2_13, "13.  Tipo de Vivienda" %>
+      <%= f.select :p2_13, ["Casa", "Apartamento", "Cuarto(s) en inquilinato", "Cuarto(s) en otra estructura", "Otro"],{:include_blank => true}, {class: "form-control", id:"res_p1_12b3_7"}%>
+    </div>
+    <div class="field col-md-4" id="div_p2_14">
+      <%= f.label :p2_14, "14.  Material predominante de los pisos de la vivienda" %>
+      <%= f.select :p2_14, ["Marmol, parqué o madera pulida y lacada", "Alfombra o tapete de pared a pared", "Baldosa, cerámica, vinilo, tableta, ladrillo, madera pulida sin lacar o laminada", "Madera burda, tabla o tablón u otro vegetal", "Cemento o gravilla", "Tierra o arena"],{:include_blank => true}, {class: "form-control", id:"res_p2_14"}%>
+    </div>
+    <div class="field col-md-6" id="div_p2_15">
+      <%= f.label :p2_15, "15.  Material predominante de las paredes exteriores de la vivienda" %>
+      <%= f.select :p2_15, ["Ladrillo a la vista", "Bloque a la vista", "Ladrillo o bloque revocado, pañetado o repellado", "Piedra o madera pulida", "Tapia pisada o adobe", "Bahareque revocado", "Bahareque sin revocar", "Madera burda, tabla o tablón", "Material prefabricado", "Guadua, caña, esterilla, otros vegetales", "Zinc, tela cartón, latas desechos, plástico, lona", "Sin paredes"],{:include_blank => true}, {class: "form-control", id:"res_p2_15"}%>
+    </div>
+  </div> 
+  <div class="row col-md-12">
+     <table class="table">
+      <thead>
+        <h6 class="field col-md-12" style="margin-top: 10px; margin-bottom: 10px;">16. Con cuáles de los siguientes servicios públicos, privados o comunales cuenta la vivienda</h6>
+        <tr>
+          <th scope="col" class="text-center"></th>
+          <th scope="col" class="text-center">Cuenta con este servicio?</th>
+          <th scope="col" class="text-center">Como paga este servicio?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1.  Energía eléctrica</th>
+          <td><%= f.select :p2_16_1a, ["Si", "No"],{:include_blank => true},{class: "form-control", id:"res_p2_16_1a"} %></td>
+          <td>
+            <div id="div_p2_16_1b">
+              <%= f.select :p2_16_1b, ["Según factura", "Con el arriendo", "No pagan"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_1b"}%>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2.  Gas natural conectado a red pública</th>
+          <td><%= f.select :p2_16_2a, ["Si", "No"],{:include_blank => true},{class: "form-control", id:"res_p2_16_2a"} %></td>
+          <td>
+            <div id="div_p2_16_2b">
+              <%= f.select :p2_16_2b, ["Según factura", "Con el arriendo", "No pagan"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_2b"}%>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3.  Acueducto</th>
+          <td><%= f.select :p2_16_3a,["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_3a"} %></td>
+          <td>
+            <div id="div_p2_16_3b">
+              <%= f.select :p2_16_3b, ["Según factura", "Con el arriendo", "No pagan"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_3b"}%>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4.  Alcantarillado</th>
+          <td><%= f.select :p2_16_4a, ["Si", "No"],{:include_blank => true},{class: "form-control", id:"res_p2_16_4a"} %></td>
+          <td>
+            <div id="div_p2_16_4b">
+              <%= f.select :p2_16_4b, ["Según factura", "Con el arriendo", "No pagan"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_4b"}%>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">5.  Recolección de basuras</th>
+          <td><%= f.select :p2_16_5a, ["Si", "No"],{:include_blank => true},{class: "form-control", id:"res_p2_16_5a"} %></td>
+          <td>
+            <div id="div_p2_16_5b">
+              <%= f.select :p2_16_5b, ["Según factura", "Con el arriendo", "No pagan"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_5b"}%>
+            </div>
+            <td>
+              <div id="div_p2_16_5c">
+                <%= f.select :p2_16_5c, ["1","2","3","4","5","6","7"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_5b"}%>
+                <p>Veces por semana</p>
+              </div>  
+            </td>
+          </td>
+        </tr>
+      </tbody>
+    </table> 
+  </div>
+  <div class=" col-md-12 row">
+    <div class="field col-md-4" id="div_p2_17">
+      <%= f.label :p2_17, "17. ¿Cuantas personas conforman el hogar del productor? (incluido el productor)" %>
+      <%= f.text_field :p2_17, {class: "form-control", id:"res_p2_17"} %>
+    </div>
+
+    <div class="field col-md-8" id="div_p2_18">
+      <%= f.label :p2_18, "18. Incluyendo la sala y comedor, ¿de cuántos cuartos o piezas dispone este hogar? (excluya la cocina, los baños, los garajes, bodegas y cuartos destinados a trabajadores o negocio)" %>
+      <%= f.text_field :p2_18, {class: "form-control", id:"res_p2_18"} %>
+    </div>
+  </div> 
+  <div class="col-md-12 row">
+    <div class="field col-md-7" id="div_p2_19">
+      <%= f.label :p2_19, "19. ¿En cuantos de estos cuartos o piezas duermen las personas de este hogar?" %>
+      <%= f.text_field :p2_19, {class: "form-control", id:"res_p2_19"} %>
+    </div>
+    <div class="field col-md-5" id="div_p2_20">
+      <%= f.label :p2_20, "20.  ¿Con que tipo de servicio sanitario cuenta el hogar?" %>
+      <%= f.select :p2_20, ["Inodoro con conexión al alcantarillado", "Inodoro con conexión a pozo séptico", "Inodoro sin conexión", "Letrina", "Bajamar", "No tiene servicio sanitario"],{:include_blank => true}, {class: "form-control", id:"res_p2_20"}%>
+    </div>
+  </div>  
+
+  <div class="col-md-12 row">
+    <div class="field col-md-6" id="div_p2_21">
+      <%= f.label :p2_21, "21.  El agua para preparar los alimentos la obtienen principalmente de:" %>
+      <%= f.select :p2_21, ["Acueducto público", "Acueducto veredal", "Pozo con bomba", "Pozo sin bomba", "Agua lluvia", "Rio, quebrada, manantial, nacimiento", "Pila pública", "Carrotanque", "Aguatero", "Agua embotellada o en bolsa"],{:include_blank => true}, {class: "form-control", id:"res_p2_21"}%>
+    </div>
+
+    <div class="field col-md-6" id="div_p2_22">
+      <%= f.label :p2_22, "22.  ¿Hace alguna práctica de potabilización del agua en la finca?" %>
+      <%= f.select :p2_22, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p2_22"}%>
+      <div class="hidden" col-md-6" id="div_p2_22c"><p>¿Cuál?</p>
+        <%= f.text_field :p2_22c, {class: "form-control", id:"res_p2_22c"}%>
+      </div>
+    </div>
+  </div>  
+  <div class="col-md-12 row">
+    <div class="field col-md-6" id="div_p2_23">
+      <%= f.label :p2_23, "23.  ¿Cuantos días a la semana llega el agua al hogar? (total de días)" %>
+      <%= f.text_field :p2_23, {class: "form-control", id:"res_p2_23"} %>
+    </div>
+
+    <div class="field col-lg-6" id="div_p2_24">
+      <%= f.label :p2_24, "24.  Los días que llega el agua, ¿el suministro es continuo las 24 horas?" %>
+      <%= f.select :p2_24, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p2_24"}%>
+    </div>
+  </div>
+  <div class="col-md-12 row">
+      <div class="field col-md-6" id="div_p2_25">
+        <%= f.label :p2_25, "25.  ¿Que energía combustible utilizan principalmente para cocinar?" %>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="p2_26">
+          <label class="form-check-label" for="p2_26">Electricidad</label>
+          <p></p>
+          <input class="form-check-input" type="checkbox" value="" id="p2_26">
+          <label class="form-check-label" for="p2_26">Gas natural conectado a red pública</label>
+          <p></p>
+          <input class="form-check-input" type="checkbox" value="" id="p2_26">
+          <label class="form-check-label" for="p2_26">Gas propano (en cilindro o pipeta)</label>
+          <p></p>
+          <input class="form-check-input" type="checkbox" value="" id="p2_26">
+          <label class="form-check-label" for="p2_26">Gas producido en la finca</label>
+          <p></p>
+          <input class="form-check-input" type="checkbox" value="" id="p2_26">
+          <label class="form-check-label" for="p2_26">Keresene, petróleo, gasolina, cocinol, alcohol</label>
+          <p></p>
+          <input class="form-check-input" type="checkbox" value="" id="p2_26">
+          <label class="form-check-label" for="p2_26">Leña, madera, carbón de leña</label>
+          <p></p>
+          <input class="form-check-input" type="checkbox" value="" id="p2_26">
+          <label class="form-check-label" for="p2_26">Carbón mineral</label>
+        </div>
+      </div>
+    <div class= "field col-md-6" id="div_p2_26">
+      <%= f.label :p2_26, "26.  ¿Cuáles de los siguienes bienes posee este hogar?" %>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Máquina lavadora de ropa</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Nevera o enfriador</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Licuadora</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Equipo de sonido</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Estufa eléctrica o a gas</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Horno eléctrico o a gas</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Horno microondas</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Aspiradora y/o brilladora</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Calentador de agua (eléctrico o a gas) o ducha eléctrica</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Estufa ecoeficiente</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Aire acondicionado o ventilador</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Televisor a color</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Servicio de televisión por cable o parabólica</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Computador para uso del hogar</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">DVD</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Servicio de Internet</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Celular con plan de datos</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Cámara de video</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Cámara fotográfica digital</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Bicicleta</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Motocicleta</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Carro particular</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Caballo o animal de carga</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p2_26">
+        <label class="form-check-label" for="p2_26">Casa, apartamento o finca de recreo</label>
+      </div>
+    </div>
+  </div>  
+  <div class="col-md-12 text-center">
+  <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo2">Siguiente</a>
+  </div>
+</div>  
+   
+
 <% end %>
 
 <script type="text/javascript">
@@ -237,8 +480,12 @@
     });
     $('#Siguiente_modulo1').click(function(){
       $('#Seccion_Modulo1').addClass('hidden');
+      $('#Seccion_Modulo2').removeClass('hidden');
     });
-
+    $('#Siguiente_modulo2').click(function(){
+      $('#Seccion_Modulo2').addClass('hidden');
+      $('#Seccion_Modulo3').removeClass('hidden');
+    });
 
     
      $('#res_p1_1').change(function(){
@@ -1330,6 +1577,44 @@
       }
       });
 
+      $('#res_p2_16_1a').change(function(){
+        if ($('#res_p2_16_1a').val() == "No") {
+          $('#div_p2_16_1b').addClass('hidden');
+        } else {
+          $('#div_p2_16_1b').removeClass('hidden');
+        }
+      });  
+      $('#res_p2_16_2a').change(function(){
+        if ($('#res_p2_16_2a').val() == "No") {
+          $('#div_p2_16_2b').addClass('hidden');
+        } else {
+          $('#div_p2_16_2b').removeClass('hidden');
+        }
+      });  
+      $('#res_p2_16_3a').change(function(){
+        if ($('#res_p2_16_3a').val() == "No") {
+          $('#div_p2_16_3b').addClass('hidden');
+        } else {
+          $('#div_p2_16_3b').removeClass('hidden');
+        }
+      });  
+      $('#res_p2_16_4a').change(function(){
+        if ($('#res_p2_16_4a').val() == "No") {
+          $('#div_p2_16_4b').addClass('hidden');
+        } else {
+          $('#div_p2_16_4b').removeClass('hidden');
+        }
+      });  
+      $('#res_p2_16_5a').change(function(){
+        if ($('#res_p2_16_5a').val() == "No") {
+          $('#div_p2_16_5b').addClass('hidden');
+          $('#div_p2_16_5c').addClass('hidden');
+        } else {
+          $('#div_p2_16_5b').removeClass('hidden');
+          $('#div_p2_16_5c').removeClass('hidden');
+        }
+      });  
+
       $('#res_p2_21').change(function(){
         if ($('#res_p2_21').val() == "Acueducto público") {
           $('#div_p2_22').addClass('hidden');
@@ -1344,9 +1629,11 @@
         if ($('#res_p2_22').val() == "Si") {
           $('#div_p2_23').addClass('hidden');
           $('#div_p2_24').addClass('hidden');
+          $('#div_p2_22c').removeClass('hidden');
         } else if ($('#res_p2_22').val() == "No") {
           $('#div_p2_23').removeClass('hidden');
           $('#div_p2_24').removeClass('hidden');
+          $('#div_p2_22c').addClass('hidden');
         }
       });  
 
