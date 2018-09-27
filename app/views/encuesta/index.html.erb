@@ -1,19 +1,2 @@
-<header>
-  <div class="row">
-      <div class="col-lg-6 text-center" style="margin-top: 20px;"> 
-        <img src="<%= asset_path 'bioestadistica.png' %>">
-      </div>    
-      <div class="col-lg-6">
-        <img src="<%= asset_path 'fncafeteros.jpg' %>">
-      </div>
-  </div>
-</header>
-
-<div class="continer">
-  <h4 class="text-center">ENCUESTA NACIONAL DE CARACTERIZACIÓN SOCIOECONÓMICA A HOGARES CAFETEROS - LINEA BASE 2018</h4>
-  <div class="alert alert-danger" role="alert"> 
-    <h10>Confidencialidad: Este trabajo es propiedad de la Federación Nacional de Cafeteros de Colombia.  No puede transmitirse o distribuirse sin la autorización escrita.  La persona es libre de responder o no este formulario, si decide hacerlo la información sera tratada con total reserva.</h10> 
-   </div>
-</div>
 <%= render 'form', encuestum: @encuestum %>
 
