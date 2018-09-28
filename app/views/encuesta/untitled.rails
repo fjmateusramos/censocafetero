@@ -1,91 +1,45 @@
       <tr>
-          <th scope="row">44. ¿Llevan el menor a control de crecimiento y desarrollo?</th>
-            <td id="persona_1_23">
-              <div class="field" id="div_p5_44_1">
-                <%= f.select :p5_44_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_1"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_1">
-              <%= f.label :p5_44_b_1 , "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_1">
-              <%= f.text_field :p5_44_b_1, {class: "form-control", id:"res_p5_44_b_1"} %>
-              </div>
-              </div>
-            </td>
-            <td id="persona_2_23">
-              <div class="field" id="div_p5_44_2">
-                <%= f.select :p5_44_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_2"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_2">
-              <%= f.label :p5_44_b_2 , "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_2">
-              <%= f.text_field :p5_44_b_2, {class: "form-control", id:"res_p5_44_b_2"} %>
-              </div>
-              </div>
-            </td>
-            <td id="persona_3_23">
-              <div class="field" id="div_p5_44_3">
-                <%= f.select :p5_44_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_3"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_3">
-              <%= f.label :p5_44_b_3 , "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_3">
-              <%= f.text_field :p5_44_b_3, {class: "form-control", id:"res_p5_44_b_3"} %>
-              </div>
-              </div>
-            </td>
-            <td id="persona_4_23">
-              <div class="field" id="div_p5_44_4">
-                <%= f.select :p5_44_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_4"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_4">
-              <%= f.label :p5_44_b_4, "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_4">
-              <%= f.text_field :p5_44_b_4, {class: "form-control", id:"res_p5_44_b_4"} %>
-              </div>
-              </div>
-            </td>
-            <td id="persona_5_23">
-              <div class="field" id="div_p5_44_5">
-                <%= f.select :p5_44_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_5"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_5">
-              <%= f.label :p5_44_b_5, "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_5">
-              <%= f.text_field :p5_44_b_5, {class: "form-control", id:"res_p5_44_b_5"} %>
-              </div>
-              </div>
-            </td>
-            <td id="persona_6_23">
-              <div class="field" id="div_p5_44_6">
-                <%= f.select :p5_44_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_6"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_6">
-              <%= f.label :p5_44_b_6, "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_6">
-              <%= f.text_field :p5_44_b_6, {class: "form-control", id:"res_p5_44_b_6"} %>
-              </div>
-              </div>
-            </td>
-            <td id="persona_7_23">
-              <div class="field" id="div_p5_44_7">
-                <%= f.select :p5_44_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_7"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_7">
-              <%= f.label :p5_44_b_7, "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_7">
-              <%= f.text_field :p5_44_b_7, {class: "form-control", id:"res_p5_44_b_7"} %>
-              </div>
-              </div>
-            </td>
-            <td id="persona_8_23">
-              <div class="field" id="div_p5_44_8">
-                <%= f.select :p5_44_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_44_8"}%>
-              </div>
-              <div class="field" id="div_p5_44_b_8">
-              <%= f.label :p5_44_b_8, "¿Cuantas veces lo llevaron durante los últimos 12 meses?" %>
-              <div class="" id="div_p5_44_b_8">
-              <%= f.text_field :p5_44_b_8, {class: "form-control", id:"res_p5_44_b_8"} %>
-              </div>
-              </div>
+          <th scope="row">51.  ¿Cuál es el nivel educativo más alto alcanzado?</th>
+            <td id="persona_1_32">
+                <d6 id="div_p6_51_1" class="field col-lg-12" style="margin-top: 10px; margin-bottom: 10px;">51_1.  ¿Cuál es el nivel educativo más alto alcanzado y el último grado aprobado en ese nivel?</d6>
+
+                <div class="field col-lg-6 text-center" id="div_p6_51_1_a">
+                  <%= f.label :p6_51_1_a, "51a_1. Nivel" %>
+                  <%= f.select :p6_51_1_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_1_a"}%>
+                </div>
+                <div class="field col-lg-6 text-center" id="div_p6_51_2_a">
+                  <%= f.label :p6_51_2_a, "51a_2. Nivel" %>
+                  <%= f.select :p6_51_2_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_2_a"}%>
+                </div>
+
+                <div class="field col-lg-6 text-center" id="div_p6_51_3_a">
+                  <%= f.label :p6_51_3_a, "51a_3. Nivel" %>
+                  <%= f.select :p6_51_3_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_3_a"}%>
+                </div>
+
+                <div class="field col-lg-6 text-center" id="div_p6_51_4_a">
+                  <%= f.label :p6_51_4_a, "51a_4. Nivel" %>
+                  <%= f.select :p6_51_4_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_4_a"}%>
+                </div>
+
+                <div class="field col-lg-6 text-center" id="div_p6_51_5_a">
+                  <%= f.label :p6_51_5_a, "51a_5. Nivel" %>
+                  <%= f.select :p6_51_5_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_5_a"}%>
+                </div>
+                
+                <div class="field col-lg-6 text-center" id="div_p6_51_6_a">
+                  <%= f.label :p6_51_6_a, "51a_6. Nivel" %>
+                  <%= f.select :p6_51_6_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_6_a"}%>
+                </div>
+
+                <div class="field col-lg-6 text-center" id="div_p6_51_7_a">
+                  <%= f.label :p6_51_7_a, "51a_7. Nivel" %>
+                  <%= f.select :p6_51_7_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_7_a"}%>
+                </div>
+
+                <div class="field col-lg-6 text-center" id="div_p6_51_8_a">
+                  <%= f.label :p6_51_8_a, "51a_8. Nivel" %>
+                  <%= f.select :p6_51_8_a, ["Ninguno", "Preescolar", "Básica primaria (1 a 5)", "Básica secundaria (6 a 13)", "Tecnico", "Tecnológo", "Universitaria sin título", "Universitaria con título", "Posgrado sin título", "Posgrado con título"],{:include_blank => true}, {class: "form-control", id:"res_p6_51_8_a"}%>
+                </div>
             </td> 
         </tr>   
