@@ -1644,7 +1644,7 @@
       </thead>
       <tbody>
       <tr>
-          <th scope="row">43. ¿Cuántas horas en promedio al día le dedica el/la ... al cuidado del menor?</td>
+          <th  colspan="8" scope="row">43. ¿Cuántas horas en promedio al día le dedica el/la ... al cuidado del menor?</th>
       </tr>
       <tr>
       <th scope="row" id="div_p5_43_1_1">De lunes a viernes</th>
@@ -1816,96 +1816,464 @@
             </td> 
         </tr> 
         <tr>
-          <th scope="row">46. ¿Cuáles de los siguientes apoyos alimentarios recibe en la institución?</td>
+          <th colspan="8" scope="row">46. ¿Cuáles de los siguientes apoyos alimentarios recibe en la institución?</th>
         </tr>
         <tr>
           <th scope="row">Almuerzo en comedor comunitario</th>
-          <td id="persona_1_24"><%= f.select :p5_46_1a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_1"}%>
-            <div class="hidden" id="div_p5_46_1b_1">
-            <%= f.select :p5_46_1b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_1"}%></td>
-              <p>¿Los recibe todos los dìas?</p>
-            </div>
-          <td id="persona_2_24"><%= f.select :p5_46_1a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_2"}%>
-            <div class="hidden" id="div_p5_46_1b_2">
-            <%= f.select :p5_46_1b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_2"}%></td> 
-            <p>¿Los recibe todos los dìas?</p>  
-            </div>
-          <td id="persona_3_24"><%= f.select :p5_46_1a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_3"}%>
-            <div class="hidden" id="div_p5_46_1b_3">
-            <%= f.select :p5_46_1b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_3"}%></td>
-            <p>¿Los recibe todos los dìas?</p>
-            </div>
-          <td id="persona_4_24"><%= f.select :p5_46_1a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_4"}%>
-            <div class="hidden" id="div_p5_46_1b_4">
-            <%= f.select :p5_46_1b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_4"}%></td>  
-            <p>¿Los recibe todos los dìas?</p> 
-            </div> 
-          <td id="persona_5_24"><%= f.select :p5_46_1a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_5"}%>
-            <div class="hidden" id="div_p5_46_1b_5">
-            <%= f.select :p5_46_1b_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_5"}%></td>
-            <p>¿Los recibe todos los dìas?</p>
-            </div>
-          <td id="persona_6_24"><%= f.select :p5_46_1a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_6"}%>
-            <div class="hidden" id="div_p5_46_1b_6">
-            <%= f.select :p5_46_1b_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_6"}%></td>  
-            <p>¿Los recibe todos los dìas?</p> 
-            </div>
-          <td id="persona_7_24"><%= f.select :p5_46_1a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_7"}%>
-            <div class="hidden" id="div_p5_46_1b_7">
-            <%= f.select :p5_46_1b_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_7"}%></td>
-            <p>¿Los recibe todos los dìas?</p>
-            </div>
-          <td id="persona_8_24"><%= f.select :p5_46_1a_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_8"}%>
-            <div class="hidden" id="div_p5_46_1b_8">
-            <%= f.select :p5_46_1b_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_8"}%></td>   
-            <p>¿Los recibe todos los dìas?</p> 
-            </div> 
+            <td id="persona_1_24">
+              <div id="div_p5_46_1_1">
+                <%= f.select :p5_46_1a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_1"}%>
+                <div class="hidden" id="div_p5_46_1b_1">
+                <%= f.select :p5_46_1b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_1"}%>
+                <p>¿Los recibe todos los dìas?</p>
+                </div>
+              </div>
+            </td>
+            <td id="persona_2_24">
+              <div id="div_p5_46_1_2"> 
+                <%= f.select :p5_46_1a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_2"}%>
+                <div class="hidden" id="div_p5_46_1b_2">
+                <%= f.select :p5_46_1b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_2"}%>
+                <p>¿Los recibe todos los dìas?</p>  
+                </div>
+              </div>  
+            </td>              
+            <td id="persona_3_24">
+              <div id="div_p5_46_1_3">  
+                <%= f.select :p5_46_1a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_3"}%>
+                <div class="hidden" id="div_p5_46_1b_3">
+                <%= f.select :p5_46_1b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_3"}%>
+                <p>¿Los recibe todos los dìas?</p>
+                </div>
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_4_24">
+              <div id="div_p5_46_1_4"> 
+                <%= f.select :p5_46_1a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_4"}%>
+                <div class="hidden" id="div_p5_46_1b_4">
+                <%= f.select :p5_46_1b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_4"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>  
+          </div>  
+            <td id="persona_5_24">
+              <div id="div_p5_46_1_5"> 
+                <%= f.select :p5_46_1a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_5"}%>
+                <div class="hidden" id="div_p5_46_1b_5">
+                <%= f.select :p5_46_1b_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_5"}%>
+                <p>¿Los recibe todos los dìas?</p>
+                </div>
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_6_24">
+              <div id="div_p5_46_1_6">
+                <%= f.select :p5_46_1a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_6"}%>
+                <div class="hidden" id="div_p5_46_1b_6">
+                <%= f.select :p5_46_1b_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_6"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>  
+          </div>              
+            <td id="persona_7_24">
+              <div id="div_p5_46_1_7"> 
+                <%= f.select :p5_46_1a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_7"}%>
+                <div class="hidden" id="div_p5_46_1b_7">
+                <%= f.select :p5_46_1b_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_7"}%>
+                <p>¿Los recibe todos los dìas?</p>
+                </div>
+              </div>  
+            </td>
+          </div>              
+            <td id="persona_8_24">
+              <div id="div_p5_46_1_8"> 
+                <%= f.select :p5_46_1a_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1a_8"}%>
+                <div class="hidden" id="div_p5_46_1b_8">
+                <%= f.select :p5_46_1b_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_1b_8"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>   
+          </div>     
         </tr>
-        <tr>
-          <th scope="row">Otro, diferente a almuerzo, refrigerio o algo que recibe en el establecimiento donde asiste</th>
-          <td><%= f.select :p5_46_2a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_1"}%></td>
-          <td><%= f.select :p5_46_2b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_1"}%></td>
-          <td><%= f.select :p5_46_2a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_2"}%></td>
-          <td><%= f.select :p5_46_2b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_2"}%></td>
-          <td><%= f.select :p5_46_2a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_3"}%></td>
-          <td><%= f.select :p5_46_2b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_3"}%></td>
-          <td><%= f.select :p5_46_2a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_4"}%></td>
-          <td><%= f.select :p5_46_2b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_4"}%></td>
+        <tr>         
+          <th scope="row">Otro, diferente a almuerzo, refrigerio o algo que recibe en el establecimiento donde asiste</th>   
+            <td id="persona_1_25">
+              <div id="div_p5_46_2_1">
+                <%= f.select :p5_46_2a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_1"}%>
+                <div class="hidden" id="div_p5_46_2b_1">
+                <%= f.select :p5_46_2b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_1"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>             
+            <td id="persona_2_25">
+              <div id="div_p5_46_2_2">
+                <%= f.select :p5_46_2a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_2"}%>
+                <div class="hidden" id="div_p5_46_2b_2">
+                <%= f.select :p5_46_2b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_2"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_3_25">
+              <div id="div_p5_46_2_3"> 
+                <%= f.select :p5_46_2a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_3"}%>
+                <div class="hidden" id="div_p5_46_2b_3">
+                <%= f.select :p5_46_2b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_3"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>   
+            <td id="persona_4_25">
+              <div id="div_p5_46_2_4">
+                <%= f.select :p5_46_2a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_4"}%>
+                <div class="hidden" id="div_p5_46_2b_4">
+                <%= f.select :p5_46_2b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_4"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>   
+            <td id="persona_5_25">
+              <div id="div_p5_46_2_5">
+                <%= f.select :p5_46_2a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_5"}%>
+                <div class="hidden" id="div_p5_46_2b_5">
+                <%= f.select :p5_46_2b_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_5"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>   
+            <td id="persona_6_25">
+              <div id="div_p5_46_2_6">
+                <%= f.select :p5_46_2a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_6"}%>
+                <div class="hidden" id="div_p5_46_2b_6">
+                <%= f.select :p5_46_2b_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_6"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>   
+            <td id="persona_7_25">
+              <div id="div_p5_46_2_7">
+                <%= f.select :p5_46_2a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_7"}%>
+                <div class="hidden" id="div_p5_46_2b_7">
+                <%= f.select :p5_46_2b_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_7"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_8_25">
+              <div id="div_p5_46_2_8"> 
+                <%= f.select :p5_46_2a_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2a_8"}%>
+                <div class="hidden" id="div_p5_46_2b_8">
+                <%= f.select :p5_46_2b_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_2b_8"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>  
         </tr>
         <tr>
           <th scope="row">Bono para compra de alimentos</th>
-          <td><%= f.select :p5_46_3a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_1"}%></td>
-          <td><%= f.select :p5_46_3b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_1"}%></td>
-          <td><%= f.select :p5_46_3a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_2"}%></td>
-          <td><%= f.select :p5_46_3b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_2"}%></td> 
-          <td><%= f.select :p5_46_3a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_3"}%></td>
-          <td><%= f.select :p5_46_3b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_3"}%></td> 
-          <td><%= f.select :p5_46_3a_4, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_4"}%></td>
-          <td><%= f.select :p5_46_3b_4, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_4"}%></td>         
+            <td id="persona_1_26">
+              <div id="div_p5_46_3_1"> 
+                <%= f.select :p5_46_3a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_1"}%>
+                <div class="hidden" id="div_p5_46_3b_1">
+                <%= f.select :p5_46_3b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_1"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_2_26">
+              <div id="div_p5_46_3_2"> 
+                <%= f.select :p5_46_3a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_2"}%>
+                <div class="hidden" id="div_p5_46_3b_2">
+                <%= f.select :p5_46_3b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_2"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td> 
+          </div>   
+            <td id="persona_3_26">
+              <div id="div_p5_46_3_3"> 
+                <%= f.select :p5_46_3a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_3"}%>
+                <div class="hidden" id="div_p5_46_3b_3">
+                <%= f.select :p5_46_3b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_3"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div> 
+              </div>   
+            </td> 
+          </div>  
+            <td id="persona_4_26">
+              <div id="div_p5_46_3_4">
+                <%= f.select :p5_46_3a_4, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_4"}%>
+                <div class="hidden" id="div_p5_46_3b_4">
+                <%= f.select :p5_46_3b_4, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_4"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div> 
+              </div>   
+            </td> 
+          </div>    
+            <td id="persona_5_26">
+              <div id="div_p5_46_3_5">
+                <%= f.select :p5_46_3a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_5"}%>
+                <div class="hidden" id="div_p5_46_3b_5">
+                <%= f.select :p5_46_3b_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_5"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_6_26">
+              <div id="div_p5_46_3_6">
+                <%= f.select :p5_46_3a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_6"}%>
+                <div class="hidden" id="div_p5_46_3b_6">
+                <%= f.select :p5_46_3b_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_6"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td> 
+          </div>  
+            <td id="persona_7_26">
+              <div id="div_p5_46_3_7">
+                <%= f.select :p5_46_3a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_7"}%>
+                <div class="hidden" id="div_p5_46_3b_7">
+                <%= f.select :p5_46_3b_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_7"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div> 
+              </div>   
+            </td> 
+          </div>   
+            <td id="persona_8_26">
+              <div id="div_p5_46_3_8"> 
+                <%= f.select :p5_46_3a_8, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p5_46_3a_8"}%>
+                <div class="hidden" id="div_p5_46_3b_8">
+                <%= f.select :p5_46_3b_8, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p5_46_3b_8"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>  
+              </div>  
+            </td>
+          </div>         
         </tr>
         <tr>
           <th scope="row">Canasta de alimentos para el hogar</th>
-          <td><%= f.select :p5_46_4a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_1"}%></td>
-          <td><%= f.select :p5_46_4b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_1"}%></td>
-          <td><%= f.select :p5_46_4a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_2"}%></td>
-          <td><%= f.select :p5_46_4b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_2"}%></td> 
-          <td><%= f.select :p5_46_4a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_3"}%></td>
-          <td><%= f.select :p5_46_4b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_3"}%></td>  
-          <td><%= f.select :p5_46_4a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_4"}%></td>
-          <td><%= f.select :p5_46_4b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_4"}%></td>   
+            <td id="persona_1_27">
+              <div id="div_p5_46_4_1">
+                <%= f.select :p5_46_4a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_1"}%>
+                <div class="hidden" id="div_p5_46_4b_1">
+                <%= f.select :p5_46_4b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_1"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>  
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_2_27">
+              <div id="div_p5_46_4_2">
+                <%= f.select :p5_46_4a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_2"}%>
+                <div class="hidden" id="div_p5_46_4b_2">
+                <%= f.select :p5_46_4b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_2"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div> 
+              </div>   
+            </td> 
+          </div>   
+            <td id="persona_3_27">
+              <div id="div_p5_46_4_3"> 
+                <%= f.select :p5_46_4a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_3"}%>
+                <div class="hidden" id="div_p5_46_4b_3">
+                <%= f.select :p5_46_4b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_3"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>    
+            </td>  
+          </div>  
+            <td id="persona_4_27">
+              <div id="div_p5_46_4_4">
+                <%= f.select :p5_46_4a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_4"}%>
+                <div class="hidden" id="div_p5_46_4b_1">
+                <%= f.select :p5_46_4b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_4"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>  
+              </div>  
+            </td>  
+          </div> 
+            <td id="persona_5_27">
+              <div id="div_p5_46_4_5"> 
+                <%= f.select :p5_46_4a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_5"}%>
+                <div class="hidden" id="div_p5_46_4b_5">
+                <%= f.select :p5_46_4b_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_5"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>  
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_6_27">
+              <div id="div_p5_46_4_6">
+                <%= f.select :p5_46_4a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_6"}%>
+                <div class="hidden" id="div_p5_46_4b_6">
+                <%= f.select :p5_46_4b_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_6"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>    
+            </td> 
+          </div> 
+            <td id="persona_7_27">
+              <div id="div_p5_46_4_7"> 
+                <%= f.select :p5_46_4a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_7"}%>
+                <div class="hidden" id="div_p5_46_4b_7">
+                <%= f.select :p5_46_4b_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_7"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div> 
+              </div>   
+            </td> 
+          </div> 
+            <td id="persona_8_27">
+              <div id="div_p5_46_4_8">  
+                <%= f.select :p5_46_4a_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4a_8"}%>
+                <div class="hidden" id="div_p5_46_4b_8">
+                <%= f.select :p5_46_4b_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_4b_8"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>    
+            </td>
+          </div>     
         </tr>
         <tr>
           <th scope="row">Bienestarina</th>
-          <td><%= f.select :p5_46_5a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_1"}%></td>
-          <td><%= f.select :p5_46_5b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_1"}%></td>
-          <td><%= f.select :p5_46_5a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_2"}%></td>
-          <td><%= f.select :p5_46_5b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_2"}%></td>
-          <td><%= f.select :p5_46_5a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_3"}%></td>
-          <td><%= f.select :p5_46_5b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_3"}%></td>
-          <td><%= f.select :p5_46_5a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_4"}%></td>
-          <td><%= f.select :p5_46_5b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_4"}%></td>
+            <td id="persona_1_28">
+              <div id="div_p5_46_5_1">
+                <%= f.select :p5_46_5a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_1"}%>
+                <div class="hidden" id="div_p5_46_5b_1">
+                <%= f.select :p5_46_5b_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_1"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div> 
+            <td id="persona_2_28">
+              <div id="div_p5_46_5_2"> 
+                <%= f.select :p5_46_5a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_2"}%>
+                <div class="hidden" id="div_p5_46_5b_2">
+                <%= f.select :p5_46_5b_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_2"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>    
+            </td>
+          </div> 
+            <td id="persona_3_28">
+              <div id="div_p5_46_5_3"> 
+                <%= f.select :p5_46_5a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_3"}%>
+                <div class="hidden" id="div_p5_46_5b_3">
+                <%= f.select :p5_46_5b_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_3"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>  
+              </div>   
+            </td>
+          </div> 
+            <td id="persona_4_28">
+              <div id="div_p5_46_5_4"> 
+                <%= f.select :p5_46_5a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_4"}%>
+                <div class="hidden" id="div_p5_46_5b_4">
+                <%= f.select :p5_46_5b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_4"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>    
+            </td>
+          </div>
+            <td id="persona_5_28">
+              <div id="div_p5_46_5_5">  
+                <%= f.select :p5_46_5a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_5"}%>
+                <div class="hidden" id="div_p5_46_5b_5">
+                <%= f.select :p5_46_5b_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_5"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>
+              </div>  
+            </td>
+          </div>  
+            <td id="persona_6_28">
+              <div id="div_p5_46_5_6">
+                <%= f.select :p5_46_5a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_6"}%>
+                <div class="hidden" id="div_p5_46_5b_6">
+                <%= f.select :p5_46_5b_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_6"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div> 
+              </div>   
+            </td>
+          </div> 
+            <td id="persona_7_28">
+              <div id="div_p5_46_5_7"> 
+                <%= f.select :p5_46_5a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_7"}%>
+                <div class="hidden" id="div_p5_46_5b_7">
+                <%= f.select :p5_46_5b_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_7"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div> 
+              </div>    
+            </td>
+          </div>  
+            <td id="persona_8_28">
+              <div id="div_p5_46_5_8">
+                <%= f.select :p5_46_5a_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5a_8"}%>
+                <div class="hidden" id="div_p5_46_5b_8">
+                <%= f.select :p5_46_5b_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p5_46_5b_8"}%>
+                <p>¿Los recibe todos los dìas?</p> 
+                </div>  
+              </div>  
+            </td>
+          </div>  
         </tr>
-
+        <tr>
+          <th scope="row">47. ¿Por este apoyo alimentario que recibió?</th>
+            <td id="persona_1_29">
+               <div class="field" id="div_p5_47_1">
+                  <%= f.select :p5_47_1, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_1"}%>
+                </div>
+            </td>    
+            <td id="persona_2_29">
+                <div class="field" id="div_p5_47_2">
+                  <%= f.select :p5_47_2, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_2"}%>
+                </div>
+            </td>    
+            <td id="persona_3_29">
+                <div class="field" id="div_p5_47_3">
+                  <%= f.select :p5_47_3, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_3"}%>
+                </div>
+            </td>    
+            <td id="persona_4_29">
+                <div class="field" id="div_p5_47_4">
+                  <%= f.select :p5_47_4, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_4"}%>
+                </div>
+            </td>    
+            <td id="persona_5_29">
+                <div class="field" id="div_p5_47_5">
+                  <%= f.select :p5_47_5, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_5"}%>
+                </div>
+            </td>    
+            <td id="persona_6_29">
+                <div class="field" id="div_p5_47_6">
+                  <%= f.select :p5_47_6, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_6"}%>
+                </div>
+            </td>    
+            <td id="persona_7_29">
+                <div class="field" id="div_p5_47_7">
+                  <%= f.select :p5_47_7, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_7"}%>
+                </div>
+            </td>    
+            <td id="persona_8_29">
+                <div class="field" id="div_p5_47_8">
+                  <%= f.select :p5_47_8, ["No pagó nada (fue gratis)", "Pagó el valor del apoyo"],{:include_blank => true}, {class: "form-control", id:"res_p5_47_8"}%>
+                </div>
+            </td> 
+        </tr>
       </tbody>
     </table>
   </div>
@@ -1973,6 +2341,14 @@
       $('#Seccion_Modulo4').addClass('hidden');
       $('#Seccion_Modulo3').removeClass('hidden');
     });    
+    $('#Siguiente_modulo5').click(function(){
+      $('#Seccion_Modulo5').addClass('hidden');
+      $('#Seccion_Modulo6').removeClass('hidden');
+    });
+    $('#Anterior_modulo5').click(function(){
+      $('#Seccion_Modulo5').addClass('hidden');
+      $('#Seccion_Modulo4').removeClass('hidden');
+    }); 
 
      $('#res_p1_1').change(function(){
       if($('#res_p1_1').val() == "Amazonas"){
@@ -3680,81 +4056,430 @@
 
       $('#res_p5_45_1').change(function(){
         if ($('#res_p5_45_1').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_1').removeClass('hidden');
+          $('#div_p5_46_1_1').removeClass('hidden');
+          $('#div_p5_46_2_1').removeClass('hidden');
+          $('#div_p5_46_3_1').removeClass('hidden');
+          $('#div_p5_46_4_1').removeClass('hidden');
+          $('#div_p5_46_5_1').removeClass('hidden');
           $('#div_p5_47_1').removeClass('hidden');
         } else {
-          $('#div_p5_46_1').addClass('hidden');
+          $('#div_p5_46_1_1').addClass('hidden');
+          $('#div_p5_46_2_1').addClass('hidden');
+          $('#div_p5_46_3_1').addClass('hidden');
+          $('#div_p5_46_4_1').addClass('hidden');
+          $('#div_p5_46_5_1').addClass('hidden');
           $('#div_p5_47_1').addClass('hidden');
         }
       });
 
       $('#res_p5_45_2').change(function(){
         if ($('#res_p5_45_2').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_2').removeClass('hidden');
+          $('#div_p5_46_1_2').removeClass('hidden');
+          $('#div_p5_46_2_2').removeClass('hidden');
+          $('#div_p5_46_3_2').removeClass('hidden');
+          $('#div_p5_46_4_2').removeClass('hidden');
+          $('#div_p5_46_5_2').removeClass('hidden');
           $('#div_p5_47_2').removeClass('hidden');
         } else {
-          $('#div_p5_46_2').addClass('hidden');
+          $('#div_p5_46_1_2').addClass('hidden');
+          $('#div_p5_46_2_2').addClass('hidden');
+          $('#div_p5_46_3_2').addClass('hidden');
+          $('#div_p5_46_4_2').addClass('hidden');
+          $('#div_p5_46_5_2').addClass('hidden');
           $('#div_p5_47_2').addClass('hidden');
         }
       });
 
       $('#res_p5_45_3').change(function(){
         if ($('#res_p5_45_3').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_3').removeClass('hidden');
+          $('#div_p5_46_1_3').removeClass('hidden');
+          $('#div_p5_46_2_3').removeClass('hidden');
+          $('#div_p5_46_3_3').removeClass('hidden');
+          $('#div_p5_46_4_3').removeClass('hidden');
+          $('#div_p5_46_5_3').removeClass('hidden');
           $('#div_p5_47_3').removeClass('hidden');
         } else {
-          $('#div_p5_46_3').addClass('hidden');
+          $('#div_p5_46_1_3').addClass('hidden');
+          $('#div_p5_46_2_3').addClass('hidden');
+          $('#div_p5_46_3_3').addClass('hidden');
+          $('#div_p5_46_4_3').addClass('hidden');
+          $('#div_p5_46_5_3').addClass('hidden');
           $('#div_p5_47_3').addClass('hidden');
         }
       });
 
       $('#res_p5_45_4').change(function(){
         if ($('#res_p5_45_4').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_4').removeClass('hidden');
+          $('#div_p5_46_1_4').removeClass('hidden');
+          $('#div_p5_46_2_4').removeClass('hidden');
+          $('#div_p5_46_3_4').removeClass('hidden');
+          $('#div_p5_46_4_4').removeClass('hidden');
+          $('#div_p5_46_5_4').removeClass('hidden');
           $('#div_p5_47_4').removeClass('hidden');
         } else {
-          $('#div_p5_46_4').addClass('hidden');
+          $('#div_p5_46_1_4').addClass('hidden');
+          $('#div_p5_46_2_4').addClass('hidden');
+          $('#div_p5_46_3_4').addClass('hidden');
+          $('#div_p5_46_4_4').addClass('hidden');
+          $('#div_p5_46_5_4').addClass('hidden');
           $('#div_p5_47_4').addClass('hidden');
         }
       });
 
       $('#res_p5_45_5').change(function(){
         if ($('#res_p5_45_5').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_5').removeClass('hidden');
+          $('#div_p5_46_1_5').removeClass('hidden');
+          $('#div_p5_46_2_5').removeClass('hidden');
+          $('#div_p5_46_3_5').removeClass('hidden');
+          $('#div_p5_46_4_5').removeClass('hidden');
+          $('#div_p5_46_5_5').removeClass('hidden');
           $('#div_p5_47_5').removeClass('hidden');
         } else {
-          $('#div_p5_46_5').addClass('hidden');
+          $('#div_p5_46_1_5').addClass('hidden');
+          $('#div_p5_46_2_5').addClass('hidden');
+          $('#div_p5_46_3_5').addClass('hidden');
+          $('#div_p5_46_4_5').addClass('hidden');
+          $('#div_p5_46_5_5').addClass('hidden');
           $('#div_p5_47_5').addClass('hidden');
         }
       });
 
       $('#res_p5_45_6').change(function(){
         if ($('#res_p5_45_6').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_6').removeClass('hidden');
+          $('#div_p5_46_1_6').removeClass('hidden');
+          $('#div_p5_46_2_6').removeClass('hidden');
+          $('#div_p5_46_3_6').removeClass('hidden');
+          $('#div_p5_46_4_6').removeClass('hidden');
+          $('#div_p5_46_5_6').removeClass('hidden');
           $('#div_p5_47_6').removeClass('hidden');
         } else {
-          $('#div_p5_46_6').addClass('hidden');
+          $('#div_p5_46_1_6').addClass('hidden');
+          $('#div_p5_46_2_6').addClass('hidden');
+          $('#div_p5_46_3_6').addClass('hidden');
+          $('#div_p5_46_4_6').addClass('hidden');
+          $('#div_p5_46_5_6').addClass('hidden');
           $('#div_p5_47_6').addClass('hidden');
         }
       });
 
       $('#res_p5_45_7').change(function(){
         if ($('#res_p5_45_7').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_7').removeClass('hidden');
+          $('#div_p5_46_1_7').removeClass('hidden');
+          $('#div_p5_46_2_7').removeClass('hidden');
+          $('#div_p5_46_3_7').removeClass('hidden');
+          $('#div_p5_46_4_7').removeClass('hidden');
+          $('#div_p5_46_5_7').removeClass('hidden');
           $('#div_p5_47_7').removeClass('hidden');
         } else {
-          $('#div_p5_46_7').addClass('hidden');
+          $('#div_p5_46_1_7').addClass('hidden');
+          $('#div_p5_46_2_7').addClass('hidden');
+          $('#div_p5_46_3_7').addClass('hidden');
+          $('#div_p5_46_4_7').addClass('hidden');
+          $('#div_p5_46_5_7').addClass('hidden');
           $('#div_p5_47_7').addClass('hidden');
         }
       });
 
       $('#res_p5_45_8').change(function(){
         if ($('#res_p5_45_8').val() == "Asiste a un jardín infantil, hogar comunitario, guardería o preescolar") {
-          $('#div_p5_46_8').removeClass('hidden');
+          $('#div_p5_46_1_8').removeClass('hidden');
+          $('#div_p5_46_2_8').removeClass('hidden');
+          $('#div_p5_46_3_8').removeClass('hidden');
+          $('#div_p5_46_4_8').removeClass('hidden');
+          $('#div_p5_46_5_8').removeClass('hidden');
           $('#div_p5_47_8').removeClass('hidden');
         } else {
-          $('#div_p5_46_8').addClass('hidden');
+          $('#div_p5_46_1_8').addClass('hidden');
+          $('#div_p5_46_2_8').addClass('hidden');
+          $('#div_p5_46_3_8').addClass('hidden');
+          $('#div_p5_46_4_8').addClass('hidden');
+          $('#div_p5_46_5_8').addClass('hidden');
           $('#div_p5_47_8').addClass('hidden');
+        }
+      });
+
+      $('#res_p5_46_1a_1').change(function(){
+        if ($('#res_p5_46_1a_1').val() == "Si") {
+          $('#div_p5_46_1b_1').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_1').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_1a_2').change(function(){
+        if ($('#res_p5_46_1a_2').val() == "Si") {
+          $('#div_p5_46_1b_2').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_2').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_1a_3').change(function(){
+        if ($('#res_p5_46_1a_3').val() == "Si") {
+          $('#div_p5_46_1b_3').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_3').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_1a_4').change(function(){
+        if ($('#res_p5_46_1a_4').val() == "Si") {
+          $('#div_p5_46_1b_4').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_4').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_1a_5').change(function(){
+        if ($('#res_p5_46_1a_5').val() == "Si") {
+          $('#div_p5_46_1b_5').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_5').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_1a_6').change(function(){
+        if ($('#res_p5_46_1a_6').val() == "Si") {
+          $('#div_p5_46_1b_6').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_6').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_1a_7').change(function(){
+        if ($('#res_p5_46_1a_7').val() == "Si") {
+          $('#div_p5_46_1b_7').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_7').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_1a_8').change(function(){
+        if ($('#res_p5_46_1a_8').val() == "Si") {
+          $('#div_p5_46_1b_8').removeClass('hidden');
+        } else {
+          $('#div_p5_46_1b_8').addClass('hidden');
+        }
+      });
+
+      $('#res_p5_46_2a_1').change(function(){
+        if ($('#res_p5_46_2a_1').val() == "Si") {
+          $('#div_p5_46_2b_1').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_1').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_2a_2').change(function(){
+        if ($('#res_p5_46_2a_2').val() == "Si") {
+          $('#div_p5_46_2b_2').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_2').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_2a_3').change(function(){
+        if ($('#res_p5_46_2a_3').val() == "Si") {
+          $('#div_p5_46_2b_3').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_3').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_2a_4').change(function(){
+        if ($('#res_p5_46_2a_4').val() == "Si") {
+          $('#div_p5_46_2b_4').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_4').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_2a_5').change(function(){
+        if ($('#res_p5_46_2a_5').val() == "Si") {
+          $('#div_p5_46_2b_5').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_5').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_2a_6').change(function(){
+        if ($('#res_p5_46_2a_6').val() == "Si") {
+          $('#div_p5_46_2b_6').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_6').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_2a_7').change(function(){
+        if ($('#res_p5_46_2a_7').val() == "Si") {
+          $('#div_p5_46_2b_7').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_7').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_2a_8').change(function(){
+        if ($('#res_p5_46_2a_8').val() == "Si") {
+          $('#div_p5_46_2b_8').removeClass('hidden');
+        } else {
+          $('#div_p5_46_2b_8').addClass('hidden');
+        }
+      });
+
+      $('#res_p5_46_3a_1').change(function(){
+        if ($('#res_p5_46_3a_1').val() == "Si") {
+          $('#div_p5_46_3b_1').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_1').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_3a_2').change(function(){
+        if ($('#res_p5_46_3a_2').val() == "Si") {
+          $('#div_p5_46_3b_2').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_2').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_3a_3').change(function(){
+        if ($('#res_p5_46_3a_3').val() == "Si") {
+          $('#div_p5_46_3b_3').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_3').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_3a_4').change(function(){
+        if ($('#res_p5_46_3a_4').val() == "Si") {
+          $('#div_p5_46_3b_4').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_4').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_3a_5').change(function(){
+        if ($('#res_p5_46_3a_5').val() == "Si") {
+          $('#div_p5_46_3b_5').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_5').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_3a_6').change(function(){
+        if ($('#res_p5_46_3a_6').val() == "Si") {
+          $('#div_p5_46_3b_6').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_6').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_3a_7').change(function(){
+        if ($('#res_p5_46_3a_7').val() == "Si") {
+          $('#div_p5_46_3b_7').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_7').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_3a_8').change(function(){
+        if ($('#res_p5_46_3a_8').val() == "Si") {
+          $('#div_p5_46_3b_8').removeClass('hidden');
+        } else {
+          $('#div_p5_46_3b_8').addClass('hidden');
+        }
+      });
+
+      $('#res_p5_46_4a_1').change(function(){
+        if ($('#res_p5_46_4a_1').val() == "Si") {
+          $('#div_p5_46_4b_1').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_1').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_4a_2').change(function(){
+        if ($('#res_p5_46_4a_2').val() == "Si") {
+          $('#div_p5_46_4b_2').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_2').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_4a_3').change(function(){
+        if ($('#res_p5_46_4a_3').val() == "Si") {
+          $('#div_p5_46_4b_3').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_3').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_4a_4').change(function(){
+        if ($('#res_p5_46_4a_4').val() == "Si") {
+          $('#div_p5_46_4b_4').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_4').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_4a_5').change(function(){
+        if ($('#res_p5_46_4a_5').val() == "Si") {
+          $('#div_p5_46_4b_5').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_5').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_4a_6').change(function(){
+        if ($('#res_p5_46_4a_6').val() == "Si") {
+          $('#div_p5_46_4b_6').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_6').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_4a_7').change(function(){
+        if ($('#res_p5_46_4a_7').val() == "Si") {
+          $('#div_p5_46_4b_7').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_7').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_4a_8').change(function(){
+        if ($('#res_p5_46_4a_8').val() == "Si") {
+          $('#div_p5_46_4b_8').removeClass('hidden');
+        } else {
+          $('#div_p5_46_4b_8').addClass('hidden');
+        }
+      });
+
+      $('#res_p5_46_5a_1').change(function(){
+        if ($('#res_p5_46_5a_1').val() == "Si") {
+          $('#div_p5_46_5b_1').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_1').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_5a_2').change(function(){
+        if ($('#res_p5_46_5a_2').val() == "Si") {
+          $('#div_p5_46_5b_2').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_2').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_5a_3').change(function(){
+        if ($('#res_p5_46_5a_3').val() == "Si") {
+          $('#div_p5_46_5b_3').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_3').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_5a_4').change(function(){
+        if ($('#res_p5_46_5a_4').val() == "Si") {
+          $('#div_p5_46_5b_4').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_4').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_5a_5').change(function(){
+        if ($('#res_p5_46_5a_5').val() == "Si") {
+          $('#div_p5_46_5b_5').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_5').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_5a_6').change(function(){
+        if ($('#res_p5_46_5a_6').val() == "Si") {
+          $('#div_p5_46_5b_6').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_6').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_5a_7').change(function(){
+        if ($('#res_p5_46_5a_7').val() == "Si") {
+          $('#div_p5_46_5b_7').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_7').addClass('hidden');
+        }
+      });
+      $('#res_p5_46_5a_8').change(function(){
+        if ($('#res_p5_46_5a_8').val() == "Si") {
+          $('#div_p5_46_5b_8').removeClass('hidden');
+        } else {
+          $('#div_p5_46_5b_8').addClass('hidden');
         }
       });
 
