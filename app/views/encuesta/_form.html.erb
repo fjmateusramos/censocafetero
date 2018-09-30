@@ -52,7 +52,7 @@
 </div>
 
 <div class="col-md-12 hidden" id="Seccion_Modulo1">
-  <div class="alert alert-secondary" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 20px; margin-top: 20px;">MODULO 1. Datos de indentificación (la ubicación de la vivienda corresponde al sitio de residencia habitual del hogar del productor)
+  <div class="alert alert-secondary" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 20px; margin-top: 20px;">MODULO 1. Datos de identificación (la ubicación de la vivienda corresponde al sitio de residencia habitual del hogar del productor)
   </div>
   <div class="row">
     <div class="field col-md-4" id="div_p1_1">
@@ -154,13 +154,13 @@
     </div>
 
     <div class="field col-md-4" id="div_p1_9a">
-      <%= f.label :p1_9a, "9a.  Celular del Productor" %>
+      <%= f.label :p1_9a, "9.  Celular del Productor" %>
       <%= f.text_field :p1_9a, {class: "form-control", id:"res_p1_9a"} %>
     </div>
   </div>  
   <div class="row">
     <div class="field col-md-3" id="div_p1_9b">
-      <%= f.label :p1_9b, "9b.  Celular de quien responde la encuesta" %>
+      <%= f.label :p1_9b, "9a.  Celular de quien responde la encuesta" %>
       <%= f.text_field :p1_9b, {class: "form-control", id:"res_p1_9b"} %>
     </div>
 
@@ -174,7 +174,7 @@
     <%= f.select :p1_11, ["Jefe", "Esposo(a) o compañero(a)","Hijo(a), hijastro(a)","Nieto(a)","Padre, madre, suegro (a)", "Hermano(a), hermanastr(a)"],{:include_blank => true}, {class: "form-control", id:"res_p1_11"}%>
     </div>
     <div class="field col-md-3" id="div_p1_12a">
-    <%= f.label :p1_12a , "12a.  ¿El productor reside en la finca?" %>
+    <%= f.label :p1_12a , "12.  ¿El productor reside en la finca?" %>
     <%= f.select :p1_12a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p1_12a"}%>
     </div>
   </div> 
@@ -1701,7 +1701,7 @@
         <div id="div_p5_43_11">
           <%= f.select :p5_43_2m_1, ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"] , {:include_blank => true}  ,{class: "form-control", id:"res_p5_43_2m_1"} %><p class="font-weight-bold text-center">Madre</p><%= f.select :p5_43_2p_1, ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"] , {:include_blank => true}  ,{class: "form-control", id:"res_p5_43_2p_1"} %><p class="font-weight-bold text-center">Padre</p>
         </div>
-        </td>
+      </td>
 
       <td id="persona_2_22">
         <div id="div_p5_43_21">
@@ -2682,49 +2682,704 @@
         <tr>
           <th scope="row">53. ¿Recibe en el plantel educativo alguna comida de forma gratuita?</th>
             <td id="persona_1_35">
-                <div class="field col-lg-3" id="div_p6_53_1">
+                <div class="field" id="div_p6_53_1">
                   <%= f.select :p6_53_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_1"}%>
                 </div>
             </td>    
             <td id="persona_2_35">
-                <div class="field col-lg-3" id="div_p6_53_2">
+                <div class="field" id="div_p6_53_2">
                   <%= f.select :p6_53_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_2"}%>
                 </div>
             </td>    
             <td id="persona_3_35">
-                <div class="field col-lg-3" id="div_p6_53_3">
+                <div class="field" id="div_p6_53_3">
                   <%= f.select :p6_53_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_3"}%>
                 </div>
             </td>    
             <td id="persona_4_35">
-                <div class="field col-lg-3" id="div_p6_53_4">
+                <div class="field" id="div_p6_53_4">
                   <%= f.select :p6_53_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_4"}%>
                 </div>
             </td>    
             <td id="persona_5_35">
-                <div class="field col-lg-3" id="div_p6_53_5">
+                <div class="field" id="div_p6_53_5">
                   <%= f.select :p6_53_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_5"}%>
                 </div>
             </td>    
             <td id="persona_6_35">
-                <div class="field col-lg-3" id="div_p6_53_6">
+                <div class="field" id="div_p6_53_6">
                   <%= f.select :p6_53_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_6"}%>
                 </div>
             </td>    
             <td id="persona_7_35">
-                <div class="field col-lg-3" id="div_p6_53_7">
+                <div class="field" id="div_p6_53_7">
                   <%= f.select :p6_53_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_7"}%>
                 </div>
             </td>    
             <td id="persona_8_35">
-                <div class="field col-lg-3" id="div_p6_53_8">
+                <div class="field" id="div_p6_53_8">
                   <%= f.select :p6_53_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_53_8"}%>
                 </div>
             </td> 
         </tr>  
         <tr>
-          <th colspan="8">54_1.  ¿Qué tipo de comidas recibe en el plantel educativo?</th>
+          <th colspan="8">54.  ¿Qué tipo de comidas recibe en el plantel educativo?</th>
         </tr>
+        <tr>
+          <th scope="row">54a. Refrigerio</th>
+            <td id="persona_1_36">
+              <div class="field" id="div_p6_54_1_1a">
+                <%= f.select :p6_54_1_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_1_1a"}%>
+              </div>
+            </td>    
+            <td id="persona_2_36">                
+              <div class="field" id="div_p6_54_2_1a">              
+                <%= f.select :p6_54_2_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_2_1a"}%>
+              </div>
+            </td>    
+            <td id="persona_3_36">                
+              <div class="field" id="div_p6_54_3_1a">
+                <%= f.select :p6_54_3_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_3_1a"}%>
+              </div>
+            </td>    
+            <td id="persona_4_36">   
+              <div class="field" id="div_p6_54_4_1a">
+                <%= f.select :p6_54_4_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_4_1a"}%>
+              </div>
+            </td>    
+            <td id="persona_5_36">   
+              <div class="field" id="div_p6_54_5_1a">
+                <%= f.select :p6_54_5_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_5_1a"}%>
+              </div>
+            </td>    
+            <td id="persona_6_36">   
+              <div class="field" id="div_p6_54_6_1a">
+                <%= f.select :p6_54_6_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_6_1a"}%>
+              </div>
+            </td>    
+            <td id="persona_7_36">   
+              <div class="field" id="div_p6_54_7_1a">
+                <%= f.select :p6_54_7_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_7_1a"}%>
+              </div>
+            </td>    
+            <td id="persona_8_36">   
+              <div class="field" id="div_p6_54_8_1a">
+                <%= f.select :p6_54_8_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_8_1a"}%>
+              </div>
+            </td>  
+        </tr>  
+        <tr>
+          <th scope="row">54a.1. ¿Las recibe todos los días?</th>
+            <td id="persona_1_37">
+              <div class="hidden" id="div_p6_54_1_1b">
+                <%= f.select :p6_54_1_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_1_1b"} %>
+              </div>
+            </td>    
+            <td id="persona_2_37">                
+              <div class="hidden" id="div_p6_54_2_1b">
+                <%= f.select :p6_54_2_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_2_1b"} %>
+              </div>
+            </td>    
+            <td id="persona_3_37">                
+              <div class="hidden" id="div_p6_54_3_1b">
+                <%= f.select :p6_54_3_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_3_1b"} %>
+              </div>
+            </td>    
+            <td id="persona_4_37">   
+              <div class="hidden" id="div_p6_54_4_1b">
+                <%= f.select :p6_54_4_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_4_1b"} %>
+              </div>
+            </td>    
+            <td id="persona_5_37">   
+              <div class="hidden" id="div_p6_54_5_1b">
+                <%= f.select :p6_54_5_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_5_1b"} %>
+              </div>
+            </td>    
+            <td id="persona_6_37">   
+              <div class="hidden" id="div_p6_54_6_1b">
+                <%= f.select :p6_54_6_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_6_1b"} %>
+              </div>
+            </td>    
+            <td id="persona_7_37">   
+              <div class="hidden" id="div_p6_54_7_1b">
+                <%= f.select :p6_54_7_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_7_1b"} %>
+              </div>
+            </td>    
+            <td id="persona_8_37">   
+              <div class="hidden" id="div_p6_54_8_1b">
+                <%= f.select :p6_54_8_1b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_8_1b"} %>
+              </div>
+            </td>  
+        </tr> 
+        <tr>
+          <th scope="row">54b. Desayuno</th>
+            <td id="persona_1_38">
+              <div class="field" id="div_p6_54_1_2a">
+                <%= f.select :p6_54_1_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_1_2a"}%>
+              </div>
+            </td>    
+            <td id="persona_2_38">                
+              <div class="field" id="div_p6_54_2_2a">
+                <%= f.select :p6_54_2_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_2_2a"}%>
+              </div>
+            </td>    
+            <td id="persona_3_38">                
+              <div class="field" id="div_p6_54_3_2a">
+                <%= f.select :p6_54_3_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_3_2a"}%>
+              </div>
+            </td>    
+            <td id="persona_4_38">   
+              <div class="field" id="div_p6_54_4_2a">
+                <%= f.select :p6_54_4_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_4_2a"}%>
+              </div>
+            </td>    
+            <td id="persona_5_38">   
+              <div class="field" id="div_p6_54_5_2a">
+                <%= f.select :p6_54_5_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_5_2a"}%>
+              </div>
+            </td>    
+            <td id="persona_6_38">   
+              <div class="field" id="div_p6_54_6_2a">
+                <%= f.select :p6_54_6_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_6_2a"}%>
+              </div>
+            </td>    
+            <td id="persona_7_38">   
+              <div class="field" id="div_p6_54_7_2a">
+                <%= f.select :p6_54_7_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_7_2a"}%>
+              </div>
+            </td>    
+            <td id="persona_8_38">   
+              <div class="field" id="div_p6_54_8_2a">
+                <%= f.select :p6_54_8_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_8_2a"}%>
+              </div>
+            </td>  
+        </tr>
+        <tr>
+          <th scope="row">54b.1. ¿Las recibe todos los días?</th>
+            <td id="persona_1_39">
+              <div class="hidden" id="div_p6_54_1_2b">
+                <%= f.select :p6_54_1_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_1_2b"} %>
+              </div>
+            </td>    
+            <td id="persona_2_39">                
+              <div class="hidden" id="div_p6_54_2_2b">
+                <%= f.select :p6_54_2_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_2_2b"} %>
+              </div>
+            </td>    
+            <td id="persona_3_39">                
+              <div class="hidden" id="div_p6_54_3_2b">
+                <%= f.select :p6_54_3_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_3_2b"} %>
+              </div>
+            </td>    
+            <td id="persona_4_39">   
+              <div class="hidden" id="div_p6_54_4_2b">
+                <%= f.select :p6_54_4_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_4_2b"} %>
+              </div>
+            </td>    
+            <td id="persona_5_39">   
+              <div class="hidden" id="div_p6_54_5_2b">
+                <%= f.select :p6_54_5_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_5_2b"} %>
+              </div>
+            </td>    
+            <td id="persona_6_39">   
+              <div class="hidden" id="div_6_54_6_2b">
+                <%= f.select :p6_54_6_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_6_2b"} %>
+              </div>
+            </td>    
+            <td id="persona_7_39">   
+              <div class="hidden" id="div_p6_54_7_2b">
+                <%= f.select :p6_54_7_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_7_2b"} %>
+              </div>
+            </td>    
+            <td id="persona_8_39">   
+              <div class="hidden" id="div_p6_54_8_2b">
+                <%= f.select :p6_54_8_2b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_8_2b"} %>
+              </div>
+            </td>  
+        </tr> 
+        <tr>
+          <th scope="row">54c. Almuerzo</th>
+            <td id="persona_1_40">
+              <div class="field" id="div_p6_54_1_3a">
+                <%= f.select :p6_54_1_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_1_3a"}%>
+              </div>
+            </td>    
+            <td id="persona_2_40">                
+              <div class="field" id="div_p6_54_2_3a">
+                <%= f.select :p6_54_2_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_2_3a"}%>
+              </div>
+            </td>    
+            <td id="persona_3_40">                
+              <div class="field" id="div_p6_54_3_3a">
+                <%= f.select :p6_54_3_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_3_3a"}%>
+              </div>
+            </td>    
+            <td id="persona_4_40">   
+              <div class="field" id="div_p6_54_4_3a">
+                <%= f.select :p6_54_4_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_4_3a"}%>
+              </div>
+            </td>    
+            <td id="persona_5_40">   
+              <div class="field" id="div_p6_54_5_3a">
+                <%= f.select :p6_54_5_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_5_3a"}%>
+              </div>
+            </td>    
+            <td id="persona_6_40">   
+              <div class="field" id="div_p6_54_6_3a">
+                <%= f.select :p6_54_6_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_6_3a"}%>
+              </div>
+            </td>    
+            <td id="persona_7_40">   
+              <div class="field" id="div_p6_54_7_3a">
+                <%= f.select :p6_54_7_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_7_3a"}%>
+              </div>
+            </td>    
+            <td id="persona_8_40">   
+              <div class="field" id="div_p6_54_8_3a">
+                <%= f.select :p6_54_8_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_8_3a"}%>
+              </div>
+            </td>  
+        </tr> 
+        <tr>
+          <th scope="row">54c.1. ¿Las recibe todos los días?</th>
+            <td id="persona_1_41">
+              <div class="hidden" id="div_p6_54_1_3b">
+                <%= f.select :p6_54_1_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_1_3b"} %>
+              </div>            
+            </td>    
+            <td id="persona_2_41">                
+              <div class="hidden" id="div_p6_54_2_3b">
+                <%= f.select :p6_54_2_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_2_3b"} %>
+              </div> 
+            </td>    
+            <td id="persona_3_41">                
+              <div class="hidden" id="div_p6_54_3_3b">
+                <%= f.select :p6_54_3_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_3_3b"} %>
+              </div> 
+            </td>    
+            <td id="persona_4_41">   
+              <div class="hidden" id="div_p6_54_4_3b">
+                <%= f.select :p6_54_4_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_4_3b"} %>
+              </div> 
+            </td>    
+            <td id="persona_5_41">   
+              <div class="hidden" id="div_p6_54_5_3b">
+                <%= f.select :p6_54_5_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_5_3b"} %>
+              </div> 
+            </td>    
+            <td id="persona_6_41">   
+              <div class="hidden" id="div_p6_54_6_3b">
+                <%= f.select :p6_54_6_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_6_3b"} %>
+              </div> 
+            </td>    
+            <td id="persona_7_41">   
+              <div class="hidden" id="div_p6_54_7_3b">
+                <%= f.select :p6_54_7_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_7_3b"} %>
+              </div> 
+            </td>    
+            <td id="persona_8_41">   
+              <div class="hidden" id="div_p6_54_8_3b">
+                <%= f.select :p6_54_8_3b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_54_8_3b"} %>
+              </div> 
+            </td>  
+        </tr>
+         <tr>
+          <th scope="row">55. Durante el año ESCOLAR, ¿recibió subsidio en dinero o en especie para estudiar?</th>
+            <td id="persona_1_42">
+              <div class="field" id="div_p6_55_1">
+                <%= f.select :p6_55_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_1"}%>
+              </div>            
+            </td>    
+            <td id="persona_2_42">                
+              <div class="field" id="div_p6_55_2">
+                <%= f.select :p6_55_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_2"}%>
+              </div>  
+            </td>   
+            <td id="persona_3_42">                
+              <div class="field" id="div_p6_55_3">
+                <%= f.select :p6_55_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_3"}%>
+              </div> 
+            </td>    
+            <td id="persona_4_42">   
+              <div class="field" id="div_p6_55_4">
+                <%= f.select :p6_55_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_4"}%>
+              </div>  
+            </td>    
+            <td id="persona_5_42">   
+              <div class="field" id="div_p6_55_5">
+                <%= f.select :p6_55_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_5"}%>
+              </div> 
+            </td>    
+            <td id="persona_6_42">   
+              <div class="field" id="div_p6_55_6">
+                <%= f.select :p6_55_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_6"}%>
+              </div> 
+            </td>    
+            <td id="persona_7_42">   
+              <div class="field" id="div_p6_55_7">
+                <%= f.select :p6_55_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_7"}%>
+              </div> 
+            </td>    
+            <td id="persona_8_42">   
+              <div class="field" id="div_p6_55_8">
+                <%= f.select :p6_55_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_55_8"}%>
+              </div> 
+            </td>  
+        </tr>    
+        <tr>
+          <th colspan="8">56.  ¿Qué subsidios recibió?</th>
+        </tr>
+        <tr>
+          <th scope="row">56a. Dinero por asistencia escolar</th>
+            <td id="persona_1_43">
+              <div class="field" id="div_p6_56_1_1">
+                <%= f.select :p6_56_1_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_1_1"}%>
+              </div>           
+            </td>    
+            <td id="persona_2_43">                
+              <div class="field" id="div_p6_56_2_1">
+                <%= f.select :p6_56_2_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_2_1"}%>
+              </div>  
+            </td>   
+            <td id="persona_3_43">                
+              <div class="field" id="div_p6_56_3_1">
+                <%= f.select :p6_56_3_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_3_1"}%>
+              </div> 
+            </td>    
+            <td id="persona_4_43">   
+              <div class="field" id="div_p6_56_4_1">
+                <%= f.select :p6_56_4_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_4_1"}%>
+              </div>  
+            </td>    
+            <td id="persona_5_43">   
+              <div class="field" id="div_p6_56_5_1">
+                <%= f.select :p6_56_5_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_5_1"}%>
+              </div> 
+            </td>    
+            <td id="persona_6_43">   
+              <div class="field" id="div_p6_56_6_1">
+                <%= f.select :p6_56_6_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_6_1"}%>
+              </div> 
+            </td>    
+            <td id="persona_7_43">   
+              <div class="field" id="div_p6_56_7_1">
+                <%= f.select :p6_56_7_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_7_1"}%>
+              </div> 
+            </td>    
+            <td id="persona_8_43">   
+              <div class="field" id="div_p6_56_8_1">
+                <%= f.select :p6_56_8_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_8_1"}%>
+              </div> 
+            </td>  
+        </tr> 
+        <tr>
+          <th scope="row">56b. Útiles escolares</th>
+            <td id="persona_1_44">
+              <div class="field" id="div_p6_56_1_2">
+                <%= f.select :p6_56_1_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_1_2"}%>
+              </div>          
+            </td>    
+            <td id="persona_2_44">                
+              <div class="field" id="div_p6_56_2_2">
+                <%= f.select :p6_56_2_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_2_2"}%>
+              </div>  
+            </td>   
+            <td id="persona_3_44">                
+              <div class="field" id="div_p6_56_3_2">
+                <%= f.select :p6_56_3_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_3_2"}%>
+              </div> 
+            </td>    
+            <td id="persona_4_44">   
+              <div class="field" id="div_p6_56_4_2">
+                <%= f.select :p6_56_4_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_4_2"}%>
+              </div>   
+            </td>    
+            <td id="persona_5_44">   
+              <div class="field" id="div_p6_56_5_2">
+                <%= f.select :p6_56_5_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_5_2"}%>
+              </div> 
+            </td>    
+            <td id="persona_6_44">   
+              <div class="field" id="div_p6_56_6_2">
+                <%= f.select :p6_56_6_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_6_2"}%>
+              </div> 
+            </td>    
+            <td id="persona_7_44">   
+              <div class="field" id="div_p6_56_7_2">
+                <%= f.select :p6_56_7_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_7_2"}%>
+              </div> 
+            </td>    
+            <td id="persona_8_44">   
+              <div class="field" id="div_p6_56_8_2">
+                <%= f.select :p6_56_8_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_8_2"}%>
+              </div> 
+            </td>  
+        </tr>  
+        <tr>
+          <th scope="row">56c. Transporte escolar</th>
+            <td id="persona_1_45">
+              <div class="field" id="div_p6_56_1_3">
+                <%= f.select :p6_56_1_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_1_3"}%>
+              </div>        
+            </td>    
+            <td id="persona_2_45">                
+              <div class="field" id="div_p6_56_2_3">
+                <%= f.select :p6_56_2_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_2_3"}%>
+              </div>
+            </td>   
+            <td id="persona_3_45">                
+              <div class="field" id="div_p6_56_3_3">
+                <%= f.select :p6_56_3_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_3_3"}%>
+              </div>
+            </td>    
+            <td id="persona_4_45">   
+              <div class="field" id="div_p6_56_4_3">
+                <%= f.select :p6_56_4_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_4_3"}%>
+              </div> 
+            </td>    
+            <td id="persona_5_45">   
+              <div class="field" id="div_p6_56_5_3">
+                <%= f.select :p6_56_5_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_5_3"}%>
+              </div>
+            </td>    
+            <td id="persona_6_45">   
+              <div class="field" id="div_p6_56_6_3">
+                <%= f.select :p6_56_6_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_6_3"}%>
+              </div>
+            </td>    
+            <td id="persona_7_45">   
+              <div class="field" id="div_p6_56_7_3">
+                <%= f.select :p6_56_7_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_7_3"}%>
+              </div>
+            </td>    
+            <td id="persona_8_45">   
+              <div class="field" id="div_p6_56_8_3">
+                <%= f.select :p6_56_8_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_8_3"}%>
+              </div>
+            </td>  
+        </tr> 
+        <tr>
+          <th scope="row">56d. Dinero o bono para pago de matrícula</th>
+            <td id="persona_1_46">
+              <div class="field" id="div_p6_56_1_4">
+                <%= f.select :p6_56_1_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_1_4"}%>
+              </div>       
+            </td>    
+            <td id="persona_2_46">                
+              <div class="field" id="div_p6_56_2_4">
+                <%= f.select :p6_56_2_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_2_4"}%>
+              </div> 
+            </td>   
+            <td id="persona_3_46">                
+              <div class="field" id="div_p6_56_3_4">
+                <%= f.select :p6_56_3_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_3_4"}%>
+              </div> 
+            </td>    
+            <td id="persona_4_46">   
+              <div class="field" id="div_p6_56_4_4">
+                <%= f.select :p6_56_4_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_4_4"}%>
+              </div>  
+            </td>    
+            <td id="persona_5_46">   
+              <div class="field" id="div_p6_56_5_4">
+                <%= f.select :p6_56_5_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_5_4"}%>
+              </div> 
+            </td>    
+            <td id="persona_6_46">   
+              <div class="field" id="div_p6_56_6_4">
+                <%= f.select :p6_56_6_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_6_4"}%>
+              </div> 
+            </td>    
+            <td id="persona_7_46">   
+              <div class="field" id="div_p6_56_7_4">
+                <%= f.select :p6_56_7_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_7_4"}%>
+              </div> 
+            </td>    
+            <td id="persona_8_46">   
+              <div class="field" id="div_p6_56_8_4">
+                <%= f.select :p6_56_8_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_56_8_4"}%>
+              </div> 
+            </td>  
+        </tr>   
+        <tr>
+          <th scope="row">56d. Otro ¿Cuál?</th>
+            <td id="persona_1_47">
+              <div class="field" id="div_p6_56_1_5">
+                <%= f.text_field :p6_56_1_5, {class: "form-control", id:"res_p6_56_1_5"} %>
+              </div>      
+            </td>    
+            <td id="persona_2_47">                
+              <div class="field" id="div_p6_56_2_5">
+                <%= f.text_field :p6_56_2_5, {class: "form-control", id:"res_p6_56_2_5"} %>
+              </div>
+            </td>   
+            <td id="persona_3_47">                
+              <div class="field" id="div_p6_56_3_5">
+                <%= f.text_field :p6_56_3_5, {class: "form-control", id:"res_p6_56_3_5"} %>
+              </div>
+            </td>    
+            <td id="persona_4_47">   
+              <div class="field" id="div_p6_56_4_5">
+                <%= f.text_field :p6_56_4_5, {class: "form-control", id:"res_p6_56_4_5"} %>
+              </div>
+            </td>    
+            <td id="persona_5_47">   
+              <div class="field" id="div_p6_56_5_5">
+                <%= f.text_field :p6_56_5_5, {class: "form-control", id:"res_p6_56_5_5"} %>
+              </div>
+            </td>    
+            <td id="persona_6_47">   
+              <div class="field" id="div_p6_56_6_5">
+                <%= f.text_field :p6_56_6_5, {class: "form-control", id:"res_p6_56_6_5"} %>
+              </div>
+            </td>    
+            <td id="persona_7_47">   
+              <div class="field" id="div_p6_56_7_5">
+                <%= f.text_field :p6_56_7_5, {class: "form-control", id:"res_p6_56_7_5"} %>
+              </div>
+            </td>    
+            <td id="persona_8_47">   
+              <div class="field" id="div_p6_56_8_5">
+                <%= f.text_field :p6_56_8_5, {class: "form-control", id:"res_p6_56_8_5"} %>
+              </div>
+            </td>  
+        </tr> 
+        <tr>
+          <th scope="row">57 Durante este AÑO ESCOLAR, ¿recibió beca para estudiar?</th>
+            <td id="persona_1_48">
+              <div class="field" id="div_p6_57_1">
+                <%= f.select :p6_57_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_1"}%>
+              </div>
+            </td>  
+            <td id="persona_2_48">
+              <div class="field" id="div_p6_57_2">
+                <%= f.select :p6_57_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_2"}%>
+              </div>
+            </td>  
+            <td id="persona_3_48">
+              <div class="field" id="div_p6_57_3">
+                <%= f.select :p6_57_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_3"}%>
+              </div>
+            </td>  
+            <td id="persona_4_48">
+              <div class="field" id="div_p6_57_4">
+                <%= f.select :p6_57_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_4"}%>
+              </div>
+            </td>  
+            <td id="persona_5_48">
+              <div class="field" id="div_p6_57_5">
+                <%= f.select :p6_57_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_5"}%>
+              </div>
+            </td>  
+            <td id="persona_6_48">
+              <div class="field" id="div_p6_57_6">
+                <%= f.select :p6_57_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_6"}%>
+              </div>
+            </td>  
+            <td id="persona_7_48">
+              <div class="field" id="div_p6_57_7">
+                <%= f.select :p6_57_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_7"}%>
+              </div>
+            </td>  
+            <td id="persona_8_48">
+              <div class="field" id="div_p6_57_8">
+                <%= f.select :p6_57_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_57_8"}%>
+              </div>
+            </td>  
+        </tr> 
+        <tr>
+          <th scope="row">58 Durante este AÑO ESCOLAR, ¿ha recibido crédito educativo?</th>
+            <td id="persona_1_49">
+              <div class="field" id="div_p6_58a_1">
+                <%= f.select :p6_58a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_1"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_1">
+              <%= f.label :p6_58b_1, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_1">
+              <%= f.text_field :p6_58b_1, {class: "form-control", id:"res_p6_58b_1"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_2_49">
+              <div class="field" id="div_p6_58a_2">
+                <%= f.select :p6_58a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_2"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_2">
+              <%= f.label :p6_58b_2, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_2">
+              <%= f.text_field :p6_58b_2, {class: "form-control", id:"res_p6_58b_2"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_3_49">
+              <div class="field" id="div_p6_58a_3">
+                <%= f.select :p6_58a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_3"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_3">
+              <%= f.label :p6_58b_3, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_3">
+              <%= f.text_field :p6_58b_3, {class: "form-control", id:"res_p6_58b_3"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_4_49">
+              <div class="field" id="div_p6_58a_4">
+                <%= f.select :p6_58a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_4"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_4">
+              <%= f.label :p6_58b_4, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_4">
+              <%= f.text_field :p6_58b_4, {class: "form-control", id:"res_p6_58b_4"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_5_49">
+              <div class="field" id="div_p6_58a_5">
+                <%= f.select :p6_58a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_5"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_5">
+              <%= f.label :p6_58b_5, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_5">
+              <%= f.text_field :p6_58b_5, {class: "form-control", id:"res_p6_58b_5"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_6_49">
+              <div class="field" id="div_p6_58a_6">
+                <%= f.select :p6_58a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_6"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_6">
+              <%= f.label :p6_58b_6, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_6">
+              <%= f.text_field :p6_58b_6, {class: "form-control", id:"res_p6_58b_6"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_7_49">
+              <div class="field" id="div_p6_58a_7">
+                <%= f.select :p6_58a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_7"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_7">
+              <%= f.label :p6_58b_7, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_7">
+              <%= f.text_field :p6_58b_7, {class: "form-control", id:"res_p6_58b_7"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_8_49">
+              <div class="field" id="div_p6_58a_8">
+                <%= f.select :p6_58a_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_8"}%>
+              </div>
+              <div class="field hidden" id="div_p6_58b_8">
+              <%= f.label :p6_58b_8, "¿Quien se lo otorgo?" %>
+              <div class="" id="div_p6_58b_8">
+              <%= f.text_field :p6_58b_8, {class: "form-control", id:"res_p6_58b_8"} %>
+              </div>
+              </div>
+            </td>  
+        </tr>   
+
+
 
       </tbody>
     </table>
@@ -4019,8 +4674,8 @@
           $('#div_p2_24').addClass('hidden');
           $('#div_p2_22c').removeClass('hidden');
         } else if ($('#res_p2_22').val() == "No") {
-          $('#div_p2_23').removeClass('hidden');
-          $('#div_p2_24').removeClass('hidden');
+          $('#div_p2_23').addClass('hidden');
+          $('#div_p2_24').addClass('hidden');
           $('#div_p2_22c').addClass('hidden');
         }
       });  
@@ -4150,6 +4805,28 @@
             $("#div_p5_46_4_1").removeClass('hidden');
             $("#div_p5_46_5_1").removeClass('hidden');
             $("#div_p5_47_1").removeClass('hidden');
+            $("#div_p6_48_1").addClass('hidden');
+            $("#div_p6_49_1").addClass('hidden');
+            $("#div_p6_50_1").addClass('hidden');
+            $("#div_p6_51_1_a").addClass('hidden');
+            $("#div_p6_51_1_b").addClass('hidden');
+            $("#div_p6_52_1").addClass('hidden');
+            $("#div_p6_52b_1").addClass('hidden');
+            $("#div_p6_53_1").addClass('hidden');
+            $("#div_p6_54_1_1a").addClass('hidden');
+            $("#div_p6_54_1_2a").addClass('hidden');
+            $("#div_p6_54_1_3a").addClass('hidden');
+            $("#div_p6_54_1_1b").addClass('hidden');
+            $("#div_p6_54_1_2b").addClass('hidden');
+            $("#div_p6_54_1_3b").addClass('hidden');
+            $("#div_p6_55_1").addClass('hidden');
+            $("#div_p6_56_1_1").addClass('hidden');
+            $("#div_p6_56_1_2").addClass('hidden');
+            $("#div_p6_56_1_3").addClass('hidden');
+            $("#div_p6_56_1_4").addClass('hidden');
+            $("#div_p6_56_1_5").addClass('hidden');
+            $("#div_p6_57_1").addClass('hidden');
+            $("#div_p6_58a_1").addClass('hidden');
         } else {
             ("#div_p5_43_11").addClass('hidden');
             $("#div_p5_43_1").addClass('hidden');
@@ -4161,8 +4838,31 @@
             $("#div_p5_46_4_1").addClass('hidden');
             $("#div_p5_46_5_1").addClass('hidden');
             $("#div_p5_47_1").addClass('hidden');
+            $("#div_p6_48_1").removeClass('hidden');
+            $("#div_p6_49_1").removeClass('hidden');
+            $("#div_p6_50_1").removeClass('hidden');
+            $("#div_p6_51_1_a").removeClass('hidden');
+            $("#div_p6_51_1_b").removeClass('hidden');
+            $("#div_p6_52_1").removeClass('hidden');
+            $("#div_p6_52b_1").removeClass('hidden');
+            $("#div_p6_53_1").removeClass('hidden');
+            $("#div_p6_54_1_1a").removeClass('hidden');
+            $("#div_p6_54_1_2a").removeClass('hidden');
+            $("#div_p6_54_1_3a").removeClass('hidden');
+            $("#div_p6_54_1_1b").removeClass('hidden');
+            $("#div_p6_54_1_2b").removeClass('hidden');
+            $("#div_p6_54_1_3b").removeClass('hidden');
+            $("#div_p6_55_1").removeClass('hidden');
+            $("#div_p6_56_1_1").removeClass('hidden');
+            $("#div_p6_56_1_2").removeClass('hidden');
+            $("#div_p6_56_1_3").removeClass('hidden');
+            $("#div_p6_56_1_4").removeClass('hidden');
+            $("#div_p6_56_1_5").removeClass('hidden');
+            $("#div_p6_57_1").removeClass('hidden');
+            $("#div_p6_58a_1").removeClass('hidden');
         }
-      });  
+      });
+
       $('#res_p3_29_2').change(function(){
       if ($('#res_p3_29_2').val() <=5){
             $("#div_p5_43_21").removeClass('hidden');
@@ -4175,6 +4875,28 @@
             $("#div_p5_46_4_2").removeClass('hidden');
             $("#div_p5_46_5_2").removeClass('hidden');
             $("#div_p5_47_2").removeClass('hidden');
+            $("#div_p6_48_2").addClass('hidden');
+            $("#div_p6_49_2").addClass('hidden');
+            $("#div_p6_50_2").addClass('hidden');
+            $("#div_p6_51_2_a").addClass('hidden');
+            $("#div_p6_51_2_b").addClass('hidden');
+            $("#div_p6_52_2").addClass('hidden');
+            $("#div_p6_52b_2").addClass('hidden');
+            $("#div_p6_53_2").addClass('hidden');
+            $("#div_p6_54_2_1a").addClass('hidden');
+            $("#div_p6_54_2_2a").addClass('hidden');
+            $("#div_p6_54_2_3a").addClass('hidden');
+            $("#div_p6_54_2_1b").addClass('hidden');
+            $("#div_p6_54_2_2b").addClass('hidden');
+            $("#div_p6_54_2_3b").addClass('hidden');
+            $("#div_p6_55_2").addClass('hidden');
+            $("#div_p6_56_2_1").addClass('hidden');
+            $("#div_p6_56_2_2").addClass('hidden');
+            $("#div_p6_56_2_3").addClass('hidden');
+            $("#div_p6_56_2_4").addClass('hidden');
+            $("#div_p6_56_2_5").addClass('hidden');
+            $("#div_p6_57_2").addClass('hidden');
+            $("#div_p6_58a_2").addClass('hidden');
         } else {
             $("#div_p5_43_21").addClass('hidden');
             $("#div_p5_43_2").addClass('hidden');
@@ -4186,6 +4908,28 @@
             $("#div_p5_46_4_2").addClass('hidden');
             $("#div_p5_46_5_2").addClass('hidden');
             $("#div_p5_47_2").addClass('hidden');
+            $("#div_p6_48_1").removeClass('hidden');
+            $("#div_p6_49_1").removeClass('hidden');
+            $("#div_p6_50_1").removeClass('hidden');
+            $("#div_p6_51_2_a").removeClass('hidden');
+            $("#div_p6_51_2_b").removeClass('hidden');
+            $("#div_p6_52_2").removeClass('hidden');
+            $("#div_p6_52b_2").removeClass('hidden');
+            $("#div_p6_53_2").removeClass('hidden');
+            $("#div_p6_54_2_1a").removeClass('hidden');
+            $("#div_p6_54_2_2a").removeClass('hidden');
+            $("#div_p6_54_2_3a").removeClass('hidden');
+            $("#div_p6_54_2_1b").removeClass('hidden');
+            $("#div_p6_54_2_2b").removeClass('hidden');
+            $("#div_p6_54_2_3b").removeClass('hidden');
+            $("#div_p6_55_2").removeClass('hidden');
+            $("#div_p6_56_2_1").removeClass('hidden');
+            $("#div_p6_56_2_2").removeClass('hidden');
+            $("#div_p6_56_2_3").removeClass('hidden');
+            $("#div_p6_56_2_4").removeClass('hidden');
+            $("#div_p6_56_2_5").removeClass('hidden');
+            $("#div_p6_57_2").removeClass('hidden');
+            $("#div_p6_58a_2").removeClass('hidden');
         }
       }); 
       $('#res_p3_29_3').change(function(){
@@ -4200,6 +4944,28 @@
             $("#div_p5_46_4_3").removeClass('hidden');
             $("#div_p5_46_5_3").removeClass('hidden');
             $("#div_p5_47_3").removeClass('hidden');
+            $("#div_p6_48_3").addClass('hidden');
+            $("#div_p6_49_3").addClass('hidden');
+            $("#div_p6_50_3").addClass('hidden');
+            $("#div_p6_51_3_a").addClass('hidden');
+            $("#div_p6_51_3_b").addClass('hidden');
+            $("#div_p6_52_3").addClass('hidden');
+            $("#div_p6_52b_3").addClass('hidden');
+            $("#div_p6_53_3").addClass('hidden');
+            $("#div_p6_54_3_1a").addClass('hidden');
+            $("#div_p6_54_3_2a").addClass('hidden');
+            $("#div_p6_54_3_3a").addClass('hidden');
+            $("#div_p6_54_3_1b").addClass('hidden');
+            $("#div_p6_54_3_2b").addClass('hidden');
+            $("#div_p6_54_3_3b").addClass('hidden');
+            $("#div_p6_55_3").addClass('hidden');
+            $("#div_p6_56_3_1").addClass('hidden');
+            $("#div_p6_56_3_2").addClass('hidden');
+            $("#div_p6_56_3_3").addClass('hidden');
+            $("#div_p6_56_3_4").addClass('hidden');
+            $("#div_p6_56_3_5").addClass('hidden');
+            $("#div_p6_57_3").addClass('hidden');
+            $("#div_p6_58a_3").addClass('hidden');
         } else {
             $("#div_p5_43_31").addClass('hidden');
             $("#div_p5_43_3").addClass('hidden');
@@ -4211,6 +4977,28 @@
             $("#div_p5_46_4_3").addClass('hidden');
             $("#div_p5_46_5_3").addClass('hidden');
             $("#div_p5_47_3").addClass('hidden');
+            $("#div_p6_48_3").removeClass('hidden');
+            $("#div_p6_49_3").removeClass('hidden');
+            $("#div_p6_50_3").removeClass('hidden');
+            $("#div_p6_51_3_a").removeClass('hidden');
+            $("#div_p6_51_3_b").removeClass('hidden');
+            $("#div_p6_52_3").removeClass('hidden');
+            $("#div_p6_52b_3").removeClass('hidden');
+            $("#div_p6_53_3").removeClass('hidden');
+            $("#div_p6_54_3_1a").removeClass('hidden');
+            $("#div_p6_54_3_2a").removeClass('hidden');
+            $("#div_p6_54_3_3a").removeClass('hidden');
+            $("#div_p6_54_3_1b").removeClass('hidden');
+            $("#div_p6_54_3_2b").removeClass('hidden');
+            $("#div_p6_54_3_3b").removeClass('hidden');
+            $("#div_p6_55_3").removeClass('hidden');
+            $("#div_p6_56_3_1").removeClass('hidden');
+            $("#div_p6_56_3_2").removeClass('hidden');
+            $("#div_p6_56_3_3").removeClass('hidden');
+            $("#div_p6_56_3_4").removeClass('hidden');
+            $("#div_p6_56_3_5").removeClass('hidden');
+            $("#div_p6_57_3").removeClass('hidden');
+            $("#div_p6_58a_3").removeClass('hidden');
         }
       }); 
       $('#res_p3_29_4').change(function(){
@@ -4225,6 +5013,28 @@
             $("#div_p5_46_4_4").removeClass('hidden');
             $("#div_p5_46_5_4").removeClass('hidden');
             $("#div_p5_47_4").removeClass('hidden');
+            $("#div_p6_48_4").addClass('hidden');
+            $("#div_p6_49_4").addClass('hidden');
+            $("#div_p6_50_4").addClass('hidden');
+            $("#div_p6_51_4_a").addClass('hidden');
+            $("#div_p6_51_4_b").addClass('hidden');
+            $("#div_p6_52_4").addClass('hidden');
+            $("#div_p6_52b_4").addClass('hidden');
+            $("#div_p6_53_4").addClass('hidden');
+            $("#div_p6_54_4_1a").addClass('hidden');
+            $("#div_p6_54_4_2a").addClass('hidden');
+            $("#div_p6_54_4_3a").addClass('hidden');
+            $("#div_p6_54_4_1b").addClass('hidden');
+            $("#div_p6_54_4_2b").addClass('hidden');
+            $("#div_p6_54_4_3b").addClass('hidden');
+            $("#div_p6_55_4").addClass('hidden');
+            $("#div_p6_56_4_1").addClass('hidden');
+            $("#div_p6_56_4_2").addClass('hidden');
+            $("#div_p6_56_4_3").addClass('hidden');
+            $("#div_p6_56_4_4").addClass('hidden');
+            $("#div_p6_56_4_5").addClass('hidden');
+            $("#div_p6_57_4").addClass('hidden');
+            $("#div_p6_58a_4").addClass('hidden');
         } else {
             $("#div_p5_43_41").addClass('hidden');
             $("#div_p5_43_4").addClass('hidden');
@@ -4236,6 +5046,28 @@
             $("#div_p5_46_4_4").addClass('hidden');
             $("#div_p5_46_5_4").addClass('hidden');
             $("#div_p5_47_4").addClass('hidden');
+            $("#div_p6_48_4").removeClass('hidden');
+            $("#div_p6_49_4").removeClass('hidden');
+            $("#div_p6_50_4").removeClass('hidden');
+            $("#div_p6_51_4_a").removeClass('hidden');
+            $("#div_p6_51_4_b").removeClass('hidden');
+            $("#div_p6_52_4").removeClass('hidden');
+            $("#div_p6_52b_4").removeClass('hidden');
+            $("#div_p6_53_4").removeClass('hidden');
+            $("#div_p6_54_4_1a").removeClass('hidden');
+            $("#div_p6_54_4_2a").removeClass('hidden');
+            $("#div_p6_54_4_3a").removeClass('hidden');
+            $("#div_p6_54_4_1b").removeClass('hidden');
+            $("#div_p6_54_4_2b").removeClass('hidden');
+            $("#div_p6_54_4_3b").removeClass('hidden');
+            $("#div_p6_55_4").removeClass('hidden');
+            $("#div_p6_56_4_1").removeClass('hidden');
+            $("#div_p6_56_4_2").removeClass('hidden');
+            $("#div_p6_56_4_3").removeClass('hidden');
+            $("#div_p6_56_4_4").removeClass('hidden');
+            $("#div_p6_56_4_5").removeClass('hidden');
+            $("#div_p6_57_4").removeClass('hidden');
+            $("#div_p6_58a_4").removeClass('hidden');
         }
       });             
       $('#res_p3_29_5').change(function(){
@@ -4250,6 +5082,28 @@
             $("#div_p5_46_4_5").removeClass('hidden');
             $("#div_p5_46_5_5").removeClass('hidden');
             $("#div_p5_47_5").removeClass('hidden');
+            $("#div_p6_48_5").addClass('hidden');
+            $("#div_p6_49_5").addClass('hidden');
+            $("#div_p6_50_5").addClass('hidden');
+            $("#div_p6_51_5_a").addClass('hidden');
+            $("#div_p6_51_5_b").addClass('hidden');
+            $("#div_p6_52_5").addClass('hidden');
+            $("#div_p6_52b_5").addClass('hidden');
+            $("#div_p6_53_5").addClass('hidden');
+            $("#div_p6_54_5_1a").addClass('hidden');
+            $("#div_p6_54_5_2a").addClass('hidden');
+            $("#div_p6_54_5_3a").addClass('hidden');
+            $("#div_p6_54_5_1b").addClass('hidden');
+            $("#div_p6_54_5_2b").addClass('hidden');
+            $("#div_p6_54_5_3b").addClass('hidden');
+            $("#div_p6_55_5").addClass('hidden');
+            $("#div_p6_56_5_1").addClass('hidden');
+            $("#div_p6_56_5_2").addClass('hidden');
+            $("#div_p6_56_5_3").addClass('hidden');
+            $("#div_p6_56_5_4").addClass('hidden');
+            $("#div_p6_56_5_5").addClass('hidden');
+            $("#div_p6_57_5").addClass('hidden');
+            $("#div_p6_58a_5").addClass('hidden');
         } else {
             $("#div_p5_43_51").addClass('hidden');
             $("#div_p5_43_5").addClass('hidden');
@@ -4261,6 +5115,28 @@
             $("#div_p5_46_4_5").addClass('hidden');
             $("#div_p5_46_5_5").addClass('hidden');
             $("#div_p5_47_5").addClass('hidden');
+            $("#div_p6_48_5").removeClass('hidden');
+            $("#div_p6_49_5").removeClass('hidden');
+            $("#div_p6_50_5").removeClass('hidden');
+            $("#div_p6_51_5_a").removeClass('hidden');
+            $("#div_p6_51_5_b").removeClass('hidden');
+            $("#div_p6_52_5").removeClass('hidden');
+            $("#div_p6_52b_5").removeClass('hidden');
+            $("#div_p6_53_5").removeClass('hidden');
+            $("#div_p6_54_5_1a").removeClass('hidden');
+            $("#div_p6_54_5_2a").removeClass('hidden');
+            $("#div_p6_54_5_3a").removeClass('hidden');
+            $("#div_p6_54_5_1b").removeClass('hidden');
+            $("#div_p6_54_5_2b").removeClass('hidden');
+            $("#div_p6_54_5_3b").removeClass('hidden');
+            $("#div_p6_55_5").removeClass('hidden');
+            $("#div_p6_56_5_1").removeClass('hidden');
+            $("#div_p6_56_5_2").removeClass('hidden');
+            $("#div_p6_56_5_3").removeClass('hidden');
+            $("#div_p6_56_5_4").removeClass('hidden');
+            $("#div_p6_56_5_5").removeClass('hidden');
+            $("#div_p6_57_5").removeClass('hidden');
+            $("#div_p6_58a_5").removeClass('hidden');
         }
       }); 
       $('#res_p3_29_6').change(function(){
@@ -4275,6 +5151,28 @@
             $("#div_p5_46_4_6").removeClass('hidden');
             $("#div_p5_46_5_6").removeClass('hidden');
             $("#div_p5_47_6").removeClass('hidden');
+            $("#div_p6_48_6").addClass('hidden');
+            $("#div_p6_49_6").addClass('hidden');
+            $("#div_p6_50_6").addClass('hidden');
+            $("#div_p6_51_6_a").addClass('hidden');
+            $("#div_p6_51_6_b").addClass('hidden');
+            $("#div_p6_52_6").addClass('hidden');
+            $("#div_p6_52b_6").addClass('hidden');
+            $("#div_p6_53_6").addClass('hidden');
+            $("#div_p6_54_6_1a").addClass('hidden');
+            $("#div_p6_54_6_2a").addClass('hidden');
+            $("#div_p6_54_6_3a").addClass('hidden');
+            $("#div_p6_54_6_1b").addClass('hidden');
+            $("#div_p6_54_6_2b").addClass('hidden');
+            $("#div_p6_54_6_3b").addClass('hidden');
+            $("#div_p6_55_6").addClass('hidden');
+            $("#div_p6_56_6_1").addClass('hidden');
+            $("#div_p6_56_6_2").addClass('hidden');
+            $("#div_p6_56_6_3").addClass('hidden');
+            $("#div_p6_56_6_4").addClass('hidden');
+            $("#div_p6_56_6_5").addClass('hidden');
+            $("#div_p6_57_6").addClass('hidden');
+            $("#div_p6_58a_6").addClass('hidden');
         } else {
             $("#div_p5_43_61").addClass('hidden');
             $("#div_p5_43_6").addClass('hidden');
@@ -4286,6 +5184,28 @@
             $("#div_p5_46_4_6").addClass('hidden');
             $("#div_p5_46_5_6").addClass('hidden');
             $("#div_p5_47_6").addClass('hidden');
+            $("#div_p6_48_6").removeClass('hidden');
+            $("#div_p6_49_6").removeClass('hidden');
+            $("#div_p6_50_6").removeClass('hidden');
+            $("#div_p6_51_6_a").removeClass('hidden');
+            $("#div_p6_51_6_b").removeClass('hidden');
+            $("#div_p6_52_6").removeClass('hidden');
+            $("#div_p6_52b_6").removeClass('hidden');
+            $("#div_p6_53_6").removeClass('hidden');
+            $("#div_p6_54_6_1a").removeClass('hidden');
+            $("#div_p6_54_6_2a").removeClass('hidden');
+            $("#div_p6_54_6_3a").removeClass('hidden');
+            $("#div_p6_54_6_1b").removeClass('hidden');
+            $("#div_p6_54_6_2b").removeClass('hidden');
+            $("#div_p6_54_6_3b").removeClass('hidden');
+            $("#div_p6_55_6").removeClass('hidden');
+            $("#div_p6_56_6_1").removeClass('hidden');
+            $("#div_p6_56_6_2").removeClass('hidden');
+            $("#div_p6_56_6_3").removeClass('hidden');
+            $("#div_p6_56_6_4").removeClass('hidden');
+            $("#div_p6_56_6_5").removeClass('hidden');
+            $("#div_p6_57_6").removeClass('hidden');
+            $("#div_p6_58a_6").removeClass('hidden');
         }
       });  
       $('#res_p3_29_7').change(function(){
@@ -4300,6 +5220,28 @@
             $("#div_p5_46_4_7").removeClass('hidden');
             $("#div_p5_46_5_7").removeClass('hidden');
             $("#div_p5_47_7").removeClass('hidden');
+            $("#div_p6_48_7").addClass('hidden');
+            $("#div_p6_49_7").addClass('hidden');
+            $("#div_p6_50_7").addClass('hidden');
+            $("#div_p6_51_7_a").addClass('hidden');
+            $("#div_p6_51_7_b").addClass('hidden');
+            $("#div_p6_52_7").addClass('hidden');
+            $("#div_p6_52b_7").addClass('hidden');
+            $("#div_p6_53_7").addClass('hidden');
+            $("#div_p6_54_7_1a").addClass('hidden');
+            $("#div_p6_54_7_2a").addClass('hidden');
+            $("#div_p6_54_7_3a").addClass('hidden');
+            $("#div_p6_54_7_1b").addClass('hidden');
+            $("#div_p6_54_7_2b").addClass('hidden');
+            $("#div_p6_54_7_3b").addClass('hidden');
+            $("#div_p6_55_7").addClass('hidden');
+            $("#div_p6_56_7_1").addClass('hidden');
+            $("#div_p6_56_7_2").addClass('hidden');
+            $("#div_p6_56_7_3").addClass('hidden');
+            $("#div_p6_56_7_4").addClass('hidden');
+            $("#div_p6_56_7_5").addClass('hidden');
+            $("#div_p6_57_7").addClass('hidden');
+            $("#div_p6_58a_7").addClass('hidden');
         } else {
             $("#div_p5_43_71").addClass('hidden');
             $("#div_p5_43_7").addClass('hidden');
@@ -4311,6 +5253,28 @@
             $("#div_p5_46_4_7").addClass('hidden');
             $("#div_p5_46_5_7").addClass('hidden');
             $("#div_p5_47_7").addClass('hidden');
+            $("#div_p6_48_7").removeClass('hidden');
+            $("#div_p6_49_7").removeClass('hidden');
+            $("#div_p6_50_7").removeClass('hidden');
+            $("#div_p6_51_7_a").removeClass('hidden');
+            $("#div_p6_51_7_b").removeClass('hidden');
+            $("#div_p6_52_7").removeClass('hidden');
+            $("#div_p6_52b_7").removeClass('hidden');
+            $("#div_p6_53_7").removeClass('hidden');
+            $("#div_p6_54_7_1a").removeClass('hidden');
+            $("#div_p6_54_7_2a").removeClass('hidden');
+            $("#div_p6_54_7_3a").removeClass('hidden');
+            $("#div_p6_54_7_1b").removeClass('hidden');
+            $("#div_p6_54_7_2b").removeClass('hidden');
+            $("#div_p6_54_7_3b").removeClass('hidden');
+            $("#div_p6_55_7").removeClass('hidden');
+            $("#div_p6_56_7_1").removeClass('hidden');
+            $("#div_p6_56_7_2").removeClass('hidden');
+            $("#div_p6_56_7_3").removeClass('hidden');
+            $("#div_p6_56_7_4").removeClass('hidden');
+            $("#div_p6_56_7_5").removeClass('hidden');
+            $("#div_p6_57_7").removeClass('hidden');
+            $("#div_p6_58a_7").removeClass('hidden');
         }
       });  
       $('#res_p3_29_8').change(function(){
@@ -4325,6 +5289,28 @@
             $("#div_p5_46_4_8").removeClass('hidden');
             $("#div_p5_46_5_8").removeClass('hidden');
             $("#div_p5_47_8").removeClass('hidden');
+            $("#div_p6_48_8").addClass('hidden');
+            $("#div_p6_49_8").addClass('hidden');
+            $("#div_p6_50_8").addClass('hidden');
+            $("#div_p6_51_8_a").addClass('hidden');
+            $("#div_p6_51_8_b").addClass('hidden');
+            $("#div_p6_52_8").addClass('hidden');
+            $("#div_p6_52b_8").addClass('hidden');
+            $("#div_p6_53_8").addClass('hidden');
+            $("#div_p6_54_8_1a").addClass('hidden');
+            $("#div_p6_54_8_2a").addClass('hidden');
+            $("#div_p6_54_8_3a").addClass('hidden');
+            $("#div_p6_54_8_1b").addClass('hidden');
+            $("#div_p6_54_8_2b").addClass('hidden');
+            $("#div_p6_54_8_3b").addClass('hidden');
+            $("#div_p6_55_8").addClass('hidden');
+            $("#div_p6_56_8_1").addClass('hidden');
+            $("#div_p6_56_8_2").addClass('hidden');
+            $("#div_p6_56_8_3").addClass('hidden');
+            $("#div_p6_56_8_4").addClass('hidden');
+            $("#div_p6_56_8_5").addClass('hidden');
+            $("#div_p6_57_8").addClass('hidden');
+            $("#div_p6_58a_8").addClass('hidden');
         } else {
             $("#div_p5_43_81").addClass('hidden');
             $("#div_p5_43_8").addClass('hidden');
@@ -4336,6 +5322,28 @@
             $("#div_p5_46_4_8").addClass('hidden');
             $("#div_p5_46_5_8").addClass('hidden');
             $("#div_p5_47_8").addClass('hidden');
+            $("#div_p6_48_8").removeClass('hidden');
+            $("#div_p6_49_8").removeClass('hidden');
+            $("#div_p6_50_8").removeClass('hidden');
+            $("#div_p6_51_8_a").removeClass('hidden');
+            $("#div_p6_51_8_b").removeClass('hidden');
+            $("#div_p6_52_8").removeClass('hidden');
+            $("#div_p6_52b_8").removeClass('hidden');
+            $("#div_p6_53_8").removeClass('hidden');
+            $("#div_p6_54_8_1a").removeClass('hidden');
+            $("#div_p6_54_8_2a").removeClass('hidden');
+            $("#div_p6_54_8_3a").removeClass('hidden');
+            $("#div_p6_54_8_1b").removeClass('hidden');
+            $("#div_p6_54_8_2b").removeClass('hidden');
+            $("#div_p6_54_8_3b").removeClass('hidden');
+            $("#div_p6_55_8").removeClass('hidden');
+            $("#div_p6_56_8_1").removeClass('hidden');
+            $("#div_p6_56_8_2").removeClass('hidden');
+            $("#div_p6_56_8_3").removeClass('hidden');
+            $("#div_p6_56_8_4").removeClass('hidden');
+            $("#div_p6_56_8_5").removeClass('hidden');
+            $("#div_p6_57_8").removeClass('hidden');
+            $("#div_p6_58a_8").removeClass('hidden');
         }
       });        
 
@@ -4597,6 +5605,7 @@
           $('#div_p4_42bb_1').removeClass('hidden');
         } else {
           $('#div_p4_42bb_1').addClass('hidden');
+          $('#res_p4_42c_1').addClass('hidden');
         }
       });
 
@@ -4605,6 +5614,7 @@
           $('#div_p4_42bb_2').removeClass('hidden');
         } else {
           $('#div_p4_42bb_2').addClass('hidden');
+          $('#res_p4_42c_2').addClass('hidden');
         }
       });
 
@@ -4613,6 +5623,7 @@
           $('#div_p4_42bb_3').removeClass('hidden');
         } else {
           $('#div_p4_42bb_3').addClass('hidden');
+          $('#res_p4_42c_3').addClass('hidden');
         }
       });
 
@@ -4621,6 +5632,7 @@
           $('#div_p4_42bb_4').removeClass('hidden');
         } else {
           $('#div_p4_42bb_4').addClass('hidden');
+          $('#res_p4_42c_4').addClass('hidden');
         }
       });
 
@@ -4629,6 +5641,7 @@
           $('#div_p4_42bb_5').removeClass('hidden');
         } else {
           $('#div_p4_42bb_5').addClass('hidden');
+          $('#res_p4_42c_5').addClass('hidden');
         }
       });
 
@@ -4637,6 +5650,7 @@
           $('#div_p4_42bb_6').removeClass('hidden');
         } else {
           $('#div_p4_42bb_6').addClass('hidden');
+          $('#res_p4_42c_6').addClass('hidden');
         }
       });
 
@@ -4645,6 +5659,7 @@
           $('#div_p4_42bb_7').removeClass('hidden');
         } else {
           $('#div_p4_42bb_7').addClass('hidden');
+          $('#res_p4_42c_7').addClass('hidden');
         }
       });
 
@@ -4653,6 +5668,7 @@
           $('#div_p4_42bb_8').removeClass('hidden');
         } else {
           $('#div_p4_42bb_8').addClass('hidden');
+          $('#res_p4_42c_8').addClass('hidden');
         }
       });
 
@@ -4713,6 +5729,8 @@
           $('#div_p4_42ao_8').addClass('hidden');
         }
       });
+
+     
 
       $('#res_p4_42c_1').change(function(){
         if ($('#res_p4_42c_1').val() == "Otra") {
@@ -5260,7 +6278,6 @@
       $('#res_p6_49_1').change(function(){
         if ($('#res_p6_49_1').val() == "No") {
           $('#div_p6_50_1').removeClass('hidden');
-          $('#div_p6_50_b_1').removeClass('hidden');
           $('#div_p6_52_1').addClass('hidden');
           $('#div_p6_52b_1').addClass('hidden');
           $('#div_p6_53_1').addClass('hidden');
@@ -5268,13 +6285,21 @@
           $('#div_p6_54_1_1a').addClass('hidden');
           $('#div_p6_54_1_1b').addClass('hidden');
           $('#div_p6_54_1_2a').addClass('hidden');
-          $('#div_p6_54_1_2a').addClass('hidden');
+          $('#div_p6_54_1_2b').addClass('hidden');
           $('#div_p6_54_1_3a').addClass('hidden');
-          $('#div_p6_54_1_3b').addClass('hidden');
+          $('#div_p6_54_1_3b').addClass('hidden');  
+          $('#div_p6_55_1').addClass('hidden');  
+          $('#div_p6_56_1_1').addClass('hidden'); 
+          $('#div_p6_56_1_2').addClass('hidden'); 
+          $('#div_p6_56_1_3').addClass('hidden'); 
+          $('#div_p6_56_1_4').addClass('hidden'); 
+          $('#div_p6_56_1_5').addClass('hidden');
+          $('#div_p6_57_1').addClass('hidden');  
+          $('#div_p6_58b_1').addClass('hidden');
+          $('#div_p6_58a_1').addClass('hidden');        
         } else {
           $('#div_p6_50_1').addClass('hidden');
-          $('#div_p6_50_b_1').addClass('hidden');
-          $('#div_p6_52_1').addClass('hidden');
+          $('#div_p6_52_1').remoceClass('hidden');
           $('#div_p6_52b_1').removeClass('hidden');
           $('#div_p6_53_1').removeClass('hidden');
           $('#div_p6_54_1').removeClass('hidden');
@@ -5284,12 +6309,21 @@
           $('#div_p6_54_1_2a').removeClass('hidden');
           $('#div_p6_54_1_3a').removeClass('hidden');
           $('#div_p6_54_1_3b').removeClass('hidden');
+          $('#div_p6_55_1').removeClass('hidden');
+          $('#div_p6_56_1_1').removeClass('hidden'); 
+          $('#div_p6_56_1_2').removeClass('hidden'); 
+          $('#div_p6_56_1_3').removeClass('hidden'); 
+          $('#div_p6_56_1_4').removeClass('hidden'); 
+          $('#div_p6_56_1_5').removeClass('hidden');
+          $('#div_p6_57_1').removeClass('hidden');  
+          $('#div_p6_58b_1').removeClass('hidden');
+          $('#div_p6_58a_1').removeClass('hidden');  
         }
       });
+
       $('#res_p6_49_2').change(function(){
         if ($('#res_p6_49_2').val() == "No") {
           $('#div_p6_50_2').removeClass('hidden');
-          $('#div_p6_50_b_2').removeClass('hidden');
           $('#div_p6_52_2').addClass('hidden');
           $('#div_p6_52b_2').addClass('hidden');
           $('#div_p6_53_2').addClass('hidden');
@@ -5300,9 +6334,17 @@
           $('#div_p6_54_2_2a').addClass('hidden');
           $('#div_p6_54_2_3a').addClass('hidden');
           $('#div_p6_54_2_3b').addClass('hidden');
+          $('#div_p6_55_2').addClass('hidden'); 
+          $('#div_p6_56_2_1').addClass('hidden'); 
+          $('#div_p6_56_2_2').addClass('hidden'); 
+          $('#div_p6_56_2_3').addClass('hidden'); 
+          $('#div_p6_56_2_4').addClass('hidden'); 
+          $('#div_p6_56_2_5').addClass('hidden');
+          $('#div_p6_57_2').addClass('hidden');  
+          $('#div_p6_58b_2').addClass('hidden');
+          $('#div_p6_58a_2').addClass('hidden');   
         } else {
           $('#div_p6_50_2').addClass('hidden');
-          $('#div_p6_50_b_2').addClass('hidden');
           $('#div_p6_52_2').addClass('hidden');
           $('#div_p6_52b_2').removeClass('hidden');
           $('#div_p6_53_2').removeClass('hidden');
@@ -5313,12 +6355,20 @@
           $('#div_p6_54_2_2a').removeClass('hidden');
           $('#div_p6_54_2_3a').removeClass('hidden');
           $('#div_p6_54_2_3b').removeClass('hidden');
+          $('#div_p6_55_2').removeClass('hidden');
+          $('#div_p6_56_2_1').removeClass('hidden'); 
+          $('#div_p6_56_2_2').removeClass('hidden'); 
+          $('#div_p6_56_2_3').removeClass('hidden'); 
+          $('#div_p6_56_2_4').removeClass('hidden'); 
+          $('#div_p6_56_2_5').removeClass('hidden');
+          $('#div_p6_57_2').removeClass('hidden');  
+          $('#div_p6_58b_2').removeClass('hidden');
+          $('#div_p6_58a_2').removeClass('hidden'); 
         }
       });
       $('#res_p6_49_3').change(function(){
         if ($('#res_p6_49_3').val() == "No") {
           $('#div_p6_50_3').removeClass('hidden');
-          $('#div_p6_50_b_3').removeClass('hidden');
           $('#div_p6_52_3').addClass('hidden');
           $('#div_p6_52b_3').addClass('hidden');
           $('#div_p6_53_3').addClass('hidden');
@@ -5329,9 +6379,17 @@
           $('#div_p6_54_3_2a').addClass('hidden');
           $('#div_p6_54_3_3a').addClass('hidden');
           $('#div_p6_54_3_3b').addClass('hidden');
+          $('#div_p6_55_3').addClass('hidden'); 
+          $('#div_p6_56_3_1').addClass('hidden'); 
+          $('#div_p6_56_3_2').addClass('hidden'); 
+          $('#div_p6_56_3_3').addClass('hidden'); 
+          $('#div_p6_56_3_4').addClass('hidden'); 
+          $('#div_p6_56_3_5').addClass('hidden');
+          $('#div_p6_57_3').addClass('hidden');  
+          $('#div_p6_58b_3').addClass('hidden');
+          $('#div_p6_58a_3').addClass('hidden');
         } else {
           $('#div_p6_50_3').addClass('hidden');
-          $('#div_p6_50_b_3').addClass('hidden');
           $('#div_p6_52_3').addClass('hidden');
           $('#div_p6_52b_3').removeClass('hidden');
           $('#div_p6_53_3').removeClass('hidden');
@@ -5342,12 +6400,20 @@
           $('#div_p6_54_3_2a').removeClass('hidden');
           $('#div_p6_54_3_3a').removeClass('hidden');
           $('#div_p6_54_3_3b').removeClass('hidden');
+          $('#div_p6_55_3').removeClass('hidden');
+          $('#div_p6_56_3_1').removeClass('hidden'); 
+          $('#div_p6_56_3_2').removeClass('hidden'); 
+          $('#div_p6_56_3_3').removeClass('hidden'); 
+          $('#div_p6_56_3_4').removeClass('hidden'); 
+          $('#div_p6_56_3_5').removeClass('hidden');
+          $('#div_p6_57_3').removeClass('hidden');  
+          $('#div_p6_58b_3').removeClass('hidden');
+          $('#div_p6_58a_3').removeClass('hidden'); 
         }
       });
       $('#res_p6_49_4').change(function(){
         if ($('#res_p6_49_4').val() == "No") {
           $('#div_p6_50_4').removeClass('hidden');
-          $('#div_p6_50_b_4').removeClass('hidden');
           $('#div_p6_52_4').addClass('hidden');
           $('#div_p6_52b_4').addClass('hidden');
           $('#div_p6_53_4').addClass('hidden');
@@ -5358,9 +6424,17 @@
           $('#div_p6_54_4_2a').addClass('hidden');
           $('#div_p6_54_4_3a').addClass('hidden');
           $('#div_p6_54_4_3b').addClass('hidden');
+          $('#div_p6_55_4').addClass('hidden'); 
+          $('#div_p6_56_4_1').addClass('hidden'); 
+          $('#div_p6_56_4_2').addClass('hidden'); 
+          $('#div_p6_56_4_3').addClass('hidden'); 
+          $('#div_p6_56_4_4').addClass('hidden'); 
+          $('#div_p6_56_4_5').addClass('hidden');
+          $('#div_p6_57_4').addClass('hidden');  
+          $('#div_p6_58b_4').addClass('hidden');
+          $('#div_p6_58a_4').addClass('hidden');
         } else {
           $('#div_p6_50_4').addClass('hidden');
-          $('#div_p6_50_b_4').addClass('hidden');
           $('#div_p6_52_4').addClass('hidden');
           $('#div_p6_52b_4').removeClass('hidden');
           $('#div_p6_53_4').removeClass('hidden');
@@ -5371,12 +6445,20 @@
           $('#div_p6_54_4_2a').removeClass('hidden');
           $('#div_p6_54_4_3a').removeClass('hidden');
           $('#div_p6_54_4_3b').removeClass('hidden');
+          $('#div_p6_55_4').removeClass('hidden');
+          $('#div_p6_56_4_1').removeClass('hidden'); 
+          $('#div_p6_56_4_2').removeClass('hidden'); 
+          $('#div_p6_56_4_3').removeClass('hidden'); 
+          $('#div_p6_56_4_4').removeClass('hidden'); 
+          $('#div_p6_56_4_5').removeClass('hidden');
+          $('#div_p6_57_4').removeClass('hidden');  
+          $('#div_p6_58b_4').removeClass('hidden');
+          $('#div_p6_58a_4').removeClass('hidden'); 
         }
       });
       $('#res_p6_49_5').change(function(){
         if ($('#res_p6_49_5').val() == "No") {
           $('#div_p6_50_5').removeClass('hidden');
-          $('#div_p6_50_b_5').removeClass('hidden');
           $('#div_p6_52_5').addClass('hidden');
           $('#div_p6_52b_5').addClass('hidden');
           $('#div_p6_53_5').addClass('hidden');
@@ -5387,9 +6469,17 @@
           $('#div_p6_54_5_2a').addClass('hidden');
           $('#div_p6_54_5_3a').addClass('hidden');
           $('#div_p6_54_5_3b').addClass('hidden');
+          $('#div_p6_55_5').addClass('hidden'); 
+          $('#div_p6_56_5_1').addClass('hidden'); 
+          $('#div_p6_56_5_2').addClass('hidden'); 
+          $('#div_p6_56_5_3').addClass('hidden'); 
+          $('#div_p6_56_5_4').addClass('hidden'); 
+          $('#div_p6_56_5_5').addClass('hidden');
+          $('#div_p6_57_5').addClass('hidden');  
+          $('#div_p6_58b_5').addClass('hidden');
+          $('#div_p6_58a_5').addClass('hidden');
         } else {
           $('#div_p6_50_5').addClass('hidden');
-          $('#div_p6_50_b_5').addClass('hidden');
           $('#div_p6_52_5').addClass('hidden');
           $('#div_p6_52b_5').removeClass('hidden');
           $('#div_p6_53_5').removeClass('hidden');
@@ -5400,12 +6490,20 @@
           $('#div_p6_54_5_2a').removeClass('hidden');
           $('#div_p6_54_5_3a').removeClass('hidden');
           $('#div_p6_54_5_3b').removeClass('hidden');
+          $('#div_p6_55_5').removeClass('hidden');
+          $('#div_p6_56_5_1').removeClass('hidden'); 
+          $('#div_p6_56_5_2').removeClass('hidden'); 
+          $('#div_p6_56_5_3').removeClass('hidden'); 
+          $('#div_p6_56_5_4').removeClass('hidden'); 
+          $('#div_p6_56_5_5').removeClass('hidden');
+          $('#div_p6_57_5').removeClass('hidden');  
+          $('#div_p6_58b_5').removeClass('hidden');
+          $('#div_p6_58a_5').removeClass('hidden'); 
         }
       });
       $('#res_p6_49_6').change(function(){
         if ($('#res_p6_49_6').val() == "No") {
           $('#div_p6_50_6').removeClass('hidden');
-          $('#div_p6_50_b_6').removeClass('hidden');
           $('#div_p6_52_6').addClass('hidden');
           $('#div_p6_52b_6').addClass('hidden');
           $('#div_p6_53_6').addClass('hidden');
@@ -5416,9 +6514,17 @@
           $('#div_p6_54_6_2a').addClass('hidden');
           $('#div_p6_54_6_3a').addClass('hidden');
           $('#div_p6_54_6_3b').addClass('hidden');
+          $('#div_p6_55_6').addClass('hidden'); 
+          $('#div_p6_56_6_1').addClass('hidden'); 
+          $('#div_p6_56_6_2').addClass('hidden'); 
+          $('#div_p6_56_6_3').addClass('hidden'); 
+          $('#div_p6_56_6_4').addClass('hidden'); 
+          $('#div_p6_56_6_5').addClass('hidden');
+          $('#div_p6_57_6').addClass('hidden');  
+          $('#div_p6_58b_6').addClass('hidden');
+          $('#div_p6_58a_6').addClass('hidden');
         } else {
          $('#div_p6_50_6').addClass('hidden');
-          $('#div_p6_50_b_6').addClass('hidden');
           $('#div_p6_52_6').addClass('hidden');
           $('#div_p6_52b_6').removeClass('hidden');
           $('#div_p6_53_6').removeClass('hidden');
@@ -5428,13 +6534,21 @@
           $('#div_p6_54_6_2a').removeClass('hidden');
           $('#div_p6_54_6_2a').removeClass('hidden');
           $('#div_p6_54_6_3a').removeClass('hidden');
+          $('#div_p6_55_6').removeClass('hidden');
           $('#div_p6_54_6_3b').removeClass('hidden');
+          $('#div_p6_56_6_1').removeClass('hidden'); 
+          $('#div_p6_56_6_2').removeClass('hidden'); 
+          $('#div_p6_56_6_3').removeClass('hidden'); 
+          $('#div_p6_56_6_4').removeClass('hidden'); 
+          $('#div_p6_56_6_5').removeClass('hidden');
+          $('#div_p6_57_6').removeClass('hidden');  
+          $('#div_p6_58b_6').removeClass('hidden');
+          $('#div_p6_58a_6').removeClass('hidden'); 
         }
       });
       $('#res_p6_49_7').change(function(){
         if ($('#res_p6_49_7').val() == "No") {
           $('#div_p6_50_7').removeClass('hidden');
-          $('#div_p6_50_b_7').removeClass('hidden');
           $('#div_p6_52_7').addClass('hidden');
           $('#div_p6_52b_7').addClass('hidden');
           $('#div_p6_53_7').addClass('hidden');
@@ -5445,9 +6559,17 @@
           $('#div_p6_54_7_2a').addClass('hidden');
           $('#div_p6_54_7_3a').addClass('hidden');
           $('#div_p6_54_7_3b').addClass('hidden');
+          $('#div_p6_55_7').addClass('hidden'); 
+          $('#div_p6_56_7_1').addClass('hidden'); 
+          $('#div_p6_56_7_2').addClass('hidden'); 
+          $('#div_p6_56_7_3').addClass('hidden'); 
+          $('#div_p6_56_7_4').addClass('hidden'); 
+          $('#div_p6_56_7_5').addClass('hidden');
+          $('#div_p6_57_7').addClass('hidden');  
+          $('#div_p6_58b_7').addClass('hidden');
+          $('#div_p6_58a_7').addClass('hidden');
         } else {
           $('#div_p6_50_7').addClass('hidden');
-          $('#div_p6_50_b_7').addClass('hidden');
           $('#div_p6_52_7').addClass('hidden');
           $('#div_p6_52b_7').removeClass('hidden');
           $('#div_p6_53_7').removeClass('hidden');
@@ -5458,12 +6580,66 @@
           $('#div_p6_54_7_2a').removeClass('hidden');
           $('#div_p6_54_7_3a').removeClass('hidden');
           $('#div_p6_54_7_3b').removeClass('hidden');
+          $('#div_p6_55_7').removeClass('hidden');
+          $('#div_p6_56_7_1').removeClass('hidden'); 
+          $('#div_p6_56_7_2').removeClass('hidden'); 
+          $('#div_p6_56_7_3').removeClass('hidden'); 
+          $('#div_p6_56_7_4').removeClass('hidden'); 
+          $('#div_p6_56_7_5').removeClass('hidden');
+          $('#div_p6_57_7').removeClass('hidden');  
+          $('#div_p6_58b_7').removeClass('hidden');
+          $('#div_p6_58a_7').removeClass('hidden'); 
         }
       });
       $('#res_p6_49_8').change(function(){
         if ($('#res_p6_49_8').val() == "No") {
           $('#div_p6_50_8').removeClass('hidden');
-          $('#div_p6_50_b_8').removeClass('hidden');
+          $('#div_p6_52_8').addClass('hidden');
+          $('#div_p6_52b_8').addClass('hidden');
+          $('#div_p6_53_8').addClass('hidden');
+          $('#div_p6_54_8').addClass('hidden');
+          $('#div_p6_54_8_1a').addClass('hidden');
+          $('#div_p6_54_8_1b').addClass('hidden');
+          $('#div_p6_54_8_2a').addClass('hidden');
+          $('#div_p6_54_8_2a').addClass('hidden');
+          $('#div_p6_54_8_3a').addClass('hidden');
+          $('#div_p6_54_8_3b').addClass('hidden');
+          $('#div_p6_55_8').addClass('hidden'); 
+          $('#div_p6_56_8_1').addClass('hidden'); 
+          $('#div_p6_56_8_2').addClass('hidden'); 
+          $('#div_p6_56_8_3').addClass('hidden'); 
+          $('#div_p6_56_8_4').addClass('hidden'); 
+          $('#div_p6_56_8_5').addClass('hidden');
+          $('#div_p6_57_8').addClass('hidden');  
+          $('#div_p6_58b_8').addClass('hidden');
+          $('#div_p6_58a_8').addClass('hidden');
+        } else {
+          $('#div_p6_50_8').addClass('hidden');
+          $('#div_p6_52_8').addClass('hidden');
+          $('#div_p6_52b_8').removeClass('hidden');
+          $('#div_p6_53_8').removeClass('hidden');
+          $('#div_p6_54_8').removeClass('hidden');
+          $('#div_p6_54_8_1a').removeClass('hidden');
+          $('#div_p6_54_8_1b').removeClass('hidden');
+          $('#div_p6_54_8_2a').removeClass('hidden');
+          $('#div_p6_54_8_2a').removeClass('hidden');
+          $('#div_p6_54_8_3a').removeClass('hidden');
+          $('#div_p6_54_8_3b').removeClass('hidden');
+          $('#div_p6_55_8').removeClass('hidden'); 
+          $('#div_p6_56_8_1').removeClass('hidden'); 
+          $('#div_p6_56_8_2').removeClass('hidden'); 
+          $('#div_p6_56_8_3').removeClass('hidden'); 
+          $('#div_p6_56_8_4').removeClass('hidden'); 
+          $('#div_p6_56_8_5').removeClass('hidden');
+          $('#div_p6_57_8').removeClass('hidden');  
+          $('#div_p6_58b_8').removeClass('hidden');
+          $('#div_p6_58a_8').removeClass('hidden'); 
+        }
+      });
+
+      $('#res_p6_49_8').change(function(){
+        if ($('#res_p6_49_8').val() == "No") {
+          $('#div_p6_50_8').removeClass('hidden');
           $('#div_p6_52_8').addClass('hidden');
           $('#div_p6_52b_8').addClass('hidden');
           $('#div_p6_53_8').addClass('hidden');
@@ -5476,7 +6652,6 @@
           $('#div_p6_54_8_3b').addClass('hidden');
         } else {
           $('#div_p6_50_8').addClass('hidden');
-          $('#div_p6_50_b_8').addClass('hidden');
           $('#div_p6_52_8').addClass('hidden');
           $('#div_p6_52b_8').removeClass('hidden');
           $('#div_p6_53_8').removeClass('hidden');
@@ -5490,186 +6665,165 @@
         }
       });
 
-      $('#res_p6_49_8').change(function(){
-        if ($('#res_p6_49_8').val() == "No") {
-          $('#div_p6_50_8').removeClass('hidden');
-          $('#div_p6_50_b_8').removeClass('hidden');
-          $('#div_p6_52_8').addClass('hidden');
-          $('#div_p6_52b_8').addClass('hidden');
-          $('#div_p6_53_8').addClass('hidden');
-          $('#div_p6_54_8').addClass('hidden');
-          $('#div_p6_54_8_1a').addClass('hidden');
-          $('#div_p6_54_8_1b').addClass('hidden');
-          $('#div_p6_54_8_2a').addClass('hidden');
-          $('#div_p6_54_8_2a').addClass('hidden');
-          $('#div_p6_54_8_3a').addClass('hidden');
-          $('#div_p6_54_8_3b').addClass('hidden');
+      $('#res_p6_50_1').change(function(){
+        if ($('#res_p6_50_1').val() == "Otra razón") {
+          $('#div_p6_50_b_1').removeClass('hidden');
         } else {
-          $('#div_p6_50_8').addClass('hidden');
-          $('#div_p6_50_b_8').addClass('hidden');
-          $('#div_p6_52_8').addClass('hidden');
-          $('#div_p6_52b_8').removeClass('hidden');
-          $('#div_p6_53_8').removeClass('hidden');
-          $('#div_p6_54_8').removeClass('hidden');
-          $('#div_p6_54_8_1a').removeClass('hidden');
-          $('#div_p6_54_8_1b').removeClass('hidden');
-          $('#div_p6_54_8_2a').removeClass('hidden');
-          $('#div_p6_54_8_2a').removeClass('hidden');
-          $('#div_p6_54_8_3a').removeClass('hidden');
-          $('#div_p6_54_8_3b').removeClass('hidden');
+          $('#div_p6_50_b_1').addClass('hidden');
         }
+      });
+      $('#res_p6_50_2').change(function(){
+        if ($('#res_p6_50_2').val() == "Otra razón") {
+          $('#div_p6_50_b_2').removeClass('hidden');
+        } else {
+          $('#div_p6_50_b_2').addClass('hidden');
+        }
+      });
+      $('#res_p6_50_3').change(function(){
+        if ($('#res_p6_50_3').val() == "Otra razón") {
+          $('#div_p6_50_b_3').removeClass('hidden');
+        } else {
+          $('#div_p6_50_b_3').addClass('hidden');
+        }  
+      });
+      $('#res_p6_50_4').change(function(){
+        if ($('#res_p6_50_4').val() == "Otra razón") {
+          $('#div_p6_50_b_4').removeClass('hidden');
+        } else {
+          $('#div_p6_50_b_4').addClass('hidden');
+        }  
+      });
+      $('#res_p6_50_5').change(function(){
+        if ($('#res_p6_50_5').val() == "Otra razón") {
+          $('#div_p6_50_b_5').removeClass('hidden');
+        } else {
+          $('#div_p6_50_b_5').addClass('hidden');
+        }  
+      });
+      $('#res_p6_50_6').change(function(){
+        if ($('#res_p6_50_6').val() == "Otra razón") {
+          $('#div_p6_50_b_6').removeClass('hidden');
+        } else {
+          $('#div_p6_50_b_6').addClass('hidden');
+        }  
+      });
+      $('#res_p6_50_7').change(function(){
+        if ($('#res_p6_50_7').val() == "Otra razón") {
+          $('#div_p6_50_b_7').removeClass('hidden');
+        } else {
+          $('#div_p6_50_b_7').addClass('hidden');
+        }  
+      });
+      $('#res_p6_50_8').change(function(){
+        if ($('#res_p6_50_8').val() == "Otra razón") {
+          $('#div_p6_50_b_8').removeClass('hidden');
+        } else {
+          $('#div_p6_50_b_8').addClass('hidden');
+        }  
       });
 
       $('#res_p6_53_1').change(function(){
         if ($('#res_p6_53_1').val() == "No") {
           $('#div_p6_54_1').addClass('hidden');
           $('#div_p6_54_1_1a').addClass('hidden');
-          $('#div_p6_54_1_1b').addClass('hidden');
-          $('#div_p6_54_1_2a').addClass('hidden');
           $('#div_p6_54_1_2a').addClass('hidden');
           $('#div_p6_54_1_3a').addClass('hidden');
-          $('#div_p6_54_1_3b').addClass('hidden');
         } else {
           $('#div_p6_54_1').removeClass('hidden');
           $('#div_p6_54_1_1a').removeClass('hidden');
-          $('#div_p6_54_1_1b').removeClass('hidden');
-          $('#div_p6_54_1_2a').removeClass('hidden');
           $('#div_p6_54_1_2a').removeClass('hidden');
           $('#div_p6_54_1_3a').removeClass('hidden');
-          $('#div_p6_54_1_3b').removeClass('hidden');
         }
       });
       $('#res_p6_53_2').change(function(){
         if ($('#res_p6_53_2').val() == "No") {
           $('#div_p6_54_2').addClass('hidden');
+          $('#div_p6_54_2_1a').addClass('hidden');
           $('#div_p6_54_2_2a').addClass('hidden');
-          $('#div_p6_54_2_2b').addClass('hidden');
-          $('#div_p6_54_2_2a').addClass('hidden');
-          $('#div_p6_54_2_2a').addClass('hidden');
-          $('#div_p6_54_2_2a').addClass('hidden');
-          $('#div_p6_54_2_2b').addClass('hidden');
+          $('#div_p6_54_2_3a').addClass('hidden');
         } else {
           $('#div_p6_54_2').removeClass('hidden');
           $('#div_p6_54_2_1a').removeClass('hidden');
-          $('#div_p6_54_2_1b').removeClass('hidden');
-          $('#div_p6_54_2_2a').removeClass('hidden');
           $('#div_p6_54_2_2a').removeClass('hidden');
           $('#div_p6_54_2_3a').removeClass('hidden');
-          $('#div_p6_54_2_3b').removeClass('hidden');
         }
       });
       $('#res_p6_53_3').change(function(){
         if ($('#res_p6_53_3').val() == "No") {
           $('#div_p6_54_3').addClass('hidden');
+          $('#div_p6_54_3_1a').addClass('hidden');
           $('#div_p6_54_3_2a').addClass('hidden');
-          $('#div_p6_54_3_2b').addClass('hidden');
-          $('#div_p6_54_3_2a').addClass('hidden');
-          $('#div_p6_54_3_2a').addClass('hidden');
-          $('#div_p6_54_3_2a').addClass('hidden');
-          $('#div_p6_54_3_2b').addClass('hidden');
+          $('#div_p6_54_3_3a').addClass('hidden');
         } else {
           $('#div_p6_54_3').removeClass('hidden');
           $('#div_p6_54_3_1a').removeClass('hidden');
-          $('#div_p6_54_3_1b').removeClass('hidden');
-          $('#div_p6_54_3_2a').removeClass('hidden');
           $('#div_p6_54_3_2a').removeClass('hidden');
           $('#div_p6_54_3_3a').removeClass('hidden');
-          $('#div_p6_54_3_3b').removeClass('hidden');
         }
       });
       $('#res_p6_53_4').change(function(){
         if ($('#res_p6_53_4').val() == "No") {
           $('#div_p6_54_4').addClass('hidden');
+          $('#div_p6_54_4_1a').addClass('hidden');
           $('#div_p6_54_4_2a').addClass('hidden');
-          $('#div_p6_54_4_2b').addClass('hidden');
-          $('#div_p6_54_4_2a').addClass('hidden');
-          $('#div_p6_54_4_2a').addClass('hidden');
-          $('#div_p6_54_4_2a').addClass('hidden');
-          $('#div_p6_54_4_2b').addClass('hidden');
+          $('#div_p6_54_4_3a').addClass('hidden');
         } else {
           $('#div_p6_54_4').removeClass('hidden');
           $('#div_p6_54_4_1a').removeClass('hidden');
-          $('#div_p6_54_4_1b').removeClass('hidden');
-          $('#div_p6_54_4_2a').removeClass('hidden');
           $('#div_p6_54_4_2a').removeClass('hidden');
           $('#div_p6_54_4_3a').removeClass('hidden');
-          $('#div_p6_54_4_3b').removeClass('hidden');
         }
       });
       $('#res_p6_53_5').change(function(){
         if ($('#res_p6_53_5').val() == "No") {
           $('#div_p6_54_5').addClass('hidden');
+          $('#div_p6_54_5_1a').addClass('hidden');
           $('#div_p6_54_5_2a').addClass('hidden');
-          $('#div_p6_54_5_2b').addClass('hidden');
-          $('#div_p6_54_5_2a').addClass('hidden');
-          $('#div_p6_54_5_2a').addClass('hidden');
-          $('#div_p6_54_5_2a').addClass('hidden');
-          $('#div_p6_54_5_2b').addClass('hidden');
+          $('#div_p6_54_5_3a').addClass('hidden');
         } else {
           $('#div_p6_54_5').removeClass('hidden');
           $('#div_p6_54_5_1a').removeClass('hidden');
-          $('#div_p6_54_5_1b').removeClass('hidden');
-          $('#div_p6_54_5_2a').removeClass('hidden');
           $('#div_p6_54_5_2a').removeClass('hidden');
           $('#div_p6_54_5_3a').removeClass('hidden');
-          $('#div_p6_54_5_3b').removeClass('hidden');
         }
       });
       $('#res_p6_53_6').change(function(){
         if ($('#res_p6_53_6').val() == "No") {
           $('#div_p6_54_6').addClass('hidden');
+          $('#div_p6_54_6_1a').addClass('hidden');
           $('#div_p6_54_6_2a').addClass('hidden');
-          $('#div_p6_54_6_2b').addClass('hidden');
-          $('#div_p6_54_6_2a').addClass('hidden');
-          $('#div_p6_54_6_2a').addClass('hidden');
-          $('#div_p6_54_6_2a').addClass('hidden');
-          $('#div_p6_54_6_2b').addClass('hidden');
+          $('#div_p6_54_6_3a').addClass('hidden');
         } else {
           $('#div_p6_54_6').removeClass('hidden');
           $('#div_p6_54_6_1a').removeClass('hidden');
-          $('#div_p6_54_6_1b').removeClass('hidden');
-          $('#div_p6_54_6_2a').removeClass('hidden');
           $('#div_p6_54_6_2a').removeClass('hidden');
           $('#div_p6_54_6_3a').removeClass('hidden');
-          $('#div_p6_54_6_3b').removeClass('hidden');
         }
       });
       $('#res_p6_53_7').change(function(){
         if ($('#res_p6_53_7').val() == "No") {
           $('#div_p6_54_7').addClass('hidden');
+          $('#div_p6_54_7_1a').addClass('hidden');
           $('#div_p6_54_7_2a').addClass('hidden');
-          $('#div_p6_54_7_2b').addClass('hidden');
-          $('#div_p6_54_7_2a').addClass('hidden');
-          $('#div_p6_54_7_2a').addClass('hidden');
-          $('#div_p6_54_7_2a').addClass('hidden');
-          $('#div_p6_54_7_2b').addClass('hidden');
+          $('#div_p6_54_7_3a').addClass('hidden');
         } else {
           $('#div_p6_54_7').removeClass('hidden');
           $('#div_p6_54_7_1a').removeClass('hidden');
-          $('#div_p6_54_7_1b').removeClass('hidden');
-          $('#div_p6_54_7_2a').removeClass('hidden');
           $('#div_p6_54_7_2a').removeClass('hidden');
           $('#div_p6_54_7_3a').removeClass('hidden');
-          $('#div_p6_54_7_3b').removeClass('hidden');
         }
       });
       $('#res_p6_53_8').change(function(){
         if ($('#res_p6_53_8').val() == "No") {
           $('#div_p6_54_8').addClass('hidden');
+          $('#div_p6_54_8_1a').addClass('hidden');
           $('#div_p6_54_8_2a').addClass('hidden');
-          $('#div_p6_54_8_2b').addClass('hidden');
-          $('#div_p6_54_8_2a').addClass('hidden');
-          $('#div_p6_54_8_2a').addClass('hidden');
-          $('#div_p6_54_8_2a').addClass('hidden');
-          $('#div_p6_54_8_2b').addClass('hidden');
+          $('#div_p6_54_8_3a').addClass('hidden');
         } else {
           $('#div_p6_54_8').removeClass('hidden');
           $('#div_p6_54_8_1a').removeClass('hidden');
-          $('#div_p6_54_8_1b').removeClass('hidden');
-          $('#div_p6_54_8_2a').removeClass('hidden');
           $('#div_p6_54_8_2a').removeClass('hidden');
           $('#div_p6_54_8_3a').removeClass('hidden');
-          $('#div_p6_54_8_3b').removeClass('hidden');
         }
       });
 
