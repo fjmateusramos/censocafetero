@@ -1,67 +1,151 @@
-        <tr>
-          <th scope="row">74. ¿Alimentos como parte de pago por su trabajo?"</th>
-            <td id="persona_1_69">
-              <div class="field" id="div_p7_72_1_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-              <div class="field hidden" id="div_p7_72_1_69">
-                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
+ 
+          <tr>
+          <th scope="row">94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?</th>
+            <td id="persona_1_708">
+              <div class="field" id="div_p7_1_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Preparación de alimentos</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Labores de aseo de la vivienda</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Lavado y arreglo de ropa</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Lavado de utensilios de cocina</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Apoyo en tareas escolares a otros miembros del hogar</label>
+                  <p></p>
+                </div>  
+              </div> 
+            </td>  
+            <td id="persona_2_708">
+              <<div class="field" id="div_p7_2_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Fondo de pensiones</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">BEPS</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ya es pensionado</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ninguna de las anteriores</label>
+                  <p></p>
+                </div>  
               </div>
             </td>  
-            <td id="persona_2_69">
-              <div class="field" id="div_p7_72_2_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-              <div class="field hidden" id="div_p7_72_2_69">
-                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-            </td>  
-            <td id="persona_3_69">
-              <div class="field" id="div_p7_72_3_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-              <div class="field hidden" id="div_p7_72_3_69">
-                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-            </td>  
-            <td id="persona_4_69">
-              <div class="field" id="div_p7_72_4_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-              <div class="field hidden" id="div_p7_72_4_69">
-                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
+            <td id="persona_3_708">
+              <div class="field" id="div_p7_3_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Fondo de pensiones</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">BEPS</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ya es pensionado</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ninguna de las anteriores</label>
+                  <p></p>
+                </div>  
               </div>
             </td>  
-            <td id="persona_5_69">
-              <div class="field" id="div_p7_72_5_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-              <div class="field hidden" id="div_p7_72_5_69">
-                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-            </td>  
-            <td id="persona_6_69">
-              <div class="field" id="div_p7_72_6_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-              <div class="field hidden" id="div_p7_72_6_69">
-                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-            </td>  
-            <td id="persona_7_69">
-              <div class="field" id="div_p7_72_7_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
-              </div>
-              <div class="field hidden" id="div_p7_72_7_69">
-                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
+            <td id="persona_4_708">
+              <div class="field" id="div_p7_4_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Fondo de pensiones</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">BEPS</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ya es pensionado</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ninguna de las anteriores</label>
+                  <p></p>
+                </div>  
               </div>
             </td>  
-            <td id="persona_8_69">
-              <div class="field" id="div_p7_72_8_691">
-                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
+            <td id="persona_5_708">
+              <div class="field" id="div_p7_5_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Fondo de pensiones</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">BEPS</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ya es pensionado</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ninguna de las anteriores</label>
+                  <p></p>
+                </div>  
               </div>
-              <div class="field hidden" id="div_p7_72_8_69">
-               <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
-              </div>   
+            </td>  
+            <td id="persona_6_708">
+              <div class="field" id="div_p7_6_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Fondo de pensiones</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">BEPS</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ya es pensionado</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ninguna de las anteriores</label>
+                  <p></p>
+                </div>  
+              </div>
+            </td>  
+            <td id="persona_7_708">
+              <div class="field" id="div_p7_1_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Fondo de pensiones</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">BEPS</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ya es pensionado</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ninguna de las anteriores</label>
+                  <p></p>
+                </div>  
+              </div>
+            </td>  
+            <td id="persona_8_708">
+              <div class="field" id="div_p7_1_708">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">Fondo de pensiones</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1">BEPS</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ya es pensionado</label>
+                  <p></p>
+                  <input class="form-check-input" type="checkbox" value="" id="p4_38_1">
+                  <label class="form-check-label" for="p4_64_1"> Ninguna de las anteriores</label>
+                  <p></p>
+                </div>  
+              </div>  
             </td>
           </tr>  
