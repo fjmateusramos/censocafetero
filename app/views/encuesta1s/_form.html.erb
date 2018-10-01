@@ -18,7 +18,470 @@
     </div>
   <% end %>
   
-  <div class="continer row" style="margin-left: 10px; margin-right: 10px;">
+ <div class="" id="Seccion_Modulo11">
+  <div class="alert alert-secondary row col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;">MODULO 11. Características e ingresos de la actividad agropecuaria diferente al cultivo de café (para todas las fincas del productor)
+    </div>
+
+    <div id="div_p11_ta1" class="alert alert-success col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h5>Tabla A. 1. ¿Tuvo el año pasado (2017) sembrados cultivos transitorios, permanente, forrajeros o plantaciones forestales?</h5><%= f.select :p11_ta_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_1"}%>
+    </div>
+
+    <div class="continer row col-md-12 alert-success" style="margin-top: 10px; margin-right: 10px; margin-left: 10px;">
+
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center">2. ID</th>
+      <th scope="col" class="text-center">3. ¿Cuál cultivo o plantación forestal tuvo sembrado?</th>
+      <th scope="col" class="text-center">4. ¿El cultivo es transitorio?</th>
+      <th scope="col" class="text-center">5. ¿El cultivo está...?</th>
+      <th scope="col" class="text-center">6. ¿Qué cantidad de plantas tiene el cultivo? (diligencie solo para permanentes)</th>
+      <th scope="col" class="text-center">7. ¿Cuánta fue el área sembrada? (ha)</th>
+      <th scope="col" class="text-center">8. Producción en 2017 (kg)</th>
+      <th scope="col" class="text-center">9. Porcentaje de la producción vendido (%)</th>
+      <th scope="col" class="text-center">10. Ingreso total (millones)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_a_2, {class: "form-control", id:"res_p11_ta_a_2"}%></th>
+      <td><%= f.text_field :p11_ta_a_3, {class: "form-control", id:"res_p11_ta_a_3"}%></td>
+      <td><%= f.select :p11_ta_a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_a_4"}%></td>
+      <td><%= f.select :p11_ta_a_5, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_a_5"}%></td>
+      <td><%= f.text_field :p11_ta_a_6, {class: "form-control", id:"res_p11_ta_a_6"}%></td>
+      <td><%= f.text_field :p11_ta_a_7, {class: "form-control", id:"res_p11_ta_a_7"}%></td>
+      <td><%= f.text_field :p11_ta_a_8, {class: "form-control", id:"res_p11_ta_a_8"}%></td>
+      <td><%= f.text_field :p11_ta_a_9, {class: "form-control", id:"res_p11_ta_a_9"}%></td>
+      <td><%= f.text_field :p11_ta_a_10, {class: "form-control", id:"res_p11_ta_a_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_b_2, {class: "form-control", id:"res_p11_ta_b_2"}%></th>
+      <td><%= f.text_field :p11_ta_b_3, {class: "form-control", id:"res_p11_ta_b_3"}%></td>
+      <td><%= f.select :p11_ta_b_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_b_4"}%></td>
+      <td><%= f.select :p11_ta_b_5, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_b_5"}%></td>
+      <td><%= f.text_field :p11_ta_b_6, {class: "form-control", id:"res_p11_ta_b_6"}%></td>
+      <td><%= f.text_field :p11_ta_b_7, {class: "form-control", id:"res_p11_ta_b_7"}%></td>
+      <td><%= f.text_field :p11_ta_b_8, {class: "form-control", id:"res_p11_ta_b_8"}%></td>
+      <td><%= f.text_field :p11_ta_b_9, {class: "form-control", id:"res_p11_ta_b_9"}%></td>
+      <td><%= f.text_field :p11_ta_b_10, {class: "form-control", id:"res_p11_ta_b_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_c_2, {class: "form-control", id:"res_p11_ta_c_2"}%></th>
+      <td><%= f.text_field :p11_ta_c_3, {class: "form-control", id:"res_p11_ta_c_3"}%></td>
+      <td><%= f.select :p11_ta_c_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_c_4"}%></td>
+      <td><%= f.select :p11_ta_c_5, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_c_5"}%></td>
+      <td><%= f.text_field :p11_ta_c_6, {class: "form-control", id:"res_p11_ta_c_6"}%></td>
+      <td><%= f.text_field :p11_ta_c_7, {class: "form-control", id:"res_p11_ta_c_7"}%></td>
+      <td><%= f.text_field :p11_ta_c_8, {class: "form-control", id:"res_p11_ta_c_8"}%></td>
+      <td><%= f.text_field :p11_ta_c_9, {class: "form-control", id:"res_p11_ta_c_9"}%></td>
+      <td><%= f.text_field :p11_ta_c_10, {class: "form-control", id:"res_p11_ta_c_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_d_2, {class: "form-control", id:"res_p11_ta_d_2"}%></th>
+      <td><%= f.text_field :p11_ta_d_3, {class: "form-control", id:"res_p11_ta_d_3"}%></td>
+      <td><%= f.select :p11_ta_d_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_d_4"}%></td>
+      <td><%= f.select :p11_ta_d_5, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_d_5"}%></td>
+      <td><%= f.text_field :p11_ta_d_6, {class: "form-control", id:"res_p11_ta_d_6"}%></td>
+      <td><%= f.text_field :p11_ta_d_7, {class: "form-control", id:"res_p11_ta_d_7"}%></td>
+      <td><%= f.text_field :p11_ta_d_8, {class: "form-control", id:"res_p11_ta_d_8"}%></td>
+      <td><%= f.text_field :p11_ta_d_9, {class: "form-control", id:"res_p11_ta_d_9"}%></td>
+      <td><%= f.text_field :p11_ta_d_10, {class: "form-control", id:"res_p11_ta_d_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_e_2, {class: "form-control", id:"res_p11_ta_e_2"}%></th>
+      <td><%= f.text_field :p11_ta_e_3, {class: "form-control", id:"res_p11_ta_e_3"}%></td>
+      <td><%= f.select :p11_ta_e_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_e_4"}%></td>
+      <td><%= f.select :p11_ta_e_5, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_e_5"}%></td>
+      <td><%= f.text_field :p11_ta_e_6, {class: "form-control", id:"res_p11_ta_e_6"}%></td>
+      <td><%= f.text_field :p11_ta_e_7, {class: "form-control", id:"res_p11_ta_e_7"}%></td>
+      <td><%= f.text_field :p11_ta_e_8, {class: "form-control", id:"res_p11_ta_e_8"}%></td>
+      <td><%= f.text_field :p11_ta_e_9, {class: "form-control", id:"res_p11_ta_e_9"}%></td>
+      <td><%= f.text_field :p11_ta_e_10, {class: "form-control", id:"res_p11_ta_e_10"}%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.text_field :p11_ta_f_2, {class: "form-control", id:"res_p11_ta_f_2"}%></th>
+      <td><%= f.text_field :p11_ta_f_3, {class: "form-control", id:"res_p11_ta_f_3"}%></td>
+      <td><%= f.select :p11_ta_f_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_f_4"}%></td>
+      <td><%= f.select :p11_ta_f_5, ["Solo", "Asociado"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_f_5"}%></td>
+      <td><%= f.text_field :p11_ta_f_6, {class: "form-control", id:"res_p11_ta_f_6"}%></td>
+      <td><%= f.text_field :p11_ta_f_7, {class: "form-control", id:"res_p11_ta_f_7"}%></td>
+      <td><%= f.text_field :p11_ta_f_8, {class: "form-control", id:"res_p11_ta_f_8"}%></td>
+      <td><%= f.text_field :p11_ta_f_9, {class: "form-control", id:"res_p11_ta_f_9"}%></td>
+      <td><%= f.text_field :p11_ta_f_10, {class: "form-control", id:"res_p11_ta_f_10"}%></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9">
+      Tabla B. 1. ¿Tuvo el año pasado (2017) pasado ganado bovino (terneros, becerros, novillos, toros, vacas)?
+      </div>
+      <div class="col-md-3">
+      <%= f.select :p11_tb_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_tb_1"}%>
+      </div>
+    </div>
+
+    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+      <div class="row col-md-4">
+
+      <div class="field col-md-12" id="div_p11_tb_2" style="margin-top: 5px;">
+        <%= f.label :p11_tb_2, "2. ¿La orientación de la actividad ganadera ha sido...?" %>
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+  <label class="form-check-label" for="p11_tb_2">Doble propósito</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+  <label class="form-check-label" for="p11_tb_2">Leche</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+  <label class="form-check-label" for="p11_tb_2">Carne: ciclo completo</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+  <label class="form-check-label" for="p11_tb_2">Carne: cría, levante</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+  <label class="form-check-label" for="p11_tb_2">Carne: ceba</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+  <label class="form-check-label" for="p11_tb_2">Genética</label>
+  <p></p>
+      </div>
+    </div>
+
+      <div class="field col-md-12" id="div_p11_tb_3" style="margin-top: 5px;">3. ¿Cuántos machos de ganado bovino tuvo?<p></p>
+        <%= f.label :p11_tb_3_a, "a. En total" %>
+        <%= f.text_field :p11_tb_3_a, {class: "form-control", id:"res_p11_tb_3_a"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tb_3_b, "b. Terneros" %>
+        <%= f.text_field :p11_tb_3_b, {class: "form-control", id:"res_p11_tb_3_b"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tb_3_c, "c. Machos en engorde" %>
+        <%= f.text_field :p11_tb_3_c, {class: "form-control", id:"res_p11_tb_3_c"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tb_3_d, "d. Reproductores" %>
+        <%= f.text_field :p11_tb_3_d, {class: "form-control", id:"res_p11_tb_3_d"}%><p class="text-center font-italic">Diciembre 2017</p>
+      </div>
+    </div>
+
+      <div class="field col-md-4" id="div_p11_tb_4" style="margin-top: 30px;">4. ¿Cuántas hembras de ganado bovino tuvo?<p></p>
+        <%= f.label :p11_tb_4_a, "a. En total" %>
+        <%= f.text_field :p11_tb_4_a, {class: "form-control", id:"res_p11_tb_4_a"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tb_4_b, "b. Terneras" %>
+        <%= f.text_field :p11_tb_4_b, {class: "form-control", id:"res_p11_tb_4_b"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tb_4_c, "c. Novillas" %>
+        <%= f.text_field :p11_tb_4_c, {class: "form-control", id:"res_p11_tb_4_c"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tb_4_d, "d. Adultas sin ordeño" %>
+        <%= f.text_field :p11_tb_4_d, {class: "form-control", id:"res_p11_tb_4_d"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tb_4_e, "e. Adultas en ordeño" %>
+        <%= f.text_field :p11_tb_4_e, {class: "form-control", id:"res_p11_tb_4_e"}%><p class="text-center font-italic">Diciembre 2017</p>
+      </div>
+
+      <div class="row col-md-4">
+
+      <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">5. ¿Cuántos ejemplares de ganado bovino vendió en 2017?
+
+        <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"># de animales</th>
+      <th scope="col">Peso prom. (kg)</th>
+      <th scope="col">Ingreso total ($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Machos</th>
+        <td><%= f.text_field :p11_tb_5a_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
+      <td><%= f.text_field :p11_tb_5a_2, {class: "form-control", id:"res_p11_tb_5a_2"}%></td>
+      <td><%= f.text_field :p11_tb_5a_3, {class: "form-control", id:"res_p11_tb_5a_3"}%></td>
+    </tr>
+    <tr>
+      <th scope="row">Hembras</th>
+        <td><%= f.text_field :p11_tb_5b_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
+      <td></td>
+      <td><%= f.text_field :p11_tb_5b_2, {class: "form-control", id:"res_p11_tb_5b_2"}%></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">6. ¿Cuál fue el ingreso por venta de leche en 2017?
+
+        <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" class="text_center">Millones</th>
+      <th scope="col" class="text_center">No aplica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row"><%= f.text_field :p11_tb_6a, {class: "form-control", id:"res_p11_tb_6a"}%></td>
+      <td class="text-center"><%= f.radio_button :p11_tb_6b, {class: "form-control", id:"res_p11_tb_6a"}%></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="field col-md-12" id="div_p11_tb_7" style="margin-top: 5px;">
+        <%= f.label :p11_tb_7, "7. ¿En cuánta área de su finca realiza las actividades de pastoreo para el ganado bovino relacionado?" %>
+        <%= f.text_field :p11_tb_7, {class: "form-control", id:"res_p11_tb_7"}%><p class="font-italic text-center">(hectáreas)</p>
+      </div>
+    </div>
+    </div>
+
+<div id="div_p11_tc_1" class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9" style="margin-top: 20px;">
+      Tabla C. 1. ¿Tuvo el año pasado (2017), porcinos (cerdos, marranos) en confinamiento?
+      </div>
+      <div class="col-md-3" style="margin-bottom: 20px; margin-top: 20px;">
+      <%= f.select :p11_tc_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_tc_1"}%>
+      </div>
+    </div>
+
+    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+      <div class="row col-md-6">
+
+      <div class="field col-md-12" id="div_p11_tc_2" style="margin-top: 5px;">
+        <%= f.label :p11_tc_2, "2. ¿La orientación de la actividad porcícola es?" %>
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="p11_tc_2">
+  <label class="form-check-label" for="p11_tc_2">Cría</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tc_2">
+  <label class="form-check-label" for="p11_tc_2">Levante y ceba</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tc_2">
+  <label class="form-check-label" for="p11_tc_2">Ciclo completo</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_tc_2">
+  <label class="form-check-label" for="p11_tc_2">Genética</label>
+  <p></p>
+      </div>
+    </div>
+
+      <div class="field col-md-12" id="div_p11_tc_3" style="margin-top: 5px;">3. Respectoalnúmerodecerdos(as)en2017:<p></p>
+        <%= f.label :p11_tc_3_a, "a. En total" %>
+        <%= f.text_field :p11_tc_3_a, {class: "form-control", id:"res_p11_tc_3_a"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tc_3_b, "b. ¿Cuántos machos reproductores tuvo?" %>
+        <%= f.text_field :p11_tc_3_b, {class: "form-control", id:"res_p11_tc_3_b"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tc_3_c, "c. ¿Cuántos machos de engorde tuvo?" %>
+        <%= f.text_field :p11_tc_3_c, {class: "form-control", id:"res_p11_tc_3_c"}%><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.label :p11_tc_3_d, "d. ¿Cuántas hembras para cría tuvo?" %>
+        <%= f.text_field :p11_tc_3_d, {class: "form-control", id:"res_p11_tc_3_d"}%><p class="text-center font-italic">Diciembre 2017</p>
+      </div>
+    </div>
+
+    <div class="row col-md-6" style="margin-top: 20px;">
+
+      <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">
+
+        <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"># de animales</th>
+      <th scope="col">Ingreso total ($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">4. ¿Cuántos(as) cerdos(as) destetos vendió en 2017?</td>
+        <td><%= f.text_field :p11_tc_4_a, {class: "form-control", id:"res_p11_tb_4_a"}%></td>
+      <td><%= f.text_field :p11_tc_4_b, {class: "form-control", id:"res_p11_tb_4_b"}%></td>
+    </tr>
+    <tr>
+      <td scope="row">5. ¿Cuántos cerdos cebados vendió en 2017?</td>
+        <td><%= f.text_field :p11_tc_5_a, {class: "form-control", id:"res_p11_tc_5_a"}%></td>
+      <td><%= f.text_field :p11_tc_5_b, {class: "form-control", id:"res_p11_tc_5_b"}%></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="field col-md-12" id="div_p11_tc_6" style="margin-top: 1px;">
+        <%= f.label :p11_tc_6, "6. ¿En cuánta área realiza el confinamiento de los porcinos?" %>
+        <%= f.text_field :p11_tc_6, {class: "form-control", id:"res_p11_tc_6"}%><p class="font-italic text-center">(m2)</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9" style="margin-top: 20px;">
+      Tabla D. 1. ¿En su finca, el año pasado (2017), se han criado gallinas o engordado pollos en galpones?
+      </div>
+      <div class="col-md-3" style="margin-top: 20px; margin-bottom: 20px;">
+      <%= f.select :p11_td_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_td_1"}%>
+      </div>
+    </div>
+
+    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+      <div class="row col-md-6">
+
+      <div class="field col-md-12" id="div_p11_td_2" style="margin-top: 5px;">
+        <%= f.label :p11_td_2, "2. ¿La orientación de la actividad avícola ha sido para...?" %>
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="p11_td_2">
+  <label class="form-check-label" for="p11_td_2">Postura</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_td_2">
+  <label class="form-check-label" for="p11_td_2">Engorde</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p11_td_2">
+  <label class="form-check-label" for="p11_td_2">Aves de corral</label>
+  <p></p>
+        </div>
+      </div>
+
+      <div class="field col-md-12" id="div_p11_tc_3" style="margin-top: 5px;">3. Cuantas aves tuvo en el 2017:<p></p>
+        <%= f.label :p11_ts_3_a, "a. Postura" %><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.text_field :p11_td_3_a, {class: "form-control", id:"res_p11_td_3_a"}%><p class="text-center font-italic">(En total)</p>
+        <%= f.label :p11_td_3_b, "b. Engorde" %><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.text_field :p11_td_3_b, {class: "form-control", id:"res_p11_td_3_b"}%><p class="text-center font-italic">(En total)</p>
+        <%= f.label :p11_td_3_c, "c. Aves de corral" %><p class="text-center font-italic">Diciembre 2017</p>
+        <%= f.text_field :p11_td_3_c, {class: "form-control", id:"res_p11_td_3_c"}%><p class="text-center font-italic">(En total)</p>
+      </div>
+      </div>
+
+      <div class="row col-md-6">
+
+      <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">
+
+        <table class="table table-hover" style="margin-top: 20px;">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"># de animales</th>
+      <th scope="col">Ingreso total ($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">4. ¿Cuántos pollos vendió en 2017?</td>
+        <td><%= f.text_field :p11_td_4_a, {class: "form-control", id:"res_p11_td_4_a"}%></td>
+      <td><%= f.text_field :p11_td_4_b, {class: "form-control", id:"res_p11_td_4_b"}%></td>
+    </tr>
+    <tr>
+      <td scope="row" colspan="2">5. ¿Ingreso por venta de huevos en 2017?</td>
+      <td><%= f.text_field :p11_td_5, {class: "form-control", id:"res_p11_td_5"}%></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<div class="field col-md-12" id="div_p11_td_6" style="margin-top: 5px;">
+        <%= f.label :p11_td_6, "6. ¿Encuántaáreadesufinca realiza las actividades avícolas?" %>
+        <%= f.text_field :p11_td_6, {class: "form-control", id:"res_p11_td_6"}%><p class="font-italic text-center">(m2)</p>
+      </div>
+</div>
+</div>
+
+<div class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+      <div class="col-md-9" style="margin-top: 20px;">
+      Tabla E. 1. ¿En su finca, el año pasado (2017) , ha realizado otras actividades pecuarias?
+      </div>
+      <div class="col-md-3" style="margin-top: 20px; margin-bottom: 20px;">
+      <%= f.select :p11_te_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_1"}%>
+      </div>
+    </div>  
+
+    <div class="continer row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+
+    <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">
+
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center"></th>
+      <th scope="col" class="text-center">Si/No</th>
+      <th scope="col" class="text-center">Especie</th>
+      <th scope="col" class="text-center">No. de animales (Dic 2017)</th>
+      <th scope="col" class="text-center">Orientación</th>
+      <th scope="col" class="text-center">Producción en Kg (solo carne)</th>
+      <th scope="col" class="text-center">Ingreso en (Millones)</th>
+      <th scope="col" class="text-center">¿En cuanta área de su finca realiza éstas actividades? (hectáreas)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">2. ¿Ha criado peces, camarones, ostras o langostinos?</th>
+      <td><%= f.select :p11_te_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+
+      <td><%= f.select :p11_te_2a_1, ["Bagre", "Bocachico", "Cachama", "Capaz", "Capitan", "Carpa", "Nicuro", "Pargo rojo", "Sabaleta", "Salmon rosado", "Sardinata", "Tilapia", "Trucha", "Yamu"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2a_2, {class: "form-control", id:"res_p11_te_2a_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2b_1, {class: "form-control", id:"res_p11_te_2b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2b_2, {class: "form-control", id:"res_p11_te_2b_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2c_1, {class: "form-control", id:"res_p11_te_2c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2c_2, {class: "form-control", id:"res_p11_te_2c_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2d_1, {class: "form-control", id:"res_p11_te_2d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2d_2, {class: "form-control", id:"res_p11_te_2d_2"}%></td>
+
+      <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_f"}%></td>
+      <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_f"}%></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center"></th>
+      <th scope="col" class="text-center">Si/No</th>
+      <th scope="col" class="text-center">Especie</th>
+      <th scope="col" class="text-center">No. de animales (Dic 2017)</th>
+      <th scope="col" class="text-center">Ingreso en (Millones)</th>
+      <th scope="col" class="text-center">¿En cuánta área de su finca realiza éstas actividades? (hectáreas)</th>
+    </tr>
+  </thead>
+  <tbody>
+      <th scope="row">3. ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo)</th>
+      <td><%= f.select :p11_te_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+      <td><%= f.text_field :p11_te_3a_1, {class: "form-control", id:"res_p11_te_3a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3a_2, {class: "form-control", id:"res_p11_te_3a_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3b_1, {class: "form-control", id:"res_p11_te_3b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3b_2, {class: "form-control", id:"res_p11_te_3b_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3c_1, {class: "form-control", id:"res_p11_te_3c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3c_2, {class: "form-control", id:"res_p11_te_3c_2"}%></td>
+
+      <td><%= f.text_field :p11_te_3d_1, {class: "form-control", id:"res_p11_te_3d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3d_2, {class: "form-control", id:"res_p11_te_3d_2"}%></td>
+    </tr>
+    <tr>
+      <th scope="row">4. ¿Tiene otras especies de animales?</th>
+      <td><%= f.select :p11_te_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+      <td><%= f.text_field :p11_te_4a_1, {class: "form-control", id:"res_p11_te_4a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_2, {class: "form-control", id:"res_p11_te_4a_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_3, {class: "form-control", id:"res_p11_te_4a_3"}%></td>
+
+      <td><%= f.text_field :p11_te_4b_1, {class: "form-control", id:"res_p11_te_4b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_2, {class: "form-control", id:"res_p11_te_4b_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_3, {class: "form-control", id:"res_p11_te_4b_3"}%></td>
+
+      <td><%= f.text_field :p11_te_4c_1, {class: "form-control", id:"res_p11_te_4c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4c_2, {class: "form-control", id:"res_p11_te_4c_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4c_3, {class: "form-control", id:"res_p11_te_4c_3"}%></td>
+
+      <td><%= f.text_field :p11_te_4d_1, {class: "form-control", id:"res_p11_te_4d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4d_2, {class: "form-control", id:"res_p11_te_4d_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4d_3, {class: "form-control", id:"res_p11_te_4d_3"}%></td>
+    </tr>
+  </tbody>
+</table>   
+</div>
+</div>
+<div class="row col-md-12">
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo11">Anterior</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo11">Siguiente</a>
+    </div>
+  </div> 
+</div>
+  
+</div>
+
+
+
+
+
+
+  
+  <div class="hidden" id="Seccion_Modulo12">
+  <div class="row" style="margin-left: 10px; margin-right: 10px;">
 
   <div class="alert alert-secondary col-lg-12" role="alert" style="margin-bottom: 10px; margin-top: 10px;">MODULO 12. Infraestructura productiva disponible para la actividad agropecuaria (para todas las fincas del productor)
   </div>
@@ -37,273 +500,273 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Germinador</th>
+      <th scope="row">1. Germinador</th>
       <td><%= f.select :p12_a_1_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_1_a"}%></td>
       <td><%= f.text_field :p12_a_1_b, {class: "form-control", id:"res_p12_a_1_b"}%></td>
       <td><%= f.text_field :p12_a_1_c, {class: "form-control", id:"res_p12_a_1_c"}%></td>
       <td><%= f.text_field :p12_a_1_d, {class: "form-control", id:"res_p12_a_1_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Almácigo</th>
+      <th scope="row">2. Almácigo</th>
       <td><%= f.select :p12_a_2_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_2_a"}%></td>
       <td><%= f.text_field :p12_a_2_b, {class: "form-control", id:"res_p12_a_2_b"}%></td>
       <td><%= f.text_field :p12_a_2_c, {class: "form-control", id:"res_p12_a_2_c"}%></td>
       <td><%= f.text_field :p12_a_2_d, {class: "form-control", id:"res_p12_a_2_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Ahoyadora, pala o palín</th>
+      <th scope="row">3. Ahoyadora, pala o palín</th>
       <td><%= f.select :p12_a_3_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_3_a"}%></td>
       <td><%= f.text_field :p12_a_3_b, {class: "form-control", id:"res_p12_a_3_b"}%></td>
       <td><%= f.text_field :p12_a_3_c, {class: "form-control", id:"res_p12_a_3_c"}%></td>
       <td><%= f.text_field :p12_a_3_d, {class: "form-control", id:"res_p12_a_3_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Bomba para fumigar</th>
+      <th scope="row">4. Bomba para fumigar</th>
       <td><%= f.select :p12_a_4_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_4_a"}%></td>
       <td><%= f.text_field :p12_a_4_b, {class: "form-control", id:"res_p12_a_4_b"}%></td>
       <td><%= f.text_field :p12_a_4_c, {class: "form-control", id:"res_p12_a_4_c"}%></td>
       <td><%= f.text_field :p12_a_4_d, {class: "form-control", id:"res_p12_a_4_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Tijeras para descope</th>
+      <th scope="row">5. Tijeras para descope</th>
       <td><%= f.select :p12_a_5_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_5_a"}%></td>
       <td><%= f.text_field :p12_a_5_b, {class: "form-control", id:"res_p12_a_5_b"}%></td>
       <td><%= f.text_field :p12_a_5_c, {class: "form-control", id:"res_p12_a_5_c"}%></td>
       <td><%= f.text_field :p12_a_5_d, {class: "form-control", id:"res_p12_a_5_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Machete</th>
+      <th scope="row">6. Machete</th>
       <td><%= f.select :p12_a_6_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_6_a"}%></td>
       <td><%= f.text_field :p12_a_6_b, {class: "form-control", id:"res_p12_a_6_b"}%></td>
       <td><%= f.text_field :p12_a_6_c, {class: "form-control", id:"res_p12_a_6_c"}%></td>
       <td><%= f.text_field :p12_a_6_d, {class: "form-control", id:"res_p12_a_6_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Selector de arvenses</th>
+      <th scope="row">7. Selector de arvenses</th>
       <td><%= f.select :p12_a_7_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_7_a"}%></td>
       <td><%= f.text_field :p12_a_7_b, {class: "form-control", id:"res_p12_a_7_b"}%></td>
       <td><%= f.text_field :p12_a_7_c, {class: "form-control", id:"res_p12_a_7_c"}%></td>
       <td><%= f.text_field :p12_a_7_d, {class: "form-control", id:"res_p12_a_7_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Motosierra</th>
+      <th scope="row">8. Motosierra</th>
       <td><%= f.select :p12_a_8_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_8_a"}%></td>
       <td><%= f.text_field :p12_a_8_b, {class: "form-control", id:"res_p12_a_8_b"}%></td>
       <td><%= f.text_field :p12_a_8_c, {class: "form-control", id:"res_p12_a_8_c"}%></td>
       <td><%= f.text_field :p12_a_8_d, {class: "form-control", id:"res_p12_a_8_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Guadañadora</th>
+      <th scope="row">9. Guadañadora</th>
       <td><%= f.select :p12_a_9_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_9_a"}%></td>
       <td><%= f.text_field :p12_a_9_b, {class: "form-control", id:"res_p12_a_9_b"}%></td>
       <td><%= f.text_field :p12_a_9_c, {class: "form-control", id:"res_p12_a_9_c"}%></td>
       <td><%= f.text_field :p12_a_9_d, {class: "form-control", id:"res_p12_a_9_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Cocos para recolección</th>
+      <th scope="row">10. Cocos para recolección</th>
       <td><%= f.select :p12_a_10_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_10_a"}%></td>
       <td><%= f.text_field :p12_a_10_b, {class: "form-control", id:"res_p12_a_10_b"}%></td>
       <td><%= f.text_field :p12_a_10_c, {class: "form-control", id:"res_p12_a_10_c"}%></td>
       <td><%= f.text_field :p12_a_10_d, {class: "form-control", id:"res_p12_a_10_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Canguaros o similares</th>
+      <th scope="row">11. Canguaros o similares</th>
       <td><%= f.select :p12_a_11_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_11_a"}%></td>
       <td><%= f.text_field :p12_a_11_b, {class: "form-control", id:"res_p12_a_11_b"}%></td>
       <td><%= f.text_field :p12_a_11_c, {class: "form-control", id:"res_p12_a_11_c"}%></td>
       <td><%= f.text_field :p12_a_11_d, {class: "form-control", id:"res_p12_a_11_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Equipos para recolección<p></p>(alfa, imfra, gulliver, derribadora)</th>
+      <th scope="row">12. Equipos para recolección (alfa, imfra, gulliver, derribadora)</th>
       <td><%= f.select :p12_a_12_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_12_a"}%></td>
       <td><%= f.text_field :p12_a_12_b, {class: "form-control", id:"res_p12_a_12_b"}%></td>
       <td><%= f.text_field :p12_a_12_c, {class: "form-control", id:"res_p12_a_12_c"}%></td>
       <td><%= f.text_field :p12_a_12_d, {class: "form-control", id:"res_p12_a_12_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Lonas</th>
+      <th scope="row">13. Lonas</th>
       <td><%= f.select :p12_a_13_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_13_a"}%></td>
       <td><%= f.text_field :p12_a_13_b, {class: "form-control", id:"res_p12_a_13_b"}%></td>
       <td><%= f.text_field :p12_a_13_c, {class: "form-control", id:"res_p12_a_13_c"}%></td>
       <td><%= f.text_field :p12_a_13_d, {class: "form-control", id:"res_p12_a_13_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Sistema de transporte<p></p>(cables, rieles, tubería)</th>
+      <th scope="row">14. Sistema de transporte (cables, rieles, tubería)</th>
       <td><%= f.select :p12_a_14_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_14_a"}%></td>
       <td><%= f.text_field :p12_a_14_b, {class: "form-control", id:"res_p12_a_14_b"}%></td>
       <td><%= f.text_field :p12_a_14_c, {class: "form-control", id:"res_p12_a_14_c"}%></td>
       <td><%= f.text_field :p12_a_14_d, {class: "form-control", id:"res_p12_a_14_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Beneficiadero cubierto</th>
+      <th scope="row">15. Beneficiadero cubierto</th>
       <td><%= f.select :p12_a_15_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_15_a"}%></td>
       <td><%= f.text_field :p12_a_15_b, {class: "form-control", id:"res_p12_a_15_b"}%></td>
       <td><%= f.text_field :p12_a_15_c, {class: "form-control", id:"res_p12_a_15_c"}%></td>
       <td><%= f.text_field :p12_a_15_d, {class: "form-control", id:"res_p12_a_15_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Ecomill</th>
+      <th scope="row">16. Ecomill</th>
       <td><%= f.select :p12_a_16_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_16_a"}%></td>
       <td><%= f.text_field :p12_a_16_b, {class: "form-control", id:"res_p12_a_16_b"}%></td>
       <td><%= f.text_field :p12_a_16_c, {class: "form-control", id:"res_p12_a_16_c"}%></td>
       <td><%= f.text_field :p12_a_16_d, {class: "form-control", id:"res_p12_a_16_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Becolsub</th>
+      <th scope="row">17. Becolsub</th>
       <td><%= f.select :p12_a_17_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_17_a"}%></td>
       <td><%= f.text_field :p12_a_17_b, {class: "form-control", id:"res_p12_a_17_b"}%></td>
       <td><%= f.text_field :p12_a_17_c, {class: "form-control", id:"res_p12_a_17_c"}%></td>
       <td><%= f.text_field :p12_a_17_d, {class: "form-control", id:"res_p12_a_17_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Despulpadora</th>
+      <th scope="row">18. Despulpadora</th>
       <td><%= f.select :p12_a_18_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_18_a"}%></td>
       <td><%= f.text_field :p12_a_18_b, {class: "form-control", id:"res_p12_a_18_b"}%></td>
       <td><%= f.text_field :p12_a_18_c, {class: "form-control", id:"res_p12_a_18_c"}%></td>
       <td><%= f.text_field :p12_a_18_d, {class: "form-control", id:"res_p12_a_18_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Desmucilaginador</th>
+      <th scope="row">19. Desmucilaginador</th>
       <td><%= f.select :p12_a_19_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_19_a"}%></td>
       <td><%= f.text_field :p12_a_19_b, {class: "form-control", id:"res_p12_a_19_b"}%></td>
       <td><%= f.text_field :p12_a_19_c, {class: "form-control", id:"res_p12_a_19_c"}%></td>
       <td><%= f.text_field :p12_a_19_d, {class: "form-control", id:"res_p12_a_19_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Canal de correteo</th>
+      <th scope="row">20. Canal de correteo</th>
       <td><%= f.select :p12_a_20_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_20_a"}%></td>
       <td><%= f.text_field :p12_a_20_b, {class: "form-control", id:"res_p12_a_20_b"}%></td>
       <td><%= f.text_field :p12_a_20_c, {class: "form-control", id:"res_p12_a_20_c"}%></td>
       <td><%= f.text_field :p12_a_20_d, {class: "form-control", id:"res_p12_a_20_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Tanque tradicional</th>
+      <th scope="row">21. Tanque tradicional</th>
       <td><%= f.select :p12_a_21_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_21_a"}%></td>
       <td><%= f.text_field :p12_a_21_b, {class: "form-control", id:"res_p12_a_21_b"}%></td>
       <td><%= f.text_field :p12_a_21_c, {class: "form-control", id:"res_p12_a_21_c"}%></td>
       <td><%= f.text_field :p12_a_21_d, {class: "form-control", id:"res_p12_a_21_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Tanque tina</th>
+      <th scope="row">22. Tanque tina</th>
       <td><%= f.select :p12_a_22_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_22_a"}%></td>
       <td><%= f.text_field :p12_a_22_b, {class: "form-control", id:"res_p12_a_22_b"}%></td>
       <td><%= f.text_field :p12_a_22_c, {class: "form-control", id:"res_p12_a_22_c"}%></td>
       <td><%= f.text_field :p12_a_22_d, {class: "form-control", id:"res_p12_a_22_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Fermaestro</th>
+      <th scope="row">23. Fermaestro</th>
       <td><%= f.select :p12_a_23_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_23_a"}%></td>
       <td><%= f.text_field :p12_a_23_b, {class: "form-control", id:"res_p12_a_23_b"}%></td>
       <td><%= f.text_field :p12_a_23_c, {class: "form-control", id:"res_p12_a_23_c"}%></td>
       <td><%= f.text_field :p12_a_23_d, {class: "form-control", id:"res_p12_a_23_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Fosa de pulpa</th>
+      <th scope="row">24. Fosa de pulpa</th>
       <td><%= f.select :p12_a_24_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_24_a"}%></td>
       <td><%= f.text_field :p12_a_24_b, {class: "form-control", id:"res_p12_a_24_b"}%></td>
       <td><%= f.text_field :p12_a_24_c, {class: "form-control", id:"res_p12_a_24_c"}%></td>
       <td><%= f.text_field :p12_a_24_d, {class: "form-control", id:"res_p12_a_24_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Silo</th>
+      <th scope="row">25. Silo</th>
       <td><%= f.select :p12_a_25_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_25_a"}%></td>
       <td><%= f.text_field :p12_a_25_b, {class: "form-control", id:"res_p12_a_25_b"}%></td>
       <td><%= f.text_field :p12_a_25_c, {class: "form-control", id:"res_p12_a_25_c"}%></td>
       <td><%= f.text_field :p12_a_25_d, {class: "form-control", id:"res_p12_a_25_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Secador parabólico</th>
+      <th scope="row">26. Secador parabólico</th>
       <td><%= f.select :p12_a_26_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_26_a"}%></td>
       <td><%= f.text_field :p12_a_26_b, {class: "form-control", id:"res_p12_a_26_b"}%></td>
       <td><%= f.text_field :p12_a_26_c, {class: "form-control", id:"res_p12_a_26_c"}%></td>
       <td><%= f.text_field :p12_a_26_d, {class: "form-control", id:"res_p12_a_26_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Elva</th>
+      <th scope="row">27. Elva</th>
       <td><%= f.select :p12_a_27_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_27_a"}%></td>
       <td><%= f.text_field :p12_a_27_b, {class: "form-control", id:"res_p12_a_27_b"}%></td>
       <td><%= f.text_field :p12_a_27_c, {class: "form-control", id:"res_p12_a_27_c"}%></td>
       <td><%= f.text_field :p12_a_27_d, {class: "form-control", id:"res_p12_a_27_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Marquesina</th>
+      <th scope="row">28. Marquesina</th>
       <td><%= f.select :p12_a_28_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_28_a"}%></td>
       <td><%= f.text_field :p12_a_28_b, {class: "form-control", id:"res_p12_a_28_b"}%></td>
       <td><%= f.text_field :p12_a_28_c, {class: "form-control", id:"res_p12_a_28_c"}%></td>
       <td><%= f.text_field :p12_a_28_d, {class: "form-control", id:"res_p12_a_28_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Patio de secado<p></p> (cemento)</th>
+      <th scope="row">29. Patio de secado<p></p> (cemento)</th>
       <td><%= f.select :p12_a_29_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_29_a"}%></td>
       <td><%= f.text_field :p12_a_29_b, {class: "form-control", id:"res_p12_a_29_b"}%></td>
       <td><%= f.text_field :p12_a_29_c, {class: "form-control", id:"res_p12_a_29_c"}%></td>
       <td><%= f.text_field :p12_a_29_d, {class: "form-control", id:"res_p12_a_29_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Trilladora</th>
+      <th scope="row">30. Trilladora</th>
       <td><%= f.select :p12_a_30_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_30_a"}%></td>
       <td><%= f.text_field :p12_a_30_b, {class: "form-control", id:"res_p12_a_30_b"}%></td>
       <td><%= f.text_field :p12_a_30_c, {class: "form-control", id:"res_p12_a_30_c"}%></td>
       <td><%= f.text_field :p12_a_30_d, {class: "form-control", id:"res_p12_a_30_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Tostadora</th>
+      <th scope="row">31. Tostadora</th>
       <td><%= f.select :p12_a_31_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_31_a"}%></td>
       <td><%= f.text_field :p12_a_31_b, {class: "form-control", id:"res_p12_a_31_b"}%></td>
       <td><%= f.text_field :p12_a_31_c, {class: "form-control", id:"res_p12_a_31_c"}%></td>
       <td><%= f.text_field :p12_a_31_d, {class: "form-control", id:"res_p12_a_31_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Bodega</th>
+      <th scope="row">32. Bodega</th>
       <td><%= f.select :p12_a_32_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_32_a"}%></td>
       <td><%= f.text_field :p12_a_32_b, {class: "form-control", id:"res_p12_a_32_b"}%></td>
       <td><%= f.text_field :p12_a_32_c, {class: "form-control", id:"res_p12_a_32_c"}%></td>
       <td><%= f.text_field :p12_a_32_d, {class: "form-control", id:"res_p12_a_32_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Arado mecánico</th>
+      <th scope="row">33. Arado mecánico</th>
       <td><%= f.select :p12_a_33_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_33_a"}%></td>
       <td><%= f.text_field :p12_a_33_b, {class: "form-control", id:"res_p12_a_33_b"}%></td>
       <td><%= f.text_field :p12_a_33_c, {class: "form-control", id:"res_p12_a_33_c"}%></td>
       <td><%= f.text_field :p12_a_33_d, {class: "form-control", id:"res_p12_a_33_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Tractor</th>
+      <th scope="row">34. Tractor</th>
       <td><%= f.select :p12_a_34_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_34_a"}%></td>
       <td><%= f.text_field :p12_a_34_b, {class: "form-control", id:"res_p12_a_34_b"}%></td>
       <td><%= f.text_field :p12_a_34_c, {class: "form-control", id:"res_p12_a_34_c"}%></td>
       <td><%= f.text_field :p12_a_34_d, {class: "form-control", id:"res_p12_a_34_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Cosechadora mecánica</th>
+      <th scope="row">35. Cosechadora mecánica</th>
       <td><%= f.select :p12_a_35_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_35_a"}%></td>
       <td><%= f.text_field :p12_a_35_b, {class: "form-control", id:"res_p12_a_35_b"}%></td>
       <td><%= f.text_field :p12_a_35_c, {class: "form-control", id:"res_p12_a_35_c"}%></td>
       <td><%= f.text_field :p12_a_35_d, {class: "form-control", id:"res_p12_a_35_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Planta de lavado</th>
+      <th scope="row">36. Planta de lavado</th>
       <td><%= f.select :p12_a_36_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_36_a"}%></td>
       <td><%= f.text_field :p12_a_36_b, {class: "form-control", id:"res_p12_a_36_b"}%></td>
       <td><%= f.text_field :p12_a_36_c, {class: "form-control", id:"res_p12_a_36_c"}%></td>
       <td><%= f.text_field :p12_a_36_d, {class: "form-control", id:"res_p12_a_36_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Mesa de selección</th>
+      <th scope="row">37. Mesa de selección</th>
       <td><%= f.select :p12_a_37_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_37_a"}%></td>
       <td><%= f.text_field :p12_a_37_b, {class: "form-control", id:"res_p12_a_37_b"}%></td>
       <td><%= f.text_field :p12_a_37_c, {class: "form-control", id:"res_p12_a_37_c"}%></td>
       <td><%= f.text_field :p12_a_37_d, {class: "form-control", id:"res_p12_a_37_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Cuarto frío</th>
+      <th scope="row">38. Cuarto frío</th>
       <td><%= f.select :p12_a_38_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_38_a"}%></td>
       <td><%= f.text_field :p12_a_38_b, {class: "form-control", id:"res_p12_a_38_b"}%></td>
       <td><%= f.text_field :p12_a_38_c, {class: "form-control", id:"res_p12_a_38_c"}%></td>
       <td><%= f.text_field :p12_a_38_d, {class: "form-control", id:"res_p12_a_38_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Camioneta, camión</th>
+      <th scope="row">39. Camioneta, camión</th>
       <td><%= f.select :p12_a_39_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_a_39_a"}%></td>
       <td><%= f.text_field :p12_a_39_b, {class: "form-control", id:"res_p12_a_39_b"}%></td>
       <td><%= f.text_field :p12_a_39_c, {class: "form-control", id:"res_p12_a_39_c"}%></td>
@@ -313,7 +776,7 @@
 </table>
 </div>
 
-<div class="continer row" style="margin-left: 10px; margin-right: 10px;">
+<div class=" row" style="margin-left: 10px; margin-right: 10px;">
 
   <h6 id="div_p12_b" style="margin-top: 20px;">b. Activos productivos para la actividad pecuaria</h6>
 
@@ -329,136 +792,154 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Incubadora</th>
+      <th scope="row">1. Incubadora</th>
       <td><%= f.select :p12_b_1_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_1_a"}%></td>
       <td><%= f.text_field :p12_b_1_b, {class: "form-control", id:"res_p12_b_1_b"}%></td>
       <td><%= f.text_field :p12_b_1_c, {class: "form-control", id:"res_p12_b_1_c"}%></td>
       <td><%= f.text_field :p12_b_1_d, {class: "form-control", id:"res_p12_b_1_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Sala de levante</th>
+      <th scope="row">2. Sala de levante</th>
       <td><%= f.select :p12_b_2_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_2_a"}%></td>
       <td><%= f.text_field :p12_b_2_b, {class: "form-control", id:"res_p12_b_2_b"}%></td>
       <td><%= f.text_field :p12_b_2_c, {class: "form-control", id:"res_p12_b_2_c"}%></td>
       <td><%= f.text_field :p12_b_2_d, {class: "form-control", id:"res_p12_b_2_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Galpones</th>
+      <th scope="row">3. Galpones</th>
       <td><%= f.select :p12_b_3_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_3_a"}%></td>
       <td><%= f.text_field :p12_b_3_b, {class: "form-control", id:"res_p12_b_3_b"}%></td>
       <td><%= f.text_field :p12_b_3_c, {class: "form-control", id:"res_p12_b_3_c"}%></td>
       <td><%= f.text_field :p12_b_3_d, {class: "form-control", id:"res_p12_b_3_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Corrales</th>
+      <th scope="row">4. Corrales</th>
       <td><%= f.select :p12_b_4_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_4_a"}%></td>
       <td><%= f.text_field :p12_b_4_b, {class: "form-control", id:"res_p12_b_4_b"}%></td>
       <td><%= f.text_field :p12_b_4_c, {class: "form-control", id:"res_p12_b_4_c"}%></td>
       <td><%= f.text_field :p12_b_4_d, {class: "form-control", id:"res_p12_b_4_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Comederos y abrevaderos</th>
+      <th scope="row">5. Comederos y abrevaderos</th>
       <td><%= f.select :p12_b_5_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_5_a"}%></td>
       <td><%= f.text_field :p12_b_5_b, {class: "form-control", id:"res_p12_b_5_b"}%></td>
       <td><%= f.text_field :p12_b_5_c, {class: "form-control", id:"res_p12_b_5_c"}%></td>
       <td><%= f.text_field :p12_b_5_d, {class: "form-control", id:"res_p12_b_5_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Lagos o jaulas en laguna</th>
+      <th scope="row">6. Lagos o jaulas en laguna</th>
       <td><%= f.select :p12_b_6_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_6_a"}%></td>
       <td><%= f.text_field :p12_b_6_b, {class: "form-control", id:"res_p12_b_6_b"}%></td>
       <td><%= f.text_field :p12_b_6_c, {class: "form-control", id:"res_p12_b_6_c"}%></td>
       <td><%= f.text_field :p12_b_6_d, {class: "form-control", id:"res_p12_b_6_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Maquina para ordeño</th>
+      <th scope="row">7. Maquina para ordeño</th>
       <td><%= f.select :p12_b_7_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_7_a"}%></td>
       <td><%= f.text_field :p12_b_7_b, {class: "form-control", id:"res_p12_b_7_b"}%></td>
       <td><%= f.text_field :p12_b_7_c, {class: "form-control", id:"res_p12_b_7_c"}%></td>
       <td><%= f.text_field :p12_b_7_d, {class: "form-control", id:"res_p12_b_7_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Sala de ordeño</th>
+      <th scope="row">8. Sala de ordeño</th>
       <td><%= f.select :p12_b_8_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_8_a"}%></td>
       <td><%= f.text_field :p12_b_8_b, {class: "form-control", id:"res_p12_b_8_b"}%></td>
       <td><%= f.text_field :p12_b_8_c, {class: "form-control", id:"res_p12_b_8_c"}%></td>
       <td><%= f.text_field :p12_b_8_d, {class: "form-control", id:"res_p12_b_8_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Planta de sacrificio</th>
+      <th scope="row">9. Planta de sacrificio</th>
       <td><%= f.select :p12_b_9_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_9_a"}%></td>
       <td><%= f.text_field :p12_b_9_b, {class: "form-control", id:"res_p12_b_9_b"}%></td>
       <td><%= f.text_field :p12_b_9_c, {class: "form-control", id:"res_p12_b_9_c"}%></td>
       <td><%= f.text_field :p12_b_9_d, {class: "form-control", id:"res_p12_b_9_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Sala de empaque</th>
+      <th scope="row">10. Sala de empaque</th>
       <td><%= f.select :p12_b_10_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_10_a"}%></td>
       <td><%= f.text_field :p12_b_10_b, {class: "form-control", id:"res_p12_b_10_b"}%></td>
       <td><%= f.text_field :p12_b_10_c, {class: "form-control", id:"res_p12_b_10_c"}%></td>
       <td><%= f.text_field :p12_b_10_d, {class: "form-control", id:"res_p12_b_10_d"}%></td>
     </tr>
     <tr>
-      <th scope="row">Camioneta, camión</th>
+      <th scope="row">11. Tanque de leche</th>
       <td><%= f.select :p12_b_11_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_11_a"}%></td>
       <td><%= f.text_field :p12_b_11_b, {class: "form-control", id:"res_p12_b_11_b"}%></td>
       <td><%= f.text_field :p12_b_11_c, {class: "form-control", id:"res_p12_b_11_c"}%></td>
       <td><%= f.text_field :p12_b_11_d, {class: "form-control", id:"res_p12_b_11_d"}%></td>
     </tr>
+    <tr>
+      <th scope="row">12. Camioneta, camión</th>
+      <td><%= f.select :p12_b_12_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p12_b_12_a"}%></td>
+      <td><%= f.text_field :p12_b_12_b, {class: "form-control", id:"res_p12_b_12_b"}%></td>
+      <td><%= f.text_field :p12_b_12_c, {class: "form-control", id:"res_p12_b_12_c"}%></td>
+      <td><%= f.text_field :p12_b_12_d, {class: "form-control", id:"res_p12_b_12_d"}%></td>
+    </tr>
   </tbody>
 </table>
+<div class="row col-md-12">
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo12">Anterior</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo12">Siguiente</a>
+    </div>
+  </div> 
+</div>
+  
 </div>
 
-  <div class="continer row" style="margin-left: 10px; margin-right: 10px;">
 
+<div class="hidden" id="Seccion_Modulo13">
+  <div class=" row" style="margin-left: 10px; margin-right: 10px;">
   <div class="alert alert-secondary col-lg-12" role="alert" style="margin-bottom: 10px; margin-top: 10px;">MODULO 13. Crédito asociado a la actividad agropecuaria
   </div>
 
-  <div class="continer col-md-4 row border border-secundary" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" col-md-4 row border border-secundary" style="margin-right: 10px; margin-left: 10px;">
 
   <div class="field col-md-12" id="div_p13_1a" style="margin-top: 10px;">
-      <%= f.label :p13_1a, "1. ¿Porque?" %>
+      <%= f.label :p13_1a, "1. ¿Actualmente tiene créditos vigentes que hayan sido solicitados para atender necesidades de su finca?" %>
       <%= f.select :p13_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p13_1a"}%>
     </div>
     <div class="field col-md-12 text-center" id="div_p13_1b" style="margin-top: 10px;">
     <%= f.label :p13_1b, "¿Cuántos?" %>
-    <div class="""" id="div_p13_1b">
+    <div class="hidden" id="div_p13_1b">
     <%= f.text_field :p13_1b, {class: "form-control", id:"res_p13_1b"}%>
     </div>
   </div>
   </div>
 
   <div class="field col-md-3" id="div_p13_1a" style="margin-top: 10px;">
-      <%= f.label :p13_2, "2. De estos créditos ¿Cuántos le aprobaron después de enero de 2017?" %>
+      <%= f.label :p13_2, "2. De estos créditos, ¿cuántos le aprobaron después de enero de 2017?" %><p class="font-italic text-center">Número créditos</p>
       <%= f.text_field :p13_2, {class: "form-control", id:"res_p13_1a"}%>
   </div>
 
-  <div class="continer col-md-4 row border border-secundary" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" col-md-4 row border border-secundary" style="margin-right: 10px; margin-left: 10px;">
 
   <div class="field col-md-12" id="div_p13_3a" style="margin-top: 10px;">
-      <%= f.label :p13_3a, "3. ¿Alguno de estos créditos es refinanciación de deuda?" %>
+      <%= f.label :p13_3a, "3. ¿Alguno de estos créditos es refinanciación de deuda?" %>
       <%= f.select :p13_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p13_1a"}%>
   </div>
   <div class="field col-md-12 text-center" id="div_p13_3b" style="margin-top: 10px;">
-    <%= f.label :p13_3b, "¿Cuántos?" %>
-  <div class="""" id="div_p13_3b">
+    <%= f.label :p13_3b, "¿Cuántos?" %>
+  <div class="hidden" id="div_p13_3b">
     <%= f.text_field :p13_3b, {class: "form-control", id:"res_p13_3b"}%>
   </div>
   </div>
   </div>
 
-  <div class="alert alert-warning col-lg-12" id="div_p13_4"  style=" margin-bottom: 5px; margin-top: 10px;"><h6>4. ¿Cuál entidad o persona le otorgó los créditos vigentes? <d6 class="font-italic">(excluya las refinanciaciones)</d6></h6> 
+  <div class="alert alert-warning col-lg-12" id="div_p13_4"  style=" margin-bottom: 5px; margin-top: 10px; margin-left: 10px; margin-right: 10px;"><h6>4. ¿Cuál entidad o persona le otorgó los créditos vigentes?<d6 class="font-italic">(excluya las refinanciaciones)</d6></h6> 
     </div>
 
-  <div class="continer row alert-warning col-lg-12" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" row alert-warning col-lg-12" style="margin-right: 10px; margin-left: 10px;">
 
     <table class="table" id=div_p13_4>
   <thead>
     <tr>
       <th scope="col" class="text-center">Entidad</th>
       <th scope="col" class="text-center"></th>
-      <th scope="col" class="text-center">Número de Créditos</th>
-      <th scope="col" class="text-center">Valores<p class="font-italic">($ millones)</p></th></th>
+      <th scope="col" class="text-center">Número de Créditos</th>
+      <th scope="col" class="text-center">Valor<p class="font-italic">($ millones)</p></th></th>
       <th scope="col" class="text-center">Plazo<p class="font-italic">(meses)</p></th>
       <th scope="col" class="text-center">Año de desembolso</th>
     </tr>
@@ -514,18 +995,17 @@
     </tr>
     <tr>
       <th scope="row">7. Otro</th>
-      <td><%= f.text_field :p13_4_7_a, {class: "form-control", id:"res_p13_4_7_a"} %>¿Cual?</td>
+      <td><%= f.text_field :p13_4_7_a, {class: "form-control", id:"res_p13_4_7_a"} %>¿Cuál?</td>
       <td><%= f.text_field :p13_4_7_b, {class: "form-control", id:"res_p13_4_7_b"} %></td>
       <td><%= f.text_field :p13_4_7_c, {class: "form-control", id:"res_p13_4_7_c"} %></td>
       <td><%= f.text_field :p13_4_7_d, {class: "form-control", id:"res_p13_4_7_d"} %></td>
       <td><%= f.text_field :p13_4_7_e, {class: "form-control", id:"res_p13_4_7_e"} %></td>
     </tr>
-    
   </tbody>
 </table>
 </div>
 
-<div class="continer row col-md-6" style="margin-left: 10px;">
+<div class=" border row col-md-6" style="margin-left: 10px; margin-top: 10px;">
 
 <div class= "field col-md-12" id="div_p13_5a" style="margin-top: 20px;">
       <%= f.label :p13_5a, "5.  ¿Para qué pidió estos préstamos?"%><p>(puede marcar más de una opción)</p>
@@ -554,14 +1034,14 @@
   <label class="form-check-label" for="p13_5a">Consumo</label>
   <p></p>
   <input class="form-check-input" type="checkbox" value="" id="p13_5a">
-  <label class="form-check-label" for="p13_5a">Otro. ¿Cual?
+  <label class="form-check-label" for="p13_5a">Otro. ¿Cuál?
     <div id="div_p13_5b"><%= f.text_field :p13_5b, {class: "form-control", id:"res_p13_5b"} %>
   </div></label>
   </div>
   </div>
 </div>
 
-<div class="continer row col-md-6" style="margin-left: 10px;">
+<div class=" border row col-md-6" style="margin-left: 10px; margin-top: 10px;">
 
 <div class= "field col-md-12" id="div_p13_6a" style="margin-top: 20px;">
       <%= f.label :p13_6a, "6. ¿Para qué tipo de labores?"%><p>(puede marcar más de una opción)</p>
@@ -586,7 +1066,7 @@
   <label class="form-check-label" for="p13_6a">Fertilización</label>
   <p></p>
   <input class="form-check-input" type="checkbox" value="" id="p13_6a">
-  <label class="form-check-label" for="p13_6a">Otro. ¿Cual?
+  <label class="form-check-label" for="p13_6a">Otro. ¿Cuál?
     <div id="div_p13_6b"><%= f.text_field :p13_6b, {class: "form-control", id:"res_p13_6b"} %>
   </div></label>
   </div>
@@ -594,7 +1074,7 @@
 </div>
 
 
-<div class="continer row col-md-6" style="margin-left: 10px;">
+<div class=" border row col-md-6" style="margin-left: 10px;">
 
 <div class= "field col-md-12" id="div_p13_7a" style="margin-top: 20px;">
       <%= f.label :p13_7a, "7. ¿Para qué tipo de inversión?"%><p>(puede marcar más de una opción)</p>
@@ -607,14 +1087,14 @@
   <label class="form-check-label" for="p13_7a">Compra de vehículo</label>
   <p></p>
   <input class="form-check-input" type="checkbox" value="" id="p13_7a">
-  <label class="form-check-label" for="p13_7a">Otro. ¿Cual?
+  <label class="form-check-label" for="p13_7a">Otro. ¿Cuál?
     <div id="div_p13_7b"><%= f.text_field :p13_7b, {class: "form-control", id:"res_p13_7b"} %>
   </div></label>
   </div>
   </div>
 </div>
 
-<div class="continer row col-md-6" style="margin-left: 10px;">
+<div class=" border row col-md-6" style="margin-left: 10px;">
 
 <div class= "field col-md-12" id="div_p13_8a" style="margin-top: 20px;">
       <%= f.label :p13_8a, "8. ¿Qué garantías le exigieron?"%><p>(puede marcar más de una opción)</p>
@@ -652,7 +1132,7 @@
   </div>
 </div>
 
-<div class="row continer col-lg-12" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+<div class="row  col-lg-12" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <div class="field col-md-4" id="div_p13_9" style="margin-top: 10px;">
       <%= f.label :p13_9, "9. ¿No tiene ningún crédito por qué...?" %>
@@ -664,26 +1144,26 @@
       <%= f.select :p13_10, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p13_10"}%>
     </div>
 
-    <div class="continer row col-md-4">
+    <div class=" row col-md-4">
 
     <div class="field col-md-12" id="div_p13_11a" style="margin-top: 10px;">
       <%= f.label :p13_11a, "11. ¿Por qué no pidió prestado?" %>
       <%= f.select :p13_11a, ["No le gusta endeudarse", "Hay que hacer muchos trámites y son costosos", "No tiene información clara sobre las condiciones de los préstamos", "Sabe que no cumple con los requisitos exigidos", "No tiene garantías que respalden el préstamo", "Tendría que pagar intereses muy altos", "No lo necesitó", "Otro"],{:include_blank => true}, {class: "form-control", id:"res_p13_11a"}%>
     </div>
     <div class="field col-md-12 text-center" id="div_p13_11b" style="margin-top: 10px;">
-    <%= f.label :p13_11b, "¿Cual?" %>
-  <div class="""" id="div_p13_11b">
+    <%= f.label :p13_11b, "¿Cuál?" %>
+  <div class="hidden" id="div_p13_11b">
     <%= f.text_field :p13_11b, {class: "form-control", id:"res_p13_11b"}%>
   </div>
   </div>
   </div>
 
-  <div class="field col-md-6" id="div_p13_12" style="margin-top: 10px;">
-      <%= f.label :p13_12, "12. ¿Aunque actualmente tiene créditos vigentes, el año pasado solicitó algún otro crédito que le haya sido negado?" %>
+  <div class="field col-md-4" id="div_p13_12" style="margin-top: 10px;">
+      <%= f.label :p13_12, "12. ¿Aunque actualmente tiene créditos vigentes, el año pasado solicitó algún otro crédito que le haya sido negado?" %>
       <%= f.select :p13_12, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p13_12"}%>
     </div>
 
-    <div class="continer row col-md-6">
+    <div class=" row col-md-4">
 
   <div class="field col-md-12" id="div_p13_13a" style="margin-top: 10px;">
       <%= f.label :p13_13a, "13. ¿Por qué le negaron el crédito?" %>
@@ -691,7 +1171,7 @@
     </div>
     <div class="field col-md-4 text-center" id="div_p13_13b" style="margin-top: 10px;">
     <%= f.label :p13_13b, "¿Cual?" %>
-  <div class="""" id="div_p13_13b">
+  <div class="hidden" id="div_p13_13b">
     <%= f.text_field :p13_13b, {class: "form-control", id:"res_p13_13b"}%>
   </div>
   </div>
@@ -702,37 +1182,111 @@
       <%= f.select :p13_14, ["Si", "No" ],{:include_blank => true}, {class: "form-control", id:"res_p13_14"}%>
     </div>
 
-  <div class="field col-md-4" id="div_p13_15" style="margin-top: 10px;">
+  <div class="field col-md-6" id="div_p13_15" style="margin-top: 20px;">
       <%= f.label :p13_15, "15. El uso que le da a esta(s) cuenta(s) es para:" %>
-      <%= f.select :p13_15, ["Guardar dinero (ahorro)", "Recibir transferencias del Estado (Familias en acción, etc.", "Recibir salarios/pensiones", "Cobrar cheques", "Hacer transferencias o envíos (remesas)", "Recibir transferencias o envíos (remesas)", "PAgos (servicios públicos, proveedores, etc.)", "Recibe el pago por la cosecha", "Esta inactiva o no la usa" ],{:include_blank => true}, {class: "form-control", id:"res_p13_15"}%>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Guardar dinero (ahorro)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Recibir transferencias del Estado (familias en acción, etc.)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Recibir salarios/pensiones</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Cobrar cheques</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Hacer transferencias o envíos (remesas)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Recibir transferencias o envíos (remesas)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Pagos (servicios públicos, proveedores, etc.)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Recibe el pago por la cosecha</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_15">
+  <label class="form-check-label" for="p13_15">Está inactiva o no la usa</label>
+  <p></p>
     </div>
+  </div>
 
-  <div class="field col-md-4" id="div_p13_16" style="margin-top: 10px;">
+  <div class=" row col-md-6" style="margin-top: 10px;">
+
+  <div class="field col-md-12" id="div_p13_16" style="margin-top: 10px;">
       <%= f.label :p13_16, "16. ¿Cuántas veces utilizó esta(s) cuenta(s) en el último mes? " %>
       <%= f.text_field :p13_16, {class: "form-control", id:"res_p13_16"}%><p class="text-center font-italic">Número de veces</p>
     </div>
 
-  <div class="field col-md-6" id="div_p13_17" style="margin-top: 10px;">
+  <div class="field col-md-12" id="div_p13_17" style="margin-top: 10px;">
       <%= f.label :p13_17, "17. ¿En los últimos doce meses, algún miembro del hogar ha tenido algún tipo de seguro?" %>
       <%= f.select :p13_17, ["Si", "No" ],{:include_blank => true}, {class: "form-control", id:"res_p13_17"}%>
     </div>
+    </div>
 
-  <div class="field col-md-6" id="div_p13_18" style="margin-top: 10px;">
+  <div class="field col-md-12" id="div_p13_18" style="margin-top: 10px;">
       <%= f.label :p13_18, "18. ¿Qué tipo de seguro?" %>
-      <%= f.select :p13_18, ["Deudor vida (seguro para el pago del crédito por falecimiento)", "Seguro de vida", "Exequial", "Médico complementario o incapacidad", "Daños de la vivienda", "Daños de enseres (electrodomésticos, maquinaria, etc.)", "Seguro educativo", "Seguro de vehículo", "Seguro agropecuario", "Seguro climático", "Seguro al precio" ],{:include_blank => true}, {class: "form-control", id:"res_p13_18"}%>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Deudor vida (seguro para el pago de crédito por fallecimiento)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Seguro de vida</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Exequial</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Médico complementario o incapacidad</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Daños de la vivienda</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Daños de enseres (electrodomésticos, maquinaria, etc.)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Seguro educativo</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Seguro de vehículo</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Seguro agropecuario</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Seguro climático</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p13_18">
+  <label class="form-check-label" for="p13_18">Seguro al precio</label>
+  <p></p>
     </div>
+     <div class="row col-md-12">
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo13">Anterior</a>
     </div>
-  
-
-
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo13">Siguiente</a>
+    </div>
+  </div> 
+    </div>
+  </div>
+</div>
+</div>
+    
+<div class="hidden" id="Seccion_Modulo14">
   <div class="alert alert-secondary col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;">MODULO 14. Cuidado y protección del medio ambiente (en la finca principal del productor)
   </div>
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px;">
 
   <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Recurso hidrico</h4>
 
-  <div class=" continer row border" style="margin-right: 50px; margin-left: 50px;">
+  <div class="row border" style="margin-right: 50px; margin-left: 50px;">
 
     <h6 id="p14_1" class="col-md-12 field">1. Procedencia del agua para:</h6>
 
@@ -765,46 +1319,49 @@
       <%= f.select :p14_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_4"}%>
     </div>
 
-    <div class="continer row col-md-4" style="margin-left: 10px;">
+    <div class=" row border" style="margin-right: 20px; margin-left: 20px;">
+
+    <div class=" row col-md-4" style="margin-left: 10px;">
 
     <div class="field col-md-12" id="div_p14_5a" style="margin-top: 10px;">
       <%= f.label :p14_5a, "5. ¿Cuál es el consumo mensual?" %>
       <%= f.text_field :p14_5a, {class: "form-control", id:"res_p14_5a"}%>(en m3)
     </div>
-
     <div class="col-md-12 input-group" style="margin-top: 20px;" id="div_p14_5b">
       <%= f.radio_button :p14_5b, "No Sabe / No Responde" ,{class: "form-control", id:"res_p14_5b"}%><h6 class="text-center" style="prenameing-left: 1px; margin-top: 10px;">NS / NR</h6>
     </div>
     </div>
 
-    <div class="field col-md-4" id="div_p14_6" style="margin-top: 10px;>
+    <div class="field col-md-4">
+
+    <div class="field col-md-12" id="div_p14_6" style="margin-top: 10px;">
       <%= f.label :p14_6, "6. ¿Utiliza dispositivos que le permiten ahorrar agua en casa?" %>
       <%= f.select :p14_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_6"}%>
     </div>
 
-    <div class="field col-md-4" id="div_p14_7" style="margin-top: 10px;">
+    <div class="field col-md-12" id="div_p14_7" style="margin-top: 10px;">
       <%= f.label :p14_7, "7. ¿Despulpa el café con agua?" %>
       <%= f.select :p14_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_7"}%>
     </div>
+    </div>
 
-    <div class="continer row col-md-4">
+    <div class=" row col-md-4">
 
     <div class="field col-md-12" id="div_p14_8a" style="margin-top: 30px;">
-      <%= f.label :p14_8a, "8. ¿Utiliza dispositivos que le permiten ahorrar agua en casa?" %>
+      <%= f.label :p14_8a, "8. ¿Utiliza dispositivos que le permiten ahorrar agua en el proceso de producción de café?" %>
       <%= f.select :p14_8a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_8a"}%>
     </div>
     <div class="field col-md-12 text-center" id="div_p14_8b" style="margin-top: 10px;">
     <%= f.label :p14_8b, "¿Cuál?" %>
-  <div class="""" id="div_p14_8b">
+  <div class="hidden" id="div_p14_8b">
     <%= f.text_field :p14_8b, {class: "form-control", id:"res_p14_8b"}%>
   </div>
   </div>
 </div>
+</div>
 
-  <div class="continer row col-md-4" style="margin-top: 30px;">
-
-    <d6 id="div_p14_9" class="col-md-12">9. Las orillas de la fuente de agua que hacen parte del predio están protegidas con vegetación...?</d6>
-
+  <div class=" row col-md-4" style="margin-top: 30px;">
+    <d6 id="div_p14_9" class="col-md-12">9. ¿Las orillas de la fuentes de agua que hacen parte del predio están protegidas con vegetación...?</d6>
   <div class="field col-md-6 text-center" id="div_p14_9a" style="margin-top: 10px;">
       <%= f.label :p14_9a, "Natural" %>
       <%= f.select :p14_9a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_9a"}%>
@@ -815,195 +1372,222 @@
     </div>
   </div>
 
-  <div class="field col-md-4 text-center" id="div_p14_10" style="margin-top: 10px;">
-      <%= f.label :p14_10, "10. ¿Durante el 2017 tuvo problemas de escasez de agua?" %>
+
+  <div class=" row col-md-4">
+
+  <div class="field col-md-12" id="div_p14_10" style="margin-top: 30px;">
+      <%= f.label :p14_10, "10. ¿Durante 2017 tuvo problemas de escasez de agua?" %>
       <%= f.select :p14_10, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_10"}%>
     </div>
 
-  <div class="field col-md-4 text-center" id="div_p14_11" style="margin-top: 10px;">
+  <div class="field col-md-12" id="div_p14_11" style="margin-top: 30px;">
       <%= f.label :p14_11, "11. ¿Alguna vez ha tenido que regar el cultivo?" %>
       <%= f.select :p14_11, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_11"}%>
     </div>
+  </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_12" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_12" style="margin-top: 80px;">
       <%= f.label :p14_12, "12. En los últimos dos años, ¿Usted o las personas que habitan su vereda, han tenido conflictos relacionados con el agua?" %>
       <%= f.select :p14_12, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_12"}%>
     </div>
 
-  <div class="field col-md-4 text-center" id="div_p14_13" style="margin-top: 10px;">
-      <%= f.label :p14_13, "13. ¿Tiene tanque de almacenamiento de agua en la finca?" %>
+    <div class=" row border" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+
+  <div class="field col-md-6" id="div_p14_13" style="margin-top: 10px;">
+      <%= f.label :p14_13, "3. ¿Tiene tanque de almacenamiento de agua en la finca?" %>
       <%= f.select :p14_13, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_13"}%>
     </div>
 
-  <div class="field col-md-4 text-center" id="div_p14_14" style="margin-top: 10px;">
+
+  <div class="field col-md-6" id="div_p14_14" style="margin-top: 10px;">
       <%= f.label :p14_14, "14. ¿Lava el tanque de almacenamiento de agua?" %>
       <%= f.select :p14_14, ["Nunca", "Algunas veces", "Siempre"],{:include_blank => true}, {class: "form-control", id:"res_p14_14"}%>
     </div>
 
-  <div class="field col-md-4 text-center" id="div_p14_15" style="margin-top: 10px;">
+  <div class="field col-md-6" id="div_p14_15" style="margin-top: 10px;">
       <%= f.label :p14_15, "15. ¿Cuenta con una concesión de agua?" %>
       <%= f.select :p14_15, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_15"}%>
     </div>
-    <div class="field "" col-md-4 text-center" id="div_p14_15b" style="margin-top: 10px;">
+    <div class="field hidden col-md-6" id="div_p14_15b" style="margin-top: 10px;">
       <%= f.select :p14_15b, ["Tramitada por usted", "Soportada con la de su acueducto"],{:include_blank => true}, {class: "form-control", id:"res_p14_15b"}%>
     </div>
 
-  <div class="field col-md-4 text-center" id="div_p14_16" style="margin-top: 10px;">
-      <%= f.label :p14_16, "16. ¿En el año 2017 alguien de la familia se ha enfermado por la calidad del agua?" %>
+  <div class="field col-md-6" id="div_p14_16" style="margin-top: 10px;">
+      <%= f.label :p14_16, "16. ¿En el año 2017 alguien de la familia se ha enfermado por la calidad del agua?" %>
       <%= f.select :p14_16, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_16"}%>
     </div>
     </div>
+    </div>
 
-    <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+    <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Manejo de aguas residuales domésticas</h4>
 
-    <div class="field col-md-4 text-center" id="div_p14_17" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_17" style="margin-top: 10px;">
       <%= f.label :p14_17, "17. ¿Realiza tratamiento de aguas residuales en la vivienda?" %>
       <%= f.select :p14_17, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_17"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_18" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_18" style="margin-top: 10px;">
       <%= f.label :p14_18, "18. ¿Tiene trampa de grasa?" %>
       <%= f.select :p14_18, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_18"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_19" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_19" style="margin-top: 10px;">
       <%= f.label :p14_19, "19. ¿Hace mantenimiento a la trampa de grasa?" %>
       <%= f.select :p14_19, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_19"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_20" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_20" style="margin-top: 30px;">
       <%= f.label :p14_20, "20. ¿Tiene pozo séptico?" %>
       <%= f.select :p14_20, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_20"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_21" style="margin-top: 10px;">
+    <div class="field col-md-4 text-center" id="div_p14_21" style="margin-top: 30px;">
       <%= f.label :p14_21, "21. ¿Hace mantenimiento al pozo séptico?" %>
       <%= f.select :p14_21, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_21"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_22" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_22" style="margin-top: 30px;">
       <%= f.label :p14_22, "22. ¿Tiene filtro anaerobio?" %>
       <%= f.select :p14_22, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_22"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_23" style="margin-top: 10px;">
-      <%= f.label :p14_23, "21. ¿Hace mantenimiento al filtro anaerobio?" %>
+    <div class="field col-md-4" id="div_p14_23" style="margin-top: 30px;">
+      <%= f.label :p14_23, "23. ¿Hace mantenimiento al filtro anaerobio?" %>
       <%= f.select :p14_23, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_23"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_24" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_24" style="margin-top: 30px;">
       <%= f.label :p14_24, "24. ¿Tiene humedal?" %>
       <%= f.select :p14_24, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_24"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_25" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_25" style="margin-top: 30px;">
       <%= f.label :p14_25, "25. ¿Tiene lagunas?" %>
       <%= f.select :p14_25, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_25"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_26" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_26" style="margin-top: 30px;">
       <%= f.label :p14_26, "26. ¿Vierte a la fuente del agua las aguas residuales de la vivienda sin tratamiento?" %>
       <%= f.select :p14_26, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_26"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_27" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_27" style="margin-top: 30px;">
       <%= f.label :p14_27, "27. ¿Vierte al suelo las aguas residuales de la vivienda sin tratamiento?" %>
       <%= f.select :p14_27, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_27"}%>
     </div>
     </div>
 
-    <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+    <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Manejo de residuos sólidos orgánicos domésticas</h4>
 
-    <div class="field col-md-4 text-center" id="div_p14_28" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_28" style="margin-top: 10px;">
       <%= f.label :p14_28, "28. ¿Tiene fosas para compostar solo residuos?" %>
       <%= f.select :p14_28, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_28"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_29" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_29" style="margin-top: 10px;">
       <%= f.label :p14_29, "29. ¿Que hacen con los residuos sólidos?" %>
       <%= f.select :p14_29, ["Quema", "Entierra", "Tira al cultivo"],{:include_blank => true}, {class: "form-control", id:"res_p14_29"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_30" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_30" style="margin-top: 10px;">
       <%= f.label :p14_30, "30. ¿Tiene lombricultivo para descomponer solo los residuos orgánicos?" %>
       <%= f.select :p14_30, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_30"}%>
     </div>
   </div>
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Manejo de residuos sólidos inorgánicos</h4>
 
-    <div class="field col-md-4 text-center" id="div_p14_31" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_31" style="margin-top: 10px;">
       <%= f.label :p14_31, "31. ¿Esta libre de residuos la vivienda?" %>
       <%= f.select :p14_31, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_31"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_32" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_32" style="margin-top: 10px;">
       <%= f.label :p14_32, "32. ¿Esta libre de residuos los lotes?" %>
       <%= f.select :p14_32, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_32"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_33" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_33" style="margin-top: 10px;">
       <%= f.label :p14_33, "33. ¿Esta libre de residuos el beneficiadero?" %>
       <%= f.select :p14_33, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_33"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_34" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_34" style="margin-top: 30px;">
       <%= f.label :p14_34, "34. ¿Realiza clasificación de residuos sólidos inorgánicos aprovechables (cartón, vidrio, chatarra, plástico)?" %>
       <%= f.select :p14_34, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_34"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_35" style="margin-top: 10px;">
-      <%= f.label :p14_35, "35. ¿La disponibilidad final de residuos no aprovechables, se hace mediante empresa de aseo?" %>
+    <div class="field col-md-4" id="div_p14_35" style="margin-top: 30px;">
+      <%= f.label :p14_35, "35. ¿La disposición final de residuos no aprovechables, se hace mediante empresa de aseo?" %>
       <%= f.select :p14_35, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_35"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_36" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_36" style="margin-top: 30px;">
       <%= f.label :p14_36, "36. ¿Que hace con los residuos no aprovechables?" %>
       <%= f.select :p14_36, ["Quema", "Entierra", "Tira al cultivo"],{:include_blank => true}, {class: "form-control", id:"res_p14_36"}%>
     </div>
   </div>
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Manejo de aguas residuales poscosecha</h4>
 
-    <div class="field col-md-6 text-center" id="div_p14_37" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_37" style="margin-top: 10px;">
       <%= f.label :p14_37, "37. ¿Cuenta con permiso de vertimiento?" %>
       <%= f.select :p14_37, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_37"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_38" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_38" style="margin-top: 10px;">
       <%= f.label :p14_38, "38. ¿Hace prácticas de reuso o de vertimiento cero?" %>
       <%= f.select :p14_38, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_38"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_39" style="margin-top: 10px;">
-      <%= f.label :p14_39, "39. ¿Teien tratamiento de aguas residuales para el café?" %>
+    <div class="field col-md-12" id="div_p14_39" style="margin-top: 10px;">
+      <%= f.label :p14_39, "39. ¿Tienen tratamiento de aguas residuales para el café?" %>
       <%= f.select :p14_39, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_39"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_40" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_40" style="margin-top: 10px;">
       <%= f.label :p14_40, "40. ¿El tratamiento qué realiza a las aguas residuales de la poscosecha es...?" %>
-      <%= f.select :p14_40, ["Biológico (microorganismos, plantas acuáticas, laguans, reactores)", "Físico (filtros de arena, carbón activado, gravilla, desnatador)", "Químico (adición de cal, otro producto químico)"],{:include_blank => true}, {class: "form-control", id:"res_p14_40"}%>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="p14_40">
+  <label class="form-check-label" for="p14_40">Biológico (microorganismos, plantas acuáticas, lagunas, reactores)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p14_40">
+  <label class="form-check-label" for="p14_40">Físico (filtros de arena, carbón activado, gravilla, desnatador)</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p14_40">
+  <label class="form-check-label" for="p14_40">Químico (adición de cal, otro producto químico)</label>
+  </div>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_41" style="margin-top: 10px;">
-      <%= f.label :p14_41, "41. Si no hacen tratamiento, ¿Quéhacen con las aguas residuales del café?" %>
-      <%= f.select :p14_41, ["Las vierte a las fuentes de agua", "Las vierte al suelo", "Las usa para reigo"],{:include_blank => true}, {class: "form-control", id:"res_p14_41"}%>
+    <div class="field col-md-6" id="div_p14_41" style="margin-top: 10px;">
+      <%= f.label :p14_41, "41. Si no hace tratamiento, ¿Qué hace con las aguas residuales del café?" %>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="p14_41">
+  <label class="form-check-label" for="p14_41">Las vierte a las fuentes de agua</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p14_41">
+  <label class="form-check-label" for="p14_41">Las vierte al suelo</label>
+  <p></p>
+  <input class="form-check-input" type="checkbox" value="" id="p14_41">
+  <label class="form-check-label" for="p14_41">Las utiliza para riego</label>
+  <p></p>
+</div>
     </div>
 
-    <div class="continer row col-md-6">
-    <div class="field col-md-12 text-center" id="div_p14_42" style="margin-top: 10px;">
-      <%= f.label :p14_42, "42. ¿Procesa el café por fermentación natural?" %>
+    <div class=" row col-md-4">
+    <div class="field col-md-12 text-center" id="div_p14_42" style="margin-top: 30px;">
+      <%= f.label :p14_42, "42. ¿Procesa el café por fermentación natural?" %>
       <%= f.select :p14_42, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_42"}%>
     </div>
-  <div class=""" col-md-12" id="div_p14_42a" style="margin-top: 5px;">
+  <div class="hidden col-md-12" id="div_p14_42a" style="margin-top: 5px;">
     <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="p14_42a">
   <label class="form-check-label" for="p14_42a">¿Las aguas mieles son recolectadas y se agregan a la pulpa?</label>
@@ -1014,12 +1598,12 @@
   </div>
   </div>
 
-  <div class="continer row col-md-6">
-  <div class="field col-md-12 text-center" id="div_p14_43" style="margin-top: 10px;">
+  <div class=" row col-md-4">
+  <div class="field col-md-12 text-center" id="div_p14_43" style="margin-top: 30px;">
       <%= f.label :p14_43, "43. ¿Procesa el café utilizando Ecomill?" %>
       <%= f.select :p14_43, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_43"}%>
     </div>
-    <div class=""" col-md-12" id="div_p14_43a" style="margin-top: 5px;">
+    <div class="hidden col-md-12" id="div_p14_43a" style="margin-top: 5px;">
     <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="p14_43a">
   <label class="form-check-label" for="p14_43a">¿El mucílago se agrega a la pulpa?</label>
@@ -1030,12 +1614,12 @@
   </div>
   </div>
 
-  <div class="continer row col-md-6">
-    <div class="field col-md-12 text-center" id="div_p14_44" style="margin-top: 10px;">
+  <div class=" row col-md-4">
+    <div class="field col-md-12 text-center" id="div_p14_44" style="margin-top: 30px;">
       <%= f.label :p14_44, "44. ¿Procesa el café utilizando desmucilaginador?" %>
       <%= f.select :p14_44, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_44"}%>
     </div>
-    <div class=""" col-md-12" id="div_p14_44a" style="margin-top: 5px;">
+    <div class="hidden col-md-12" id="div_p14_44a" style="margin-top: 5px;">
     <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="p14_44a">
   <label class="form-check-label" for="p14_44a">¿El mucílago se agrega a la pulpa?</label>
@@ -1050,149 +1634,155 @@
   </div>
 </div>
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Manejo de residuos orgánicos poscosecha</h4>
 
-    <div class="field col-md-6 text-center" id="div_p14_45" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_45" style="margin-top: 10px;">
       <%= f.label :p14_45, "45. ¿Riega la pulpa fresca en el cafetal?" %>
       <%= f.select :p14_45, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_45"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_46" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_46" style="margin-top: 10px;">
       <%= f.label :p14_46, "46. ¿Transporta la pulpa en seco?" %>
       <%= f.select :p14_46, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_46"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_47" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_47" style="margin-top: 10px;">
       <%= f.label :p14_47, "47. ¿Tiene fosa para compostar pulpa?" %>
       <%= f.select :p14_47, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_47"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_48" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_48" style="margin-top: 10px;">
       <%= f.label :p14_48, "48. ¿Tiene lombricultivo para descomponer la pulpa?" %>
       <%= f.select :p14_48, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_48"}%>
     </div>
   </div>
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Manejo de residuos peligrosos</h4>
 
-    <div class="field col-md-6 text-center" id="div_p14_49" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_49" style="margin-top: 10px;">
       <%= f.label :p14_49, "49. ¿Utiliza agroquímicos?" %>
       <%= f.select :p14_49, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_49"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_50" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_50" style="margin-top: 10px;">
       <%= f.label :p14_50, "50. ¿Tiene envases vacíos de agroquímicos?" %>
       <%= f.select :p14_50, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_50"}%>
     </div>
 
-    <h6 id="div_p14_51" class="col-lg-12" style="margin-top: 10px;">51.  Los envases vacíos de agroquímicos...</h6>
+    <div class=" row border" style="margin-right: 10px; margin-left: 10px;">
 
-    <div class="field col-md-4 text-center" id="div_p14_51a" style="margin-top: 10px;">
+    <d6 id="div_p14_51" class="col-lg-12" style="margin-top: 10px;">51.  Los envases vacíos de agroquímicos...</d6>
+
+    <div class="field col-md-4" id="div_p14_51a" style="margin-top: 10px;">
       <%= f.label :p14_51a, "a. Los entrega al servicio de aseo" %>
       <%= f.select :p14_51a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_51a"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_51b" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_51b" style="margin-top: 10px;">
       <%= f.label :p14_51b, "b. Los entierra" %>
       <%= f.select :p14_51b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_51b"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_51c" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_51c" style="margin-top: 10px;">
       <%= f.label :p14_51c, "c. Los quema" %>
       <%= f.select :p14_51c, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_51c"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_51d" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_51d" style="margin-top: 10px;">
       <%= f.label :p14_51d, "d. Los reutiliza" %>
       <%= f.select :p14_51d, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_51d"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_51e" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_51e" style="margin-top: 10px;">
       <%= f.label :p14_51e, "e. Los acumula" %>
       <%= f.select :p14_51e, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_51e"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p14_51f" style="margin-top: 10px;">
+    <div class="field col-md-4" id="div_p14_51f" style="margin-top: 10px;">
       <%= f.label :p14_51f, "f. Los entrega a otra entidad" %>
       <%= f.select :p14_51f, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_51f"}%>
     </div>
+    </div>
 
-    <h6 class="col-lg-12" style="margin-top: 10px;">52.  Para los envases vacíos de agroquímicos realiza...</h6>
+    <div class=" row border" style="margin-left: 10px; margin-right: 10px;">
 
-    <div class="field col-md-3 text-center" id="div_p14_52a" style="margin-top: 10px;">
+    <d6 class="col-lg-12" style="margin-top: 10px;">52.  Para los envases vacíos de agroquímicos realiza...</d6>
+
+    <div class="field col-md-3" id="div_p14_52a" style="margin-top: 10px;">
       <%= f.label :p14_52a, "a. Triple lavado" %>
       <%= f.select :p14_52a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_52a"}%>
     </div>
 
-    <div class="field col-md-3 text-center" id="div_p14_52b" style="margin-top: 10px;">
+    <div class="field col-md-3" id="div_p14_52b" style="margin-top: 10px;">
       <%= f.label :p14_52b, "b. Inutilización" %>
       <%= f.select :p14_52b, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_52b"}%>
     </div>
 
-    <div class="field col-md-3 text-center" id="div_p14_52c" style="margin-top: 10px;">
+    <div class="field col-md-3" id="div_p14_52c" style="margin-top: 10px;">
       <%= f.label :p14_52c, "c. Mantiene la etiqueta" %>
       <%= f.select :p14_52c, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_52c"}%>
     </div>
 
-    <div class="field col-md-3 text-center" id="div_p14_52d" style="margin-top: 10px;">
+    <div class="field col-md-3" id="div_p14_52d">
       <%= f.label :p14_52d, "d. Los deposita en un centro de acopio" %>
       <%= f.select :p14_52d, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_52d"}%>
     </div>
+    </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_53" style="margin-top: 10px;">
-      <%= f.label :p14_53, "53. ¿Tiene pilas terminadas, baterias terminadas, envases vacios de desinfectantes para el aseo de la vivienda, envases vacíos de aceite y gasolina?" %>
+    <div class="field col-md-6" id="div_p14_53" style="margin-top: 10px;">
+      <%= f.label :p14_53, "53. ¿Tiene pilas terminadas, baterías terminadas, envases vacíos de desinfectantes para el aseo de la vivienda, envases vacíos de aceite y gasolina?" %>
       <%= f.select :p14_53, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_53"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_54" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_54" style="margin-top: 40px;">
       <%= f.label :p14_54, "54. ¿Qué hace con estos elementos?" %>
       <%= f.select :p14_54, ["Los quema", "Los entierra", "Los entrega al servicio de aseo"],{:include_blank => true}, {class: "form-control", id:"res_p14_54"}%>
     </div>
   </div>
 
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Almacenamiento de combustibles</h4>
 
 
-    <div class="field col-md-6 text-center" id="div_p14_55" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_55" style="margin-top: 10px;">
       <%= f.label :p14_55, "55. ¿Utiliza combustibles en la finca?" %>
       <%= f.select :p14_55, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_55"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_56" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_56" style="margin-top: 10px;">
       <%= f.label :p14_56, "56. ¿Tiene un sitio para el almacenamiento de combustibles?" %>
       <%= f.select :p14_56, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_56"}%>
     </div>
   </div>
 
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Conservación del suelo</h4>
 
-    <div class="field col-md-6 text-center" id="div_p14_57" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_57" style="margin-top: 10px;">
       <%= f.label :p14_57, "57. ¿En la finca se evidencia problemas de erosión o de derrumbes?" %>
       <%= f.select :p14_57, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_57"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_58" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_58" style="margin-top: 10px;">
       <%= f.label :p14_58, "58. ¿Realiza análisis de suelo en los lotes de su(s) finca(s) cafeteras?" %>
       <%= f.select :p14_58, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_58"}%>
     </div>
 
-    <div class="continer row col-md-6">
-    <div class="field col-md-12 text-center" id="div_p14_59" style="margin-top: 10px;">
+    <div class=" row col-md-6">
+    <div class="field col-md-12" id="div_p14_59" style="margin-top: 10px;">
       <%= f.label :p14_59, "59. ¿Hace manejo de arvenses?" %>
       <%= f.select :p14_59, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_59"}%>
     </div>
     <div class="field" style="margin-left: 10px;"><%= f.label :p14_59a, "Para el manejo de arvenses" %></div>
-    <div class="col-md-12 """ id="div_p14_59a" style="margin-top: 5px;">
+    <div class="col-md-12 hidden" id="div_p14_59a" style="margin-top: 5px;">
     <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="p14_59a">
   <label class="form-check-label" for="p14_59a">¿Utiliza machete?</label>
@@ -1215,108 +1805,108 @@
   </div>
   </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_60" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_60" style="margin-top: 10px;">
       <%= f.label :p14_60, "60. ¿Realiza prácticas de conservación del suelo?" %>
       <%= f.select :p14_60, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_60"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_61" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_61" style="margin-top: 10px;">
       <%= f.label :p14_61, "61. ¿Permite las cobertura nobles?" %>
       <%= f.select :p14_61, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_61"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_62" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_62" style="margin-top: 10px;">
       <%= f.label :p14_62, "62. ¿Tiene árboles de sombrío en los lotes más pendientes y susceptibles a deslizamientos?" %>
       <%= f.select :p14_62, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_62"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_63" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_63" style="margin-top: 10px;">
       <%= f.label :p14_63, "63. ¿Protege los taludes y hace mantenimiento de caminos de la finca con coberturas vivas?" %>
       <%= f.select :p14_63, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_63"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_64" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_64" style="margin-top: 10px;">
       <%= f.label :p14_64, "64. ¿Utiliza barreras vivas?" %>
       <%= f.select :p14_64, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_64"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_65" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_65" style="margin-top: 10px;">
       <%= f.label :p14_65, "65. ¿Después del zoqueo deja ramillas y hojarasca como cobertura?" %>
       <%= f.select :p14_65, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_65"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_66" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_66" style="margin-top: 10px;">
       <%= f.label :p14_66, "66. ¿Durante el levante del café, los cultivos transitorios o pastos, los ubica siempre en los lotes de menor pendiente?" %>
       <%= f.select :p14_66, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_66"}%>
     </div>
   </div>
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Biodiversidad</h4>
 
-    <div class="field col-md-6 text-center" id="div_p14_67" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_67" style="margin-top: 10px;">
       <%= f.label :p14_67, "67. Tiene señalización que prohíba la cacería" %>
       <%= f.select :p14_67, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_67"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_68" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_68" style="margin-top: 10px;">
       <%= f.label :p14_68, "68. Hay evidencia de cacería (pieles, huesos)" %>
       <%= f.select :p14_68, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_68"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_69" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_69" style="margin-top: 10px;">
       <%= f.label :p14_69, "69. Tiene animales silvestres cautivos" %>
       <%= f.select :p14_69, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_69"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_70" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_70" style="margin-top: 10px;">
       <%= f.label :p14_70, "70. Tiene comederos para aves u otros animales" %>
       <%= f.select :p14_70, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_70"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_71" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_71" style="margin-top: 10px;">
       <%= f.label :p14_71, "71. Tiene nidos de avispas" %>
       <%= f.select :p14_71, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_71"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_72" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_72" style="margin-top: 10px;">
       <%= f.label :p14_72, "72. Tiene cercas vivas" %>
       <%= f.select :p14_72, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_72"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_73" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_73" style="margin-top: 10px;">
       <%= f.label :p14_73, "73. Tiene café con sombra" %>
       <%= f.select :p14_73, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_73"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_74" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_74" style="margin-top: 10px;">
       <%= f.label :p14_74, "74. Tiene sistema silvopastoril" %>
       <%= f.select :p14_74, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_74"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_75" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_75" style="margin-top: 10px;">
       <%= f.label :p14_75, "75. Tiene potreros" %>
       <%= f.select :p14_75, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_75"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_76" style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_76" style="margin-top: 10px;">
       <%= f.label :p14_76, "76. Tiene árboles dispersos en potreros" %>
       <%= f.select :p14_76, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_76"}%>
     </div>
   </div>
 
-  <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 25px; margin-top: 20px;">
+  <div class=" row border-warning border" style="margin-right: 10px; margin-left: 25px; margin-top: 20px;">
 
     <h4 class="text-center field font-weight-bold alert-warning alert col-lg-12">Prevención del fuego</h4>
 
-<div class="continer row col-md-6" style="margin-left: 250px">
+<div class=" row col-md-6" style="margin-left: 250px">
     <div class="field col-md-12 text-center" id="div_p14_77a style="margin-top: 10px;">
       <%= f.label :p14_77a, "77a. ¿Realiza quemas?" %>
       <%= f.select :p14_77a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p14_77a"}%>
     </div>
     <div class="field" style="margin-left: 10px;"><%= f.label :p14_77b, "Realiza quemas para..." %></div>
-    <div class="col-md-12 """ id="div_p14_77b" style="margin-top: 5px;">
+    <div class="col-md-12 hidden" id="div_p14_77b" style="margin-top: 5px;">
     <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="p14_77b">
   <label class="form-check-label" for="p14_77b">Limpieza de terrenos</label>
@@ -1331,61 +1921,72 @@
   </div>
 </div>
 
-    <div class="continer row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
+    <div class=" row border-warning border" style="margin-right: 10px; margin-left: 10px; margin-top: 20px;">
 
     <h4 class="text-center font-weight-bold alert-warning alert col-lg-12">Mano de obra en aspectos ambientales</h4>
 
-    <h5 id="div_p14_78" class="field col-lg-12">78. ¿Quién se encarga generalmente...?</h5>
+    <d5 id="div_p14_78" class="field col-lg-12">78. ¿Quién se encarga generalmente...?</d5>
 
-    <div class="field col-md-6 text-center" id="div_p14_78a style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_78a style="margin-top: 10px;">
       <%= f.label :p14_78a, "a. Del mantenimiento de la trampa de grasa y el pozo séptico" %>
       <%= f.select :p14_78a, ["Hombre del hogar", "Mujeres del hogar", "Niños del hogar", "Adultos mayores del hogar", "Todos los miembros del hogar", "Administrador", "Se contrata"],{:include_blank => true}, {class: "form-control", id:"res_p14_78a"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_78b style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_78b style="margin-top: 10px;">
       <%= f.label :p14_78b, "b. ¿De manejar los residuos sólidos orgánicos domésticos?" %>
       <%= f.select :p14_78b, ["Hombre del hogar", "Mujeres del hogar", "Niños del hogar", "Adultos mayores del hogar", "Todos los miembros del hogar", "Administrador", "Se contrata"],{:include_blank => true}, {class: "form-control", id:"res_p14_78b"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_78c style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_78c style="margin-top: 10px;">
       <%= f.label :p14_78c, "c. De manejar los residuos inorgánicos no aprovechables" %>
       <%= f.select :p14_78c, ["Hombre del hogar", "Mujeres del hogar", "Niños del hogar", "Adultos mayores del hogar", "Todos los miembros del hogar", "Administrador", "Se contrata"],{:include_blank => true}, {class: "form-control", id:"res_p14_78c"}%>
     </div>
 
-<div class="field col-md-6 text-center" id="div_p14_78d style="margin-top: 10px;">
+<div class="field col-md-6" id="div_p14_78d style="margin-top: 10px;">
       <%= f.label :p14_78d, "d. ¿Del mantenimiento del sistema de tratamiento de aguas residuales del café?" %>
       <%= f.select :p14_78d, ["Hombre del hogar", "Mujeres del hogar", "Niños del hogar", "Adultos mayores del hogar", "Todos los miembros del hogar", "Administrador", "Se contrata"],{:include_blank => true}, {class: "form-control", id:"res_p14_78d"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_78e style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_78e style="margin-top: 10px;">
       <%= f.label :p14_78e, "e. De realizar el manejo de la pulpa" %>
       <%= f.select :p14_78e, ["Hombre del hogar", "Mujeres del hogar", "Niños del hogar", "Adultos mayores del hogar", "Todos los miembros del hogar", "Administrador", "Se contrata"],{:include_blank => true}, {class: "form-control", id:"res_p14_78e"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_78f style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_78f style="margin-top: 10px;">
       <%= f.label :p14_78f, "f. De manejar los residuos de agroquímicos" %>
       <%= f.select :p14_78f, ["Hombre del hogar", "Mujeres del hogar", "Niños del hogar", "Adultos mayores del hogar", "Todos los miembros del hogar", "Administrador", "Se contrata"],{:include_blank => true}, {class: "form-control", id:"res_p14_78f"}%>
     </div>
 
-    <div class="field col-md-6 text-center" id="div_p14_78g style="margin-top: 10px;">
+    <div class="field col-md-6" id="div_p14_78g style="margin-top: 10px;">
       <%= f.label :p14_78g, "g. De manejar los combustibles" %>
       <%= f.select :p14_78g, ["Hombre del hogar", "Mujeres del hogar", "Niños del hogar", "Adultos mayores del hogar", "Todos los miembros del hogar", "Administrador", "Se contrata"],{:include_blank => true}, {class: "form-control", id:"res_p14_78g"}%>
     </div>
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo14">Anterior</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo14">Siguiente</a>
+    </div>
+  </div> 
   </div>
+    
+</div>
 
+<div class="hidden" id="Seccion_Modulo15">
   <div class="alert alert-secondary col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;">MODULO 15. Eventos que desestabilizaron al hogar durante los últimos años
   </div>
 
   <div class="alert alert-info col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h6>Tabla.  Durante los últimos años, ¿cuáles de los siguientes problemas o eventos se han presentado en este año?</d6></h6> 
-    </div>
+  </div>
 
-  <div class="continer row alert-info" style="margin-right: 10px; margin-left: 10px;">
+  <div class="row alert-info col-lg-12" style="margin-right: 10px; margin-left: 10px;">
 
     <table class="table">
   <thead>
     <tr>
       <th scope="col" class="text-center"></th>
-      <th scope="col" class="text-center"></th>
+      <th scope="col" class="text-center">Si./No.</th>
       <th scope="col" class="text-center">2. ¿Qué importancia tuvo para la estabilidad económica del hogar?</th>
       <th scope="col" class="text-center">3. ¿Qué hicieron principalemnte los miembros de este hogar para hacerle frente o superar este problema?</th>
       <th scope="col" class="text-center">4. ¿Cuántas veces ocurrió el evento en los últimos 3 años?</th>
@@ -1398,104 +1999,104 @@
       <td><%= f.select :p15_1a_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1a_2"} %></td>
       <td><%= f.select :p15_1a_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1a_3"} %></td>
       <td><%= f.text_field :p15_1a_4a, {class: "form-control", id:"res_p15_1a_4a"} %>a.2016<%= f.text_field :p15_1a_4b, {class: "form-control", id:"res_p15_1a_4b"} %>b.2017<%= f.text_field :p15_1a_4c, {class: "form-control", id:"res_p15_1a_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">b. Muerte del que era jefe del hogar o del cónyuge</td>
       <td><%= f.select :p15_1b_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1b_1"} %></td>
       <td><%= f.select :p15_1b_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1b_2"} %></td>
       <td><%= f.select :p15_1b_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1b_3"} %></td>
       <td><%= f.text_field :p15_1b_4a, {class: "form-control", id:"res_p15_1b_4a"} %>a.2016<%= f.text_field :p15_1b_4b, {class: "form-control", id:"res_p15_1b_4b"} %>b.2017<%= f.text_field :p15_1b_4c, {class: "form-control", id:"res_p15_1b_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">c. Muerte de algún(nos) otro(s) miembro(s) del hogar</td>
       <td><%= f.select :p15_1c_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1c_1"} %></td>
       <td><%= f.select :p15_1a_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1a_2"} %></td>
       <td><%= f.select :p15_1a_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1a_3"} %></td>
       <td><%= f.text_field :p15_1a_4a, {class: "form-control", id:"res_p15_1a_4a"} %>a.2016<%= f.text_field :p15_1a_4b, {class: "form-control", id:"res_p15_1a_4b"} %>b.2017<%= f.text_field :p15_1a_4c, {class: "form-control", id:"res_p15_1a_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">d. Separación de los cónyuges</td>
       <td><%= f.select :p15_1d_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1d_1"} %></td>
       <td><%= f.select :p15_1d_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1d_2"} %></td>
       <td><%= f.select :p15_1d_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1d_3"} %></td>
       <td><%= f.text_field :p15_1d_4a, {class: "form-control", id:"res_p15_1d_4a"} %>a.2016<%= f.text_field :p15_1d_4b, {class: "form-control", id:"res_p15_1d_4b"} %>b.2017<%= f.text_field :p15_1d_4c, {class: "form-control", id:"res_p15_1d_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">e. El jefe del hogar perdió su empleo</td>
       <td><%= f.select :p15_1e_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1e_1"} %></td>
       <td><%= f.select :p15_1e_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1e_2"} %></td>
       <td><%= f.select :p15_1e_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1e_3"} %></td>
       <td><%= f.text_field :p15_1e_4a, {class: "form-control", id:"res_p15_1e_4a"} %>a.2016<%= f.text_field :p15_1e_4b, {class: "form-control", id:"res_p15_1e_4b"} %>b.2017<%= f.text_field :p15_1e_4c, {class: "form-control", id:"res_p15_1e_4c"} %>c.2018</td>
-
     </tr>
+
     <tr>
       <td scope="row">f. El cónyuge perdió su empleo</td>
       <td><%= f.select :p15_1f_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1f_1"} %></td>
       <td><%= f.select :p15_1f_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1f_2"} %></td>
       <td><%= f.select :p15_1f_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1f_3"} %></td>
       <td><%= f.text_field :p15_1f_4a, {class: "form-control", id:"res_p15_1f_4a"} %>a.2016<%= f.text_field :p15_1f_4b, {class: "form-control", id:"res_p15_1f_4b"} %>b.2017<%= f.text_field :p15_1f_4c, {class: "form-control", id:"res_p15_1f_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">g. Otro miembro del hogar perdió su empleo</td>
       <td><%= f.select :p15_1g_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1g_1"} %></td>
       <td><%= f.select :p15_1g_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1g_2"} %></td>
       <td><%= f.select :p15_1g_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1g_3"} %></td>
       <td><%= f.text_field :p15_1g_4a, {class: "form-control", id:"res_p15_1g_4a"} %>a.2016<%= f.text_field :p15_1g_4b, {class: "form-control", id:"res_p15_1g_4b"} %>b.2017<%= f.text_field :p15_1g_4c, {class: "form-control", id:"res_p15_1g_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">h. Llegada o acogida de un familiar en el hogar</td>
       <td><%= f.select :p15_1h_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1h_1"} %></td>
       <td><%= f.select :p15_1h_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1h_2"} %></td>
       <td><%= f.select :p15_1h_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1h_3"} %></td>
       <td><%= f.text_field :p15_1h_4a, {class: "form-control", id:"res_p15_1h_4a"} %>a.2016<%= f.text_field :p15_1h_4b, {class: "form-control", id:"res_p15_1h_4b"} %>b.2017<%= f.text_field :p15_1h_4c, {class: "form-control", id:"res_p15_1h_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">i. Tuvieron que abandonar su lugar de residencia habitual</td>
       <td><%= f.select :p15_1i_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1i_1"} %></td>
       <td><%= f.select :p15_1i_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1i_2"} %></td>
       <td><%= f.select :p15_1i_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1i_3"} %></td>
       <td><%= f.text_field :p15_1i_4a, {class: "form-control", id:"res_p15_1i_4a"} %>a.2016<%= f.text_field :p15_1i_4b, {class: "form-control", id:"res_p15_1i_4b"} %>b.2017<%= f.text_field :p15_1i_4c, {class: "form-control", id:"res_p15_1i_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">j. Quiebras y / o cierres del (los) negocio (s) familiar (es)</td>
       <td><%= f.select :p15_1j_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1j_1"} %></td>
       <td><%= f.select :p15_1j_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1j_2"} %></td>
       <td><%= f.select :p15_1j_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1j_3"} %></td>
       <td><%= f.text_field :p15_1j_4a, {class: "form-control", id:"res_p15_1j_4a"} %>a.2016<%= f.text_field :p15_1j_4b, {class: "form-control", id:"res_p15_1j_4b"} %>b.2017<%= f.text_field :p15_1j_4c, {class: "form-control", id:"res_p15_1j_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">k. Pérdida o recorte de remesas</td>
       <td><%= f.select :p15_1k_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1k_1"} %></td>
       <td><%= f.select :p15_1k_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1k_2"} %></td>
       <td><%= f.select :p15_1k_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1k_3"} %></td>
       <td><%= f.text_field :p15_1k_4a, {class: "form-control", id:"res_p15_1k_4a"} %>a.2016<%= f.text_field :p15_1k_4b, {class: "form-control", id:"res_p15_1k_4b"} %>b.2017<%= f.text_field :p15_1k_4c, {class: "form-control", id:"res_p15_1k_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">l. Pérdida de fincas, lotes, terrenos o pedazos de tierra</td>
       <td><%= f.select :p15_1l_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1l_1"} %></td>
       <td><%= f.select :p15_1l_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1l_2"} %></td>
       <td><%= f.select :p15_1l_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1l_3"} %></td>
       <td><%= f.text_field :p15_1l_4a, {class: "form-control", id:"res_p15_1l_4a"} %>a.2016<%= f.text_field :p15_1l_4b, {class: "form-control", id:"res_p15_1l_4b"} %>b.2017<%= f.text_field :p15_1l_4c, {class: "form-control", id:"res_p15_1l_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">m. Plagas o pérdida de cosechas</td>
       <td><%= f.select :p15_1m_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1m_1"} %></td>
       <td><%= f.select :p15_1m_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1m_2"} %></td>
       <td><%= f.select :p15_1m_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1m_3"} %></td>
       <td><%= f.text_field :p15_1m_4a, {class: "form-control", id:"res_p15_1m_4a"} %>a.2016<%= f.text_field :p15_1m_4b, {class: "form-control", id:"res_p15_1m_4b"} %>b.2017<%= f.text_field :p15_1m_4c, {class: "form-control", id:"res_p15_1m_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">n. Pérdida o muerte de animales</td>
       <td><%= f.select :p15_1n_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1n_1"} %></td>
@@ -1503,6 +2104,7 @@
       <td><%= f.select :p15_1n_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1n_3"} %></td>
       <td><%= f.text_field :p15_1n_4a, {class: "form-control", id:"res_p15_1n_4a"} %>a.2016<%= f.text_field :p15_1n_4b, {class: "form-control", id:"res_p15_1n_4b"} %>b.2017<%= f.text_field :p15_1n_4c, {class: "form-control", id:"res_p15_1n_4c"} %>c.2018</td>
     </tr>
+
     <tr>
       <td scope="row">o. Robo, incendio o destrucción de bienes del hogar (en casa o raponeo)</td>
       <td><%= f.select :p15_1o_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1o_1"} %></td>
@@ -1510,6 +2112,7 @@
       <td><%= f.select :p15_1o_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1o_3"} %></td>
       <td><%= f.text_field :p15_1o_4a, {class: "form-control", id:"res_p15_1o_4a"} %>a.2016<%= f.text_field :p15_1o_4b, {class: "form-control", id:"res_p15_1o_4b"} %>b.2017<%= f.text_field :p15_1o_4c, {class: "form-control", id:"res_p15_1o_4c"} %>c.2018</td>
     </tr>
+
     <tr>
       <td scope="row">p. Sufrieron inundaciones, avalanchas, derrumbes, desbordamientos o deslizamientos o vendavales</td>
       <td><%= f.select :p15_1p_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1p_1"} %></td>
@@ -1517,6 +2120,7 @@
       <td><%= f.select :p15_1p_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1p_3"} %></td>
       <td><%= f.text_field :p15_1p_4a, {class: "form-control", id:"res_p15_1p_4a"} %>a.2016<%= f.text_field :p15_1p_4b, {class: "form-control", id:"res_p15_1p_4b"} %>b.2017<%= f.text_field :p15_1p_4c, {class: "form-control", id:"res_p15_1p_4c"} %>c.2018</td>
     </tr>
+
     <tr>
       <td scope="row">q. Sufrieron temblores o terremotos</td>
       <td><%= f.select :p15_1q_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1q_1"} %></td>
@@ -1524,6 +2128,7 @@
       <td><%= f.select :p15_1q_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1q_3"} %></td>
       <td><%= f.text_field :p15_1q_4a, {class: "form-control", id:"res_p15_1q_4a"} %>a.2016<%= f.text_field :p15_1q_4b, {class: "form-control", id:"res_p15_1q_4b"} %>b.2017<%= f.text_field :p15_1q_4c, {class: "form-control", id:"res_p15_1q_4c"} %>c.2018</td>
     </tr>
+
     <tr>
       <td scope="row">r. Fueron víctimas de la violencia</td>
       <td><%= f.select :p15_1q_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1q_1"} %></td>
@@ -1531,20 +2136,23 @@
       <td><%= f.select :p15_1q_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1q_3"} %></td>
       <td><%= f.text_field :p15_1q_4a, {class: "form-control", id:"res_p15_1q_4a"} %>a.2016<%= f.text_field :p15_1q_4b, {class: "form-control", id:"res_p15_1q_4b"} %>b.2017<%= f.text_field :p15_1q_4c, {class: "form-control", id:"res_p15_1q_4c"} %>c.2018</td>
     </tr>
+
     <tr>
       <td scope="row">s. Se produjo una caída en el precio del café</td>
       <td><%= f.select :p15_1s_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1s_1"} %></td>
       <td><%= f.select :p15_1s_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1s_2"} %></td>
       <td><%= f.select :p15_1s_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1s_3"} %></td>
       <td><%= f.text_field :p15_1s_4a, {class: "form-control", id:"res_p15_1s_4a"} %>a.2016<%= f.text_field :p15_1s_4b, {class: "form-control", id:"res_p15_1s_4b"} %>b.2017<%= f.text_field :p15_1s_4c, {class: "form-control", id:"res_p15_1s_4c"} %>c.2018</td>
+    </tr>
+
     <tr>
       <td scope="row">t. Sufrió una disminución de la producción de café asociada a un exceso de lluvia</td>
       <td><%= f.select :p15_1t_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1t_1"} %></td>
       <td><%= f.select :p15_1t_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1t_2"} %></td>
       <td><%= f.select :p15_1t_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1t_3"} %></td>
       <td><%= f.text_field :p15_1t_4a, {class: "form-control", id:"res_p15_1t_4a"} %>a.2016<%= f.text_field :p15_1t_4b, {class: "form-control", id:"res_p15_1t_4b"} %>b.2017<%= f.text_field :p15_1t_4c, {class: "form-control", id:"res_p15_1t_4c"} %>c.2018</td>
-      
     </tr>
+
     <tr>
       <td scope="row">u. Sufrió una disminución de la producción y/o calidad del café asociada a una sequía</td>
       <td><%= f.select :p15_1u_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1u_1"} %></td>
@@ -1554,15 +2162,27 @@
     </tr>
   </tbody>
 </table>
+<div class="row col-md-12">
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo15">Anterior</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo15">Siguiente</a>
+    </div>
+  </div> 
+</div>
+  
 </div>
 
+
+<div class="hidden" id="Seccion_Modulo16">
 <div class="alert alert-secondary col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 20px;">MODULO 16. Características del gasto de los hogares
   </div>
 
   <div class="alert alert-success col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h6>1. ¿Cuánto gastó su hogar el mes pasado en...?</d6></h6> 
     </div>
 
-  <div class="continer row alert-success" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" row alert-success" style="margin-right: 10px; margin-left: 10px;">
 
     <table class="table">
   <thead>
@@ -1576,7 +2196,7 @@
   <tbody>
     <tr>
       <th scope="row">a. Abarrotes y productos de aseo</th>
-      <td>1. Arroz, pan, arepas, galletas, pastas alimenticias, harinas y otros cereales <p>2. Aceites, mantequilla, margarina y manteca</p>3. Azúcar, panela, mermelada, café, chocolate , bebidas de cacao y dulces<p>4. Sal, condimentos, salsas, conservas, cremas o sopas en sobre, frituras y enlatados</p>5. Agua, gaseosas, jugos y otras bebidas no alcohólicas<p>6. Carne, pollo, pescado (fresco y enlatado) entre otros y productos derivados</p><p>7. Huevos, leche (animal o vegetal) y sus derivados</p></td>
+      <td>1. Arroz, pan, arepas, galletas, pastas alimenticias, harinas y otros cereales <p>2. Aceites, mantequilla, margarina y manteca</p>3. Azúcar, panela, mermelada, café, chocolate , bebidas de cacao y dulces<p>4. Sal, condimentos, salsas, conservas, cremas o sopas en sobre, frituras y enlatados</p>5. Agua, gaseosas, jugos y otras bebidas no alcohólicas<p>6. Artículos de limpieza y cuidado de la vivienda</p><p>7. Artículos para limpieza de ropa y cuidado personal</p></td>
       <td><%= f.select :p16_1a_1, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_1a_1"} %></td>
       <td><%= f.text_field :p16_1a_2, {class: "form-control", id:"res_p16_1a_2"} %></td> 
     </tr>
@@ -1593,19 +2213,19 @@
       <td><%= f.text_field :p16_1c_2, {class: "form-control", id:"res_p16_1c_2"} %></td>
     </tr>
     <tr>
-      <th scope="row">d. Comidas y bebidas fuera del hogar</th>
+      <th scope="row">e. Comidas y bebidas fuera del hogar</th>
       <td>1. Comidas y bebidas preparadas fuera del hogar en restaurantes, cafeterías, etc.<p>2. Bebidas alcohólicas tomadas fuera del hogar en tiendas, fondas o al aire libre</p></td>
       <td><%= f.select :p16_1e_1, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_1e_1"} %></td>
       <td><%= f.text_field :p16_1e_2, {class: "form-control", id:"res_p16_1e_2"} %></td>
     </tr>
     <tr>
-      <th scope="row">e. Mesadas</th>
+      <th scope="row">f. Mesadas</th>
       <td>1. Mesadas a estudiantes y personas del mismo hogar como de otros hogares para gastos diarios</td>
       <td><%= f.select :p16_1f_1, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_1f_1"} %></td>
       <td><%= f.text_field :p16_1f_2, {class: "form-control", id:"res_p16_1f_2"} %></td>
     </tr>
     <tr>
-      <th scope="row">f. Otros gastos</th>
+      <th scope="row">g. Otros gastos</th>
       <td>1. Transporte, comunicaciones, periódicos, loterías, alimentos para animales, gasolina<p>2. Cigarrillos, tabaco, bebidas alcohólicas para consumo en el hogar</p></td>
       <td><%= f.select :p16_1g_1, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_1g_1"} %></td>
       <td><%= f.text_field :p16_1g_2, {class: "form-control", id:"res_p16_1g_2"} %></td>
@@ -1614,10 +2234,10 @@
 </table>
 </div>
 
-<div class="alert alert-info col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h6>2. ¿Cuánto pagó este hogar la última vez por cada uno de los siguientes servcios públicos domiciliarios?</d6></h6> 
+<div class="alert alert-info col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h6>2. ¿Cuánto pagó este hogar la última vez (en la vivienda y en las fincas) por cada uno de los siguientes servicios públicos domiciliarios?</d6></h6> 
     </div>
 
-  <div class="continer row border-info border" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" row border-info border" style="margin-right: 10px; margin-left: 10px;">
 
     <table class="table">
   <thead>
@@ -1630,84 +2250,65 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1. Acueducto</th>
+      <th scope="row">1. Acueducto, recolección de basuras (aseo) y alcantarillado</th>
       <td><%= f.select :p16_2_1_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_1_b"} %></td>
       <td><%= f.text_field :p16_2_1_c, {class: "form-control", id:"res_p16_2_1_c"} %></td>
       <td><%= f.text_field :p16_2_1_d, {class: "form-control", id:"res_p16_2_1_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">2. Recolección de basuras y aseo</th>
+      <th scope="row">2. Energía eléctrica y alumbrado público</th>
       <td><%= f.select :p16_2_2_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_2_b"} %></td>
       <td><%= f.text_field :p16_2_2_c, {class: "form-control", id:"res_p16_2_2_c"} %></td>
       <td><%= f.text_field :p16_2_2_d, {class: "form-control", id:"res_p16_2_2_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">3. Alcantarillado</th>
+      <th scope="row">3. Gas natural por tubería</th>
       <td><%= f.select :p16_2_3_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_3_b"} %></td>
       <td><%= f.text_field :p16_2_3_c, {class: "form-control", id:"res_p16_2_3_c"} %></td>
       <td><%= f.text_field :p16_2_3_d, {class: "form-control", id:"res_p16_2_3_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">4. Energía eléctrica</th>
+      <th scope="row">4. Gas natural En cilindro</th>
       <td><%= f.select :p16_2_4_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_4_b"} %></td>
       <td><%= f.text_field :p16_2_4_c, {class: "form-control", id:"res_p16_2_4_c"} %></td>
       <td><%= f.text_field :p16_2_4_d, {class: "form-control", id:"res_p16_2_4_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">5. Alumbrado público</th>
+      <th scope="row">5. Teléfono residencial (local y larga distancia)</th>
       <td><%= f.select :p16_2_5_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_5_b"} %></td>
       <td><%= f.text_field :p16_2_5_c, {class: "form-control", id:"res_p16_2_5_c"} %></td>
       <td><%= f.text_field :p16_2_5_d, {class: "form-control", id:"res_p16_2_5_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">6. Gas natural por tubería</th>
+      <th scope="row">6. Telefonía celular</th>
       <td><%= f.select :p16_2_6_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_6_b"} %></td>
       <td><%= f.text_field :p16_2_6_c, {class: "form-control", id:"res_p16_2_6_c"} %></td>
       <td><%= f.text_field :p16_2_6_d, {class: "form-control", id:"res_p16_2_6_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">7. Gas natural En cilindro</th>
+      <th scope="row">7. Internet fijo (banda ancha, acceso inalámbrico)</th>
       <td><%= f.select :p16_2_7_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_7_b"} %></td>
       <td><%= f.text_field :p16_2_7_c, {class: "form-control", id:"res_p16_2_7_c"} %></td>
       <td><%= f.text_field :p16_2_7_d, {class: "form-control", id:"res_p16_2_7_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">8. Teléfono residencial (local y larga distancia)</th>
+      <th scope="row">8. Televisión (cable, satelital, digitalizada, IPTV, antena parabólica)</th>
       <td><%= f.select :p16_2_8_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_8_b"} %></td>
       <td><%= f.text_field :p16_2_8_c, {class: "form-control", id:"res_p16_2_8_c"} %></td>
       <td><%= f.text_field :p16_2_8_d, {class: "form-control", id:"res_p16_2_8_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">9. Telefonía celular</th>
+      <th scope="row">9. Duo Play</th>
       <td><%= f.select :p16_2_9_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_9_b"} %></td>
       <td><%= f.text_field :p16_2_9_c, {class: "form-control", id:"res_p16_2_9_c"} %></td>
       <td><%= f.text_field :p16_2_9_d, {class: "form-control", id:"res_p16_2_9_d"} %></td>
     </tr>
     <tr>
-      <th scope="row">10. Internet fijo (banda ancha, acceso inalámbrico)</th>
+      <th scope="row">10. Triple Play</th>
       <td><%= f.select :p16_2_10_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_10_b"} %></td>
       <td><%= f.text_field :p16_2_10_c, {class: "form-control", id:"res_p16_2_10_c"} %></td>
       <td><%= f.text_field :p16_2_10_d, {class: "form-control", id:"res_p16_2_10_d"} %></td>
-    </tr>
-    <tr>
-      <th scope="row">11. Televisión (cable, satelital, digitalizada, IPTV, antena parabólica)</th>
-      <td><%= f.select :p16_2_11_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_11_b"} %></td>
-      <td><%= f.text_field :p16_2_11_c, {class: "form-control", id:"res_p16_2_11_c"} %></td>
-      <td><%= f.text_field :p16_2_11_d, {class: "form-control", id:"res_p16_2_11_d"} %></td>
-    </tr>
-    <tr>
-      <th scope="row">12. Duo Play</th>
-      <td><%= f.select :p16_2_12_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_12_b"} %></td>
-      <td><%= f.text_field :p16_2_12_c, {class: "form-control", id:"res_p16_2_12_c"} %></td>
-      <td><%= f.text_field :p16_2_12_d, {class: "form-control", id:"res_p16_2_12_d"} %></td>
-    </tr>
-    <tr>
-      <th scope="row">13. Triple Play</th>
-      <td><%= f.select :p16_2_13_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_2_13_b"} %></td>
-      <td><%= f.text_field :p16_2_13_c, {class: "form-control", id:"res_p16_2_13_c"} %></td>
-      <td><%= f.text_field :p16_2_13_d, {class: "form-control", id:"res_p16_2_13_d"} %></td>
-    </tr>
-    
+    </tr>  
   </tbody>
 </table>
 </div>
@@ -1715,14 +2316,13 @@
 <div class="alert alert-dark col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h6>3. ¿Cuánto gastó su hogar el mes pasado en...?</d6></h6> 
     </div>
 
-  <div class="continer row" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" row" style="margin-right: 10px; margin-left: 10px;">
 
     <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col" class="text-center"></th>
       <th scope="col" class="text-center">Pagó</th>
-      <th scope="col" class="text-center">Frecuencia</th>
       <th scope="col" class="text-center">¿Cuánto fue el valor total ?</th>
     </tr>
   </thead>
@@ -1730,38 +2330,37 @@
     <tr>
       <th scope="row">1. Aportes voluntarios a fondos de pensiones y cesantías</th>
       <td><%= f.select :p16_3_1_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_1_a"} %></td>
-      <td><%= f.select :p16_3_1_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_1_b"} %></td>
       <td><%= f.text_field :p16_3_1_c, {class: "form-control", id:"res_p16_3_1_c"} %></td>
     </tr>
     <tr>
       <th scope="row">2. Cuota de manejo de tarjetas débito y crédito</th>
       <td><%= f.select :p16_3_2_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_2_a"} %></td>
-      <td><%= f.select :p16_3_2_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_2_b"} %></td>
       <td><%= f.text_field :p16_3_2_c, {class: "form-control", id:"res_p16_3_2_c"} %></td>
     </tr>
     <tr>
       <th scope="row">3. Cuotas por crédito para adquisición de vehículos</th>
       <td><%= f.select :p16_3_3_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_3_a"} %></td>
-      <td><%= f.select :p16_3_3_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_3_b"} %></td>
       <td><%= f.text_field :p16_3_3_c, {class: "form-control", id:"res_p16_3_3_c"} %></td>
     </tr>
     <tr>
       <th scope="row">4. Cuotas mensuales por adquisición de bienes raíces (viviendas, fincas, etc.)</th>
       <td><%= f.select :p16_3_4_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_4_a"} %></td>
-      <td><%= f.select :p16_3_4_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_4_b"} %></td>
       <td><%= f.text_field :p16_3_4_c, {class: "form-control", id:"res_p16_3_4_c"} %></td>
     </tr>
     <tr>
       <th scope="row">5. Cuotas o pagos por préstamos (diferentes a vivienda y vehículo)</th>
       <td><%= f.select :p16_3_5_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_5_a"} %></td>
-      <td><%= f.select :p16_3_5_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_5_b"} %></td>
       <td><%= f.text_field :p16_3_5_c, {class: "form-control", id:"res_p16_3_5_c"} %></td>
     </tr>
     <tr>
       <th scope="row">6. Dineros ahorrados</th>
       <td><%= f.select :p16_3_6_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_6_a"} %></td>
-      <td><%= f.select :p16_3_6_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_6_b"} %></td>
       <td><%= f.text_field :p16_3_6_c, {class: "form-control", id:"res_p16_3_6_c"} %></td>
+    </tr>
+    <tr>
+      <th scope="row">7. Seguros (vida, desempleo, vehículo), EPS, Prepagada y demás.</th>
+      <td><%= f.select :p16_3_7_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_3_6_a"} %></td>
+      <td><%= f.text_field :p16_3_7_c, {class: "form-control", id:"res_p16_3_6_c"} %></td>
     </tr>
   </tbody>
 </table>
@@ -1770,14 +2369,13 @@
 <div class="alert alert-warning col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h6>4. ¿Cuánto gastó su hogar el año pasado en...?</d6></h6> 
     </div>
 
-  <div class="continer row" style="margin-right: 10px; margin-left: 10px;">
+  <div class=" row" style="margin-right: 10px; margin-left: 10px;">
 
     <table class="table table-striped table-warning">
   <thead>
     <tr>
       <th scope="col" class="text-center"></th>
       <th scope="col" class="text-center">Pagó</th>
-      <th scope="col" class="text-center">Frecuencia</th>
       <th scope="col" class="text-center">¿Cuánto fue el valor total ?</th>
     </tr>
   </thead>
@@ -1785,80 +2383,81 @@
     <tr>
       <th scope="row">1. Prendas de vestir y calzado</th>
       <td><%= f.select :p16_4_1_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_1_a"} %></td>
-      <td><%= f.select :p16_4_1_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_1_b"} %></td>
       <td><%= f.text_field :p16_4_1_c, {class: "form-control", id:"res_p16_4_1_c"} %></td>
     </tr>
     <tr>
       <th scope="row">2. Uniformes escolare</th>
       <td><%= f.select :p16_4_2_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_2_a"} %></td>
-      <td><%= f.select :p16_4_2_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_2_b"} %></td>
       <td><%= f.text_field :p16_4_2_c, {class: "form-control", id:"res_p16_4_2_c"} %></td>
     </tr>
     <tr>
       <th scope="row">3. Muebles, electrodomésticos y artículos de uso personal</th>
       <td><%= f.select :p16_4_3_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_3_a"} %></td>
-      <td><%= f.select :p16_4_3_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_3_b"} %></td>
       <td><%= f.text_field :p16_4_3_c, {class: "form-control", id:"res_p16_4_3_c"} %></td>
     </tr>
     <tr>
       <th scope="row">4. En educación de los miembros del hoga</th>
       <td><%= f.select :p16_4_4_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_4_a"} %></td>
-      <td><%= f.select :p16_4_4_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_4_b"} %></td>
       <td><%= f.text_field :p16_4_4_c, {class: "form-control", id:"res_p16_4_4_c"} %></td>
     </tr>
     <tr>
       <th scope="row">5. Salud (consultas, hospitalización y medicamentos)</th>
       <td><%= f.select :p16_4_5_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_5_a"} %></td>
-      <td><%= f.select :p16_4_5_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_5_b"} %></td>
       <td><%= f.text_field :p16_4_5_c, {class: "form-control", id:"res_p16_4_5_c"} %></td>
     </tr>
     <tr>
       <th scope="row">6. Compra de títulos financieros (acciones, bonos, CDTs, CDAT, etc.)</th>
       <td><%= f.select :p16_4_6_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_6_a"} %></td>
-      <td><%= f.select :p16_4_6_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_6_b"} %></td>
       <td><%= f.text_field :p16_4_6_c, {class: "form-control", id:"res_p16_4_6_c"} %></td>
     </tr>
     <tr>
       <th scope="row">7. Recreación y cultura</th>
       <td><%= f.select :p16_4_7_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_7_a"} %></td>
-      <td><%= f.select :p16_4_7_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_7_b"} %></td>
       <td><%= f.text_field :p16_4_7_c, {class: "form-control", id:"res_p16_4_7_c"} %></td>
     </tr>
     <tr>
       <th scope="row">8. Viajes y alojamientos</th>
       <td><%= f.select :p16_4_8_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_8_a"} %></td>
-      <td><%= f.select :p16_4_8_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_8_b"} %></td>
       <td><%= f.text_field :p16_4_8_c, {class: "form-control", id:"res_p16_4_8_c"} %></td>
     </tr>
     <tr>
       <th scope="row">9. Impuesto predial</th>
       <td><%= f.select :p16_4_9_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_9_a"} %></td>
-      <td><%= f.select :p16_4_9_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_9_b"} %></td>
       <td><%= f.text_field :p16_4_9_c, {class: "form-control", id:"res_p16_4_6_c"} %></td>
     </tr>
     <tr>
       <th scope="row">10. Impuestos (renta, IVA, etc.)</th>
       <td><%= f.select :p16_4_10_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_10_a"} %></td>
-      <td><%= f.select :p16_4_10_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_10_b"} %></td>
       <td><%= f.text_field :p16_4_10_c, {class: "form-control", id:"res_p16_4_10_c"} %></td>
     </tr>
     <tr>
       <th scope="row">11. Servicios para el mantenimiento y cuidado de la vivienda</th>
       <td><%= f.select :p16_4_11_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_11_a"} %></td>
-      <td><%= f.select :p16_4_11_b, ["Diaria", "Semanal", "Quincenal", "Mensual", "Semestral", "Anual"], {:include_blank => true}, {class: "form-control", id:"res_p16_4_11_b"} %></td>
       <td><%= f.text_field :p16_4_11_c, {class: "form-control", id:"res_p16_4_11_c"} %></td>
     </tr>
   </tbody>
 </table>
+<div class="row col-md-12">
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo16">Anterior</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo16">Siguiente</a>
+    </div>
+  </div> 
+</div>
 </div>
 
-<div class="alert alert-secondary col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 20px;">MODULO 16. Características del gasto de los hogares
+<div class="hidden" id="Seccion_Modulo17">
+<div class="alert alert-secondary col-lg-12" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 20px;">MODULO 17. Disposición del productor al aseguramiento
   </div>
+
+  <div class="border row border-info" style="margin-right: 10px; margin-left: 10px;">
 
   <table class="table table-borderless">
   <thead>
     <tr>
-      <th colspan="2" class="text-center">1. Ordene los siguientes riesgos según la importancia que tienen para el desarrollo de su actividad cafetera (siendo el 1 el más importante y el 9 el menos importante):</th>
+      <th colspan="2" class="text-center">1. Ordene los siguientes riesgos según la importancia que tienen para el desarrollo de su actividad cafetera<h5>(siendo el 1 el más importante y el 9 el menos importante):</h5></th>
       <th scope="col"></th>
       <th scope="col"></th>
     </tr>
@@ -1902,34 +2501,36 @@
     </tr>
   </tbody>
 </table>
+</div>
 
-<div class="field col-md-12" id="div_p17_2a" style="margin-top: 10px;">
+
+<div class="field row border border-warning col-lg-12" id="div_p17_2a" style="margin-top: 10px; margin-right: 10px; margin-left: 10px;">
+  <div class="field col-md-12" style="margin-top: 10px; margin-right: 10px; margin-left: 10px;">
       <%= f.label :p17_2a, "2. ¿Ha usado algún mecanismo para proteger el precio de venta del café a futuro?" %>
       <%= f.select :p17_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p17_2a"}%>
     </div>
-
     <div class="field col-md-12 text-center" id="div_p17_2b" style="margin-top: 10px;">
     <%= f.label :p17_2b, "¿Cuales?" %>
-    <div class="""" id="div_p17_2b">
+    <div class="hidden" id="div_p17_2b">
     <%= f.select :p17_2b, ["Contrato de protección de precio (CPP)", "Entregas futuras", "Otra"], {:include_blank => true}, {class: "form-control", id:"res_p17_2b"}%>
     </div>
   </div>
-
   <div class="field col-md-12 text-center" id="div_p17_2c" style="margin-top: 10px;">
     <%= f.label :p17_2c, "Otra. ¿Cuál?" %>
-    <div class="""" id="div_p17_2c">
+    <div class="hidden" id="div_p17_2c">
     <%= f.text_field :p17_2c, {class: "form-control", id:"res_p17_2c"}%>
     </div>
   </div>
+  </div>
 
 
-  <div class="field col-md-12" style="margin-top: 10px;">3. Suponga que el precio actual del café pergamino seco es de 80,000 pesos por arroba y que existe un seguro para proteger el precio en el mes de venta de su cosecha dentro de tres años. Por ejemplo, si usted adquiere el seguro en septiembre de 2018, estará protegiendo su cosecha de agosto, septiembre y octubre de 2021." %><p6>Este seguro tiene las siguientes características:</p6><p></p>- Si el precio del café en los meses asegurados (agosto, septiembre y octubre de 2021) es menor al precio promedio de los tres años anteriores, el seguro se activa.<p></p>- Si el seguro se activa, recibirá una compensación variable que dependerá de qué tan fuerte sea la caída del precio (alrededor de 7.500 pesos por arroba).<p></p>Con base en lo anterior, usted:<p></p></div>
-
+  <div class="field col-md-12" style="margin-top: 10px;">3. Suponga que el precio actual del café pergamino seco es de 80,000 pesos por arroba y que existe un seguro para proteger el precio en el mes de venta de su cosecha dentro de tres años. Por ejemplo, si usted adquiere el seguro en septiembre de 2018, estará protegiendo su cosecha de agosto, septiembre y octubre de 2021.<p></p><p6>Este seguro tiene las siguientes características:</p6><p></p>- Si el precio del café en los meses asegurados (agosto, septiembre y octubre de 2021) es menor al precio promedio de los tres años anteriores, el seguro se activa.<p></p>- Si el seguro se activa, recibirá una compensación variable que dependerá de qué tan fuerte sea la caída del precio (alrededor de 7.500 pesos por arroba).<p></p>Con base en lo anterior, usted:<p></p></div>
 
     <div class="field col-md-4" id="div_p17_3_a" style="margin-top: 10px;">
       <%= f.label :p17_3_a, "a. ¿Compraría este seguro por 6.000 pesos por arroba?"%>
       <%= f.select :p17_3_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_a"}%>
     </div>
+
     <div class="field col-md-4 text-center" id="div_p17_3_b" style="margin-top: 10px;">
     <%= f.label :p17_3_b, "b. Compraría este seguro por 4.000 pesos por arroba?" %>
     <%= f.select :p17_3_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_b"}%>
@@ -1940,36 +2541,87 @@
     <%= f.select :p17_3_c, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_c"}%>
     </div>
 
-
     <div class="field col-md-4 text-center" id="div_p17_3_d" style="margin-top: 10px;">
     <%= f.label :p17_3_d, "d. Por qué no lo compraría? (marque la razón principal)" %>
     <%= f.select :p17_3_d, ["Porque el precio es alto", "Porque no lo necesita", "Porque no le gustan los seguros", "Porque hay que comprarlo con mucha anticipación", "Porque no está seguro de cuánto recibirá como compensación", "Por la incertidumbre en la producción dentro de tres años", "Otra"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_d"}%>
     </div>
     <div class="field col-md-4 text-center" id="div_p17_3_do" style="margin-top: 10px;">
     <%= f.label :p17_3_do, "Otra. ¿Cuál?" %>
-    <div class="""" id="div_p17_3_do">
+    <div class="hidden" id="div_p17_3_do">
     <%= f.text_field :p17_3_do, {class: "form-control", id:"res_p17_3_do"}%>
     </div>
   </div>
-  
-  </div>
-
-<div class="continer row col-md-12">
-
-<br>
-  <div class="col-md-8" style="margin-top: 20px;">
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <div class="btn btn-success btn-lg hidden">
-          <%= f.submit "Guardar Encuesta" , id:"#Guardar_Sin_Internet" , style:"background-image: none;background: transparent; border: none;" , onclick: "guardarsininternet();" %>
-        </div>
-      </div>
-      <div class="col-md-6 text-center">  
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center">
+      <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo17">Anterior</a>
+    </div>
+    <div class="col-md-6 text-center">  
         <a href="https://ancient-sands-58784.herokuapp.com" class="btn btn-primary btn-lg" style="color: #fff;">Guardar Encuesta</a>
       </div>
-    </div>
-  </div>  
+    </div> 
+  </div>
 </div>
+
+
 <% end %>
 
+<script type="text/javascript">
+  $('#Siguiente_modulo11').click(function(){
+      $('#Seccion_Modulo11').addClass('hidden');
+      $('#Seccion_Modulo12').removeClass('hidden');
+    });
+    $('#Anterior_modulo11').click(function(){
+      $('#Seccion_Modulo11').addClass('hidden');
+      $('#Seccion_Modulo10').removeClass('hidden');
+    }); 
+    $('#Siguiente_modulo12').click(function(){
+      $('#Seccion_Modulo12').addClass('hidden');
+      $('#Seccion_Modulo13').removeClass('hidden');
+    });
+    $('#Anterior_modulo12').click(function(){
+      $('#Seccion_Modulo12').addClass('hidden');
+      $('#Seccion_Modulo11').removeClass('hidden');
+    }); 
+    $('#Siguiente_modulo13').click(function(){
+      $('#Seccion_Modulo13').addClass('hidden');
+      $('#Seccion_Modulo14').removeClass('hidden');
+    });
+    $('#Anterior_modulo13').click(function(){
+      $('#Seccion_Modulo13').addClass('hidden');
+      $('#Seccion_Modulo12').removeClass('hidden');
+    }); 
+    $('#Siguiente_modulo14').click(function(){
+      $('#Seccion_Modulo14').addClass('hidden');
+      $('#Seccion_Modulo15').removeClass('hidden');
+    });
+    $('#Anterior_modulo14').click(function(){
+      $('#Seccion_Modulo14').addClass('hidden');
+      $('#Seccion_Modulo13').removeClass('hidden');
+    }); 
+    $('#Siguiente_modulo15').click(function(){
+      $('#Seccion_Modulo15').addClass('hidden');
+      $('#Seccion_Modulo16').removeClass('hidden');
+    });
+    $('#Anterior_modulo15').click(function(){
+      $('#Seccion_Modulo15').addClass('hidden');
+      $('#Seccion_Modulo14').removeClass('hidden');
+    });
+    $('#Siguiente_modulo16').click(function(){
+      $('#Seccion_Modulo16').addClass('hidden');
+      $('#Seccion_Modulo17').removeClass('hidden');
+    });
+    $('#Anterior_modulo16').click(function(){
+      $('#Seccion_Modulo16').addClass('hidden');
+      $('#Seccion_Modulo15').removeClass('hidden');
+    }); 
+    $('#Anterior_modulo17').click(function(){
+      $('#Seccion_Modulo17').addClass('hidden');
+      $('#Seccion_Modulo16').removeClass('hidden');
+    }); 
+
+
+
+
+
+</script>
 

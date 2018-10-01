@@ -1,113 +1,91 @@
-          $('#div_p6_52_1').addClass('hidden');
-          $('#div_p6_52b_1').addClass('hidden');
-          $('#div_p6_53_1').addClass('hidden');
-          $('#div_p6_54_1').addClass('hidden');
-          $('#div_p6_54_1_1a').addClass('hidden');
-          $('#div_p6_54_1_1b').addClass('hidden');
-          $('#div_p6_54_1_2a').addClass('hidden');
-          $('#div_p6_54_1_2b').addClass('hidden');
-          $('#div_p6_54_1_3a').addClass('hidden');
-          $('#div_p6_54_1_3b').addClass('hidden');
-
-
-          $('#div_p6_52_1').addClass('hidden');
-          $('#div_p6_52b_1').removeClass('hidden');
-          $('#div_p6_53_1').removeClass('hidden');
-          $('#div_p6_54_1').removeClass('hidden');
-          $('#div_p6_54_1_1a').removeClass('hidden');
-          $('#div_p6_54_1_1b').removeClass('hidden');
-          $('#div_p6_54_1_2a').removeClass('hidden');
-          $('#div_p6_54_1_2a').removeClass('hidden');
-          $('#div_p6_54_1_3a').removeClass('hidden');
-          $('#div_p6_54_1_3b').removeClass('hidden');
-      <tr>
-          <th scope="row">58 Durante este AÑO ESCOLAR, ¿ha recibido crédito educativo?</th>
-            <td id="persona_1_49">
-              <div class="field" id="div_p6_58a_1">
-                <%= f.select :p6_58a_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_1"}%>
+        <tr>
+          <th scope="row">71. ¿El contrato de trabajo es ...?</th>
+            <td id="persona_1_64">
+              <div class="field" id="div_p7_71a_1">
+                <%= f.select :p7_71a_1, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_1"}%>
               </div>
-              <div class="field hidden" id="div_p6_58b_1">
-              <%= f.label :p6_58b_1, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_1">
-              <%= f.text_field :p6_58b_1, {class: "form-control", id:"res_p6_58b_1"} %>
+              <div class="field hidden" id="div_p7_71b_1">
+              <%= f.label :p7_71b_1, "No. de meses" %>
+              <div class="" id="div_p7_71b_1">
+              <%= f.text_field :p7_71b_1, {class: "form-control", id:"res_p7_71b_1"} %>
               </div>
               </div>
             </td>  
-            <td id="persona_2_49">
-              <div class="field" id="div_p6_58a_2">
-                <%= f.select :p6_58a_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_2"}%>
+            <td id="persona_2_64">
+              <div class="field" id="div_p7_71a_2">
+                <%= f.select :p7_71a_2, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_2"}%>
               </div>
-              <div class="field hidden" id="div_p6_58b_2">
-              <%= f.label :p6_58b_2, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_2">
-              <%= f.text_field :p6_58b_2, {class: "form-control", id:"res_p6_58b_2"} %>
-              </div>
-              </div>
-            </td>  
-            <td id="persona_3_49">
-              <div class="field" id="div_p6_58a_3">
-                <%= f.select :p6_58a_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_3"}%>
-              </div>
-              <div class="field hidden" id="div_p6_58b_3">
-              <%= f.label :p6_58b_3, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_3">
-              <%= f.text_field :p6_58b_3, {class: "form-control", id:"res_p6_58b_3"} %>
+              <div class="field hidden" id="div_p7_71b_2">
+              <%= f.label :p7_71b_2, "No. de meses" %>
+              <div class="" id="div_p7_71b_2">
+              <%= f.text_field :p7_71b_2, {class: "form-control", id:"res_p7_71b_2"} %>
               </div>
               </div>
             </td>  
-            <td id="persona_4_49">
-              <div class="field" id="div_p6_58a_4">
-                <%= f.select :p6_58a_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_4"}%>
+            <td id="persona_3_64">
+              <div class="field" id="div_p7_71a_3">
+                <%= f.select :p7_71a_3, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_3"}%>
               </div>
-              <div class="field hidden" id="div_p6_58b_4">
-              <%= f.label :p6_58b_4, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_4">
-              <%= f.text_field :p6_58b_4, {class: "form-control", id:"res_p6_58b_4"} %>
-              </div>
-              </div>
-            </td>  
-            <td id="persona_5_49">
-              <div class="field" id="div_p6_58a_5">
-                <%= f.select :p6_58a_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_5"}%>
-              </div>
-              <div class="field hidden" id="div_p6_58b_5">
-              <%= f.label :p6_58b_5, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_5">
-              <%= f.text_field :p6_58b_5, {class: "form-control", id:"res_p6_58b_5"} %>
+              <div class="field hidden" id="div_p7_71b_3">
+              <%= f.label :p7_71b_3, "No. de meses" %>
+              <div class="" id="div_p7_71b_3">
+              <%= f.text_field :p7_71b_3, {class: "form-control", id:"res_p7_71b_3"} %>
               </div>
               </div>
             </td>  
-            <td id="persona_6_49">
-              <div class="field" id="div_p6_58a_6">
-                <%= f.select :p6_58a_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_6"}%>
+            <td id="persona_4_64">
+              <div class="field" id="div_p7_71a_4">
+                <%= f.select :p7_71a_4, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_4"}%>
               </div>
-              <div class="field hidden" id="div_p6_58b_6">
-              <%= f.label :p6_58b_6, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_6">
-              <%= f.text_field :p6_58b_6, {class: "form-control", id:"res_p6_58b_6"} %>
-              </div>
-              </div>
-            </td>  
-            <td id="persona_7_49">
-              <div class="field" id="div_p6_58a_7">
-                <%= f.select :p6_58a_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_7"}%>
-              </div>
-              <div class="field hidden" id="div_p6_58b_7">
-              <%= f.label :p6_58b_7, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_7">
-              <%= f.text_field :p6_58b_7, {class: "form-control", id:"res_p6_58b_7"} %>
+              <div class="field hidden" id="div_p7_71b_4">
+              <%= f.label :p7_71b_4, "No. de meses" %>
+              <div class="" id="div_p7_71b_4">
+              <%= f.text_field :p7_71b_4, {class: "form-control", id:"res_p7_71b_4"} %>
               </div>
               </div>
             </td>  
-            <td id="persona_8_49">
-              <div class="field" id="div_p6_58a_8">
-                <%= f.select :p6_58a_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p6_58a_8"}%>
+            <td id="persona_5_64">
+              <div class="field" id="div_p7_71a_5">
+                <%= f.select :p7_71a_5, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_5"}%>
               </div>
-              <div class="field hidden" id="div_p6_58b_8">
-              <%= f.label :p6_58b_8, "¿Quien se lo otorgo?" %>
-              <div class="" id="div_p6_58b_8">
-              <%= f.text_field :p6_58b_8, {class: "form-control", id:"res_p6_58b_8"} %>
+              <div class="field hidden" id="div_p7_71b_5">
+              <%= f.label :p7_71b_5, "No. de meses" %>
+              <div class="" id="div_p7_71b_5">
+              <%= f.text_field :p7_71b_5, {class: "form-control", id:"res_p7_71b_5"} %>
               </div>
               </div>
             </td>  
-        </tr>   
+            <td id="persona_6_64">
+              <div class="field" id="div_p7_71a_6">
+                <%= f.select :p7_71a_6, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_6"}%>
+              </div>
+              <div class="field hidden" id="div_p7_71b_6">
+              <%= f.label :p7_71b_6, "No. de meses" %>
+              <div class="" id="div_p7_71b_6">
+              <%= f.text_field :p7_71b_6, {class: "form-control", id:"res_p7_71b_6"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_7_64">
+              <div class="field" id="div_p7_71a_7">
+                <%= f.select :p7_71a_7, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_7"}%>
+              </div>
+              <div class="field hidden" id="div_p7_71b_7">
+              <%= f.label :p7_71b_7, "No. de meses" %>
+              <div class="" id="div_p7_71b_7">
+              <%= f.text_field :p7_71b_7, {class: "form-control", id:"res_p7_71b_7"} %>
+              </div>
+              </div>
+            </td>  
+            <td id="persona_8_64">
+              <div class="field" id="div_p7_71a_8">
+                <%= f.select :p7_71a_8, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_8"}%>
+              </div>
+              <div class="field hidden" id="div_p7_71b_8">
+              <%= f.label :p7_71b_8, "No. de meses" %>
+              <div class="" id="div_p7_71b_8">
+              <%= f.text_field :p7_71b_8, {class: "form-control", id:"res_p7_71b_8"} %>
+              </div>
+              </div>     
+            </td>
+          </tr>  
