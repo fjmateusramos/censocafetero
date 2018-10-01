@@ -1,91 +1,67 @@
         <tr>
-          <th scope="row">71. ¿El contrato de trabajo es ...?</th>
-            <td id="persona_1_64">
-              <div class="field" id="div_p7_71a_1">
-                <%= f.select :p7_71a_1, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_1"}%>
+          <th scope="row">74. ¿Alimentos como parte de pago por su trabajo?"</th>
+            <td id="persona_1_69">
+              <div class="field" id="div_p7_72_1_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_1">
-              <%= f.label :p7_71b_1, "No. de meses" %>
-              <div class="" id="div_p7_71b_1">
-              <%= f.text_field :p7_71b_1, {class: "form-control", id:"res_p7_71b_1"} %>
-              </div>
+              <div class="field hidden" id="div_p7_72_1_69">
+                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
               </div>
             </td>  
-            <td id="persona_2_64">
-              <div class="field" id="div_p7_71a_2">
-                <%= f.select :p7_71a_2, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_2"}%>
+            <td id="persona_2_69">
+              <div class="field" id="div_p7_72_2_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_2">
-              <%= f.label :p7_71b_2, "No. de meses" %>
-              <div class="" id="div_p7_71b_2">
-              <%= f.text_field :p7_71b_2, {class: "form-control", id:"res_p7_71b_2"} %>
-              </div>
+              <div class="field hidden" id="div_p7_72_2_69">
+                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
               </div>
             </td>  
-            <td id="persona_3_64">
-              <div class="field" id="div_p7_71a_3">
-                <%= f.select :p7_71a_3, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_3"}%>
+            <td id="persona_3_69">
+              <div class="field" id="div_p7_72_3_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_3">
-              <%= f.label :p7_71b_3, "No. de meses" %>
-              <div class="" id="div_p7_71b_3">
-              <%= f.text_field :p7_71b_3, {class: "form-control", id:"res_p7_71b_3"} %>
-              </div>
+              <div class="field hidden" id="div_p7_72_3_69">
+                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
               </div>
             </td>  
-            <td id="persona_4_64">
-              <div class="field" id="div_p7_71a_4">
-                <%= f.select :p7_71a_4, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_4"}%>
+            <td id="persona_4_69">
+              <div class="field" id="div_p7_72_4_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_4">
-              <%= f.label :p7_71b_4, "No. de meses" %>
-              <div class="" id="div_p7_71b_4">
-              <%= f.text_field :p7_71b_4, {class: "form-control", id:"res_p7_71b_4"} %>
-              </div>
+              <div class="field hidden" id="div_p7_72_4_69">
+                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
               </div>
             </td>  
-            <td id="persona_5_64">
-              <div class="field" id="div_p7_71a_5">
-                <%= f.select :p7_71a_5, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_5"}%>
+            <td id="persona_5_69">
+              <div class="field" id="div_p7_72_5_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_5">
-              <%= f.label :p7_71b_5, "No. de meses" %>
-              <div class="" id="div_p7_71b_5">
-              <%= f.text_field :p7_71b_5, {class: "form-control", id:"res_p7_71b_5"} %>
-              </div>
+              <div class="field hidden" id="div_p7_72_5_69">
+                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
               </div>
             </td>  
-            <td id="persona_6_64">
-              <div class="field" id="div_p7_71a_6">
-                <%= f.select :p7_71a_6, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_6"}%>
+            <td id="persona_6_69">
+              <div class="field" id="div_p7_72_6_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_6">
-              <%= f.label :p7_71b_6, "No. de meses" %>
-              <div class="" id="div_p7_71b_6">
-              <%= f.text_field :p7_71b_6, {class: "form-control", id:"res_p7_71b_6"} %>
-              </div>
+              <div class="field hidden" id="div_p7_72_6_69">
+                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
               </div>
             </td>  
-            <td id="persona_7_64">
-              <div class="field" id="div_p7_71a_7">
-                <%= f.select :p7_71a_7, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_7"}%>
+            <td id="persona_7_69">
+              <div class="field" id="div_p7_72_7_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_7">
-              <%= f.label :p7_71b_7, "No. de meses" %>
-              <div class="" id="div_p7_71b_7">
-              <%= f.text_field :p7_71b_7, {class: "form-control", id:"res_p7_71b_7"} %>
-              </div>
+              <div class="field hidden" id="div_p7_72_7_69">
+                <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
               </div>
             </td>  
-            <td id="persona_8_64">
-              <div class="field" id="div_p7_71a_8">
-                <%= f.select :p7_71a_8, ["A término indefinido", "A término fijo", "Otro tipo de contrato (labor, prestación de servicios)"],{:include_blank => true}, {class: "form-control", id:"res_p7_71a_8"}%>
+            <td id="persona_8_69">
+              <div class="field" id="div_p7_72_8_691">
+                <%= f.select :p7_73a_1, ["Si","No"], {:include_blank => true} ,{class: "form-control", id:"res_p7_73a_1"} %>
               </div>
-              <div class="field hidden" id="div_p7_71b_8">
-              <%= f.label :p7_71b_8, "No. de meses" %>
-              <div class="" id="div_p7_71b_8">
-              <%= f.text_field :p7_71b_8, {class: "form-control", id:"res_p7_71b_8"} %>
-              </div>
-              </div>     
+              <div class="field hidden" id="div_p7_72_8_69">
+               <%= f.text_field :p7_73a_1, {class: "form-control", id:"res_p7_73a_1"} %>
+              </div>   
             </td>
           </tr>  
