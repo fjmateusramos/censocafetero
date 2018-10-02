@@ -25,10 +25,10 @@
     <div id="div_p11_ta1" class="alert alert-success col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;"><h5>Tabla A. 1. ¿Tuvo el año pasado (2017) sembrados cultivos transitorios, permanente, forrajeros o plantaciones forestales?</h5><%= f.select :p11_ta_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_ta_1"}%>
     </div>
 
-    <div class="continer row col-md-12 alert-success" style="margin-top: 10px; margin-right: 10px; margin-left: 10px;">
+    <div class="continer row col-md-12 alert-success" style="margin-top: 10px; margin-right: 10px; margin-left: 10px;" id="div_tabla1_p11">
 
     <table class="table table-striped">
-  <thead>
+    <thead>
     <tr>
       <th scope="col" class="text-center">2. ID</th>
       <th scope="col" class="text-center">3. ¿Cuál cultivo o plantación forestal tuvo sembrado?</th>
@@ -40,8 +40,8 @@
       <th scope="col" class="text-center">9. Porcentaje de la producción vendido (%)</th>
       <th scope="col" class="text-center">10. Ingreso total (millones)</th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     <tr>
       <th scope="row"><%= f.text_field :p11_ta_a_2, {class: "form-control", id:"res_p11_ta_a_2"}%></th>
       <td><%= f.text_field :p11_ta_a_3, {class: "form-control", id:"res_p11_ta_a_3"}%></td>
@@ -108,8 +108,8 @@
       <td><%= f.text_field :p11_ta_f_9, {class: "form-control", id:"res_p11_ta_f_9"}%></td>
       <td><%= f.text_field :p11_ta_f_10, {class: "form-control", id:"res_p11_ta_f_10"}%></td>
     </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
     </div>
 
     <div class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
@@ -121,33 +121,33 @@
       </div>
     </div>
 
-    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;" id="div_tablab_bovino">
 
       <div class="row col-md-4">
 
       <div class="field col-md-12" id="div_p11_tb_2" style="margin-top: 5px;">
         <%= f.label :p11_tb_2, "2. ¿La orientación de la actividad ganadera ha sido...?" %>
         <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
-  <label class="form-check-label" for="p11_tb_2">Doble propósito</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
-  <label class="form-check-label" for="p11_tb_2">Leche</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
-  <label class="form-check-label" for="p11_tb_2">Carne: ciclo completo</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
-  <label class="form-check-label" for="p11_tb_2">Carne: cría, levante</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
-  <label class="form-check-label" for="p11_tb_2">Carne: ceba</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
-  <label class="form-check-label" for="p11_tb_2">Genética</label>
-  <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+        <label class="form-check-label" for="p11_tb_2">Doble propósito</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+        <label class="form-check-label" for="p11_tb_2">Leche</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+        <label class="form-check-label" for="p11_tb_2">Carne: ciclo completo</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+        <label class="form-check-label" for="p11_tb_2">Carne: cría, levante</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+        <label class="form-check-label" for="p11_tb_2">Carne: ceba</label>
+        <p></p>
+        <input class="form-check-input" type="checkbox" value="" id="p11_tb_2">
+        <label class="form-check-label" for="p11_tb_2">Genética</label>
+        <p></p>
+        </div>
       </div>
-    </div>
 
       <div class="field col-md-12" id="div_p11_tb_3" style="margin-top: 5px;">3. ¿Cuántos machos de ganado bovino tuvo?<p></p>
         <%= f.label :p11_tb_3_a, "a. En total" %>
@@ -159,7 +159,7 @@
         <%= f.label :p11_tb_3_d, "d. Reproductores" %>
         <%= f.text_field :p11_tb_3_d, {class: "form-control", id:"res_p11_tb_3_d"}%><p class="text-center font-italic">Diciembre 2017</p>
       </div>
-    </div>
+      </div>
 
       <div class="field col-md-4" id="div_p11_tb_4" style="margin-top: 30px;">4. ¿Cuántas hembras de ganado bovino tuvo?<p></p>
         <%= f.label :p11_tb_4_a, "a. En total" %>
@@ -179,55 +179,55 @@
       <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">5. ¿Cuántos ejemplares de ganado bovino vendió en 2017?
 
         <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col"># de animales</th>
-      <th scope="col">Peso prom. (kg)</th>
-      <th scope="col">Ingreso total ($)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Machos</th>
-        <td><%= f.text_field :p11_tb_5a_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
-      <td><%= f.text_field :p11_tb_5a_2, {class: "form-control", id:"res_p11_tb_5a_2"}%></td>
-      <td><%= f.text_field :p11_tb_5a_3, {class: "form-control", id:"res_p11_tb_5a_3"}%></td>
-    </tr>
-    <tr>
-      <th scope="row">Hembras</th>
-        <td><%= f.text_field :p11_tb_5b_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
-      <td></td>
-      <td><%= f.text_field :p11_tb_5b_2, {class: "form-control", id:"res_p11_tb_5b_2"}%></td>
-    </tr>
-  </tbody>
-</table>
-</div>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"># de animales</th>
+          <th scope="col">Peso prom. (kg)</th>
+          <th scope="col">Ingreso total ($)</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <th scope="row">Machos</th>
+              <td><%= f.text_field :p11_tb_5a_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
+            <td><%= f.text_field :p11_tb_5a_2, {class: "form-control", id:"res_p11_tb_5a_2"}%></td>
+            <td><%= f.text_field :p11_tb_5a_3, {class: "form-control", id:"res_p11_tb_5a_3"}%></td>
+          </tr>
+          <tr>
+            <th scope="row">Hembras</th>
+              <td><%= f.text_field :p11_tb_5b_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
+            <td></td>
+            <td><%= f.text_field :p11_tb_5b_2, {class: "form-control", id:"res_p11_tb_5b_2"}%></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">6. ¿Cuál fue el ingreso por venta de leche en 2017?
+    <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">6. ¿Cuál fue el ingreso por venta de leche en 2017?
 
-        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col" class="text_center">Millones</th>
-      <th scope="col" class="text_center">No aplica</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row"><%= f.text_field :p11_tb_6a, {class: "form-control", id:"res_p11_tb_6a"}%></td>
-      <td class="text-center"><%= f.radio_button :p11_tb_6b, {class: "form-control", id:"res_p11_tb_6a"}%></td>
-    </tr>
-  </tbody>
-</table>
-</div>
+            <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col" class="text_center">Millones</th>
+          <th scope="col" class="text_center">No aplica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row"><%= f.text_field :p11_tb_6a, {class: "form-control", id:"res_p11_tb_6a"}%></td>
+          <td class="text-center"><%= f.radio_button :p11_tb_6b, {class: "form-control", id:"res_p11_tb_6a"}%></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
 
-<div class="field col-md-12" id="div_p11_tb_7" style="margin-top: 5px;">
+    <div class="field col-md-12" id="div_p11_tb_7" style="margin-top: 5px;">
         <%= f.label :p11_tb_7, "7. ¿En cuánta área de su finca realiza las actividades de pastoreo para el ganado bovino relacionado?" %>
         <%= f.text_field :p11_tb_7, {class: "form-control", id:"res_p11_tb_7"}%><p class="font-italic text-center">(hectáreas)</p>
       </div>
     </div>
-    </div>
+  </div>
 
 <div id="div_p11_tc_1" class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
       <div class="col-md-9" style="margin-top: 20px;">
@@ -238,7 +238,7 @@
       </div>
     </div>
 
-    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;" id="div_tablac_porcino">
 
       <div class="row col-md-6">
 
@@ -260,7 +260,7 @@
       </div>
     </div>
 
-      <div class="field col-md-12" id="div_p11_tc_3" style="margin-top: 5px;">3. Respectoalnúmerodecerdos(as)en2017:<p></p>
+      <div class="field col-md-12" id="div_p11_tc_3" style="margin-top: 5px;">3. Respecto al númer ode cerdos(as) en 2017:<p></p>
         <%= f.label :p11_tc_3_a, "a. En total" %>
         <%= f.text_field :p11_tc_3_a, {class: "form-control", id:"res_p11_tc_3_a"}%><p class="text-center font-italic">Diciembre 2017</p>
         <%= f.label :p11_tc_3_b, "b. ¿Cuántos machos reproductores tuvo?" %>
@@ -315,7 +315,7 @@
       </div>
     </div>
 
-    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+    <div class="row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;" id="div_tablad_pollo">
 
       <div class="row col-md-6">
 
@@ -379,7 +379,7 @@
 </div>
 </div>
 
-<div class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;">
+<div class="row col-md-12 border border-secundary font-weight-bold" style="margin-top: 20px; margin-right: 10px; margin-left: 5px;" >
       <div class="col-md-9" style="margin-top: 20px;">
       Tabla E. 1. ¿En su finca, el año pasado (2017) , ha realizado otras actividades pecuarias?
       </div>
@@ -388,7 +388,7 @@
       </div>
     </div>  
 
-    <div class="continer row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;">
+    <div class="continer row col-md-12 border" style="margin-top: 5px; margin-right: 10px; margin-left: 5px;" id="div_tablae_pecuaria">
 
     <div class="field col-md-12" id="div_p11_tb_5" style="margin-top: 10px;">
 
@@ -419,7 +419,7 @@
       <td><%= f.text_field :p11_te_2d_1, {class: "form-control", id:"res_p11_te_2d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2d_2, {class: "form-control", id:"res_p11_te_2d_2"}%></td>
 
       <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_f"}%></td>
-      <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_f"}%></td>
+      <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_ff"}%></td>
     </tr>
     </tbody>
 </table>
@@ -438,7 +438,7 @@
   </thead>
   <tbody>
       <th scope="row">3. ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo)</th>
-      <td><%= f.select :p11_te_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+      <td><%= f.select :p11_te_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_3"}%></td>
       <td><%= f.text_field :p11_te_3a_1, {class: "form-control", id:"res_p11_te_3a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3a_2, {class: "form-control", id:"res_p11_te_3a_2"}%></td>
 
       <td><%= f.text_field :p11_te_3b_1, {class: "form-control", id:"res_p11_te_3b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3b_2, {class: "form-control", id:"res_p11_te_3b_2"}%></td>
@@ -449,7 +449,7 @@
     </tr>
     <tr>
       <th scope="row">4. ¿Tiene otras especies de animales?</th>
-      <td><%= f.select :p11_te_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
+      <td><%= f.select :p11_te_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_4"}%></td>
       <td><%= f.text_field :p11_te_4a_1, {class: "form-control", id:"res_p11_te_4a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_2, {class: "form-control", id:"res_p11_te_4a_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_3, {class: "form-control", id:"res_p11_te_4a_3"}%></td>
 
       <td><%= f.text_field :p11_te_4b_1, {class: "form-control", id:"res_p11_te_4b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_2, {class: "form-control", id:"res_p11_te_4b_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_3, {class: "form-control", id:"res_p11_te_4b_3"}%></td>
@@ -2619,8 +2619,687 @@
       $('#Seccion_Modulo16').removeClass('hidden');
     }); 
 
+    $('#res_p11_ta_1').change(function(){
+        if ($('#res_p11_ta_1').val() == "Si") {
+          $('#div_tabla1_p11').removeClass('hidden');
+        } else {
+          $('#div_tabla1_p11').addClass('hidden');
+        }
+      });
+    $('#res_p11_tb_1').change(function(){
+        if ($('#res_p11_tb_1').val() == "Si") {
+          $('#div_tablab_bovino').removeClass('hidden');
+        } else {
+          $('#div_tablab_bovino').addClass('hidden');
+        }
+      });
+    $('#res_p11_tc_1').change(function(){
+        if ($('#res_p11_tc_1').val() == "Si") {
+          $('#div_tablac_porcino').removeClass('hidden');
+        } else {
+          $('#div_tablac_porcino').addClass('hidden');
+        }
+      });
+    $('#res_p11_td_1').change(function(){
+        if ($('#res_p11_td_1').val() == "Si") {
+          $('#div_tablad_pollo').removeClass('hidden');
+        } else {
+          $('#div_tablad_pollo').addClass('hidden');
+        }
+      });
+    $('#res_p11_te_1').change(function(){
+        if ($('#res_p11_te_1').val() == "Si") {
+          $('#div_tablae_pecuaria').removeClass('hidden');
+        } else {
+          $('#div_tablae_pecuaria').addClass('hidden');
+        }
+      });
+    $('#res_p11_te_2').change(function(){
+        if ($('#res_p11_te_2').val() == "Si") {
+          $('#res_p11_te_2a_1').removeClass('hidden');
+          $('#res_p11_te_2a_2').removeClass('hidden');
+          $('#res_p11_te_2b_1').removeClass('hidden');
+          $('#res_p11_te_2b_2').removeClass('hidden');
+          $('#res_p11_te_2c_1').removeClass('hidden');
+          $('#res_p11_te_2c_2').removeClass('hidden');
+          $('#res_p11_te_2d_1').removeClass('hidden');
+          $('#res_p11_te_2d_2').removeClass('hidden');
+          $('#res_p11_te_2_f').removeClass('hidden');
+          $('#res_p11_te_2_ff').removeClass('hidden');
+        } else {
+          $('#res_p11_te_2a_1').addClass('hidden');
+          $('#res_p11_te_2a_2').addClass('hidden');
+          $('#res_p11_te_2b_1').addClass('hidden');
+          $('#res_p11_te_2b_2').addClass('hidden');
+          $('#res_p11_te_2c_1').addClass('hidden');
+          $('#res_p11_te_2d_1').addClass('hidden');
+          $('#res_p11_te_2d_2').addClass('hidden');
+          $('#res_p11_te_2_f').addClass('hidden');
+          $('#res_p11_te_2_ff').addClass('hidden');  
+
+        }
+      });
+    $('#res_p11_te_3').change(function(){
+        if ($('#res_p11_te_3').val() == "Si") {
+          $('#res_p11_te_3a_1').removeClass('hidden');
+          $('#res_p11_te_3a_2').removeClass('hidden');
+          $('#res_p11_te_3b_1').removeClass('hidden');
+          $('#res_p11_te_3b_2').removeClass('hidden');
+          $('#res_p11_te_3c_1').removeClass('hidden');
+          $('#res_p11_te_3c_2').removeClass('hidden');
+          $('#res_p11_te_3d_1').removeClass('hidden');
+          $('#res_p11_te_3d_2').removeClass('hidden');
+        } else {
+          $('#res_p11_te_3a_1').addClass('hidden');
+          $('#res_p11_te_3a_2').addClass('hidden');
+          $('#res_p11_te_3b_1').addClass('hidden');
+          $('#res_p11_te_3b_2').addClass('hidden');
+          $('#res_p11_te_3c_1').addClass('hidden');
+          $('#res_p11_te_3c_2').addClass('hidden');
+          $('#res_p11_te_3d_1').addClass('hidden');
+          $('#res_p11_te_3d_2').addClass('hidden'); 
+        }
+      });
+    $('#res_p11_te_4').change(function(){
+        if ($('#res_p11_te_3').val() == "Si") {
+          $('#res_p11_te_4a_1').removeClass('hidden');
+          $('#res_p11_te_4a_2').removeClass('hidden');
+          $('#res_p11_te_4a_3').removeClass('hidden');
+          $('#res_p11_te_4b_1').removeClass('hidden');
+          $('#res_p11_te_4b_2').removeClass('hidden');
+          $('#res_p11_te_4b_3').removeClass('hidden');
+          $('#res_p11_te_4c_1').removeClass('hidden');
+          $('#res_p11_te_4c_2').removeClass('hidden');
+          $('#res_p11_te_4c_3').removeClass('hidden');
+          $('#res_p11_te_4d_1').removeClass('hidden');
+          $('#res_p11_te_4d_2').removeClass('hidden');
+          $('#res_p11_te_4d_3').removeClass('hidden');
+        } else {
+          $('#res_p11_te_4a_1').addClass('hidden');
+          $('#res_p11_te_4a_2').addClass('hidden');
+          $('#res_p11_te_4a_3').addClass('hidden');
+          $('#res_p11_te_4b_1').addClass('hidden');
+          $('#res_p11_te_4b_2').addClass('hidden');
+          $('#res_p11_te_4b_3').addClass('hidden');
+          $('#res_p11_te_4c_1').addClass('hidden');
+          $('#res_p11_te_4c_2').addClass('hidden');
+          $('#res_p11_te_4c_3').addClass('hidden');
+          $('#res_p11_te_4d_1').addClass('hidden');
+          $('#res_p11_te_4d_2').addClass('hidden');
+          $('#res_p11_te_4d_3').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_1_a').change(function(){
+        if ($('#res_p12_a_1_a').val() == "Si") {
+          $('#res_p12_a_1_b').removeClass('hidden');
+          $('#res_p12_a_1_c').removeClass('hidden');
+          $('#res_p12_a_1_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_1_b').addClass('hidden');
+          $('#res_p12_a_1_c').addClass('hidden');
+          $('#res_p12_a_1_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_2_a').change(function(){
+        if ($('#res_p12_a_2_a').val() == "Si") {
+          $('#res_p12_a_2_b').removeClass('hidden');
+          $('#res_p12_a_2_c').removeClass('hidden');
+          $('#res_p12_a_2_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_2_b').addClass('hidden');
+          $('#res_p12_a_2_c').addClass('hidden');
+          $('#res_p12_a_2_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_3_a').change(function(){
+        if ($('#res_p12_a_3_a').val() == "Si") {
+          $('#res_p12_a_3_b').removeClass('hidden');
+          $('#res_p12_a_3_c').removeClass('hidden');
+          $('#res_p12_a_3_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_3_b').addClass('hidden');
+          $('#res_p12_a_3_c').addClass('hidden');
+          $('#res_p12_a_3_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_4_a').change(function(){
+        if ($('#res_p12_a_4_a').val() == "Si") {
+          $('#res_p12_a_4_b').removeClass('hidden');
+          $('#res_p12_a_4_c').removeClass('hidden');
+          $('#res_p12_a_4_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_4_b').addClass('hidden');
+          $('#res_p12_a_4_c').addClass('hidden');
+          $('#res_p12_a_4_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_5_a').change(function(){
+        if ($('#res_p12_a_5_a').val() == "Si") {
+          $('#res_p12_a_5_b').removeClass('hidden');
+          $('#res_p12_a_5_c').removeClass('hidden');
+          $('#res_p12_a_5_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_5_b').addClass('hidden');
+          $('#res_p12_a_5_c').addClass('hidden');
+          $('#res_p12_a_5_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_6_a').change(function(){
+        if ($('#res_p12_a_6_a').val() == "Si") {
+          $('#res_p12_a_6_b').removeClass('hidden');
+          $('#res_p12_a_6_c').removeClass('hidden');
+          $('#res_p12_a_6_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_6_b').addClass('hidden');
+          $('#res_p12_a_6_c').addClass('hidden');
+          $('#res_p12_a_6_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_7_a').change(function(){
+        if ($('#res_p12_a_7_a').val() == "Si") {
+          $('#res_p12_a_7_b').removeClass('hidden');
+          $('#res_p12_a_7_c').removeClass('hidden');
+          $('#res_p12_a_7_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_7_b').addClass('hidden');
+          $('#res_p12_a_7_c').addClass('hidden');
+          $('#res_p12_a_7_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_8_a').change(function(){
+        if ($('#res_p12_a_8_a').val() == "Si") {
+          $('#res_p12_a_8_b').removeClass('hidden');
+          $('#res_p12_a_8_c').removeClass('hidden');
+          $('#res_p12_a_8_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_8_b').addClass('hidden');
+          $('#res_p12_a_8_c').addClass('hidden');
+          $('#res_p12_a_8_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_9_a').change(function(){
+        if ($('#res_p12_a_9_a').val() == "Si") {
+          $('#res_p12_a_9_b').removeClass('hidden');
+          $('#res_p12_a_9_c').removeClass('hidden');
+          $('#res_p12_a_9_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_9_b').addClass('hidden');
+          $('#res_p12_a_9_c').addClass('hidden');
+          $('#res_p12_a_9_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_10_a').change(function(){
+        if ($('#res_p12_a_10_a').val() == "Si") {
+          $('#res_p12_a_10_b').removeClass('hidden');
+          $('#res_p12_a_10_c').removeClass('hidden');
+          $('#res_p12_a_10_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_10_b').addClass('hidden');
+          $('#res_p12_a_10_c').addClass('hidden');
+          $('#res_p12_a_10_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_11_a').change(function(){
+        if ($('#res_p12_a_11_a').val() == "Si") {
+          $('#res_p12_a_11_b').removeClass('hidden');
+          $('#res_p12_a_11_c').removeClass('hidden');
+          $('#res_p12_a_11_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_11_b').addClass('hidden');
+          $('#res_p12_a_11_c').addClass('hidden');
+          $('#res_p12_a_11_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_12_a').change(function(){
+        if ($('#res_p12_a_12_a').val() == "Si") {
+          $('#res_p12_a_12_b').removeClass('hidden');
+          $('#res_p12_a_12_c').removeClass('hidden');
+          $('#res_p12_a_12_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_12_b').addClass('hidden');
+          $('#res_p12_a_12_c').addClass('hidden');
+          $('#res_p12_a_12_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_13_a').change(function(){
+        if ($('#res_p12_a_13_a').val() == "Si") {
+          $('#res_p12_a_13_b').removeClass('hidden');
+          $('#res_p12_a_13_c').removeClass('hidden');
+          $('#res_p12_a_13_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_13_b').addClass('hidden');
+          $('#res_p12_a_13_c').addClass('hidden');
+          $('#res_p12_a_13_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_14_a').change(function(){
+        if ($('#res_p12_a_14_a').val() == "Si") {
+          $('#res_p12_a_14_b').removeClass('hidden');
+          $('#res_p12_a_14_c').removeClass('hidden');
+          $('#res_p12_a_14_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_14_b').addClass('hidden');
+          $('#res_p12_a_14_c').addClass('hidden');
+          $('#res_p12_a_14_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_15_a').change(function(){
+        if ($('#res_p12_a_15_a').val() == "Si") {
+          $('#res_p12_a_15_b').removeClass('hidden');
+          $('#res_p12_a_15_c').removeClass('hidden');
+          $('#res_p12_a_15_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_15_b').addClass('hidden');
+          $('#res_p12_a_15_c').addClass('hidden');
+          $('#res_p12_a_15_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_16_a').change(function(){
+        if ($('#res_p12_a_16_a').val() == "Si") {
+          $('#res_p12_a_16_b').removeClass('hidden');
+          $('#res_p12_a_16_c').removeClass('hidden');
+          $('#res_p12_a_16_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_16_b').addClass('hidden');
+          $('#res_p12_a_16_c').addClass('hidden');
+          $('#res_p12_a_16_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_17_a').change(function(){
+        if ($('#res_p12_a_17_a').val() == "Si") {
+          $('#res_p12_a_17_b').removeClass('hidden');
+          $('#res_p12_a_17_c').removeClass('hidden');
+          $('#res_p12_a_17_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_17_b').addClass('hidden');
+          $('#res_p12_a_17_c').addClass('hidden');
+          $('#res_p12_a_17_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_18_a').change(function(){
+        if ($('#res_p12_a_18_a').val() == "Si") {
+          $('#res_p12_a_18_b').removeClass('hidden');
+          $('#res_p12_a_18_c').removeClass('hidden');
+          $('#res_p12_a_18_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_18_b').addClass('hidden');
+          $('#res_p12_a_18_c').addClass('hidden');
+          $('#res_p12_a_18_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_19_a').change(function(){
+        if ($('#res_p12_a_19_a').val() == "Si") {
+          $('#res_p12_a_19_b').removeClass('hidden');
+          $('#res_p12_a_19_c').removeClass('hidden');
+          $('#res_p12_a_19_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_19_b').addClass('hidden');
+          $('#res_p12_a_19_c').addClass('hidden');
+          $('#res_p12_a_19_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_20_a').change(function(){
+        if ($('#res_p12_a_20_a').val() == "Si") {
+          $('#res_p12_a_20_b').removeClass('hidden');
+          $('#res_p12_a_20_c').removeClass('hidden');
+          $('#res_p12_a_20_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_20_b').addClass('hidden');
+          $('#res_p12_a_20_c').addClass('hidden');
+          $('#res_p12_a_20_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_21_a').change(function(){
+        if ($('#res_p12_a_21_a').val() == "Si") {
+          $('#res_p12_a_21_b').removeClass('hidden');
+          $('#res_p12_a_21_c').removeClass('hidden');
+          $('#res_p12_a_21_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_21_b').addClass('hidden');
+          $('#res_p12_a_21_c').addClass('hidden');
+          $('#res_p12_a_21_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_22_a').change(function(){
+        if ($('#res_p12_a_22_a').val() == "Si") {
+          $('#res_p12_a_22_b').removeClass('hidden');
+          $('#res_p12_a_22_c').removeClass('hidden');
+          $('#res_p12_a_22_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_22_b').addClass('hidden');
+          $('#res_p12_a_22_c').addClass('hidden');
+          $('#res_p12_a_22_d').addClass('hidden');
+        }
+      });
+    $('#res_p12_a_28_a').change(function(){
+        if ($('#res_p12_a_28_a').val() == "Si") {
+          $('#res_p12_a_28_b').removeClass('hidden');
+          $('#res_p12_a_28_c').removeClass('hidden');
+          $('#res_p12_a_28_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_28_b').addClass('hidden');
+          $('#res_p12_a_28_c').addClass('hidden');
+          $('#res_p12_a_28_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_27_a').change(function(){
+        if ($('#res_p12_a_27_a').val() == "Si") {
+          $('#res_p12_a_27_b').removeClass('hidden');
+          $('#res_p12_a_27_c').removeClass('hidden');
+          $('#res_p12_a_27_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_27_b').addClass('hidden');
+          $('#res_p12_a_27_c').addClass('hidden');
+          $('#res_p12_a_27_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_26_a').change(function(){
+        if ($('#res_p12_a_26_a').val() == "Si") {
+          $('#res_p12_a_26_b').removeClass('hidden');
+          $('#res_p12_a_26_c').removeClass('hidden');
+          $('#res_p12_a_26_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_26_b').addClass('hidden');
+          $('#res_p12_a_26_c').addClass('hidden');
+          $('#res_p12_a_26_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_24_a').change(function(){
+        if ($('#res_p12_a_24_a').val() == "Si") {
+          $('#res_p12_a_24_b').removeClass('hidden');
+          $('#res_p12_a_24_c').removeClass('hidden');
+          $('#res_p12_a_24_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_24_b').addClass('hidden');
+          $('#res_p12_a_24_c').addClass('hidden');
+          $('#res_p12_a_24_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_25_a').change(function(){
+        if ($('#res_p12_a_25_a').val() == "Si") {
+          $('#res_p12_a_25_b').removeClass('hidden');
+          $('#res_p12_a_25_c').removeClass('hidden');
+          $('#res_p12_a_25_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_25_b').addClass('hidden');
+          $('#res_p12_a_25_c').addClass('hidden');
+          $('#res_p12_a_25_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_23_a').change(function(){
+        if ($('#res_p12_a_23_a').val() == "Si") {
+          $('#res_p12_a_23_b').removeClass('hidden');
+          $('#res_p12_a_23_c').removeClass('hidden');
+          $('#res_p12_a_23_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_23_b').addClass('hidden');
+          $('#res_p12_a_23_c').addClass('hidden');
+          $('#res_p12_a_23_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_29_a').change(function(){
+        if ($('#res_p12_a_29_a').val() == "Si") {
+          $('#res_p12_a_29_b').removeClass('hidden');
+          $('#res_p12_a_29_c').removeClass('hidden');
+          $('#res_p12_a_29_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_29_b').addClass('hidden');
+          $('#res_p12_a_29_c').addClass('hidden');
+          $('#res_p12_a_29_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_31_a').change(function(){
+        if ($('#res_p12_a_31_a').val() == "Si") {
+          $('#res_p12_a_31_b').removeClass('hidden');
+          $('#res_p12_a_31_c').removeClass('hidden');
+          $('#res_p12_a_31_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_31_b').addClass('hidden');
+          $('#res_p12_a_31_c').addClass('hidden');
+          $('#res_p12_a_31_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_30_a').change(function(){
+        if ($('#res_p12_a_30_a').val() == "Si") {
+          $('#res_p12_a_30_b').removeClass('hidden');
+          $('#res_p12_a_30_c').removeClass('hidden');
+          $('#res_p12_a_30_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_30_b').addClass('hidden');
+          $('#res_p12_a_30_c').addClass('hidden');
+          $('#res_p12_a_30_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_32_a').change(function(){
+        if ($('#res_p12_a_32_a').val() == "Si") {
+          $('#res_p12_a_32_b').removeClass('hidden');
+          $('#res_p12_a_32_c').removeClass('hidden');
+          $('#res_p12_a_32_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_32_b').addClass('hidden');
+          $('#res_p12_a_32_c').addClass('hidden');
+          $('#res_p12_a_32_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_33_a').change(function(){
+        if ($('#res_p12_a_33_a').val() == "Si") {
+          $('#res_p12_a_33_b').removeClass('hidden');
+          $('#res_p12_a_33_c').removeClass('hidden');
+          $('#res_p12_a_33_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_33_b').addClass('hidden');
+          $('#res_p12_a_33_c').addClass('hidden');
+          $('#res_p12_a_33_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_34_a').change(function(){
+        if ($('#res_p12_a_34_a').val() == "Si") {
+          $('#res_p12_a_34_b').removeClass('hidden');
+          $('#res_p12_a_34_c').removeClass('hidden');
+          $('#res_p12_a_34_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_34_b').addClass('hidden');
+          $('#res_p12_a_34_c').addClass('hidden');
+          $('#res_p12_a_34_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_35_a').change(function(){
+        if ($('#res_p12_a_35_a').val() == "Si") {
+          $('#res_p12_a_35_b').removeClass('hidden');
+          $('#res_p12_a_35_c').removeClass('hidden');
+          $('#res_p12_a_35_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_35_b').addClass('hidden');
+          $('#res_p12_a_35_c').addClass('hidden');
+          $('#res_p12_a_35_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_36_a').change(function(){
+        if ($('#res_p12_a_36_a').val() == "Si") {
+          $('#res_p12_a_36_b').removeClass('hidden');
+          $('#res_p12_a_36_c').removeClass('hidden');
+          $('#res_p12_a_36_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_36_b').addClass('hidden');
+          $('#res_p12_a_36_c').addClass('hidden');
+          $('#res_p12_a_36_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_37_a').change(function(){
+        if ($('#res_p12_a_37_a').val() == "Si") {
+          $('#res_p12_a_37_b').removeClass('hidden');
+          $('#res_p12_a_37_c').removeClass('hidden');
+          $('#res_p12_a_37_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_37_b').addClass('hidden');
+          $('#res_p12_a_37_c').addClass('hidden');
+          $('#res_p12_a_37_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_38_a').change(function(){
+        if ($('#res_p12_a_38_a').val() == "Si") {
+          $('#res_p12_a_38_b').removeClass('hidden');
+          $('#res_p12_a_38_c').removeClass('hidden');
+          $('#res_p12_a_38_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_38_b').addClass('hidden');
+          $('#res_p12_a_38_c').addClass('hidden');
+          $('#res_p12_a_38_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_a_39_a').change(function(){
+        if ($('#res_p12_a_39_a').val() == "Si") {
+          $('#res_p12_a_39_b').removeClass('hidden');
+          $('#res_p12_a_39_c').removeClass('hidden');
+          $('#res_p12_a_39_d').removeClass('hidden');
+        } else {
+          $('#res_p12_a_39_b').addClass('hidden');
+          $('#res_p12_a_39_c').addClass('hidden');
+          $('#res_p12_a_39_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_1_a').change(function(){
+        if ($('#res_p12_b_1_a').val() == "Si") {
+          $('#res_p12_b_1_b').removeClass('hidden');
+          $('#res_p12_b_1_c').removeClass('hidden');
+          $('#res_p12_b_1_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_1_b').addClass('hidden');
+          $('#res_p12_b_1_c').addClass('hidden');
+          $('#res_p12_b_1_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_2_a').change(function(){
+        if ($('#res_p12_b_2_a').val() == "Si") {
+          $('#res_p12_b_2_b').removeClass('hidden');
+          $('#res_p12_b_2_c').removeClass('hidden');
+          $('#res_p12_b_2_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_2_b').addClass('hidden');
+          $('#res_p12_b_2_c').addClass('hidden');
+          $('#res_p12_b_2_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_3_a').change(function(){
+        if ($('#res_p12_b_3_a').val() == "Si") {
+          $('#res_p12_b_3_b').removeClass('hidden');
+          $('#res_p12_b_3_c').removeClass('hidden');
+          $('#res_p12_b_3_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_3_b').addClass('hidden');
+          $('#res_p12_b_3_c').addClass('hidden');
+          $('#res_p12_b_3_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_4_a').change(function(){
+        if ($('#res_p12_b_4_a').val() == "Si") {
+          $('#res_p12_b_4_b').removeClass('hidden');
+          $('#res_p12_b_4_c').removeClass('hidden');
+          $('#res_p12_b_4_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_4_b').addClass('hidden');
+          $('#res_p12_b_4_c').addClass('hidden');
+          $('#res_p12_b_4_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_5_a').change(function(){
+        if ($('#res_p12_b_5_a').val() == "Si") {
+          $('#res_p12_b_5_b').removeClass('hidden');
+          $('#res_p12_b_5_c').removeClass('hidden');
+          $('#res_p12_b_5_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_5_b').addClass('hidden');
+          $('#res_p12_b_5_c').addClass('hidden');
+          $('#res_p12_b_5_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_6_a').change(function(){
+        if ($('#res_p12_b_6_a').val() == "Si") {
+          $('#res_p12_b_6_b').removeClass('hidden');
+          $('#res_p12_b_6_c').removeClass('hidden');
+          $('#res_p12_b_6_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_6_b').addClass('hidden');
+          $('#res_p12_b_6_c').addClass('hidden');
+          $('#res_p12_b_6_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_7_a').change(function(){
+        if ($('#res_p12_b_7_a').val() == "Si") {
+          $('#res_p12_b_7_b').removeClass('hidden');
+          $('#res_p12_b_7_c').removeClass('hidden');
+          $('#res_p12_b_7_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_7_b').addClass('hidden');
+          $('#res_p12_b_7_c').addClass('hidden');
+          $('#res_p12_b_7_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_8_a').change(function(){
+        if ($('#res_p12_b_8_a').val() == "Si") {
+          $('#res_p12_b_8_b').removeClass('hidden');
+          $('#res_p12_b_8_c').removeClass('hidden');
+          $('#res_p12_b_8_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_8_b').addClass('hidden');
+          $('#res_p12_b_8_c').addClass('hidden');
+          $('#res_p12_b_8_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_9_a').change(function(){
+        if ($('#res_p12_b_9_a').val() == "Si") {
+          $('#res_p12_b_9_b').removeClass('hidden');
+          $('#res_p12_b_9_c').removeClass('hidden');
+          $('#res_p12_b_9_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_9_b').addClass('hidden');
+          $('#res_p12_b_9_c').addClass('hidden');
+          $('#res_p12_b_9_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_10_a').change(function(){
+        if ($('#res_p12_b_10_a').val() == "Si") {
+          $('#res_p12_b_10_b').removeClass('hidden');
+          $('#res_p12_b_10_c').removeClass('hidden');
+          $('#res_p12_b_10_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_10_b').addClass('hidden');
+          $('#res_p12_b_10_c').addClass('hidden');
+          $('#res_p12_b_10_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_11_a').change(function(){
+        if ($('#res_p12_b_11_a').val() == "Si") {
+          $('#res_p12_b_11_b').removeClass('hidden');
+          $('#res_p12_b_11_c').removeClass('hidden');
+          $('#res_p12_b_11_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_11_b').addClass('hidden');
+          $('#res_p12_b_11_c').addClass('hidden');
+          $('#res_p12_b_11_d').addClass('hidden');
+        }
+      });
+      $('#res_p12_b_12_a').change(function(){
+        if ($('#res_p12_b_12_a').val() == "Si") {
+          $('#res_p12_b_12_b').removeClass('hidden');
+          $('#res_p12_b_12_c').removeClass('hidden');
+          $('#res_p12_b_12_d').removeClass('hidden');
+        } else {
+          $('#res_p12_b_12_b').addClass('hidden');
+          $('#res_p12_b_12_c').addClass('hidden');
+          $('#res_p12_b_12_d').addClass('hidden');
+        }
+      });
+
+    
 
 
+
+
+
+
+
+     
 
 
 </script>
