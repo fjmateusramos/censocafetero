@@ -901,28 +901,28 @@
       <%= f.label :p13_1a, "1. ¿Actualmente tiene créditos vigentes que hayan sido solicitados para atender necesidades de su finca?" %>
       <%= f.select :p13_1a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p13_1a"}%>
     </div>
-    <div class="field col-md-12 text-center" id="div_p13_1b" style="margin-top: 10px;">
+    <div class="field col-md-12 text-center hidden" id="div_p13_1b" style="margin-top: 10px;">
     <%= f.label :p13_1b, "¿Cuántos?" %>
-    <div class="hidden" id="div_p13_1b">
+    <div class="">
     <%= f.text_field :p13_1b, {class: "form-control", id:"res_p13_1b"}%>
     </div>
   </div>
   </div>
 
-  <div class="field col-md-3" id="div_p13_1a" style="margin-top: 10px;">
+  <div class="field col-md-3" id="div_p13_2a" style="margin-top: 10px;">
       <%= f.label :p13_2, "2. De estos créditos, ¿cuántos le aprobaron después de enero de 2017?" %><p class="font-italic text-center">Número créditos</p>
-      <%= f.text_field :p13_2, {class: "form-control", id:"res_p13_1a"}%>
+      <%= f.text_field :p13_2, {class: "form-control", id:"res_p13_2a"}%>
   </div>
 
   <div class=" col-md-4 row border border-secundary" style="margin-right: 10px; margin-left: 10px;">
 
   <div class="field col-md-12" id="div_p13_3a" style="margin-top: 10px;">
       <%= f.label :p13_3a, "3. ¿Alguno de estos créditos es refinanciación de deuda?" %>
-      <%= f.select :p13_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p13_1a"}%>
+      <%= f.select :p13_3a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p13_3a"}%>
   </div>
-  <div class="field col-md-12 text-center" id="div_p13_3b" style="margin-top: 10px;">
+  <div class="field col-md-12 text-center hidden" id="div_p13_3b" style="margin-top: 10px;">
     <%= f.label :p13_3b, "¿Cuántos?" %>
-  <div class="hidden" id="div_p13_3b">
+  <div class="" id="">
     <%= f.text_field :p13_3b, {class: "form-control", id:"res_p13_3b"}%>
   </div>
   </div>
@@ -933,7 +933,7 @@
 
   <div class=" row alert-warning col-lg-12" style="margin-right: 10px; margin-left: 10px;">
 
-    <table class="table" id=div_p13_4>
+    <table class="table" id=div_p13_4tabla>
   <thead>
     <tr>
       <th scope="col" class="text-center">Entidad</th>
@@ -1011,29 +1011,29 @@
       <%= f.label :p13_5a, "5.  ¿Para qué pidió estos préstamos?"%><p>(puede marcar más de una opción)</p>
 
     <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_1">
   <label class="form-check-label" for="p13_5a">Labores del cultivo de café</label>
   <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_2">
   <label class="form-check-label" for="p13_5a">inversión agropecuaria (maquinaria, equipos, herramientas)</label>
   <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_3">
   <label class="form-check-label" for="p13_5a">Inversión no agropecuaria</label>
   <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_4">
   <label class="form-check-label" for="p13_5a">Labores de otros cultivos y/o pecuarias
 </label>
   <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_5">
   <label class="form-check-label" for="p13_5a">Educación</label>
   <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_6">
   <label class="form-check-label" for="p13_5a">Salud</label>
   <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_7">
   <label class="form-check-label" for="p13_5a">Consumo</label>
   <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p13_5a">
+  <input class="form-check-input" type="checkbox" value="" id="p13_5a_8">
   <label class="form-check-label" for="p13_5a">Otro. ¿Cuál?
     <div id="div_p13_5b"><%= f.text_field :p13_5b, {class: "form-control", id:"res_p13_5b"} %>
   </div></label>
@@ -1150,9 +1150,9 @@
       <%= f.label :p13_11a, "11. ¿Por qué no pidió prestado?" %>
       <%= f.select :p13_11a, ["No le gusta endeudarse", "Hay que hacer muchos trámites y son costosos", "No tiene información clara sobre las condiciones de los préstamos", "Sabe que no cumple con los requisitos exigidos", "No tiene garantías que respalden el préstamo", "Tendría que pagar intereses muy altos", "No lo necesitó", "Otro"],{:include_blank => true}, {class: "form-control", id:"res_p13_11a"}%>
     </div>
-    <div class="field col-md-12 text-center" id="div_p13_11b" style="margin-top: 10px;">
+    <div class="field col-md-12 text-center hidden" id="div_p13_11b" style="margin-top: 10px;">
     <%= f.label :p13_11b, "¿Cuál?" %>
-  <div class="hidden" id="div_p13_11b">
+  <div class="" id="div_p13_11b">
     <%= f.text_field :p13_11b, {class: "form-control", id:"res_p13_11b"}%>
   </div>
   </div>
@@ -1169,9 +1169,9 @@
       <%= f.label :p13_13a, "13. ¿Por qué le negaron el crédito?" %>
       <%= f.select :p13_13a, ["Tiene mala historia crediticia", "Está reportado en Datacrédito y/o Cifín", "No tiene garantías que respalden el préstamo", "No tiene codeudor/fiador", "Tiene bajos ingresos", "Tiene una deuda anterior", "Alto nivel de riesgo de las actividad (clima, plagas, precios, etc.)", "Por el tamaño de la finca", "Por la tenencia de la finca", "La producción de la finca es muy baja", "Bajo cupo de endeudamiento", "Otro" ],{:include_blank => true}, {class: "form-control", id:"res_p13_13a"}%>
     </div>
-    <div class="field col-md-4 text-center" id="div_p13_13b" style="margin-top: 10px;">
+    <div class="field col-md-4 text-center hidden" id="div_p13_13b" style="margin-top: 10px;">
     <%= f.label :p13_13b, "¿Cual?" %>
-  <div class="hidden" id="div_p13_13b">
+  <div class="" id="div_p13_13b">
     <%= f.text_field :p13_13b, {class: "form-control", id:"res_p13_13b"}%>
   </div>
   </div>
@@ -3290,6 +3290,195 @@
           $('#res_p12_b_12_d').addClass('hidden');
         }
       });
+      $('#res_p13_1a').change(function(){
+        if ($('#res_p13_1a').val() == "Si") {
+          $('#div_p13_2a').removeClass('hidden');
+          $('#div_p13_3a').removeClass('hidden');
+          $('#div_p13_4').removeClass('hidden');
+          $('#div_p13_4tabla').removeClass('hidden');
+          $('#div_p13_5a').removeClass('hidden');
+          $('#div_p13_6a').removeClass('hidden');
+          $('#div_p13_7a').removeClass('hidden');
+          $('#div_p13_8a').removeClass('hidden');
+          $('#div_p13_1b').removeClass('hidden');
+        } else {
+          $('#div_p13_2a').addClass('hidden');
+          $('#div_p13_3a').addClass('hidden');
+          $('#div_p13_4').addClass('hidden');
+          $('#div_p13_4tabla').addClass('hidden');
+          $('#div_p13_5a').addClass('hidden');
+          $('#div_p13_6a').addClass('hidden');
+          $('#div_p13_7a').addClass('hidden');
+          $('#div_p13_8a').addClass('hidden');
+          $('#div_p13_1b').addClass('hidden');
+        }
+      });
+
+      $('#res_p13_3a').change(function(){
+        if ($('#res_p13_3a').val() == "Si") {
+          $('#div_p13_3b').removeClass('hidden');
+        } else {
+          $('#div_p13_3b').addClass('hidden');
+        }
+      });
+
+      $('#res_p13_4_1_a').change(function(){
+        if ($('#res_p13_4_1_a').val() == "Si") {
+          $('#res_p13_4_1_b').removeClass('hidden');
+          $('#res_p13_4_1_c').removeClass('hidden');
+          $('#res_p13_4_1_d').removeClass('hidden');
+          $('#res_p13_4_1_e').removeClass('hidden');
+        } else {
+          $('#res_p13_4_1_b').addClass('hidden');
+          $('#res_p13_4_1_c').addClass('hidden');
+          $('#res_p13_4_1_d').addClass('hidden');
+          $('#res_p13_4_1_e').addClass('hidden');
+        }
+      });
+      $('#res_p13_4_2_a').change(function(){
+        if ($('#res_p13_4_2_a').val() == "Si") {
+          $('#res_p13_4_2_b').removeClass('hidden');
+          $('#res_p13_4_2_c').removeClass('hidden');
+          $('#res_p13_4_2_d').removeClass('hidden');
+          $('#res_p13_4_2_e').removeClass('hidden');
+        } else {
+          $('#res_p13_4_2_b').addClass('hidden');
+          $('#res_p13_4_2_c').addClass('hidden');
+          $('#res_p13_4_2_d').addClass('hidden');
+          $('#res_p13_4_2_e').addClass('hidden');
+        }
+      });
+      $('#res_p13_4_3_a').change(function(){
+        if ($('#res_p13_4_3_a').val() == "Si") {
+          $('#res_p13_4_3_b').removeClass('hidden');
+          $('#res_p13_4_3_c').removeClass('hidden');
+          $('#res_p13_4_3_d').removeClass('hidden');
+          $('#res_p13_4_3_e').removeClass('hidden');
+        } else {
+          $('#res_p13_4_3_b').addClass('hidden');
+          $('#res_p13_4_3_c').addClass('hidden');
+          $('#res_p13_4_3_d').addClass('hidden');
+          $('#res_p13_4_3_e').addClass('hidden');
+        }
+      });
+      $('#res_p13_4_4_a').change(function(){
+        if ($('#res_p13_4_4_a').val() == "Si") {
+          $('#res_p13_4_4_b').removeClass('hidden');
+          $('#res_p13_4_4_c').removeClass('hidden');
+          $('#res_p13_4_4_d').removeClass('hidden');
+          $('#res_p13_4_4_e').removeClass('hidden');
+        } else {
+          $('#res_p13_4_4_b').addClass('hidden');
+          $('#res_p13_4_4_c').addClass('hidden');
+          $('#res_p13_4_4_d').addClass('hidden');
+          $('#res_p13_4_4_e').addClass('hidden');
+        }
+      });
+      $('#res_p13_4_5_a').change(function(){
+        if ($('#res_p13_4_5_a').val() == "Si") {
+          $('#res_p13_4_5_b').removeClass('hidden');
+          $('#res_p13_4_5_c').removeClass('hidden');
+          $('#res_p13_4_5_d').removeClass('hidden');
+          $('#res_p13_4_5_e').removeClass('hidden');
+        } else {
+          $('#res_p13_4_5_b').addClass('hidden');
+          $('#res_p13_4_5_c').addClass('hidden');
+          $('#res_p13_4_5_d').addClass('hidden');
+          $('#res_p13_4_5_e').addClass('hidden');
+        }
+      });
+      $('#res_p13_4_6_a').change(function(){
+        if ($('#res_p13_4_6_a').val() == "Si") {
+          $('#res_p13_4_6_b').removeClass('hidden');
+          $('#res_p13_4_6_c').removeClass('hidden');
+          $('#res_p13_4_6_d').removeClass('hidden');
+          $('#res_p13_4_6_e').removeClass('hidden');
+        } else {
+          $('#res_p13_4_6_b').addClass('hidden');
+          $('#res_p13_4_6_c').addClass('hidden');
+          $('#res_p13_4_6_d').addClass('hidden');
+          $('#res_p13_4_6_e').addClass('hidden');
+        }
+      });
+      $('#res_p13_4_7_a').change(function(){
+        if ($('#res_p13_4_7_a').val() == "Si") {
+          $('#res_p13_4_7_b').removeClass('hidden');
+          $('#res_p13_4_7_c').removeClass('hidden');
+          $('#res_p13_4_7_d').removeClass('hidden');
+          $('#res_p13_4_7_e').removeClass('hidden');
+        } else {
+          $('#res_p13_4_7_b').addClass('hidden');
+          $('#res_p13_4_7_c').addClass('hidden');
+          $('#res_p13_4_7_d').addClass('hidden');
+          $('#res_p13_4_7_e').addClass('hidden');
+        }
+      });
+
+      $('#res_p13_9').change(function(){
+        if ($('#res_p13_9').val() == "No se lo aprobaron") {
+          $('#res_p13_10').addClass('hidden');
+          $('#res_p13_11a').addClass('hidden');
+          $('#res_p13_12').addClass('hidden');
+        } else {
+          $('#res_p13_10').removeClass('hidden');
+          $('#res_p13_11a').removeClass('hidden');
+          $('#res_p13_12').removeClass('hidden');
+        }
+      });
+      $('#res_p13_9').change(function(){
+        if ($('#res_p13_9').val() == "No se lo aprobaron") {
+          $('#div_p13_10').addClass('hidden');
+          $('#div_p13_11a').addClass('hidden');
+          $('#div_p13_12').addClass('hidden');
+        } else {
+          $('#div_p13_10').removeClass('hidden');
+          $('#div_p13_11a').removeClass('hidden');
+          $('#div_p13_12').removeClass('hidden');
+        }
+      });
+      $('#res_p13_11a').change(function(){
+        if ($('#res_p13_11a').val() == "Otro") {
+          $('#div_p13_12').removeClass('hidden');
+           $('#div_p13_13a').removeClass('hidden');
+        } else {
+          $('#div_p13_12').addClass('hidden');
+           $('#div_p13_13a').addClass('hidden');
+        }
+      });
+      $('#res_p13_12').change(function(){
+        if ($('#res_p13_12').val() == "Si") {
+           $('#div_p13_13a').removeClass('hidden');
+        } else {
+           $('#div_p13_13a').addClass('hidden');
+        }
+      });
+      $('#res_p13_14').change(function(){
+        if ($('#res_p13_14').val() == "Si") {
+           $('#div_p13_15').removeClass('hidden');
+           $('#res_p13_16').removeClass('hidden');
+        } else {
+           $('#div_p13_15').addClass('hidden');
+           $('#res_p13_16').addClass('hidden');
+        }
+      });
+      $('#res_p13_14').change(function(){
+        if ($('#res_p13_14').val() == "Si") {
+           $('#div_p13_15').removeClass('hidden');
+           $('#res_p13_16').removeClass('hidden');
+        } else {
+           $('#div_p13_15').addClass('hidden');
+           $('#res_p13_16').addClass('hidden');
+        }
+      });
+      $('#res_p13_17').change(function(){
+        if ($('#res_p13_17').val() == "Si") {
+           $('#div_p13_18').removeClass('hidden');
+        } else {
+           $('#div_p13_18').addClass('hidden');
+        }
+      });
+      
+
 
     
 
