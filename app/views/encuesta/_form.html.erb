@@ -5628,42 +5628,42 @@
           <th scope="row">88. ¿... ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas?</th>
             <td id="persona_1_704">
               <div class="field" id="div_p7_88_1">
-                <%= f.select :p7_88_1, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_1"} %>
+                <%= f.select :p7_88_1, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_1"} %>
               </div>
             </td>  
             <td id="persona_2_704">
               <div class="field" id="div_p7_88_2">
-                <%= f.select :p7_88_2, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_2"} %>
+                <%= f.select :p7_88_2, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_2"} %>
               </div>
             </td>  
             <td id="persona_3_704">
               <div class="field" id="div_p7_88_3">
-                <%= f.select :p7_88_3, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_3"} %>
+                <%= f.select :p7_88_3, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_3"} %>
               </div>
             </td>  
             <td id="persona_4_704">
               <div class="field" id="div_p7_88_4">
-                <%= f.select :p7_88_4, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_4"} %>
+                <%= f.select :p7_88_4, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_4"} %>
               </div>
             </td>  
             <td id="persona_5_704">
               <div class="field" id="div_p7_88_5">
-                <%= f.select :p7_88_5, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_5"} %>
+                <%= f.select :p7_88_5, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_5"} %>
               </div>
             </td>  
             <td id="persona_6_704">
               <div class="field" id="div_p7_88_6">
-                <%= f.select :p7_88_6, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_6"} %>
+                <%= f.select :p7_88_6, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_6"} %>
               </div>
             </td>  
             <td id="persona_7_704">
               <div class="field" id="div_p7_88_7">
-                <%= f.select :p7_88_7, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_7"} %>
+                <%= f.select :p7_88_7, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_7"} %>
               </div>
             </td>  
             <td id="persona_8_704">
               <div class="field" id="div_p7_88_8">
-                <%= f.select :p7_88_8, ["Si","No","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_8"} %>
+                <%= f.select :p7_88_8, ["Por primera vez","Trabajó antes","NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_88_8"} %>
               </div> 
             </td>
           </tr>  
@@ -7129,12 +7129,10 @@
 </table>
 </div>
 
-      <div class="field col-lg-12" style="margin-top: 10px;" id=div_p10_6>
+    <div class="alert row alert-primary col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;" id="div_tabla3"><h5>Tabla 3. Ingresos totales por venta de café y sobreprecios 2017</h5><div class="field col-lg-12" style="margin-top: 10px;" id=div_p10_6>
          <%= f.label :p10_6, "6. ¿Vendió café en el año 2017?" %>
         <%= f.select :p10_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p10_6"}%>
       </div>
-
-    <div class="alert row alert-primary col-lg-12" style="margin-left: 10px; margin-right: 10px; margin-bottom: 5px; margin-top: 10px;" id="div_tabla3"><h5>Tabla 3. Ingresos totales por venta de café y sobreprecios 2017</h5>
     </div>
 
     <div class="field  border row col-md-6" id="div_p10_t3_a1_a" style="margin-left: 250px;">
@@ -12057,6 +12055,8 @@
           $('#div_p7_86_1').removeClass('hidden');
           $('#div_p7_87a_1').removeClass('hidden');
           $('#div_p7_88_1').removeClass('hidden');
+          $('#div_p7_89_1').addClass('hidden');
+          $('#div_p7_90_1').addClass('hidden');
         } else if ($('#res_p7_59_1').val() == "Buscando trabajo") {
           $('#div_p7_60_1').addClass('hidden');
           $('#div_p7_61_1').addClass('hidden');
@@ -12094,6 +12094,8 @@
           $('#div_p7_86_1').removeClass('hidden');
           $('#div_p7_87a_1').removeClass('hidden');
           $('#div_p7_88_1').removeClass('hidden');
+          $('#div_p7_89_1').removeClass('hidden');
+          $('#div_p7_90_1').removeClass('hidden');
         } else{
           $('#div_p7_60_1').addClass('hidden');
           $('#div_p7_61_1').addClass('hidden');
@@ -12131,6 +12133,8 @@
           $('#div_p7_86_1').addClass('hidden');
           $('#div_p7_87a_1').addClass('hidden');
           $('#div_p7_88_1').addClass('hidden');
+          $('#div_p7_89_1').removeClass('hidden');
+          $('#div_p7_90_1').removeClass('hidden');
         }
       });
     $('#res_p7_59_2').change(function(){
@@ -12171,6 +12175,8 @@
           $('#div_p7_86_2').removeClass('hidden');
           $('#div_p7_87a_2').removeClass('hidden');
           $('#div_p7_88_2').removeClass('hidden');
+          $('#div_p7_89_2').addClass('hidden');
+          $('#div_p7_90_2').addClass('hidden');
         } else if ($('#res_p7_59_2').val() == "Buscando trabajo") {
           $('#div_p7_60_2').addClass('hidden');
           $('#div_p7_61_2').addClass('hidden');
@@ -12208,6 +12214,8 @@
           $('#div_p7_86_2').removeClass('hidden');
           $('#div_p7_87a_2').removeClass('hidden');
           $('#div_p7_88_2').removeClass('hidden');
+          $('#div_p7_89_2').removeClass('hidden');
+          $('#div_p7_90_2').removeClass('hidden');
         } else{
           $('#div_p7_60_2').addClass('hidden');
           $('#div_p7_61_2').addClass('hidden');
@@ -12245,6 +12253,8 @@
           $('#div_p7_86_2').addClass('hidden');
           $('#div_p7_87a_2').addClass('hidden');
           $('#div_p7_88_2').addClass('hidden');
+          $('#div_p7_89_2').removeClass('hidden');
+          $('#div_p7_90_2').removeClass('hidden');
         }
       });
       $('#res_p7_59_3').change(function(){
@@ -12285,6 +12295,10 @@
           $('#div_p7_86_3').removeClass('hidden');
           $('#div_p7_87a_3').removeClass('hidden');
           $('#div_p7_88_3').removeClass('hidden');
+          $('#div_p7_89_3').removeClass('hidden');
+          $('#div_p7_90_3').removeClass('hidden');
+          $('#div_p7_89_3').addClass('hidden');
+          $('#div_p7_90_3').addClass('hidden');
         } else if ($('#res_p7_59_3').val() == "Buscando trabajo") {
           $('#div_p7_60_3').addClass('hidden');
           $('#div_p7_61_3').addClass('hidden');
@@ -12322,6 +12336,8 @@
           $('#div_p7_86_3').removeClass('hidden');
           $('#div_p7_87a_3').removeClass('hidden');
           $('#div_p7_88_3').removeClass('hidden');
+          $('#div_p7_89_3').removeClass('hidden');
+          $('#div_p7_90_3').removeClass('hidden');
         } else{
           $('#div_p7_60_3').addClass('hidden');
           $('#div_p7_61_3').addClass('hidden');
@@ -12359,6 +12375,8 @@
           $('#div_p7_86_3').addClass('hidden');
           $('#div_p7_87a_3').addClass('hidden');
           $('#div_p7_88_3').addClass('hidden');
+          $('#div_p7_89_3').removeClass('hidden');
+          $('#div_p7_90_3').removeClass('hidden');
         }
       });
       $('#res_p7_59_4').change(function(){
@@ -12399,6 +12417,10 @@
           $('#div_p7_86_4').removeClass('hidden');
           $('#div_p7_87a_4').removeClass('hidden');
           $('#div_p7_88_4').removeClass('hidden');
+          $('#div_p7_89_4').removeClass('hidden');
+          $('#div_p7_90_4').removeClass('hidden');
+          $('#div_p7_89_4').addClass('hidden');
+          $('#div_p7_90_4').addClass('hidden');
         } else if ($('#res_p7_59_4').val() == "Buscando trabajo") {
           $('#div_p7_60_4').addClass('hidden');
           $('#div_p7_61_4').addClass('hidden');
@@ -12436,6 +12458,8 @@
           $('#div_p7_86_4').removeClass('hidden');
           $('#div_p7_87a_4').removeClass('hidden');
           $('#div_p7_88_4').removeClass('hidden');
+          $('#div_p7_89_4').removeClass('hidden');
+          $('#div_p7_90_4').removeClass('hidden');
         } else{
           $('#div_p7_60_4').addClass('hidden');
           $('#div_p7_61_4').addClass('hidden');
@@ -12473,6 +12497,8 @@
           $('#div_p7_86_4').addClass('hidden');
           $('#div_p7_87a_4').addClass('hidden');
           $('#div_p7_88_4').addClass('hidden');
+          $('#div_p7_89_4').removeClass('hidden');
+          $('#div_p7_90_4').removeClass('hidden');
         }
       });
       $('#res_p7_59_5').change(function(){
@@ -12513,6 +12539,10 @@
           $('#div_p7_86_5').removeClass('hidden');
           $('#div_p7_87a_5').removeClass('hidden');
           $('#div_p7_88_5').removeClass('hidden');
+          $('#div_p7_89_5').removeClass('hidden');
+          $('#div_p7_90_5').removeClass('hidden');
+          $('#div_p7_89_5').addClass('hidden');
+          $('#div_p7_90_5').addClass('hidden');
         } else if ($('#res_p7_59_5').val() == "Buscando trabajo") {
           $('#div_p7_60_5').addClass('hidden');
           $('#div_p7_61_5').addClass('hidden');
@@ -12550,6 +12580,8 @@
           $('#div_p7_86_5').removeClass('hidden');
           $('#div_p7_87a_5').removeClass('hidden');
           $('#div_p7_88_5').removeClass('hidden');
+          $('#div_p7_89_5').removeClass('hidden');
+          $('#div_p7_90_5').removeClass('hidden');
         } else{
           $('#div_p7_60_5').addClass('hidden');
           $('#div_p7_61_5').addClass('hidden');
@@ -12587,6 +12619,8 @@
           $('#div_p7_86_5').addClass('hidden');
           $('#div_p7_87a_5').addClass('hidden');
           $('#div_p7_88_5').addClass('hidden');
+          $('#div_p7_89_5').removeClass('hidden');
+          $('#div_p7_90_5').removeClass('hidden');
         }
       });
 
@@ -12628,6 +12662,8 @@
           $('#div_p7_86_6').removeClass('hidden');
           $('#div_p7_87a_6').removeClass('hidden');
           $('#div_p7_88_6').removeClass('hidden');
+          $('#div_p7_89_6').addClass('hidden');
+          $('#div_p7_90_6').addClass('hidden');
         } else if ($('#res_p7_59_6').val() == "Buscando trabajo") {
           $('#div_p7_60_6').addClass('hidden');
           $('#div_p7_61_6').addClass('hidden');
@@ -12665,6 +12701,8 @@
           $('#div_p7_86_6').removeClass('hidden');
           $('#div_p7_87a_6').removeClass('hidden');
           $('#div_p7_88_6').removeClass('hidden');
+          $('#div_p7_89_6').removeClass('hidden');
+          $('#div_p7_90_6').removeClass('hidden');
         } else{
           $('#div_p7_60_6').addClass('hidden');
           $('#div_p7_61_6').addClass('hidden');
@@ -12702,6 +12740,8 @@
           $('#div_p7_86_6').addClass('hidden');
           $('#div_p7_87a_6').addClass('hidden');
           $('#div_p7_88_6').addClass('hidden');
+          $('#div_p7_89_6').removeClass('hidden');
+          $('#div_p7_90_6').removeClass('hidden');
         }
       });
 
@@ -12743,6 +12783,8 @@
           $('#div_p7_86_7').removeClass('hidden');
           $('#div_p7_87a_7').removeClass('hidden');
           $('#div_p7_88_7').removeClass('hidden');
+          $('#div_p7_89_7').addClass('hidden');
+          $('#div_p7_90_7').addClass('hidden');
         } else if ($('#res_p7_59_7').val() == "Buscando trabajo") {
           $('#div_p7_60_7').addClass('hidden');
           $('#div_p7_61_7').addClass('hidden');
@@ -12780,6 +12822,8 @@
           $('#div_p7_86_7').removeClass('hidden');
           $('#div_p7_87a_7').removeClass('hidden');
           $('#div_p7_88_7').removeClass('hidden');
+          $('#div_p7_89_7').removeClass('hidden');
+          $('#div_p7_90_7').removeClass('hidden');
         } else{
           $('#div_p7_60_7').addClass('hidden');
           $('#div_p7_61_7').addClass('hidden');
@@ -12817,6 +12861,8 @@
           $('#div_p7_86_7').addClass('hidden');
           $('#div_p7_87a_7').addClass('hidden');
           $('#div_p7_88_7').addClass('hidden');
+          $('#div_p7_89_7').removeClass('hidden');
+          $('#div_p7_90_7').removeClass('hidden');
         }
       });
 
@@ -12858,6 +12904,8 @@
           $('#div_p7_86_8').removeClass('hidden');
           $('#div_p7_87a_8').removeClass('hidden');
           $('#div_p7_88_8').removeClass('hidden');
+          $('#div_p7_89_8').addClass('hidden');
+          $('#div_p7_90_8').addClass('hidden');
         } else if ($('#res_p7_59_8').val() == "Buscando trabajo") {
           $('#div_p7_60_8').addClass('hidden');
           $('#div_p7_61_8').addClass('hidden');
@@ -12895,6 +12943,8 @@
           $('#div_p7_86_8').removeClass('hidden');
           $('#div_p7_87a_8').removeClass('hidden');
           $('#div_p7_88_8').removeClass('hidden');
+          $('#div_p7_89_8').removeClass('hidden');
+          $('#div_p7_90_8').removeClass('hidden');
         } else{
           $('#div_p7_60_8').addClass('hidden');
           $('#div_p7_61_8').addClass('hidden');
@@ -12932,6 +12982,8 @@
           $('#div_p7_86_8').addClass('hidden');
           $('#div_p7_87a_8').addClass('hidden');
           $('#div_p7_88_8').addClass('hidden');
+          $('#div_p7_89_8').removeClass('hidden');
+          $('#div_p7_90_8').removeClass('hidden');
         }
       });
 
@@ -13882,9 +13934,11 @@
         if ($('#res_p7_69_1').val() == "Si") {
           $('#div_p7_70_1').removeClass('hidden');
           $('#div_p7_71a_1').removeClass('hidden');
+          $('#div_p7_71b_1').removeClass('hidden');
         } else {
           $('#div_p7_70_1').addClass('hidden');
           $('#div_p7_71a_1').addClass('hidden');
+          $('#div_p7_71b_1').addClass('hidden');
         }
       }); 
 
@@ -13892,9 +13946,11 @@
         if ($('#res_p7_69_2').val() == "Si") {
           $('#div_p7_70_2').removeClass('hidden');
           $('#div_p7_71a_2').removeClass('hidden');
+          $('#div_p7_71b_2').removeClass('hidden');
         } else {
           $('#div_p7_70_2').addClass('hidden');
           $('#div_p7_71a_2').addClass('hidden');
+          $('#div_p7_71b_2').addClass('hidden');
         }
       }); 
 
@@ -13902,9 +13958,11 @@
         if ($('#res_p7_69_3').val() == "Si") {
           $('#div_p7_70_3').removeClass('hidden');
           $('#div_p7_71a_3').removeClass('hidden');
+          $('#div_p7_71b_3').removeClass('hidden');
         } else {
           $('#div_p7_70_3').addClass('hidden');
           $('#div_p7_71a_3').addClass('hidden');
+          $('#div_p7_71b_3').addClass('hidden');
         }
       }); 
 
@@ -13912,9 +13970,11 @@
         if ($('#res_p7_69_4').val() == "Si") {
           $('#div_p7_70_4').removeClass('hidden');
           $('#div_p7_71a_4').removeClass('hidden');
+          $('#div_p7_71b_4').removeClass('hidden');
         } else {
           $('#div_p7_70_4').addClass('hidden');
           $('#div_p7_71a_4').addClass('hidden');
+          $('#div_p7_71b_4').addClass('hidden');
         }
       }); 
 
@@ -13922,9 +13982,11 @@
         if ($('#res_p7_69_5').val() == "Si") {
           $('#div_p7_70_5').removeClass('hidden');
           $('#div_p7_71a_5').removeClass('hidden');
+          $('#div_p7_71b_5').removeClass('hidden');
         } else {
           $('#div_p7_70_5').addClass('hidden');
           $('#div_p7_71a_5').addClass('hidden');
+          $('#div_p7_71b_5').addClass('hidden');
         }
       }); 
 
@@ -13932,9 +13994,11 @@
         if ($('#res_p7_69_6').val() == "Si") {
           $('#div_p7_70_6').removeClass('hidden');
           $('#div_p7_71a_6').removeClass('hidden');
+          $('#div_p7_71b_6').removeClass('hidden');
         } else {
           $('#div_p7_70_6').addClass('hidden');
           $('#div_p7_71a_6').addClass('hidden');
+          $('#div_p7_71b_6').addClass('hidden');
         }
       }); 
 
@@ -13942,9 +14006,11 @@
         if ($('#res_p7_69_7').val() == "Si") {
           $('#div_p7_70_7').removeClass('hidden');
           $('#div_p7_71a_7').removeClass('hidden');
+          $('#div_p7_71b_7').removeClass('hidden');
         } else {
           $('#div_p7_70_7').addClass('hidden');
           $('#div_p7_71a_7').addClass('hidden');
+          $('#div_p7_71b_7').addClass('hidden');
         }
       }); 
 
@@ -13952,9 +14018,11 @@
         if ($('#res_p7_69_8').val() == "Si") {
           $('#div_p7_70_8').removeClass('hidden');
           $('#div_p7_71a_8').removeClass('hidden');
+          $('#div_p7_71b_8').removeClass('hidden');
         } else {
           $('#div_p7_70_8').addClass('hidden');
           $('#div_p7_71a_8').addClass('hidden');
+          $('#div_p7_71b_8').addClass('hidden');
         }
       });
 
@@ -14540,8 +14608,18 @@
       $('#res_p7_83a_1').change(function(){
         if ($('#res_p7_83a_1').val() == "Si") {
           $('#div_p7_83b_1').removeClass('hidden');
+          $('#div_p7_84_1').removeClass('hidden');
+          $('#div_p7_85_1').removeClass('hidden');
+          $('#div_p7_86_1').removeClass('hidden');
+          $('#div_p7_87a_1').removeClass('hidden');
+          $('#div_p7_88_1').removeClass('hidden');
         } else {
           $('#div_p7_83b_1').addClass('hidden');
+          $('#div_p7_84_1').addClass('hidden');
+          $('#div_p7_85_1').addClass('hidden');
+          $('#div_p7_86_1').addClass('hidden');
+          $('#div_p7_87a_1').addClass('hidden');
+          $('#div_p7_88_1').addClass('hidden');
         }
       });
       $('#res_p7_91a_1').change(function(){
@@ -14568,8 +14646,18 @@
       $('#res_p7_83a_2').change(function(){
         if ($('#res_p7_83a_2').val() == "Si") {
           $('#div_p7_83b_2').removeClass('hidden');
+          $('#div_p7_84_2').removeClass('hidden');
+          $('#div_p7_85_2').removeClass('hidden');
+          $('#div_p7_86_2').removeClass('hidden');
+          $('#div_p7_87a_2').removeClass('hidden');
+          $('#div_p7_88_2').removeClass('hidden');
         } else {
           $('#div_p7_83b_2').addClass('hidden');
+          $('#div_p7_84_2').addClass('hidden');
+          $('#div_p7_85_2').addClass('hidden');
+          $('#div_p7_86_2').addClass('hidden');
+          $('#div_p7_87a_2').addClass('hidden');
+          $('#div_p7_88_2').addClass('hidden');
         }
       });
       $('#res_p7_91a_2').change(function(){
@@ -14596,8 +14684,18 @@
       $('#res_p7_83a_3').change(function(){
         if ($('#res_p7_83a_3').val() == "Si") {
           $('#div_p7_83b_3').removeClass('hidden');
+          $('#div_p7_84_3').removeClass('hidden');
+          $('#div_p7_85_3').removeClass('hidden');
+          $('#div_p7_86_3').removeClass('hidden');
+          $('#div_p7_87a_3').removeClass('hidden');
+          $('#div_p7_88_3').removeClass('hidden');
         } else {
           $('#div_p7_83b_3').addClass('hidden');
+          $('#div_p7_84_3').addClass('hidden');
+          $('#div_p7_85_3').addClass('hidden');
+          $('#div_p7_86_3').addClass('hidden');
+          $('#div_p7_87a_3').addClass('hidden');
+          $('#div_p7_88_3').addClass('hidden');
         }
       });
       $('#res_p7_91a_3').change(function(){
@@ -14624,8 +14722,18 @@
       $('#res_p7_83a_4').change(function(){
         if ($('#res_p7_83a_4').val() == "Si") {
           $('#div_p7_83b_4').removeClass('hidden');
+          $('#div_p7_84_4').removeClass('hidden');
+          $('#div_p7_85_4').removeClass('hidden');
+          $('#div_p7_86_4').removeClass('hidden');
+          $('#div_p7_87a_4').removeClass('hidden');
+          $('#div_p7_88_4').removeClass('hidden');
         } else {
           $('#div_p7_83b_4').addClass('hidden');
+          $('#div_p7_84_4').addClass('hidden');
+          $('#div_p7_85_4').addClass('hidden');
+          $('#div_p7_86_4').addClass('hidden');
+          $('#div_p7_87a_4').addClass('hidden');
+          $('#div_p7_88_4').addClass('hidden');
         }
       });
       $('#res_p7_91a_4').change(function(){
@@ -14652,8 +14760,18 @@
       $('#res_p7_83a_5').change(function(){
         if ($('#res_p7_83a_5').val() == "Si") {
           $('#div_p7_83b_5').removeClass('hidden');
+          $('#div_p7_84_5').removeClass('hidden');
+          $('#div_p7_85_5').removeClass('hidden');
+          $('#div_p7_86_5').removeClass('hidden');
+          $('#div_p7_87a_5').removeClass('hidden');
+          $('#div_p7_88_5').removeClass('hidden');
         } else {
           $('#div_p7_83b_5').addClass('hidden');
+          $('#div_p7_84_5').addClass('hidden');
+          $('#div_p7_85_5').addClass('hidden');
+          $('#div_p7_86_5').addClass('hidden');
+          $('#div_p7_87a_5').addClass('hidden');
+          $('#div_p7_88_5').addClass('hidden');
         }
       });
       $('#res_p7_91a_5').change(function(){
@@ -14680,8 +14798,18 @@
       $('#res_p7_83a_6').change(function(){
         if ($('#res_p7_83a_6').val() == "Si") {
           $('#div_p7_83b_6').removeClass('hidden');
+          $('#div_p7_84_6').removeClass('hidden');
+          $('#div_p7_85_6').removeClass('hidden');
+          $('#div_p7_86_6').removeClass('hidden');
+          $('#div_p7_87a_6').removeClass('hidden');
+          $('#div_p7_88_6').removeClass('hidden');
         } else {
           $('#div_p7_83b_6').addClass('hidden');
+          $('#div_p7_84_6').addClass('hidden');
+          $('#div_p7_85_6').addClass('hidden');
+          $('#div_p7_86_6').addClass('hidden');
+          $('#div_p7_87a_6').addClass('hidden');
+          $('#div_p7_88_6').addClass('hidden');
         }
       });
       $('#res_p7_91a_6').change(function(){
@@ -14708,8 +14836,18 @@
       $('#res_p7_83a_7').change(function(){
         if ($('#res_p7_83a_7').val() == "Si") {
           $('#div_p7_83b_7').removeClass('hidden');
+          $('#div_p7_84_7').removeClass('hidden');
+          $('#div_p7_85_7').removeClass('hidden');
+          $('#div_p7_86_7').removeClass('hidden');
+          $('#div_p7_87a_7').removeClass('hidden');
+          $('#div_p7_88_7').removeClass('hidden');
         } else {
           $('#div_p7_83b_7').addClass('hidden');
+          $('#div_p7_84_7').addClass('hidden');
+          $('#div_p7_85_7').addClass('hidden');
+          $('#div_p7_86_7').addClass('hidden');
+          $('#div_p7_87a_7').addClass('hidden');
+          $('#div_p7_88_7').addClass('hidden');
         }
       });
       $('#res_p7_91a_7').change(function(){
@@ -14736,8 +14874,18 @@
       $('#res_p7_83a_8').change(function(){
         if ($('#res_p7_83a_8').val() == "Si") {
           $('#div_p7_83b_8').removeClass('hidden');
+          $('#div_p7_84_8').removeClass('hidden');
+          $('#div_p7_85_8').removeClass('hidden');
+          $('#div_p7_86_8').removeClass('hidden');
+          $('#div_p7_87a_8').removeClass('hidden');
+          $('#div_p7_88_8').removeClass('hidden');
         } else {
           $('#div_p7_83b_8').addClass('hidden');
+          $('#div_p7_84_8').addClass('hidden');
+          $('#div_p7_85_8').addClass('hidden');
+          $('#div_p7_86_8').addClass('hidden');
+          $('#div_p7_87a_8').addClass('hidden');
+          $('#div_p7_88_8').addClass('hidden');
         }
       });
       $('#res_p7_91a_8').change(function(){

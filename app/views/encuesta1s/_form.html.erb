@@ -205,8 +205,8 @@
             <td><%= f.text_field :p11_tb_5a_3, {class: "form-control", id:"res_p11_tb_5a_3"}%></td>
           </tr>
           <tr>
-            <th scope="row">Hembras</th>
-              <td><%= f.text_field :p11_tb_5b_1, {class: "form-control", id:"res_p11_tb_5a_1"}%></td>
+            <th scope="row">Hembras y Terneros</th>
+              <td><%= f.text_field :p11_tb_5b_1, {class: "form-control", id:"res_p11_tb_5b_1"}%></td>
             <td></td>
             <td><%= f.text_field :p11_tb_5b_2, {class: "form-control", id:"res_p11_tb_5b_2"}%></td>
           </tr>
@@ -270,7 +270,7 @@
       </div>
     </div>
 
-      <div class="field col-md-12" id="div_p11_tc_3" style="margin-top: 5px;">3. Respecto al númer ode cerdos(as) en 2017:<p></p>
+      <div class="field col-md-12" id="div_p11_tc_3" style="margin-top: 5px;">3. Respecto al número de cerdos(as) en 2017:<p></p>
         <%= f.label :p11_tc_3_a, "a. En total" %>
         <%= f.text_field :p11_tc_3_a, {class: "form-control", id:"res_p11_tc_3_a"}%><p class="text-center font-italic">Diciembre 2017</p>
         <%= f.label :p11_tc_3_b, "b. ¿Cuántos machos reproductores tuvo?" %>
@@ -383,7 +383,7 @@
 
 
 <div class="field col-md-12" id="div_p11_td_6" style="margin-top: 5px;">
-        <%= f.label :p11_td_6, "6. ¿Encuántaáreadesufinca realiza las actividades avícolas?" %>
+        <%= f.label :p11_td_6, "6. ¿En cuánta área de su finca realiza las actividades avícolas?" %>
         <%= f.text_field :p11_td_6, {class: "form-control", id:"res_p11_td_6"}%><p class="font-italic text-center">(m2)</p>
       </div>
 </div>
@@ -420,15 +420,15 @@
       <th scope="row">2. ¿Ha criado peces, camarones, ostras o langostinos?</th>
       <td><%= f.select :p11_te_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2"}%></td>
 
-      <td><%= f.select :p11_te_2a_1, ["Bagre", "Bocachico", "Cachama", "Capaz", "Capitan", "Carpa", "Nicuro", "Pargo rojo", "Sabaleta", "Salmon rosado", "Sardinata", "Tilapia", "Trucha", "Yamu"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2a_2, {class: "form-control", id:"res_p11_te_2a_2"}%></td>
+      <td><%= f.select :p11_te_2a_1, ["Bagre", "Bocachico", "Cachama", "Capaz", "Capitan", "Carpa", "Nicuro", "Pargo rojo", "Sabaleta", "Salmon rosado", "Sardinata", "Tilapia", "Trucha", "Yamu"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.select :p11_te_2a_2, ["Bagre", "Bocachico", "Cachama", "Capaz", "Capitan", "Carpa", "Nicuro", "Pargo rojo", "Sabaleta", "Salmon rosado", "Sardinata", "Tilapia", "Trucha", "Yamu"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_2a_2"}%></td>
 
       <td><%= f.text_field :p11_te_2b_1, {class: "form-control", id:"res_p11_te_2b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2b_2, {class: "form-control", id:"res_p11_te_2b_2"}%></td>
 
-      <td><%= f.text_field :p11_te_2c_1, {class: "form-control", id:"res_p11_te_2c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2c_2, {class: "form-control", id:"res_p11_te_2c_2"}%></td>
+      <td><%= f.select :p11_te_2c_1, ["Alevinos" , "Carne"] , {:include_blank => true} , {class: "form-control", id:"res_p11_te_2c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.select :p11_te_2c_2, ["Alevinos" , "Carne"] , {:include_blank => true} , {class: "form-control", id:"res_p11_te_2c_2"}%></td>
 
       <td><%= f.text_field :p11_te_2d_1, {class: "form-control", id:"res_p11_te_2d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2d_2, {class: "form-control", id:"res_p11_te_2d_2"}%></td>
 
-      <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_f"}%></td>
+      <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_f"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_f_2"}%></td>
       <td><%= f.text_field :p11_te_2_f, {class: "form-control", id:"res_p11_te_2_ff"}%></td>
     </tr>
     </tbody>
@@ -449,24 +449,24 @@
   <tbody>
       <th scope="row">3. ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo)</th>
       <td><%= f.select :p11_te_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_3"}%></td>
-      <td><%= f.text_field :p11_te_3a_1, {class: "form-control", id:"res_p11_te_3a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3a_2, {class: "form-control", id:"res_p11_te_3a_2"}%></td>
+      <td><%= f.select :p11_te_3a_1, ["búfalos", "ovinos", "caprinos", "colmenas", "codornices", "cuyes"] , {:include_blank => true} , {class: "form-control", id:"res_p11_te_3a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.select :p11_te_3a_2, ["búfalos", "ovinos", "caprinos", "colmenas", "codornices" , "cuyes"] , {:include_blank => true} , {class: "form-control", id:"res_p11_te_3a_2"}%></td>
 
       <td><%= f.text_field :p11_te_3b_1, {class: "form-control", id:"res_p11_te_3b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3b_2, {class: "form-control", id:"res_p11_te_3b_2"}%></td>
 
       <td><%= f.text_field :p11_te_3c_1, {class: "form-control", id:"res_p11_te_3c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3c_2, {class: "form-control", id:"res_p11_te_3c_2"}%></td>
 
-      <td><%= f.text_field :p11_te_3d_1, {class: "form-control", id:"res_p11_te_3d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_3d_2, {class: "form-control", id:"res_p11_te_3d_2"}%></td>
+      <td><%= f.text_field :p11_te_3d_1, {class: "form-control", id:"res_p11_te_3d_1"}%></td>
     </tr>
     <tr>
-      <th scope="row">4. ¿Tiene otras especies de animales?</th>
+      <th scope="row">4. ¿Tiene equinos, mular o asnar?</th>
       <td><%= f.select :p11_te_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p11_te_4"}%></td>
-      <td><%= f.text_field :p11_te_4a_1, {class: "form-control", id:"res_p11_te_4a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_2, {class: "form-control", id:"res_p11_te_4a_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4a_3, {class: "form-control", id:"res_p11_te_4a_3"}%></td>
+      <td><%= f.select :p11_te_4a_1, ["equinos","mular","asnar"] ,{:include_blank => true}, {class: "form-control", id:"res_p11_te_4a_1"}%><div style="margin-bottom: 5px;"> </div><%= f.select :p11_te_4a_2, ["equinos","mular","asnar"] ,{:include_blank => true}, {class: "form-control", id:"res_p11_te_4a_2"}%><div style="margin-bottom: 5px;"> </div><%= f.select :p11_te_4a_3, ["equinos","mular","asnar"] ,{:include_blank => true}, {class: "form-control", id:"res_p11_te_4a_3"}%></td>
 
       <td><%= f.text_field :p11_te_4b_1, {class: "form-control", id:"res_p11_te_4b_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_2, {class: "form-control", id:"res_p11_te_4b_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4b_3, {class: "form-control", id:"res_p11_te_4b_3"}%></td>
 
       <td><%= f.text_field :p11_te_4c_1, {class: "form-control", id:"res_p11_te_4c_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4c_2, {class: "form-control", id:"res_p11_te_4c_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4c_3, {class: "form-control", id:"res_p11_te_4c_3"}%></td>
 
-      <td><%= f.text_field :p11_te_4d_1, {class: "form-control", id:"res_p11_te_4d_1"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4d_2, {class: "form-control", id:"res_p11_te_4d_2"}%><div style="margin-bottom: 5px;"> </div><%= f.text_field :p11_te_4d_3, {class: "form-control", id:"res_p11_te_4d_3"}%></td>
+      <td><%= f.text_field :p11_te_4d_1, {class: "form-control", id:"res_p11_te_4d_1"}%></td>
     </tr>
   </tbody>
 </table>   
@@ -2706,6 +2706,7 @@
           $('#res_p11_te_2d_1').removeClass('hidden');
           $('#res_p11_te_2d_2').removeClass('hidden');
           $('#res_p11_te_2_f').removeClass('hidden');
+          $('#res_p11_te_2_f_2').removeClass('hidden');
           $('#res_p11_te_2_ff').removeClass('hidden');
         } else {
           $('#res_p11_te_2a_1').addClass('hidden');
@@ -2713,9 +2714,11 @@
           $('#res_p11_te_2b_1').addClass('hidden');
           $('#res_p11_te_2b_2').addClass('hidden');
           $('#res_p11_te_2c_1').addClass('hidden');
+          $('#res_p11_te_2c_2').addClass('hidden');
           $('#res_p11_te_2d_1').addClass('hidden');
           $('#res_p11_te_2d_2').addClass('hidden');
           $('#res_p11_te_2_f').addClass('hidden');
+          $('#res_p11_te_2_f_2').addClass('hidden');
           $('#res_p11_te_2_ff').addClass('hidden');  
 
         }
@@ -2770,6 +2773,609 @@
           $('#res_p11_te_4d_3').addClass('hidden');
         }
       });
+
+    $('#res_p11_ta_a_6').change(function(){
+          var numero = $('#res_p11_ta_a_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Qué cantidad de plantas tiene el cultivo? " + numero + " no es un número");
+          document.getElementById("res_p11_ta_a_6").value = "";
+          }
+      });
+    $('#res_p11_ta_a_7').change(function(){
+          var numero = $('#res_p11_ta_a_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuánta fue el área sembrada? (ha) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_a_7").value = "";
+          }
+      });
+    $('#res_p11_ta_a_8').change(function(){
+          var numero = $('#res_p11_ta_a_8').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Producción en 2017 (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_a_8").value = "";
+          }
+      });
+    $('#res_p11_ta_a_9').change(function(){
+          var numero = $('#res_p11_ta_a_9').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Porcentaje de la producción vendido (%) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_a_9").value = "";
+          }
+      });
+    $('#res_p11_ta_a_10').change(function(){
+          var numero = $('#res_p11_ta_a_10').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso total (millones) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_a_10").value = "";
+          }
+      });
+
+    $('#res_p11_ta_b_6').change(function(){
+          var numero = $('#res_p11_ta_b_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Qué cantidad de plantas tiene el cultivo? " + numero + " no es un número");
+          document.getElementById("res_p11_ta_b_6").value = "";
+          }
+      });
+    $('#res_p11_ta_b_7').change(function(){
+          var numero = $('#res_p11_ta_b_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuánta fue el área sembrada? (ha) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_b_7").value = "";
+          }
+      });
+    $('#res_p11_ta_b_8').change(function(){
+          var numero = $('#res_p11_ta_b_8').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Producción en 2017 (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_b_8").value = "";
+          }
+      });
+    $('#res_p11_ta_b_9').change(function(){
+          var numero = $('#res_p11_ta_b_9').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Porcentaje de la producción vendido (%) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_b_9").value = "";
+          }
+      });
+    $('#res_p11_ta_b_10').change(function(){
+          var numero = $('#res_p11_ta_b_10').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso total (millones) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_b_10").value = "";
+          }
+      });
+
+    $('#res_p11_ta_c_6').change(function(){
+          var numero = $('#res_p11_ta_c_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Qué cantidad de plantas tiene el cultivo? " + numero + " no es un número");
+          document.getElementById("res_p11_ta_c_6").value = "";
+          }
+      });
+    $('#res_p11_ta_c_7').change(function(){
+          var numero = $('#res_p11_ta_c_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuánta fue el área sembrada? (ha) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_c_7").value = "";
+          }
+      });
+    $('#res_p11_ta_c_8').change(function(){
+          var numero = $('#res_p11_ta_c_8').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Producción en 2017 (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_c_8").value = "";
+          }
+      });
+    $('#res_p11_ta_c_9').change(function(){
+          var numero = $('#res_p11_ta_c_9').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Porcentaje de la producción vendido (%) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_c_9").value = "";
+          }
+      });
+    $('#res_p11_ta_c_10').change(function(){
+          var numero = $('#res_p11_ta_c_10').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso total (millones) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_c_10").value = "";
+          }
+      });
+    $('#res_p11_ta_d_6').change(function(){
+          var numero = $('#res_p11_ta_d_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Qué cantidad de plantas tiene el cultivo? " + numero + " no es un número");
+          document.getElementById("res_p11_ta_d_6").value = "";
+          }
+      });
+    $('#res_p11_ta_d_7').change(function(){
+          var numero = $('#res_p11_ta_d_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuánta fue el área sembrada? (ha) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_d_7").value = "";
+          }
+      });
+    $('#res_p11_ta_d_8').change(function(){
+          var numero = $('#res_p11_ta_d_8').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Producción en 2017 (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_d_8").value = "";
+          }
+      });
+    $('#res_p11_ta_d_9').change(function(){
+          var numero = $('#res_p11_ta_d_9').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Porcentaje de la producción vendido (%) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_d_9").value = "";
+          }
+      });
+    $('#res_p11_ta_d_10').change(function(){
+          var numero = $('#res_p11_ta_d_10').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso total (millones) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_d_10").value = "";
+          }
+      });
+    $('#res_p11_ta_e_6').change(function(){
+          var numero = $('#res_p11_ta_e_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Qué cantidad de plantas tiene el cultivo? " + numero + " no es un número");
+          document.getElementById("res_p11_ta_e_6").value = "";
+          }
+      });
+    $('#res_p11_ta_e_7').change(function(){
+          var numero = $('#res_p11_ta_e_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuánta fue el área sembrada? (ha) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_e_7").value = "";
+          }
+      });
+    $('#res_p11_ta_e_8').change(function(){
+          var numero = $('#res_p11_ta_e_8').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Producción en 2017 (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_e_8").value = "";
+          }
+      });
+    $('#res_p11_ta_e_9').change(function(){
+          var numero = $('#res_p11_ta_e_9').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Porcentaje de la producción vendido (%) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_e_9").value = "";
+          }
+      });
+    $('#res_p11_ta_e_10').change(function(){
+          var numero = $('#res_p11_ta_e_10').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso total (millones) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_e_10").value = "";
+          }
+      });
+    $('#res_p11_ta_f_6').change(function(){
+          var numero = $('#res_p11_ta_f_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Qué cantidad de plantas tiene el cultivo? " + numero + " no es un número");
+          document.getElementById("res_p11_ta_f_6").value = "";
+          }
+      });
+    $('#res_p11_ta_f_7').change(function(){
+          var numero = $('#res_p11_ta_f_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuánta fue el área sembrada? (ha) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_f_7").value = "";
+          }
+      });
+    $('#res_p11_ta_f_8').change(function(){
+          var numero = $('#res_p11_ta_f_8').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Producción en 2017 (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_f_8").value = "";
+          }
+      });
+    $('#res_p11_ta_f_9').change(function(){
+          var numero = $('#res_p11_ta_f_9').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Porcentaje de la producción vendido (%) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_f_9").value = "";
+          }
+      });
+    $('#res_p11_ta_f_10').change(function(){
+          var numero = $('#res_p11_ta_f_10').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso total (millones) " + numero + " no es un número");
+          document.getElementById("res_p11_ta_f_10").value = "";
+          }
+      });
+
+    $('#p11_tb_3_a').change(function(){
+          var numero = $('#p11_tb_3_a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos machos de ganado bovino tuvo? - Total " + numero + " no es un número");
+          document.getElementById("p11_tb_3_a").value = "";
+          }
+      });
+
+    $('#p11_tb_3_b').change(function(){
+          var numero = $('#p11_tb_3_b').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos machos de ganado bovino tuvo? - Terneros " + numero + " no es un número");
+          document.getElementById("p11_tb_3_b").value = "";
+          }
+      });
+
+    $('#p11_tb_3_c').change(function(){
+          var numero = $('#p11_tb_3_c').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos machos de ganado bovino tuvo? - Machos en engorde " + numero + " no es un número");
+          document.getElementById("p11_tb_3_c").value = "";
+          }
+      });
+
+    $('#p11_tb_3_d').change(function(){
+          var numero = $('#p11_tb_3_d').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos machos de ganado bovino tuvo? - Reproductores " + numero + " no es un número");
+          document.getElementById("p11_tb_3_d").value = "";
+          }
+      });
+
+    $('#p11_tb_4_a').change(function(){
+          var numero = $('#p11_tb_4_a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos hembras de ganado bovino tuvo? - Total " + numero + " no es un número");
+          document.getElementById("p11_tb_4_a").value = "";
+          }
+      });
+
+    $('#p11_tb_4_b').change(function(){
+          var numero = $('#p11_tb_4_b').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos hembras de ganado bovino tuvo? - Terneros " + numero + " no es un número");
+          document.getElementById("p11_tb_4_b").value = "";
+          }
+      });
+
+    $('#p11_tb_4_c').change(function(){
+          var numero = $('#p11_tb_4_c').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos hembras de ganado bovino tuvo? - Novillas " + numero + " no es un número");
+          document.getElementById("p11_tb_4_c").value = "";
+          }
+      });
+
+    $('#p11_tb_4_d').change(function(){
+          var numero = $('#p11_tb_4_d').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos hembras de ganado bovino tuvo? - Adultas sin ordeño " + numero + " no es un número");
+          document.getElementById("p11_tb_4_d").value = "";
+          }
+      });
+
+    $('#p11_tb_4_e').change(function(){
+          var numero = $('#p11_tb_4_e').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos hembras de ganado bovino tuvo? - Adultas en ordeño " + numero + " no es un número");
+          document.getElementById("p11_tb_4_e").value = "";
+          }
+      });
+
+    $('#res_p11_tb_5a_1').change(function(){
+          var numero = $('#res_p11_tb_5a_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos ejemplares de ganado bovino vendió en 2017? - # de animales " + numero + " no es un número");
+          document.getElementById("res_p11_tb_5a_1").value = "";
+          }
+      });
+    $('#res_p11_tb_5a_2').change(function(){
+          var numero = $('#res_p11_tb_5a_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos ejemplares de ganado bovino vendió en 2017? - Peso prom. (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_tb_5a_2").value = "";
+          }
+      });
+    $('#res_p11_tb_5a_3').change(function(){
+          var numero = $('#res_p11_tb_5a_3').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos ejemplares de ganado bovino vendió en 2017? - Ingreso total ($) " + numero + " no es un número");
+          document.getElementById("res_p11_tb_5a_3").value = "";
+          }
+      });
+    $('#res_p11_tb_5b_1').change(function(){
+          var numero = $('#res_p11_tb_5b_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos ejemplares de ganado bovino vendió en 2017? - Peso prom. (kg) " + numero + " no es un número");
+          document.getElementById("res_p11_tb_5b_1").value = "";
+          }
+      });
+    $('#res_p11_tb_5b_2').change(function(){
+          var numero = $('#res_p11_tb_5b_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuántos ejemplares de ganado bovino vendió en 2017? - Ingreso total ($) " + numero + " no es un número");
+          document.getElementById("res_p11_tb_5b_2").value = "";
+          }
+      });
+    $('#res_p11_tb_6a').change(function(){
+          var numero = $('#res_p11_tb_6a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿Cuál fue el ingreso por venta de leche en 2017? - Millones ($) " + numero + " no es un número");
+          document.getElementById("res_p11_tb_6a").value = "";
+          }
+      });
+    $('#res_p11_tb_7').change(function(){
+          var numero = $('#res_p11_tb_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿En cuánta área de su finca realiza las actividades de pastoreo para el ganado bovino relacionado? " + numero + " no es un número");
+          document.getElementById("res_p11_tb_7").value = "";
+          }
+      });
+
+    $('#res_p11_tb_7').change(function(){
+          var numero = $('#res_p11_tb_7').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  ¿En cuánta área de su finca realiza las actividades de pastoreo para el ganado bovino relacionado? " + numero + " no es un número");
+          document.getElementById("res_p11_tb_7").value = "";
+          }
+      });
+
+    $('#res_p11_tc_3_a').change(function(){
+          var numero = $('#res_p11_tc_3_a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  Respecto al número de cerdos(as) en 2017: - En total " + numero + " no es un número");
+          document.getElementById("res_p11_tc_3_a").value = "";
+          }
+      });
+    $('#res_p11_tc_3_b').change(function(){
+          var numero = $('#res_p11_tc_3_b').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  Respecto al número de cerdos(as) en 2017: - ¿Cuántos machos reproductores tuvo? " + numero + " no es un número");
+          document.getElementById("res_p11_tc_3_b").value = "";
+          }
+      });
+    $('#res_p11_tc_3_c').change(function(){
+          var numero = $('#res_p11_tc_3_c').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  Respecto al número de cerdos(as) en 2017: - ¿Cuántos machos de engorde tuvo? " + numero + " no es un número");
+          document.getElementById("res_p11_tc_3_c").value = "";
+          }
+      });
+    $('#res_p11_tc_3_d').change(function(){
+          var numero = $('#res_p11_tc_3_d').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta  Respecto al número de cerdos(as) en 2017: - ¿Cuántas hembras para cría tuvo? " + numero + " no es un número");
+          document.getElementById("res_p11_tc_3_d").value = "";
+          }
+      });
+
+    $('#res_p11_tc_4_a').change(function(){
+          var numero = $('#res_p11_tc_4_a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuántos(as) cerdos(as) destetos vendió en 2017? - # de animales " + numero + " no es un número");
+          document.getElementById("res_p11_tc_4_a").value = "";
+          }
+      });
+    $('#res_p11_tc_4_b').change(function(){
+          var numero = $('#res_p11_tc_4_b').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuántos(as) cerdos(as) destetos vendió en 2017? - Ingreso total ($) " + numero + " no es un número");
+          document.getElementById("res_p11_tc_4_b").value = "";
+          }
+      });
+    $('#res_p11_tc_5_a').change(function(){
+          var numero = $('#res_p11_tc_5_a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuántos(as) cerdos(as) destetos vendió en 2017? - # de animales " + numero + " no es un número");
+          document.getElementById("res_p11_tc_5_a").value = "";
+          }
+      });
+    $('#res_p11_tc_5_b').change(function(){
+          var numero = $('#res_p11_tc_5_b').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuántos(as) cerdos(as) destetos vendió en 2017? - Ingreso total ($) " + numero + " no es un número");
+          document.getElementById("res_p11_tc_5_b").value = "";
+          }
+      });
+    $('#res_p11_tc_6').change(function(){
+          var numero = $('#res_p11_tc_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuántos(as) cerdos(as) destetos vendió en 2017? - Ingreso total ($) " + numero + " no es un número");
+          document.getElementById("res_p11_tc_6").value = "";
+          }
+      });
+    $('#res_p11_td_3_a').change(function(){
+          var numero = $('#res_p11_td_3_a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Cuantas aves tuvo en el 2017: - Postura " + numero + " no es un número");
+          document.getElementById("res_p11_td_3_a").value = "";
+          }
+      });
+    $('#res_p11_td_3_b').change(function(){
+          var numero = $('#res_p11_td_3_b').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Cuantas aves tuvo en el 2017: - Engorde " + numero + " no es un número");
+          document.getElementById("res_p11_td_3_b").value = "";
+          }
+      });
+    $('#res_p11_td_3_c').change(function(){
+          var numero = $('#res_p11_td_3_c').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Cuantas aves tuvo en el 2017: - Aves de corral " + numero + " no es un número");
+          document.getElementById("res_p11_td_3_c").value = "";
+          }
+      });
+    $('#res_p11_td_4_a').change(function(){
+          var numero = $('#res_p11_td_4_a').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuántos pollos vendió en 2017? - # de animales " + numero + " no es un número");
+          document.getElementById("res_p11_td_4_a").value = "";
+          }
+      });
+    $('#res_p11_td_4_b').change(function(){
+          var numero = $('#res_p11_td_4_b').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Cuántos pollos vendió en 2017? - Ingreso total ($) " + numero + " no es un número");
+          document.getElementById("res_p11_td_4_b").value = "";
+          }
+      });
+    $('#res_p11_td_5').change(function(){
+          var numero = $('#res_p11_td_5').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Ingreso por venta de huevos en 2017? " + numero + " no es un número");
+          document.getElementById("res_p11_td_5").value = "";
+          }
+      });
+    $('#res_p11_td_6').change(function(){
+          var numero = $('#res_p11_td_6').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta En cuánta área de su finca realiza las actividades avícolas? " + numero + " no es un número");
+          document.getElementById("res_p11_td_6").value = "";
+          }
+      });
+    $('#res_p11_te_2b_1').change(function(){
+          var numero = $('#res_p11_te_2b_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Ha criado peces, camarones, ostras o langostinos? - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_2b_1").value = "";
+          }
+      });
+    $('#res_p11_te_2b_2').change(function(){
+          var numero = $('#res_p11_te_2b_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Ha criado peces, camarones, ostras o langostinos? - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_2b_2").value = "";
+          }
+      });
+    $('#res_p11_te_2d_1').change(function(){
+          var numero = $('#res_p11_te_2d_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Ha criado peces, camarones, ostras o langostinos? - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_2d_1").value = "";
+          }
+      });
+    $('#res_p11_te_2d_2').change(function(){
+          var numero = $('#res_p11_te_2d_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Ha criado peces, camarones, ostras o langostinos? - Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_2d_2").value = "";
+          }
+      });
+    $('#res_p11_te_2_f').change(function(){
+          var numero = $('#res_p11_te_2_f').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_2_f").value = "";
+          }
+      });
+    $('#res_p11_te_2_f_2').change(function(){
+          var numero = $('#res_p11_te_2_f_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_2_f_2").value = "";
+          }
+      });
+    $('#res_p11_te_2_ff').change(function(){
+          var numero = $('#res_p11_te_2_ff').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿En cuanta área de su finca realiza éstas actividades? (hectáreas) " + numero + " no es un número");
+          document.getElementById("res_p11_te_2_ff").value = "";
+          }
+      });
+    $('#res_p11_te_3b_1').change(function(){
+          var numero = $('#res_p11_te_3b_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo) - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_3b_1").value = "";
+          }
+      });
+    $('#res_p11_te_3b_2').change(function(){
+          var numero = $('#res_p11_te_3b_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo) - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_3b_2").value = "";
+          }
+      });
+    $('#res_p11_te_3c_1').change(function(){
+          var numero = $('#res_p11_te_3c_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo) - Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_3c_1").value = "";
+          }
+      });
+    $('#res_p11_te_3c_2').change(function(){
+          var numero = $('#res_p11_te_3c_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene búfalos, equinos, ovinos o caprinos? (no incluya animales de trabajo) - Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_3c_2").value = "";
+          }
+      });
+    $('#res_p11_te_3d_1').change(function(){
+          var numero = $('#res_p11_te_3d_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿En cuánta área de su finca realiza éstas actividades? (hectáreas) " + numero + " no es un número");
+          document.getElementById("res_p11_te_3d_1").value = "";
+          }
+      });
+    $('#res_p11_te_4b_1').change(function(){
+          var numero = $('#res_p11_te_4b_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene equinos, mular o asnar? - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_4b_1").value = "";
+          }
+      });
+    $('#res_p11_te_4b_2').change(function(){
+          var numero = $('#res_p11_te_4b_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene equinos, mular o asnar? - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_4b_2").value = "";
+          }
+      });
+    $('#res_p11_te_4b_3').change(function(){
+          var numero = $('#res_p11_te_4b_3').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene equinos, mular o asnar? - No. de animales (Dic 2017) " + numero + " no es un número");
+          document.getElementById("res_p11_te_4b_3").value = "";
+          }
+      });
+    $('#res_p11_te_4c_1').change(function(){
+          var numero = $('#res_p11_te_4c_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene equinos, mular o asnar? - Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_4c_1").value = "";
+          }
+      });
+    $('#res_p11_te_4c_2').change(function(){
+          var numero = $('#res_p11_te_4c_2').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene equinos, mular o asnar? - Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_4c_2").value = "";
+          }
+      });
+    $('#res_p11_te_4c_3').change(function(){
+          var numero = $('#res_p11_te_4c_3').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene equinos, mular o asnar? - Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_4c_3").value = "";
+          }
+      });
+    $('#res_p11_te_4d_1').change(function(){
+          var numero = $('#res_p11_te_4d_1').val();
+          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+          alert("El valor de la pregunta ¿Tiene equinos, mular o asnar? - Ingreso en (Millones) " + numero + " no es un número");
+          document.getElementById("res_p11_te_4d_1").value = "";
+          }
+      });
+
+
+
+
+
+
+
+
+
+
+   
+    
+
     $('#res_p12_a_1_a').change(function(){
         if ($('#res_p12_a_1_a').val() == "Si") {
           $('#res_p12_a_1_b').removeClass('hidden');
