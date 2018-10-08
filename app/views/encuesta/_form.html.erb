@@ -8502,7 +8502,9 @@
           var num2 = $('#res_p1_12b1_5').val();
           var num3 = $('#res_p1_12b1_6').val();
 
-          if (numero <= num1 + num2 + num3) {
+          var numero1 = num1 + num2 + num3; 
+
+          if (numero < numero1) {
             alert("El valor de la Area total es menor a la suma de las otras áreas");
             document.getElementById("res_p1_12b1_2").value = "";
           }
@@ -8536,6 +8538,16 @@
           alert("El valor de la Area total finca # 2 " + numero + " no es un número");
           document.getElementById("res_p1_12b2_2").value = "";
           }
+          var num1 = $('#res_p1_12b2_3').val();
+          var num2 = $('#res_p1_12b2_5').val();
+          var num3 = $('#res_p1_12b2_6').val();
+
+          var numero1 = num1 + num2 + num3; 
+
+          if (numero < numero1) {
+            alert("El valor de la Area total de la finca # 2 es menor a la suma de las otras áreas");
+            document.getElementById("res_p1_12b2_2").value = "";
+          }
       }); 
       $('#res_p1_12b2_3').change(function(){
           var numero = $('#res_p1_12b2_3').val();
@@ -8564,6 +8576,16 @@
           alert("El valor de la Area total finca # 3 " + numero + " no es un número");
           document.getElementById("res_p1_12b3_2").value = "";
           }
+          var num1 = $('#res_p1_12b3_3').val();
+          var num2 = $('#res_p1_12b3_5').val();
+          var num3 = $('#res_p1_12b3_6').val();
+
+          var numero1 = num1 + num2 + num3; 
+
+          if (numero < numero1) {
+            alert("El valor de la Area total de la finca # 3 es menor a la suma de las otras áreas");
+            document.getElementById("res_p1_12b3_2").value = "";
+          }
       }); 
       $('#res_p1_12b3_3').change(function(){
           var numero = $('#res_p1_12b3_3').val();
@@ -8586,8 +8608,6 @@
           document.getElementById("res_p1_12b3_6").value = "";
           }
       }); 
-
-
     
       $('#res_p2_16_1a').change(function(){
         if ($('#res_p2_16_1a').val() == "No") {
@@ -8691,6 +8711,16 @@
           $('[id*=persona_6]').removeClass('hidden');
           $('[id*=persona_7]').removeClass('hidden');
           $('[id*=persona_8]').removeClass('hidden');
+        }
+      });  
+
+      $('#res_p2_19').change(function(){
+        if ($('#res_p2_18').val() != "más de 10" && $('#res_p2_19').val() == "más de 10") {
+          alert("El numero de habitaciones no coincide");
+          document.getElementById("res_p2_19").value = "";
+        } else if (($('#res_p2_18').val() <= $('#res_p2_19').val()) && ($('#res_p2_19').val() != "más de 10")) { 
+          alert("El numero de habitaciones no coincide");
+          document.getElementById("res_p2_19").value = "";
         }
       });  
 
