@@ -49,6 +49,11 @@
   <div class="col-md-12 text-center">
   <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 100px;" id="Iniciar_Encuesta">Iniciar Encuesta</a>
   </div>
+  <div class="col-md-6">
+    <br>
+   <%= f.label :p1_1 , "Código encuesta - Solo diligencie para continuar una encuesta no completada, de lo contratio continue" %>
+   <%= f.text_field :p1_1, {class: "form-control", id:"res_continuar"}%>
+  </div>
 </div>
 
 <div class="col-md-12 hidden" id="Seccion_Modulo1">
@@ -7267,8 +7272,16 @@
       $('#Seccion_Modulo1').removeClass('hidden');
     });
     $('#Siguiente_modulo1').click(function(){
-      $('#Seccion_Modulo1').addClass('hidden');
-      $('#Seccion_Modulo2').removeClass('hidden');
+      if ($('#res_p1_12b1_2').val() == "") {
+        alert("El valor del area total es nulo, favor completelo");
+      }else if ($('#res_p1_12b2_2').val() == "" && $('#res_p1_12b2_3').val() != "" ){
+        alert("El valor del area total de la finca 2 es nulo es nulo, favor completelo");
+      }else if ($('#res_p1_12b3_2').val() == "" && $('#res_p1_12b3_3').val() != "" ){
+        alert("El valor del area total de la finca 3 es nulo es nulo, favor completelo");
+      }else{
+        $('#Seccion_Modulo1').addClass('hidden');
+        $('#Seccion_Modulo2').removeClass('hidden');
+      }
     });
     $('#Siguiente_modulo2').click(function(){
       $('#Seccion_Modulo2').addClass('hidden');
@@ -8459,6 +8472,10 @@
           alert("El valor de la pregunta 9" + numero + " no es un número");
           document.getElementById("res_p1_9a").value = "";
           }
+          if (numero.length >= 9) {
+            alert("El valor del celular tiene muchos caracteres");
+            document.getElementById("res_p1_9a").value = "";
+          }
       }); 
 
 
@@ -8469,6 +8486,10 @@
           alert("El valor de la pregunta 9a " + numero + " no es un número");
           document.getElementById("res_p1_9b").value = "";
           }
+          if (numero.length >= 9) {
+            alert("El valor del celular tiene muchos caracteres");
+            document.getElementById("res_p1_9b").value = "";
+          }
       }); 
 
       $('#res_p1_12b1_2').change(function(){
@@ -8477,6 +8498,16 @@
           alert("El valor de la Area total finca # 1 " + numero + " no es un número");
           document.getElementById("res_p1_12b1_2").value = "";
           }
+          var num1 = $('#res_p1_12b1_3').val();
+          var num2 = $('#res_p1_12b1_5').val();
+          var num3 = $('#res_p1_12b1_6').val();
+
+          if (numero <= num1 + num2 + num3) {
+            alert("El valor de la Area total es menor a la suma de las otras áreas");
+            document.getElementById("res_p1_12b1_2").value = "";
+          }
+
+
       }); 
       $('#res_p1_12b1_3').change(function(){
           var numero = $('#res_p1_12b1_3').val();
@@ -8556,6 +8587,8 @@
           }
       }); 
 
+
+    
       $('#res_p2_16_1a').change(function(){
         if ($('#res_p2_16_1a').val() == "No") {
           $('#div_p2_16_1b').addClass('hidden');
