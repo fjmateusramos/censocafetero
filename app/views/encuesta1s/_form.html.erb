@@ -1361,9 +1361,9 @@
       <%= f.label :p14_8a, "8. ¿Utiliza dispositivos que le permiten ahorrar agua en el proceso de producción de café?" %>
       <%= f.select :p14_8a, ["Si", "No", "No Aplica"],{:include_blank => true}, {class: "form-control", id:"res_p14_8a"}%>
     </div>
-    <div class="field col-md-12 text-center" id="div_p14_8b" style="margin-top: 10px;">
+    <div class="field col-md-12 text-center hidden" id="div_p14_8b" style="margin-top: 10px;">
     <%= f.label :p14_8b, "¿Cuál?" %>
-  <div class="hidden" id="div_p14_8b">
+  <div class="" id="div_p14_8b">
     <%= f.text_field :p14_8b, {class: "form-control", id:"res_p14_8b"}%>
   </div>
   </div>
@@ -2022,9 +2022,9 @@
     <tr>
       <td scope="row">c. Muerte de algún(nos) otro(s) miembro(s) del hogar</td>
       <td><%= f.select :p15_1c_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1c_1"} %></td>
-      <td><%= f.select :p15_1a_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1a_2"} %></td>
-      <td><%= f.select :p15_1a_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1a_3"} %></td>
-      <td><%= f.text_field :p15_1a_4a, {class: "form-control", id:"res_p15_1a_4a"} %>a.2016<%= f.text_field :p15_1a_4b, {class: "form-control", id:"res_p15_1a_4b"} %>b.2017<%= f.text_field :p15_1a_4c, {class: "form-control", id:"res_p15_1a_4c"} %>c.2018</td>
+      <td><%= f.select :p15_1a_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1c_2"} %></td>
+      <td><%= f.select :p15_1a_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1c_3"} %></td>
+      <td><%= f.text_field :p15_1a_4a, {class: "form-control", id:"res_p15_1c_4a"} %>a.2016<%= f.text_field :p15_1a_4b, {class: "form-control", id:"res_p15_1c_4b"} %>b.2017<%= f.text_field :p15_1a_4c, {class: "form-control", id:"res_p15_1c_4c"} %>c.2018</td>
     </tr>
 
     <tr>
@@ -2141,10 +2141,10 @@
 
     <tr>
       <td scope="row">r. Fueron víctimas de la violencia</td>
-      <td><%= f.select :p15_1q_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1q_1"} %></td>
-      <td><%= f.select :p15_1q_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1q_2"} %></td>
-      <td><%= f.select :p15_1q_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1q_3"} %></td>
-      <td><%= f.text_field :p15_1q_4a, {class: "form-control", id:"res_p15_1q_4a"} %>a.2016<%= f.text_field :p15_1q_4b, {class: "form-control", id:"res_p15_1q_4b"} %>b.2017<%= f.text_field :p15_1q_4c, {class: "form-control", id:"res_p15_1q_4c"} %>c.2018</td>
+      <td><%= f.select :p15_1q_1, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p15_1r_1"} %></td>
+      <td><%= f.select :p15_1q_2, ["Baja", "Media", "Alta"], {:include_blank => true}, {class: "form-control", id:"res_p15_1r_2"} %></td>
+      <td><%= f.select :p15_1q_3, ["Miembros del hogar que no trabajaban salieron a buscar trabajo o trabajar", "Los miembros del hogar que trabajaban aumentaron las horas de trabajo", " Uno o más miembros del hogar salieron del país", "Tuvieron que cambiar de municipio o departamento", "Cambiaron de vivienda dentro del mismo municipio", "Gastaron los ahorros", "Se endeudaron con un banco o entidad financiera", "Se endeudaron con familiares o amigos", "Vendieron bienes o activos", "Hipotecaron o arrendaron algún activo (casa, carro, finca, etc.)", "Retiraron a los hijos del colegio o la universidad", "Pasaron los hijos a un colegio o universidad más barata", "Disminuyeron los gastos en alimentos", "Pidieron ayuda a familiares, amigos u otras personas de la comunidad", "Pidieron ayuda a instituciones nacionales o internacionales", "Usaron algún seguro", "Compraron un seguro, por ejemplo: de vivienda, de salud", "Sacrificaron animales", "Aumentaron el uso de fungicidas o de alimentos para animales", "Guardó el café para venderlo despues", "No hicieron nada", "Otro"], {:include_blank => true}, {class: "form-control", id:"res_p15_1r_3"} %></td>
+      <td><%= f.text_field :p15_1q_4a, {class: "form-control", id:"res_p15_1r_4a"} %>a.2016<%= f.text_field :p15_1q_4b, {class: "form-control", id:"res_p15_1r_4b"} %>b.2017<%= f.text_field :p15_1q_4c, {class: "form-control", id:"res_p15_1r_4c"} %>c.2018</td>
     </tr>
 
     <tr>
@@ -4092,13 +4092,16 @@
       });
       $('#res_p13_11a').change(function(){
         if ($('#res_p13_11a').val() == "Otro") {
+          $('#div_p13_11b').removeClass('hidden');
           $('#div_p13_12').removeClass('hidden');
            $('#div_p13_13a').removeClass('hidden');
         } else {
+          $('#div_p13_11a').removeClass('hidden');
           $('#div_p13_12').addClass('hidden');
            $('#div_p13_13a').addClass('hidden');
         }
       });
+
       $('#res_p13_12').change(function(){
         if ($('#res_p13_12').val() == "Si") {
            $('#div_p13_13a').removeClass('hidden');
@@ -4106,13 +4109,21 @@
            $('#div_p13_13a').addClass('hidden');
         }
       });
+
+      $('#res_p13_13a').change(function(){
+        if ($('#res_p13_13a').val() == "Otro") {
+           $('#div_p13_13b').removeClass('hidden');
+        } else {
+           $('#div_p13_13b').addClass('hidden');
+        }
+      });
       $('#res_p13_14').change(function(){
         if ($('#res_p13_14').val() == "Si") {
            $('#div_p13_15').removeClass('hidden');
-           $('#res_p13_16').removeClass('hidden');
+           $('#div_p13_16').removeClass('hidden');
         } else {
            $('#div_p13_15').addClass('hidden');
-           $('#res_p13_16').addClass('hidden');
+           $('#div_p13_16').addClass('hidden');
         }
       });
       $('#res_p13_14').change(function(){
@@ -4132,9 +4143,757 @@
         }
       });
       
+      $('#res_p14_8a').change(function(){
+        if ($('#res_p14_8a').val() == "Si") {
+           $('#div_p14_8b').removeClass('hidden');
+        } else {
+           $('#div_p14_8b').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_15').change(function(){
+        if ($('#res_p14_15').val() == "Si") {
+           $('#div_p14_15b').removeClass('hidden');
+        } else {
+           $('#div_p14_15b').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_17').change(function(){
+        if ($('#res_p14_17').val() == "Si") {
+           $('#div_p14_18').removeClass('hidden');
+           $('#div_p14_19').removeClass('hidden');
+           $('#div_p14_20').removeClass('hidden');
+           $('#div_p14_21').removeClass('hidden');
+           $('#div_p14_22').removeClass('hidden');
+           $('#div_p14_23').removeClass('hidden');
+           $('#div_p14_24').removeClass('hidden');
+           $('#div_p14_25').removeClass('hidden');
+        } else {
+           $('#div_p14_18').addClass('hidden');
+           $('#div_p14_19').addClass('hidden');
+           $('#div_p14_20').addClass('hidden');
+           $('#div_p14_21').addClass('hidden');
+           $('#div_p14_22').addClass('hidden');
+           $('#div_p14_23').addClass('hidden');
+           $('#div_p14_24').addClass('hidden');
+           $('#div_p14_25').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_18').change(function(){
+        if ($('#res_p14_18').val() == "Si") {
+           $('#div_p14_19').removeClass('hidden');
+        } else {
+           $('#div_p14_19').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_20').change(function(){
+        if ($('#res_p14_20').val() == "Si") {
+           $('#div_p14_21').removeClass('hidden');
+        } else {
+           $('#div_p14_21').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_22').change(function(){
+        if ($('#res_p14_22').val() == "Si") {
+           $('#div_p14_24').removeClass('hidden');
+        } else {
+           $('#div_p14_24').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_25').change(function(){
+        if ($('#res_p14_25').val() == "Si") {
+           $('#div_p14_26').removeClass('hidden');
+           $('#div_p14_27').removeClass('hidden');
+        } else {
+           $('#div_p14_26').addClass('hidden');
+           $('#div_p14_27').addClass('hidden');
+        }
+      });
 
 
-    
+      $('#res_p14_28').change(function(){
+        if ($('#res_p14_28').val() == "Si") {
+           $('#div_p14_29').addClass('hidden');
+        } else {
+           $('#div_p14_29').removeClass('hidden');
+        }
+      });
+
+      $('#res_p14_39').change(function(){
+        if ($('#res_p14_39').val() == "Si") {
+           $('#div_p14_40').removeClass('hidden');
+        } else {
+           $('#div_p14_40').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_42').change(function(){
+        if ($('#res_p14_42').val() == "Si") {
+           $('#div_p14_42a').removeClass('hidden');
+        } else {
+           $('#div_p14_42a').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_43').change(function(){
+        if ($('#res_p14_43').val() == "Si") {
+           $('#div_p14_43a').removeClass('hidden');
+        } else {
+           $('#div_p14_43a').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_44').change(function(){
+        if ($('#res_p14_44').val() == "Si") {
+           $('#div_p14_44a').removeClass('hidden');
+        } else {
+           $('#div_p14_44a').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_49').change(function(){
+        if ($('#res_p14_49').val() == "Si") {
+           $('#div_p14_50').removeClass('hidden');
+           $('#div_p14_51').removeClass('hidden');
+           $('#div_p14_52').removeClass('hidden');
+        } else {
+           $('#div_p14_50').addClass('hidden');
+           $('#div_p14_51').addClass('hidden');
+           $('#div_p14_52').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_50').change(function(){
+        if ($('#res_p14_50').val() == "Si") {
+           $('#div_p14_51').removeClass('hidden');
+           $('#div_p14_52').removeClass('hidden');
+        } else {
+           $('#div_p14_51').addClass('hidden');
+           $('#div_p14_52').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_53').change(function(){
+        if ($('#res_p14_53').val() == "Si") {
+           $('#div_p14_54').removeClass('hidden');
+        } else {
+           $('#div_p14_54').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_55').change(function(){
+        if ($('#res_p14_55').val() == "Si") {
+           $('#div_p14_56').removeClass('hidden');
+        } else {
+           $('#div_p14_56').addClass('hidden');
+        }
+      });
+
+
+      $('#res_p14_59').change(function(){
+        if ($('#res_p14_59').val() == "Si") {
+           $('#div_p14_59a').removeClass('hidden');
+        } else {
+           $('#div_p14_59a').addClass('hidden');
+        }
+      });
+
+      $('#res_p14_77a').change(function(){
+        if ($('#res_p14_77a').val() == "Si") {
+           $('#div_p14_77b').removeClass('hidden');
+        } else {
+           $('#div_p14_77b').addClass('hidden');
+        }
+      });
+
+      $('#res_p15_1a_1').change(function(){
+        if ($('#res_p15_1a_1').val() == "Si") {
+           $('#res_p15_1a_2').removeClass('hidden');
+           $('#res_p15_1a_3').removeClass('hidden');
+           $('#res_p15_1a_4a').removeClass('hidden');
+           $('#res_p15_1a_4a').removeClass('hidden');
+           $('#res_p15_1a_4b').removeClass('hidden');
+           $('#res_p15_1a_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1a_2').addClass('hidden');
+           $('#res_p15_1a_3').addClass('hidden');
+           $('#res_p15_1a_4').addClass('hidden');
+           $('#res_p15_1a_4a').addClass('hidden');
+           $('#res_p15_1a_4b').addClass('hidden');
+           $('#res_p15_1a_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1b_1').change(function(){
+        if ($('#res_p15_1b_1').val() == "Si") {
+           $('#res_p15_1b_2').removeClass('hidden');
+           $('#res_p15_1b_3').removeClass('hidden');
+           $('#res_p15_1b_4a').removeClass('hidden');
+           $('#res_p15_1b_4a').removeClass('hidden');
+           $('#res_p15_1b_4b').removeClass('hidden');
+           $('#res_p15_1b_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1b_2').addClass('hidden');
+           $('#res_p15_1b_3').addClass('hidden');
+           $('#res_p15_1b_4').addClass('hidden');
+           $('#res_p15_1b_4a').addClass('hidden');
+           $('#res_p15_1b_4b').addClass('hidden');
+           $('#res_p15_1b_4c').addClass('hidden');
+        }
+      });
+       $('#res_p15_1c_1').change(function(){
+        if ($('#res_p15_1c_1').val() == "Si") {
+           $('#res_p15_1c_2').removeClass('hidden');
+           $('#res_p15_1c_3').removeClass('hidden');
+           $('#res_p15_1c_4a').removeClass('hidden');
+           $('#res_p15_1c_4a').removeClass('hidden');
+           $('#res_p15_1c_4b').removeClass('hidden');
+           $('#res_p15_1c_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1c_2').addClass('hidden');
+           $('#res_p15_1c_3').addClass('hidden');
+           $('#res_p15_1c_4').addClass('hidden');
+           $('#res_p15_1c_4a').addClass('hidden');
+           $('#res_p15_1c_4b').addClass('hidden');
+           $('#res_p15_1c_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1d_1').change(function(){
+        if ($('#res_p15_1d_1').val() == "Si") {
+           $('#res_p15_1d_2').removeClass('hidden');
+           $('#res_p15_1d_3').removeClass('hidden');
+           $('#res_p15_1d_4a').removeClass('hidden');
+           $('#res_p15_1d_4a').removeClass('hidden');
+           $('#res_p15_1d_4b').removeClass('hidden');
+           $('#res_p15_1d_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1d_2').addClass('hidden');
+           $('#res_p15_1d_3').addClass('hidden');
+           $('#res_p15_1d_4').addClass('hidden');
+           $('#res_p15_1d_4a').addClass('hidden');
+           $('#res_p15_1d_4b').addClass('hidden');
+           $('#res_p15_1d_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1e_1').change(function(){
+        if ($('#res_p15_1e_1').val() == "Si") {
+           $('#res_p15_1e_2').removeClass('hidden');
+           $('#res_p15_1e_3').removeClass('hidden');
+           $('#res_p15_1e_4a').removeClass('hidden');
+           $('#res_p15_1e_4a').removeClass('hidden');
+           $('#res_p15_1e_4b').removeClass('hidden');
+           $('#res_p15_1e_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1e_2').addClass('hidden');
+           $('#res_p15_1e_3').addClass('hidden');
+           $('#res_p15_1e_4').addClass('hidden');
+           $('#res_p15_1e_4a').addClass('hidden');
+           $('#res_p15_1e_4b').addClass('hidden');
+           $('#res_p15_1e_4c').addClass('hidden');
+        }
+      });
+       $('#res_p15_1f_1').change(function(){
+        if ($('#res_p15_1f_1').val() == "Si") {
+           $('#res_p15_1f_2').removeClass('hidden');
+           $('#res_p15_1f_3').removeClass('hidden');
+           $('#res_p15_1f_4a').removeClass('hidden');
+           $('#res_p15_1f_4a').removeClass('hidden');
+           $('#res_p15_1f_4b').removeClass('hidden');
+           $('#res_p15_1f_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1f_2').addClass('hidden');
+           $('#res_p15_1f_3').addClass('hidden');
+           $('#res_p15_1f_4').addClass('hidden');
+           $('#res_p15_1f_4a').addClass('hidden');
+           $('#res_p15_1f_4b').addClass('hidden');
+           $('#res_p15_1f_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1g_1').change(function(){
+        if ($('#res_p15_1g_1').val() == "Si") {
+           $('#res_p15_1g_2').removeClass('hidden');
+           $('#res_p15_1g_3').removeClass('hidden');
+           $('#res_p15_1g_4a').removeClass('hidden');
+           $('#res_p15_1g_4a').removeClass('hidden');
+           $('#res_p15_1g_4b').removeClass('hidden');
+           $('#res_p15_1g_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1g_2').addClass('hidden');
+           $('#res_p15_1g_3').addClass('hidden');
+           $('#res_p15_1g_4').addClass('hidden');
+           $('#res_p15_1g_4a').addClass('hidden');
+           $('#res_p15_1g_4b').addClass('hidden');
+           $('#res_p15_1g_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1h_1').change(function(){
+        if ($('#res_p15_1h_1').val() == "Si") {
+           $('#res_p15_1h_2').removeClass('hidden');
+           $('#res_p15_1h_3').removeClass('hidden');
+           $('#res_p15_1h_4a').removeClass('hidden');
+           $('#res_p15_1h_4a').removeClass('hidden');
+           $('#res_p15_1h_4b').removeClass('hidden');
+           $('#res_p15_1h_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1h_2').addClass('hidden');
+           $('#res_p15_1h_3').addClass('hidden');
+           $('#res_p15_1h_4').addClass('hidden');
+           $('#res_p15_1h_4a').addClass('hidden');
+           $('#res_p15_1h_4b').addClass('hidden');
+           $('#res_p15_1h_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1i_1').change(function(){
+        if ($('#res_p15_1i_1').val() == "Si") {
+           $('#res_p15_1i_2').removeClass('hidden');
+           $('#res_p15_1i_3').removeClass('hidden');
+           $('#res_p15_1i_4a').removeClass('hidden');
+           $('#res_p15_1i_4a').removeClass('hidden');
+           $('#res_p15_1i_4b').removeClass('hidden');
+           $('#res_p15_1i_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1i_2').addClass('hidden');
+           $('#res_p15_1i_3').addClass('hidden');
+           $('#res_p15_1i_4').addClass('hidden');
+           $('#res_p15_1i_4a').addClass('hidden');
+           $('#res_p15_1i_4b').addClass('hidden');
+           $('#res_p15_1i_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1j_1').change(function(){
+        if ($('#res_p15_1j_1').val() == "Si") {
+           $('#res_p15_1j_2').removeClass('hidden');
+           $('#res_p15_1j_3').removeClass('hidden');
+           $('#res_p15_1j_4a').removeClass('hidden');
+           $('#res_p15_1j_4a').removeClass('hidden');
+           $('#res_p15_1j_4b').removeClass('hidden');
+           $('#res_p15_1j_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1j_2').addClass('hidden');
+           $('#res_p15_1j_3').addClass('hidden');
+           $('#res_p15_1j_4').addClass('hidden');
+           $('#res_p15_1j_4a').addClass('hidden');
+           $('#res_p15_1j_4b').addClass('hidden');
+           $('#res_p15_1j_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1k_1').change(function(){
+        if ($('#res_p15_1k_1').val() == "Si") {
+           $('#res_p15_1k_2').removeClass('hidden');
+           $('#res_p15_1k_3').removeClass('hidden');
+           $('#res_p15_1k_4a').removeClass('hidden');
+           $('#res_p15_1k_4a').removeClass('hidden');
+           $('#res_p15_1k_4b').removeClass('hidden');
+           $('#res_p15_1k_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1k_2').addClass('hidden');
+           $('#res_p15_1k_3').addClass('hidden');
+           $('#res_p15_1k_4').addClass('hidden');
+           $('#res_p15_1k_4a').addClass('hidden');
+           $('#res_p15_1k_4b').addClass('hidden');
+           $('#res_p15_1k_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1l_1').change(function(){
+        if ($('#res_p15_1l_1').val() == "Si") {
+           $('#res_p15_1l_2').removeClass('hidden');
+           $('#res_p15_1l_3').removeClass('hidden');
+           $('#res_p15_1l_4a').removeClass('hidden');
+           $('#res_p15_1l_4a').removeClass('hidden');
+           $('#res_p15_1l_4b').removeClass('hidden');
+           $('#res_p15_1l_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1l_2').addClass('hidden');
+           $('#res_p15_1l_3').addClass('hidden');
+           $('#res_p15_1l_4').addClass('hidden');
+           $('#res_p15_1l_4a').addClass('hidden');
+           $('#res_p15_1l_4b').addClass('hidden');
+           $('#res_p15_1l_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1m_1').change(function(){
+        if ($('#res_p15_1m_1').val() == "Si") {
+           $('#res_p15_1m_2').removeClass('hidden');
+           $('#res_p15_1m_3').removeClass('hidden');
+           $('#res_p15_1m_4a').removeClass('hidden');
+           $('#res_p15_1m_4a').removeClass('hidden');
+           $('#res_p15_1m_4b').removeClass('hidden');
+           $('#res_p15_1m_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1m_2').addClass('hidden');
+           $('#res_p15_1m_3').addClass('hidden');
+           $('#res_p15_1m_4').addClass('hidden');
+           $('#res_p15_1m_4a').addClass('hidden');
+           $('#res_p15_1m_4b').addClass('hidden');
+           $('#res_p15_1m_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1n_1').change(function(){
+        if ($('#res_p15_1n_1').val() == "Si") {
+           $('#res_p15_1n_2').removeClass('hidden');
+           $('#res_p15_1n_3').removeClass('hidden');
+           $('#res_p15_1n_4a').removeClass('hidden');
+           $('#res_p15_1n_4a').removeClass('hidden');
+           $('#res_p15_1n_4b').removeClass('hidden');
+           $('#res_p15_1n_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1n_2').addClass('hidden');
+           $('#res_p15_1n_3').addClass('hidden');
+           $('#res_p15_1n_4').addClass('hidden');
+           $('#res_p15_1n_4a').addClass('hidden');
+           $('#res_p15_1n_4b').addClass('hidden');
+           $('#res_p15_1n_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1o_1').change(function(){
+        if ($('#res_p15_1o_1').val() == "Si") {
+           $('#res_p15_1o_2').removeClass('hidden');
+           $('#res_p15_1o_3').removeClass('hidden');
+           $('#res_p15_1o_4a').removeClass('hidden');
+           $('#res_p15_1o_4a').removeClass('hidden');
+           $('#res_p15_1o_4b').removeClass('hidden');
+           $('#res_p15_1o_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1o_2').addClass('hidden');
+           $('#res_p15_1o_3').addClass('hidden');
+           $('#res_p15_1o_4').addClass('hidden');
+           $('#res_p15_1o_4a').addClass('hidden');
+           $('#res_p15_1o_4b').addClass('hidden');
+           $('#res_p15_1o_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1p_1').change(function(){
+        if ($('#res_p15_1p_1').val() == "Si") {
+           $('#res_p15_1p_2').removeClass('hidden');
+           $('#res_p15_1p_3').removeClass('hidden');
+           $('#res_p15_1p_4a').removeClass('hidden');
+           $('#res_p15_1p_4a').removeClass('hidden');
+           $('#res_p15_1p_4b').removeClass('hidden');
+           $('#res_p15_1p_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1p_2').addClass('hidden');
+           $('#res_p15_1p_3').addClass('hidden');
+           $('#res_p15_1p_4').addClass('hidden');
+           $('#res_p15_1p_4a').addClass('hidden');
+           $('#res_p15_1p_4b').addClass('hidden');
+           $('#res_p15_1p_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1q_1').change(function(){
+        if ($('#res_p15_1q_1').val() == "Si") {
+           $('#res_p15_1q_2').removeClass('hidden');
+           $('#res_p15_1q_3').removeClass('hidden');
+           $('#res_p15_1q_4a').removeClass('hidden');
+           $('#res_p15_1q_4a').removeClass('hidden');
+           $('#res_p15_1q_4b').removeClass('hidden');
+           $('#res_p15_1q_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1q_2').addClass('hidden');
+           $('#res_p15_1q_3').addClass('hidden');
+           $('#res_p15_1q_4').addClass('hidden');
+           $('#res_p15_1q_4a').addClass('hidden');
+           $('#res_p15_1q_4b').addClass('hidden');
+           $('#res_p15_1q_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1r_1').change(function(){
+        if ($('#res_p15_1r_1').val() == "Si") {
+           $('#res_p15_1r_2').removeClass('hidden');
+           $('#res_p15_1r_3').removeClass('hidden');
+           $('#res_p15_1r_4a').removeClass('hidden');
+           $('#res_p15_1r_4a').removeClass('hidden');
+           $('#res_p15_1r_4b').removeClass('hidden');
+           $('#res_p15_1r_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1r_2').addClass('hidden');
+           $('#res_p15_1r_3').addClass('hidden');
+           $('#res_p15_1r_4').addClass('hidden');
+           $('#res_p15_1r_4a').addClass('hidden');
+           $('#res_p15_1r_4b').addClass('hidden');
+           $('#res_p15_1r_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1s_1').change(function(){
+        if ($('#res_p15_1s_1').val() == "Si") {
+           $('#res_p15_1s_2').removeClass('hidden');
+           $('#res_p15_1s_3').removeClass('hidden');
+           $('#res_p15_1s_4a').removeClass('hidden');
+           $('#res_p15_1s_4a').removeClass('hidden');
+           $('#res_p15_1s_4b').removeClass('hidden');
+           $('#res_p15_1s_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1s_2').addClass('hidden');
+           $('#res_p15_1s_3').addClass('hidden');
+           $('#res_p15_1s_4').addClass('hidden');
+           $('#res_p15_1s_4a').addClass('hidden');
+           $('#res_p15_1s_4b').addClass('hidden');
+           $('#res_p15_1s_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1t_1').change(function(){
+        if ($('#res_p15_1t_1').val() == "Si") {
+           $('#res_p15_1t_2').removeClass('hidden');
+           $('#res_p15_1t_3').removeClass('hidden');
+           $('#res_p15_1t_4a').removeClass('hidden');
+           $('#res_p15_1t_4a').removeClass('hidden');
+           $('#res_p15_1t_4b').removeClass('hidden');
+           $('#res_p15_1t_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1t_2').addClass('hidden');
+           $('#res_p15_1t_3').addClass('hidden');
+           $('#res_p15_1t_4').addClass('hidden');
+           $('#res_p15_1t_4a').addClass('hidden');
+           $('#res_p15_1t_4b').addClass('hidden');
+           $('#res_p15_1t_4c').addClass('hidden');
+        }
+      });
+      $('#res_p15_1u_1').change(function(){
+        if ($('#res_p15_1u_1').val() == "Si") {
+           $('#res_p15_1u_2').removeClass('hidden');
+           $('#res_p15_1u_3').removeClass('hidden');
+           $('#res_p15_1u_4a').removeClass('hidden');
+           $('#res_p15_1u_4a').removeClass('hidden');
+           $('#res_p15_1u_4b').removeClass('hidden');
+           $('#res_p15_1u_4c').removeClass('hidden');
+        } else {
+           $('#res_p15_1u_2').addClass('hidden');
+           $('#res_p15_1u_3').addClass('hidden');
+           $('#res_p15_1u_4').addClass('hidden');
+           $('#res_p15_1u_4a').addClass('hidden');
+           $('#res_p15_1u_4b').addClass('hidden');
+           $('#res_p15_1u_4c').addClass('hidden');
+        }
+      });
+
+      $('#res_p16_2_1_b').change(function(){
+        if ($('#res_p16_2_1_b').val() == "Si") {
+           $('#res_p16_2_1_c').removeClass('hidden');
+           $('#res_p16_2_1_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_1_c').addClass('hidden');
+           $('#res_p16_2_1_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_2_b').change(function(){
+        if ($('#res_p16_2_2_b').val() == "Si") {
+           $('#res_p16_2_2_c').removeClass('hidden');
+           $('#res_p16_2_2_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_2_c').addClass('hidden');
+           $('#res_p16_2_2_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_3_b').change(function(){
+        if ($('#res_p16_2_3_b').val() == "Si") {
+           $('#res_p16_2_3_c').removeClass('hidden');
+           $('#res_p16_2_3_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_3_c').addClass('hidden');
+           $('#res_p16_2_3_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_4_b').change(function(){
+        if ($('#res_p16_2_4_b').val() == "Si") {
+           $('#res_p16_2_4_c').removeClass('hidden');
+           $('#res_p16_2_4_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_4_c').addClass('hidden');
+           $('#res_p16_2_4_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_5_b').change(function(){
+        if ($('#res_p16_2_5_b').val() == "Si") {
+           $('#res_p16_2_5_c').removeClass('hidden');
+           $('#res_p16_2_5_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_5_c').addClass('hidden');
+           $('#res_p16_2_5_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_6_b').change(function(){
+        if ($('#res_p16_2_6_b').val() == "Si") {
+           $('#res_p16_2_6_c').removeClass('hidden');
+           $('#res_p16_2_6_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_6_c').addClass('hidden');
+           $('#res_p16_2_6_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_7_b').change(function(){
+        if ($('#res_p16_2_7_b').val() == "Si") {
+           $('#res_p16_2_7_c').removeClass('hidden');
+           $('#res_p16_2_7_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_7_c').addClass('hidden');
+           $('#res_p16_2_7_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_8_b').change(function(){
+        if ($('#res_p16_2_8_b').val() == "Si") {
+           $('#res_p16_2_8_c').removeClass('hidden');
+           $('#res_p16_2_8_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_8_c').addClass('hidden');
+           $('#res_p16_2_8_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_9_b').change(function(){
+        if ($('#res_p16_2_9_b').val() == "Si") {
+           $('#res_p16_2_9_c').removeClass('hidden');
+           $('#res_p16_2_9_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_9_c').addClass('hidden');
+           $('#res_p16_2_9_d').addClass('hidden');
+        }
+      });
+      $('#res_p16_2_10_b').change(function(){
+        if ($('#res_p16_2_10_b').val() == "Si") {
+           $('#res_p16_2_10_c').removeClass('hidden');
+           $('#res_p16_2_10_d').removeClass('hidden');
+        } else {
+           $('#res_p16_2_10_c').addClass('hidden');
+           $('#res_p16_2_10_d').addClass('hidden');
+        }
+      });
+
+      $('#res_p16_3_1_a').change(function(){
+        if ($('#res_p16_3_1_a').val() == "Si") {
+           $('#res_p16_3_1_c').removeClass('hidden');
+        } else {
+           $('#res_p16_3_1_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_3_2_a').change(function(){
+        if ($('#res_p16_3_2_a').val() == "Si") {
+           $('#res_p16_3_2_c').removeClass('hidden');
+        } else {
+           $('#res_p16_3_2_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_3_3_a').change(function(){
+        if ($('#res_p16_3_3_a').val() == "Si") {
+           $('#res_p16_3_3_c').removeClass('hidden');
+        } else {
+           $('#res_p16_3_3_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_3_4_a').change(function(){
+        if ($('#res_p16_3_4_a').val() == "Si") {
+           $('#res_p16_3_4_c').removeClass('hidden');
+        } else {
+           $('#res_p16_3_4_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_3_5_a').change(function(){
+        if ($('#res_p16_3_5_a').val() == "Si") {
+           $('#res_p16_3_5_c').removeClass('hidden');
+        } else {
+           $('#res_p16_3_5_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_3_6_a').change(function(){
+        if ($('#res_p16_3_6_a').val() == "Si") {
+           $('#res_p16_3_6_c').removeClass('hidden');
+        } else {
+           $('#res_p16_3_6_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_3_7_a').change(function(){
+        if ($('#res_p16_3_7_a').val() == "Si") {
+           $('#res_p16_3_7_c').removeClass('hidden');
+        } else {
+           $('#res_p16_3_7_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_1_a').change(function(){
+        if ($('#res_p16_4_1_a').val() == "Si") {
+           $('#res_p16_4_1_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_1_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_2_a').change(function(){
+        if ($('#res_p16_4_2_a').val() == "Si") {
+           $('#res_p16_4_2_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_2_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_3_a').change(function(){
+        if ($('#res_p16_4_3_a').val() == "Si") {
+           $('#res_p16_4_3_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_3_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_4_a').change(function(){
+        if ($('#res_p16_4_4_a').val() == "Si") {
+           $('#res_p16_4_4_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_4_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_5_a').change(function(){
+        if ($('#res_p16_4_5_a').val() == "Si") {
+           $('#res_p16_4_5_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_5_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_6_a').change(function(){
+        if ($('#res_p16_4_6_a').val() == "Si") {
+           $('#res_p16_4_6_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_6_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_7_a').change(function(){
+        if ($('#res_p16_4_7_a').val() == "Si") {
+           $('#res_p16_4_7_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_7_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_8_a').change(function(){
+        if ($('#res_p16_4_8_a').val() == "Si") {
+           $('#res_p16_4_8_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_8_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_9_a').change(function(){
+        if ($('#res_p16_4_9_a').val() == "Si") {
+           $('#res_p16_4_9_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_9_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_10_a').change(function(){
+        if ($('#res_p16_4_10_a').val() == "Si") {
+           $('#res_p16_4_10_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_10_c').addClass('hidden');
+        }
+      });
+      $('#res_p16_4_11_a').change(function(){
+        if ($('#res_p16_4_11_a').val() == "Si") {
+           $('#res_p16_4_11_c').removeClass('hidden');
+        } else {
+           $('#res_p16_4_11_c').addClass('hidden');
+        }
+      });
+      
+
+
+
+      
+
+
+
 
 
 
