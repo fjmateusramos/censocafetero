@@ -2519,15 +2519,15 @@
       <%= f.label :p17_2a, "2. ¿Ha usado algún mecanismo para proteger el precio de venta del café a futuro?" %>
       <%= f.select :p17_2a, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p17_2a"}%>
     </div>
-    <div class="field col-md-12 text-center" id="div_p17_2b" style="margin-top: 10px;">
+    <div class="field col-md-12 text-center hidden" id="div_p17_2b" style="margin-top: 10px;">
     <%= f.label :p17_2b, "¿Cuales?" %>
-    <div class="hidden" id="div_p17_2b">
+    <div class="" id="div_p17_2b">
     <%= f.select :p17_2b, ["Contrato de protección de precio (CPP)", "Entregas futuras", "Otra"], {:include_blank => true}, {class: "form-control", id:"res_p17_2b"}%>
     </div>
   </div>
-  <div class="field col-md-12 text-center" id="div_p17_2c" style="margin-top: 10px;">
+  <div class="field col-md-12 text-center hidden" id="div_p17_2c" style="margin-top: 10px;">
     <%= f.label :p17_2c, "Otra. ¿Cuál?" %>
-    <div class="hidden" id="div_p17_2c">
+    <div class="" id="div_p17_2c">
     <%= f.text_field :p17_2c, {class: "form-control", id:"res_p17_2c"}%>
     </div>
   </div>
@@ -2541,23 +2541,23 @@
       <%= f.select :p17_3_a, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_a"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p17_3_b" style="margin-top: 10px;">
+    <div class="field col-md-4 text-center hidden" id="div_p17_3_b" style="margin-top: 10px;">
     <%= f.label :p17_3_b, "b. Compraría este seguro por 4.000 pesos por arroba?" %>
     <%= f.select :p17_3_b, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_b"}%>
     </div>
 
-  <div class="field col-md-4 text-center" id="div_p17_3_c" style="margin-top: 10px;">
+  <div class="field col-md-4 text-center hidden" id="div_p17_3_c" style="margin-top: 10px;">
     <%= f.label :p17_3_c, "c. Compraría este seguro por 2.000 pesos por arroba?" %>
     <%= f.select :p17_3_c, ["Si", "No"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_c"}%>
     </div>
 
-    <div class="field col-md-4 text-center" id="div_p17_3_d" style="margin-top: 10px;">
+    <div class="field col-md-4 text-center hidden" id="div_p17_3_d" style="margin-top: 10px;">
     <%= f.label :p17_3_d, "d. Por qué no lo compraría? (marque la razón principal)" %>
     <%= f.select :p17_3_d, ["Porque el precio es alto", "Porque no lo necesita", "Porque no le gustan los seguros", "Porque hay que comprarlo con mucha anticipación", "Porque no está seguro de cuánto recibirá como compensación", "Por la incertidumbre en la producción dentro de tres años", "Otra"], {:include_blank => true}, {class: "form-control", id:"res_p17_3_d"}%>
     </div>
-    <div class="field col-md-4 text-center" id="div_p17_3_do" style="margin-top: 10px;">
+    <div class="field col-md-4 text-center hidden" id="div_p17_3_do" style="margin-top: 10px;">
     <%= f.label :p17_3_do, "Otra. ¿Cuál?" %>
-    <div class="hidden" id="div_p17_3_do">
+    <div class="" id="div_p17_3_doo">
     <%= f.text_field :p17_3_do, {class: "form-control", id:"res_p17_3_do"}%>
     </div>
   </div>
@@ -4886,6 +4886,58 @@
            $('#res_p16_4_11_c').addClass('hidden');
         }
       });
+
+      $('#res_p17_2a').change(function(){
+        if ($('#res_p17_2a').val() == "Si") {
+           $('#div_p17_2b').removeClass('hidden');
+        } else {
+           $('#div_p17_2b').addClass('hidden');
+        }
+      });
+
+      $('#res_p17_2b').change(function(){
+        if ($('#res_p17_2b').val() == "Otra") {
+           $('#div_p17_2c').removeClass('hidden');
+        } else {
+           $('#div_p17_2c').addClass('hidden');
+        }
+      });
+
+      $('#res_p17_3_a').change(function(){
+        if ($('#res_p17_3_a').val() == "Si") {
+           $('#div_p17_3_b').addClass('hidden');
+           $('#div_p17_3_c').addClass('hidden');
+           $('#div_p17_3_d').addClass('hidden');
+           $('#div_p17_3_do').addClass('hidden');
+        } else {
+           $('#div_p17_3_b').removeClass('hidden');
+        }
+      });
+      $('#res_p17_3_b').change(function(){
+        if ($('#res_p17_3_b').val() == "Si") {
+           $('#div_p17_3_c').addClass('hidden');
+           $('#div_p17_3_d').addClass('hidden');
+           $('#div_p17_3_do').addClass('hidden');
+        } else {
+           $('#div_p17_3_c').removeClass('hidden');
+        }
+      });
+      $('#res_p17_3_c').change(function(){
+        if ($('#res_p17_3_c').val() == "Si") {
+           $('#div_p17_3_d').addClass('hidden');
+           $('#div_p17_3_do').addClass('hidden');
+        } else {
+           $('#div_p17_3_d').removeClass('hidden');
+        }
+      });
+      $('#res_p17_3_d').change(function(){
+        if ($('#res_p17_3_d').val() == "Otra") {
+           $('#div_p17_3_do').removeClass('hidden');
+        } else {
+           $('#div_p17_3_do').addClass('hidden');
+        }
+      });
+      
       
 
 
