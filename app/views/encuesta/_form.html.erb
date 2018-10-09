@@ -49,15 +49,17 @@
   <div class="col-md-12 text-center">
   <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 100px;" id="Iniciar_Encuesta">Iniciar Encuesta</a>
   </div>
-  <div class="col-md-5">
+  <div class="row col-md-12">
+  <div class="col-md-6 text-center">
     <br>
    <%= f.label :p1_1 , "Código encuesta - Solo diligencie para continuar una encuesta no completada, de lo contratio continue" %>
    <%= f.text_field :p1_1, {class: "form-control", id:"res_continuar"}%>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-6 text-center">
     <br>
    <%= f.label :p1_1 , "Código de esta encuesta" %>
    <%= f.text_field :p1_1, {class: "form-control", id:"res_cod_encuesta"}%>
+  </div>
   </div>
 </div>
 
@@ -8829,7 +8831,7 @@
         if ($('#res_p2_18').val() != "más de 10" && $('#res_p2_19').val() == "más de 10") {
           alert("El numero de habitaciones no coincide");
           document.getElementById("res_p2_19").value = "";
-        } else if (($('#res_p2_18').val() <= $('#res_p2_19').val()) && ($('#res_p2_19').val() != "más de 10")) { 
+        } else if (($('#res_p2_18').val() < $('#res_p2_19').val()) && ($('#res_p2_19').val() != "más de 10")) { 
           alert("El numero de habitaciones no coincide");
           document.getElementById("res_p2_19").value = "";
         }
