@@ -210,29 +210,29 @@
       <tbody>
         <tr>
           <th scope="row"><%= f.text_field :p1_12b1_1, {class: "form-control", id:"res_p1_12b1_1" , :value => "1"} %></th>
-          <td><%= f.text_field :p1_12b1_2, {class: "form-control", id:"res_p1_12b1_2"} %></td>
           <td><%= f.text_field :p1_12b1_3, {class: "form-control", id:"res_p1_12b1_3"} %></td>
           <td><%= f.text_field :p1_12b1_5, {class: "form-control", id:"res_p1_12b1_5"} %></td>
           <td><%= f.text_field :p1_12b1_6, {class: "form-control", id:"res_p1_12b1_6"} %></td>
+          <td><%= f.text_field :p1_12b1_2, {class: "form-control", id:"res_p1_12b1_2"} %></td>
           <td><%= f.select :p1_12b1_7, ["Propia", "Medianía", "Arrendada", "Compañía", "Aparcería", "Posesión", "Colectiva", "Otra"],{:include_blank => true}, {class: "form-control", id:"res_p1_12b1_7"}%></td>
           <td><img src="<%= asset_path 'addb1.png' %>" id="img_tr_1"></td>
         </tr>
         <tr class="hidden" id="tr_finca_2">
           <th scope="row"><%= f.text_field :p1_12b2_1, {class: "form-control", id:"res_p1_12b2_1" , :value => "2"} %></th>
-          <td><%= f.text_field :p1_12b2_2, {class: "form-control", id:"res_p1_12b2_2"} %></td>
           <td><%= f.text_field :p1_12b2_3, {class: "form-control", id:"res_p1_12b2_3"} %></td>
           <td><%= f.text_field :p1_12b2_5, {class: "form-control", id:"res_p1_12b2_5"} %></td>
           <td><%= f.text_field :p1_12b2_6, {class: "form-control", id:"res_p1_12b2_6"} %></td>
+           <td><%= f.text_field :p1_12b2_2, {class: "form-control", id:"res_p1_12b2_2"} %></td>
           <td><%= f.select :p1_12b2_7, ["Propia", "Medianía", "Arrendada", "Compañía", "Aparcería", "Posesión", "Colectiva", "Otra"],{:include_blank => true}, {class: "form-control", id:"res_p1_12b2_7"}%></td>
           <td><img src="<%= asset_path 'addb1.png' %>" id="img_tr_2"></td>
           <td><img src="<%= asset_path 'delete1.png' %>" id="img_tr_d_2"></td>
         </tr>
         <tr class="hidden" id="tr_finca_3">
           <th scope="row"><%= f.text_field :p1_12b3_1, {class: "form-control", id:"res_p1_12b3_1" , :value => "3"} %></th>
-          <td><%= f.text_field :p1_12b3_2, {class: "form-control", id:"res_p1_12b3_2"} %></td>
           <td><%= f.text_field :p1_12b3_3, {class: "form-control", id:"res_p1_12b3_3"} %></td>
           <td><%= f.text_field :p1_12b3_5, {class: "form-control", id:"res_p1_12b3_5"} %></td>
           <td><%= f.text_field :p1_12b3_6, {class: "form-control", id:"res_p1_12b3_6"} %></td>
+          <td><%= f.text_field :p1_12b3_2, {class: "form-control", id:"res_p1_12b3_2"} %></td>
           <td><%= f.select :p1_12b3_7, ["Propia", "Medianía", "Arrendada", "Compañía", "Aparcería", "Posesión", "Colectiva", "Otra"],{:include_blank => true}, {class: "form-control", id:"res_p1_12b3_7"}%></td>
           <td><img src="<%= asset_path 'delete1.png' %>" id="img_tr_d_3"></td>
         </tr>
@@ -8527,8 +8527,6 @@
       }
       });
 
-
-
       $('#res_p1_7').change(function(){
           var numero = $('#res_p1_7').val();
           if (!/^([A-Za-z])*$/.test(numero)){
@@ -8537,8 +8535,6 @@
           }
       });
 
-
-
       $('#res_p1_10').change(function(){
           var numero = $('#res_p1_10').val();
           if (!/^([A-Za-z])*$/.test(numero)){
@@ -8546,6 +8542,123 @@
           document.getElementById("res_p1_10").value = "";
           }
       }); 
+
+      $('#res_p3_27_1').change(function(){
+          var numero = $('#res_p3_27_1').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_1").value = "";
+          }
+      });
+      $('#res_p3_27_2').change(function(){
+          var numero = $('#res_p3_27_2').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_2").value = "";
+          }
+      });
+      $('#res_p3_27_3').change(function(){
+          var numero = $('#res_p3_27_3').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_3").value = "";
+          }
+      });
+      $('#res_p3_27_4').change(function(){
+          var numero = $('#res_p3_27_4').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_4").value = "";
+          }
+      });
+      $('#res_p3_27_5').change(function(){
+          var numero = $('#res_p3_27_5').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_5").value = "";
+          }
+      });
+      $('#res_p3_27_6').change(function(){
+          var numero = $('#res_p3_27_6').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_6").value = "";
+          }
+      });
+      $('#res_p3_27_7').change(function(){
+          var numero = $('#res_p3_27_7').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_7").value = "";
+          }
+      });
+      $('#res_p3_27_8').change(function(){
+          var numero = $('#res_p3_27_8').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_27_8").value = "";
+          }
+      });
+      $('#res_p3_28_1').change(function(){
+          var numero = $('#res_p3_28_1').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_1").value = "";
+          }
+      });
+      $('#res_p3_28_2').change(function(){
+          var numero = $('#res_p3_28_2').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_2").value = "";
+          }
+      });
+      $('#res_p3_28_3').change(function(){
+          var numero = $('#res_p3_28_3').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_3").value = "";
+          }
+      });
+      $('#res_p3_28_4').change(function(){
+          var numero = $('#res_p3_28_4').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_4").value = "";
+          }
+      });
+      $('#res_p3_28_5').change(function(){
+          var numero = $('#res_p3_28_5').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_5").value = "";
+          }
+      });
+      $('#res_p3_28_6').change(function(){
+          var numero = $('#res_p3_28_6').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_6").value = "";
+          }
+      });
+      $('#res_p3_28_7').change(function(){
+          var numero = $('#res_p3_28_7').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_7").value = "";
+          }
+      });
+      $('#res_p3_28_8').change(function(){
+          var numero = $('#res_p3_28_8').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p3_28_8").value = "";
+          }
+      });
+
+
+
+
 
       $('#res_p1_11').change(function(){
         if ($('#res_p1_11').val() == "Otra, ¿Cuál?") {
