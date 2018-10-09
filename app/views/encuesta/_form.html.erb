@@ -54,6 +54,11 @@
    <%= f.label :p1_1 , "Código encuesta - Solo diligencie para continuar una encuesta no completada, de lo contratio continue" %>
    <%= f.text_field :p1_1, {class: "form-control", id:"res_continuar"}%>
   </div>
+  <div class="col-md-6">
+    <br>
+   <%= f.label :p1_1 , "Código de esta encueta" %>
+   <%= f.text_field :p1_1, {class: "form-control", id:"res_continuar"}%>
+  </div>
 </div>
 
 <div class="col-md-12 hidden" id="Seccion_Modulo1">
@@ -109,7 +114,7 @@
       <div class="hidden" id="div_p1_1_Nariño">
       <%= f.select :p1_2, ["ALBAN","ALDANA","ANCUYA","ARBOLEDA","BARBACOAS","BELEN","BUESACO","CHACHAGÜI","COLON","CONSACA","CONTADERO","CORDOBA","CUASPUD","CUMBAL","CUMBITARA","EL CHARCO","EL PEÑOL","EL ROSARIO","EL TABLON DE GOMEZ","EL TAMBO","FRANCISCO PIZARRO","FUNES","GUACHUCAL","GUAITARILLA","GUALMATAN","ILES","IMUES","IPIALES","LA CRUZ","LA FLORIDA","LA LLANADA","LA TOLA","LA UNION","LEIVA","LINARES","LOS ANDES","MAGÜI","MALLAMA","MOSQUERA","NARIÑO","OLAYA HERRERA","OSPINA","PASTO","POLICARPA","POTOSI","PROVIDENCIA","PUERRES","PUPIALES","RICAURTE","ROBERTO PAYAN","SAMANIEGO","SAN BERNARDO","SAN LORENZO","SAN PABLO","SAN PEDRO DE CARTAGO","SANDONA","SANTA BARBARA","SANTACRUZ","SAPUYES","TAMINANGO","TANGUA","TUMACO","TÚQUERRES","YACUANQUER"],{:include_blank => true}, {class: "form-control", id:"res_p1_2_Nariño"}%>
       </div>
-      <div class="hidden" id="div_p1_1_NorteSantander">
+      <div class="hidden" id="div_p1_1_Nortesantander">
       <%= f.select :p1_2, ["ABREGO","ARBOLEDAS","BOCHALEMA","BUCARASICA","CACHIRA","CACOTA","CHINACOTA","CHITAGA","CONVENCION","CÚCUTA","CUCUTILLA","DURANIA","EL CARMEN","EL TARRA","EL ZULIA","GRAMALOTE","HACARI","HERRAN","LA ESPERANZA","LA PLAYA","LABATECA","LOS PATIOS","LOURDES","MUTISCUA","OCAÑA","PAMPLONA","PAMPLONITA","PUERTO SANTANDER","RAGONVALIA","SALAZAR","SAN CALIXTO","SAN CAYETANO","SANTIAGO","SARDINATA","SILOS","TEORAMA","TIBÚ","TOLEDO","VILLA CARO","VILLA DEL ROSARIO"],{:include_blank => true}, {class: "form-control", id:"res_p1_2_NorteSantander"}%>
       </div>
       <div class="hidden" id="div_p1_1_Quindio">
@@ -8088,7 +8093,77 @@
         $('#div_p1_1_Tolima').addClass('hidden');
         $('#div_p1_1_Valle').addClass('hidden');
         $('#div_p1_1_Vaupes').addClass('hidden');
-        $('#div_p1_1_Vichada').addClass('hidden');   
+        $('#div_p1_1_Vichada').addClass('hidden');
+       } else if($('#res_p1_1').val() == "Meta"){
+        $('#div_p1_1_Amazonas').addClass('hidden');
+        $('#div_p1_1_Antioquia').addClass('hidden');
+        $('#div_p1_1_Otro').addClass('hidden');
+        $('#div_p1_1_Arauca').addClass('hidden');
+        $('#div_p1_1_SanAndres').addClass('hidden');
+        $('#div_p1_1_Atlantico').addClass('hidden');
+        $('#div_p1_1_Bogota').addClass('hidden');
+        $('#div_p1_1_Bolivar').addClass('hidden');
+        $('#div_p1_1_Boyaca').addClass('hidden');
+        $('#div_p1_1_Caldas').addClass('hidden');
+        $('#div_p1_1_Caqueta').addClass('hidden');
+        $('#div_p1_1_Casanare').addClass('hidden');
+        $('#div_p1_1_Cauca').addClass('hidden');
+        $('#div_p1_1_Cesar').addClass('hidden');
+        $('#div_p1_1_Choco').addClass('hidden');
+        $('#div_p1_1_Cordova').addClass('hidden');
+        $('#div_p1_1_Cundinamarca').addClass('hidden');
+        $('#div_p1_1_Guania').addClass('hidden');
+        $('#div_p1_1_Guaviare').addClass('hidden');
+        $('#div_p1_1_Huila').addClass('hidden');
+        $('#div_p1_1_Guajira').addClass('hidden');
+        $('#div_p1_1_Magdalena').addClass('hidden');
+        $('#div_p1_1_Meta').removeClass('hidden');
+        $('#div_p1_1_Nariño').addClass('hidden');
+        $('#div_p1_1_Nortesantander').addClass('hidden');
+        $('#div_p1_1_Putumayo').addClass('hidden');
+        $('#div_p1_1_Quindio').addClass('hidden');
+        $('#div_p1_1_Risaralda').addClass('hidden');
+        $('#div_p1_1_Santander').addClass('hidden');
+        $('#div_p1_1_Sucre').addClass('hidden');
+        $('#div_p1_1_Tolima').addClass('hidden');
+        $('#div_p1_1_Valle').addClass('hidden');
+        $('#div_p1_1_Vaupes').addClass('hidden');
+        $('#div_p1_1_Vichada').addClass('hidden');
+      }else if($('#res_p1_1').val() == "Nariño"){
+        $('#div_p1_1_Amazonas').addClass('hidden');
+        $('#div_p1_1_Antioquia').addClass('hidden');
+        $('#div_p1_1_Otro').addClass('hidden');
+        $('#div_p1_1_Arauca').addClass('hidden');
+        $('#div_p1_1_SanAndres').addClass('hidden');
+        $('#div_p1_1_Atlantico').addClass('hidden');
+        $('#div_p1_1_Bogota').addClass('hidden');
+        $('#div_p1_1_Bolivar').addClass('hidden');
+        $('#div_p1_1_Boyaca').addClass('hidden');
+        $('#div_p1_1_Caldas').addClass('hidden');
+        $('#div_p1_1_Caqueta').addClass('hidden');
+        $('#div_p1_1_Casanare').addClass('hidden');
+        $('#div_p1_1_Cauca').addClass('hidden');
+        $('#div_p1_1_Cesar').addClass('hidden');
+        $('#div_p1_1_Choco').addClass('hidden');
+        $('#div_p1_1_Cordova').addClass('hidden');
+        $('#div_p1_1_Cundinamarca').addClass('hidden');
+        $('#div_p1_1_Guania').addClass('hidden');
+        $('#div_p1_1_Guaviare').addClass('hidden');
+        $('#div_p1_1_Huila').addClass('hidden');
+        $('#div_p1_1_Guajira').addClass('hidden');
+        $('#div_p1_1_Magdalena').addClass('hidden');
+        $('#div_p1_1_Meta').addClass('hidden');
+        $('#div_p1_1_Nariño').removeClass('hidden');
+        $('#div_p1_1_Nortesantander').addClass('hidden');
+        $('#div_p1_1_Putumayo').addClass('hidden');
+        $('#div_p1_1_Quindio').addClass('hidden');
+        $('#div_p1_1_Risaralda').addClass('hidden');
+        $('#div_p1_1_Santander').addClass('hidden');
+        $('#div_p1_1_Sucre').addClass('hidden');
+        $('#div_p1_1_Tolima').addClass('hidden');
+        $('#div_p1_1_Valle').addClass('hidden');
+        $('#div_p1_1_Vaupes').addClass('hidden');
+        $('#div_p1_1_Vichada').addClass('hidden');      
       }else if($('#res_p1_1').val() == "Norte de Santander"){
         $('#div_p1_1_Amazonas').addClass('hidden');
         $('#div_p1_1_Antioquia').addClass('hidden');
@@ -8472,7 +8547,7 @@
           alert("El valor de la pregunta 9" + numero + " no es un número");
           document.getElementById("res_p1_9a").value = "";
           }
-          if (numero.length >= 9) {
+          if (numero.length >= 11) {
             alert("El valor del celular tiene muchos caracteres");
             document.getElementById("res_p1_9a").value = "";
           }
@@ -8486,7 +8561,7 @@
           alert("El valor de la pregunta 9a " + numero + " no es un número");
           document.getElementById("res_p1_9b").value = "";
           }
-          if (numero.length >= 9) {
+          if (numero.length >= 11) {
             alert("El valor del celular tiene muchos caracteres");
             document.getElementById("res_p1_9b").value = "";
           }
