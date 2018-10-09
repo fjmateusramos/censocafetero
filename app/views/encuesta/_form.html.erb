@@ -49,15 +49,15 @@
   <div class="col-md-12 text-center">
   <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 100px;" id="Iniciar_Encuesta">Iniciar Encuesta</a>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-5">
     <br>
    <%= f.label :p1_1 , "Código encuesta - Solo diligencie para continuar una encuesta no completada, de lo contratio continue" %>
    <%= f.text_field :p1_1, {class: "form-control", id:"res_continuar"}%>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-5">
     <br>
-   <%= f.label :p1_1 , "Código de esta encueta" %>
-   <%= f.text_field :p1_1, {class: "form-control", id:"res_continuar"}%>
+   <%= f.label :p1_1 , "Código de esta encuesta" %>
+   <%= f.text_field :p1_1, {class: "form-control", id:"res_cod_encuesta"}%>
   </div>
 </div>
 
@@ -7272,6 +7272,14 @@
   
   $(document).ready(function(){
 
+    var fecha= new Date()
+
+    var horas= fecha.getHours();
+    var minutos = fecha.getMinutes();
+    var segundos = fecha.getSeconds();
+
+    document.getElementById("res_cod_encuesta").value = horas+ minutos+ segundos;
+
     $('#Iniciar_Encuesta').click(function(){
       $('#Seccion_Encabezado').addClass('hidden');
       $('#Seccion_Modulo1').removeClass('hidden');
@@ -8516,6 +8524,34 @@
         $('#div_p1_1_Vichada').removeClass('hidden');
       }
       });
+
+
+
+      $('#res_p1_7').change(function(){
+          var numero = $('#res_p1_7').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p1_7").value = "";
+          }
+      });
+
+
+
+      $('#res_p1_10').change(function(){
+          var numero = $('#res_p1_10').val();
+          if (!/^([A-Za-z])*$/.test(numero)){
+          alert("El valor del nombre solo acepta letras ");
+          document.getElementById("res_p1_10").value = "";
+          }
+      }); 
+
+      $('#res_p1_11').change(function(){
+        if ($('#res_p1_11').val() == "Otra, ¿Cuál?") {
+          $('#div_p1_11_otra').removeClass('hidden');
+        } else {
+          $('#div_p1_11_otra').addClass('hidden');
+        }
+      });  
 
       $('#res_p1_11').change(function(){
         if ($('#res_p1_11').val() == "Otra, ¿Cuál?") {
