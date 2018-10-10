@@ -8655,7 +8655,7 @@
           document.getElementById("res_p3_28_8").value = "";
           }
       });
-      
+
 
 
 
@@ -8718,6 +8718,16 @@
             document.getElementById("res_p1_9b").value = "";
           }
       }); 
+
+      $('#res_p1_8').change(function(){
+          var numero = $('#res_p1_8').val();
+          if (!/^([0-9999999])*$/.test(numero)){
+          alert("El valor de la pregunta 8 " + numero + " no es un número");
+          document.getElementById("res_p1_8").value = "";
+          }
+      }); 
+
+      
 
       $('#res_p1_12b1_2').change(function(){
           var numero = $('#res_p1_12b1_2').val();
