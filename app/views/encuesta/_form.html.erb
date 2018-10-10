@@ -243,8 +243,8 @@
   <div class="col-md-6 text-center">
   <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo1">Siguiente</a>
   </div>
-  <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;>
-  <a onclick='downloadCSVMod1({ filename: "CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Modulo1</a>
+  <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+  <a onclick='downloadCSVMod1({ filename: "Modulo1CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Modulo1</a>
   </div> 
   </div> 
   <br>  
@@ -489,12 +489,16 @@
     </div>
   </div>  
   <div class="row col-md-12">
-    <div class="col-md-6 text-center">
+    <div class="col-md-4 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo2">Anterior</a>
     </div>
-    <div class="col-md-6 text-center">
+    <div class="col-md-4 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo2">Siguiente</a>
     </div>
+    <div class="col-md-4 text-center" style="color: #fff; margin-top: 10px;">
+  <a onclick='downloadCSVMod2({ filename: "Modulo2CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Modulo 2</a>
+  </div> 
+
   </div> 
   <br>  
 </div>  
@@ -18050,6 +18054,133 @@
           link.click();
           alert("Modulo encuesta 1 con Exito");
     }
+
+    function downloadCSVMod2(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "13.  Tipo de Vivienda",
+         Respuesta : $("#res_p2_13").val()
+         },
+         {
+         Pregunta: "14.  Material predominante de los pisos de la vivienda",
+         Respuesta : $("#res_p2_14").val()
+         },
+         {
+         Pregunta: "15.  Material predominante de las paredes exteriores de la vivienda",
+         Respuesta : $("#res_p2_15").val()
+         },
+         {
+         Pregunta: "16_1.  Energía eléctrica ¿Cuenta con este servicio?",
+         Respuesta : $("#res_p2_16_1a").val()
+         },
+         {
+         Pregunta: "16_1b. Energía eléctrica ¿Como paga este servicio?",
+         Respuesta : $("#res_p2_16_1b").val()
+         },
+         {
+         Pregunta: "16_2.  Gas natural conectado a red pública ¿Cuenta con este servicio?",
+         Respuesta : $("#res_p2_16_2a").val()
+         },
+         {
+         Pregunta: "16_2b. Gas natural conectado a red pública ¿Como paga este servicio?",
+         Respuesta : $("#res_p2_16_2b").val()
+         },
+         {
+         Pregunta: "16_3.  Acueducto ¿Cuenta con este servicio?",
+         Respuesta : $("#res_p2_16_3a").val()
+         },
+         {
+         Pregunta: "16_3b. Acueducto ¿Como paga este servicio?",
+         Respuesta : $("#res_p2_16_3b").val()
+         },
+         {
+         Pregunta: "16_4.  Alcantarillado ¿Cuenta con este servicio?",
+         Respuesta : $("#res_p2_16_4a").val()
+         },
+         {
+         Pregunta: "16_4b. Alcantarillado ¿Como paga este servicio?",
+         Respuesta : $("#res_p2_16_4b").val()
+         },
+         {
+         Pregunta: "16_5.  Recolección de basuras ¿Cuenta con este servicio?",
+         Respuesta : $("#res_p2_16_5a").val()
+         },
+         {
+         Pregunta: "16_5b. Recolección de basuras ¿Como paga este servicio?",
+         Respuesta : $("#res_p2_16_5b").val()
+         },
+         {
+         Pregunta: "16_5c. Recolección de basuras Veces por semana",
+         Respuesta : $("#res_p2_16_5c").val()
+         },
+         {
+         Pregunta: "17. ¿Cuantas personas conforman el hogar del productor? (incluido el productor)",
+         Respuesta : $("#res_p2_17").val()
+         },
+         {
+         Pregunta: "18. Incluyendo la sala y comedor, ¿de cuántos cuartos o piezas dispone este hogar? (excluya la cocina, los baños, los garajes, bodegas y cuartos destinados a trabajadores o negocio)",
+         Respuesta : $("#res_p2_18").val()
+         },
+         {
+         Pregunta: "19. ¿En cuantos de estos cuartos o piezas duermen las personas de este hogar?",
+         Respuesta : $("#res_p2_19").val()
+         },
+         {
+         Pregunta: "20.  ¿Con que tipo de servicio sanitario cuenta el hogar?",
+         Respuesta : $("#res_p2_20").val()
+         },
+         {
+         Pregunta: "21.  El agua para preparar los alimentos la obtienen principalmente de:",
+         Respuesta : $("#res_p2_21").val()
+         },
+         {
+         Pregunta: "22.  ¿Hace alguna práctica de potabilización del agua en la finca?",
+         Respuesta : $("#res_p2_22").val()
+         },
+         {
+         Pregunta: "22b. Otro. ¿Cuál?",
+         Respuesta : $("#res_p2_22c").val()
+         },
+         {
+         Pregunta: "23.  ¿Cuantos días a la semana llega el agua al hogar? (total de días)",
+         Respuesta : $("#res_p2_23").val()
+         },
+         {
+         Pregunta: "24.  Los días que llega el agua, ¿el suministro es continuo las 24 horas?",
+         Respuesta : $("#res_p2_24").val()
+         },
+         {
+         Pregunta: "25.  ¿Que energía combustible utilizan principalmente para cocinar?",
+         Respuesta : $("#res_p2_24").val()
+         },
+         {
+         Pregunta: "26.  ¿Cuáles de los siguienes bienes posee este hogar?",
+         Respuesta : $("#res_p2_24").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 2 con Exito");
+    }
+
+    
 
 
 
