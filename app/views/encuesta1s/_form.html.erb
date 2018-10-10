@@ -479,7 +479,15 @@
     <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo11">Siguiente</a>
     </div>
-  </div> 
+  </div>
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod11({ filename: "Modulo11CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 11</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 11" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    </div> 
 </div>
   
 </div>
@@ -895,6 +903,14 @@
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo12">Siguiente</a>
     </div>
   </div> 
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod12({ filename: "Modulo12CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 12</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 12" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    </div>
 </div>
   
 </div>
@@ -1286,6 +1302,14 @@
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo13">Siguiente</a>
     </div>
   </div> 
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod13({ filename: "Modulo13CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 13</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 13" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    </div>
 </div>
     
 <div class="hidden" id="Seccion_Modulo14">
@@ -1979,6 +2003,14 @@
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo14">Siguiente</a>
     </div>
   </div> 
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod14({ filename: "Modulo14CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 14</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 14" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    </div>
   </div>
     
 </div>
@@ -2180,6 +2212,14 @@
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo15">Siguiente</a>
     </div>
   </div> 
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod15({ filename: "Modulo15CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 15</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 15" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    </div>
 </div>
   
 </div>
@@ -2455,6 +2495,14 @@
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo16">Siguiente</a>
     </div>
   </div> 
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod16({ filename: "Modulo16CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 16</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 16" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    </div>
 </div>
 </div>
 
@@ -2569,6 +2617,14 @@
         <a href="https://ancient-sands-58784.herokuapp.com" class="btn btn-primary btn-lg" style="color: #fff;">Guardar Encuesta</a>
       </div>
     </div> 
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod17({ filename: "Modulo17CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 17</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 17" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    </div>
   </div>
 </div>
 
@@ -4966,7 +5022,238 @@
         }
       });
       
+      function convertArrayOfObjectsToCSV(args) {
+        var result, ctr, keys, columnDelimiter, lineDelimiter, data;
+ 
+        data = args.data || null;
+        if (data == null || !data.length) {
+            return null;
+        }
+ 
+        columnDelimiter = args.columnDelimiter || ',';
+        lineDelimiter = args.lineDelimiter || '\n';
+ 
+        keys = Object.keys(data[0]);
+ 
+        result = '';
+        result += keys.join(columnDelimiter);
+        result += lineDelimiter;
+ 
+        data.forEach(function(item) {
+            ctr = 0;
+            keys.forEach(function(key) {
+                if (ctr > 0) result += columnDelimiter;
+ 
+                result += item[key];
+                ctr++;
+            });
+            result += lineDelimiter;
+        });
+ 
+        return result;
+    }
       
+  function downloadCSVMod11(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "70",
+         Respuesta : $("#res_p17_3_d").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 11 con Exito");
+    }
+    function downloadCSVMod12(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "70",
+         Respuesta : $("#res_p17_3_d").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 12 con Exito");
+    }
+    function downloadCSVMod13(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "70",
+         Respuesta : $("#res_p17_3_d").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 13 con Exito");
+    }
+    function downloadCSVMod14(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "70",
+         Respuesta : $("#res_p17_3_d").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 14 con Exito");
+    }
+    function downloadCSVMod15(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "70",
+         Respuesta : $("#res_p17_3_d").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 15 con Exito");
+    }
+    function downloadCSVMod16(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "70",
+         Respuesta : $("#res_p17_3_d").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 16 con Exito");
+    }
+    function downloadCSVMod17(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "70",
+         Respuesta : $("#res_p17_3_d").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 17 con Exito");
+    }
+
+
+
+
+
 
 
 
