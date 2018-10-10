@@ -52,7 +52,7 @@
   <div class="row col-md-12">
   <div class="col-md-6 text-center">
     <br>
-   <%= f.label :p1_1 , "Código encuesta - Solo diligencie para continuar una encuesta no completada, de lo contratio continue" %>
+   <%= f.label :p1_1 , "Código encuesta - Solo diligencie para continuar una encuesta no completada" %>
    <%= f.text_field :p1_1, {class: "form-control", id:"res_continuar"}%>
   </div>
   <div class="col-md-6 text-center">
@@ -7280,7 +7280,7 @@
     var minutos = fecha.getMinutes();
     var segundos = fecha.getSeconds();
 
-    document.getElementById("res_cod_encuesta").value = horas+minutos+segundos;
+    document.getElementById("res_cod_encuesta").value =horas+""+minutos+""+segundos;
 
     $('#Iniciar_Encuesta').click(function(){
       $('#Seccion_Encabezado').addClass('hidden');
@@ -7293,6 +7293,28 @@
         alert("El valor del area total de la finca 2 es nulo es nulo, favor completelo");
       }else if ($('#res_p1_12b3_2').val() == "" && $('#res_p1_12b3_3').val() != "" ){
         alert("El valor del area total de la finca 3 es nulo es nulo, favor completelo");
+      }else if ($('#res_p1_1').val() == ""){
+        alert("El valor del Departamento esta vacio"); 
+      }else if ($('#res_p1_3').val() == ""){
+        alert("El valor del zona esta vacio"); 
+      }else if ($('#res_p1_4').val() == ""){
+        alert("El valor del barrio esta vacio");
+      }else if ($('#res_p1_5').val() == ""){
+        alert("El valor del Dirección esta vacio"); 
+      }else if ($('#res_p1_6').val() == ""){
+        alert("El valor del Código SICA esta vacio"); 
+      }else if ($('#res_p1_7').val() == ""){
+        alert("El valor del Nombre esta vacio"); 
+      }else if ($('#res_p1_8').val() == ""){
+        alert("El valor del Identificación esta vacio"); 
+      }else if ($('#res_p1_9a').val() == ""){
+        alert("El valor del Celular esta vacio");
+      }else if ($('#res_p1_10').val() == ""){
+        alert("El valor del Nombre de quien responde la encuesta esta vacio");
+      }else if ($('#res_p1_11').val() == ""){
+        alert("El valor del Relación del encuestado con el productor esta vacio"); 
+      }else if ($('#res_p1_11').val() == ""){
+        alert("El valor del Relación del encuestado con el productor esta vacio");                     
       }else{
         $('#Seccion_Modulo1').addClass('hidden');
         $('#Seccion_Modulo2').removeClass('hidden');
@@ -8725,9 +8747,7 @@
           alert("El valor de la pregunta 8 " + numero + " no es un número");
           document.getElementById("res_p1_8").value = "";
           }
-      }); 
-
-      
+      });   
 
       $('#res_p1_12b1_2').change(function(){
           var numero = $('#res_p1_12b1_2').val();
