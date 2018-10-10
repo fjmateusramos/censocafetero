@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_10_022820) do
+ActiveRecord::Schema.define(version: 2018_10_10_114322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -2133,6 +2133,9 @@ ActiveRecord::Schema.define(version: 2018_10_10_022820) do
     t.string "p12_b_12_d"
     t.string "p16_3_7_a"
     t.string "p16_3_7_c"
+    t.bigint "encuesta_id"
+    t.index ["encuesta_id"], name: "index_encuesta1s_on_encuesta_id"
   end
 
+  add_foreign_key "encuesta1s", "encuesta", column: "encuesta_id"
 end

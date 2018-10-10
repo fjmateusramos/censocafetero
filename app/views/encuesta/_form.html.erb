@@ -239,13 +239,16 @@
       </tbody>
     </table>
   </div>
-  <div class="row">
-  <div class="col-md-6 text-center">
+  <div class="row col-md-12">
+  <div class="col-md-4 text-center">
   <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo1">Siguiente</a>
   </div>
-  <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
-  <a onclick='downloadCSVMod1({ filename: "Modulo1CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Modulo1</a>
+  <div class="col-md-4 text-center" style="color: #fff; margin-top: 10px;">
+  <a onclick='downloadCSVMod1({ filename: "Modulo1CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo1</a>
   </div> 
+  <div class="btn btn-primary btn-md col-md-4">
+      <%= f.submit "Guardar Parcial Internet Modulo 1" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
   </div> 
   <br>  
 </div>
@@ -489,15 +492,20 @@
     </div>
   </div>  
   <div class="row col-md-12">
-    <div class="col-md-4 text-center">
+    <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo2">Anterior</a>
     </div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo2">Siguiente</a>
     </div>
-    <div class="col-md-4 text-center" style="color: #fff; margin-top: 10px;">
-  <a onclick='downloadCSVMod2({ filename: "Modulo2CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Modulo 2</a>
+    </div>
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+  <a onclick='downloadCSVMod2({ filename: "Modulo2CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 2</a>
   </div> 
+  <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 2" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
 
   </div> 
   <br>  
@@ -791,6 +799,14 @@
     </div>
     <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo3">Siguiente</a>
+    </div>
+    </div>
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod3({ filename: "Modulo3CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo3</a>
+    </div> 
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 3" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
     </div>
   </div> 
   <br> 
@@ -1643,6 +1659,14 @@
     <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo4">Siguiente</a>
     </div>
+    </div>
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+  <a onclick='downloadCSVMod4({ filename: "Modulo4CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 4</a>
+  </div> 
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 4" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
   </div> 
   <br>       
 </div>
@@ -2371,6 +2395,15 @@
     <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo5">Siguiente</a>
     </div>
+    </div>
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod5({ filename: "Modulo6CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 6</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 5" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+     
   </div> 
   <br>  
 </div>  
@@ -3448,12 +3481,21 @@
     </table>
   </div>      
   <div class="row col-md-12">
-    <div class="col-md-6 text-center">
+    <div class="col-md-3 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo6">Anterior</a>
     </div>
-    <div class="col-md-6 text-center">
+    <div class="col-md-3 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo6">Siguiente</a>
     </div>
+  </div>
+    <div class="row col-md-12">
+    <div class="col-md-4 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod6({ filename: "Modulo6CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 6</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-3">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 6" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+     
   </div> 
   <br>  
 </div>  
@@ -6261,6 +6303,14 @@
     <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo7">Siguiente</a>
     </div>
+  </div>
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod7({ filename: "Modulo7CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 7</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 7" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
   </div> 
   <br>  
 </div>  
@@ -6456,6 +6506,14 @@
     </div>
     <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo8">Siguiente</a>
+    </div>
+  </div>
+  <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod8({ filename: "Modulo8CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 8</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 8" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
     </div>
   </div> 
   <br>  
@@ -6720,11 +6778,19 @@
 </div>
 </div>
 <div class="row col-md-12">
-    <div class="col-md-4 text-center">
+    <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo9">Anterior</a>
     </div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo9">Siguiente</a>
+    </div>
+    </div>
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod9({ filename: "Modulo9CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 9</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 9" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
     </div>
   </div> 
 </div>
@@ -7262,14 +7328,19 @@
     </div>
     </div>
   <div class="row col-md-12">
-    <div class="col-md-4 text-center">
+    <div class="col-md-6 text-center">
       <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Anterior_modulo10">Anterior</a>
     </div>
-    <div class="col-md-4 text-center">  
+    <div class="col-md-6 text-center">  
         <a href="https://ancient-sands-58784.herokuapp.com/encuesta1s/new" class="btn btn-primary btn-lg" style="color: #fff;">Siguiente</a>
       </div>
-    <div class="btn btn-primary btn-md col-md-4">
-      <%= f.submit "Guardar Parcial Modulo 10" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+    </div>
+    <div class="row col-md-12">
+    <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;">
+    <a onclick='downloadCSVMod10({ filename: "Modulo10CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Sin Internet Modulo 10</a>
+    </div>
+    <div class="btn btn-primary btn-md col-md-6">
+      <%= f.submit "Guardar Parcial Con Internet Modulo 10" , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
     </div>
     </div>
     
@@ -7331,8 +7402,6 @@
         alert("El valor del Celular esta vacio");
       }else if ($('#res_p1_10').val() == ""){
         alert("El valor del Nombre de quien responde la encuesta esta vacio");
-      }else if ($('#res_p1_11').val() == ""){
-        alert("El valor del Relación del encuestado con el productor esta vacio"); 
       }else if ($('#res_p1_11').val() == ""){
         alert("El valor del Relación del encuestado con el productor esta vacio");                     
       }else{
@@ -18619,7 +18688,1304 @@
           link.setAttribute('href', data);
           link.setAttribute('download', filename);
           link.click();
-          alert("Modulo encuesta 3 con Exito");
+          alert("Modulo encuesta 4 con Exito");
+    }
+
+    function downloadCSVMod5(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "27. Nombres_1",
+         Respuesta : $("#res_p3_27_1").val()
+         },
+         {
+         Pregunta: "27. Nombres_2",
+         Respuesta : $("#res_p3_27_2").val()
+         },
+         {
+         Pregunta: "27. Nombres_3",
+         Respuesta : $("#res_p3_27_3").val()
+         },
+         {
+         Pregunta: "27. Nombres_4",
+         Respuesta : $("#res_p3_27_4").val()
+         },
+         {
+         Pregunta: "27. Nombres_5",
+         Respuesta : $("#res_p3_27_5").val()
+         },
+         {
+         Pregunta: "27. Nombres_6",
+         Respuesta : $("#res_p3_27_6").val()
+         },
+         {
+         Pregunta: "27. Nombres_7",
+         Respuesta : $("#res_p3_27_7").val()
+         },
+         {
+         Pregunta: "27. Nombres_8",
+         Respuesta : $("#res_p3_27_8").val()
+         },
+         {
+         Pregunta: "28. Apellidos_1",
+         Respuesta : $("#res_p3_28_1").val()
+         },
+         {
+         Pregunta: "28. Apellidos_2",
+         Respuesta : $("#res_p3_28_2").val()
+         },
+         {
+         Pregunta: "28. Apellidos_3",
+         Respuesta : $("#res_p3_28_3").val()
+         },
+         {
+         Pregunta: "28. Apellidos_4",
+         Respuesta : $("#res_p3_28_4").val()
+         },
+         {
+         Pregunta: "28. Apellidos_5",
+         Respuesta : $("#res_p3_28_5").val()
+         },
+         {
+         Pregunta: "28. Apellidos_6",
+         Respuesta : $("#res_p3_28_6").val()
+         },
+         {
+         Pregunta: "28. Apellidos_7",
+         Respuesta : $("#res_p3_28_7").val()
+         },
+         {
+         Pregunta: "28. Apellidos_8",
+         Respuesta : $("#res_p3_28_8").val()
+         },
+         {
+         Pregunta: "29. Edad_1",
+         Respuesta : $("#res_p3_29_1").val()
+         },
+         {
+         Pregunta: "29. Edad_2",
+         Respuesta : $("#res_p3_29_2").val()
+         },
+         {
+         Pregunta: "29. Edad_3",
+         Respuesta : $("#res_p3_29_3").val()
+         },
+         {
+         Pregunta: "29. Edad_4",
+         Respuesta : $("#res_p3_29_4").val()
+         },
+         {
+         Pregunta: "29. Edad_5",
+         Respuesta : $("#res_p3_29_5").val()
+         },
+         {
+         Pregunta: "29. Edad_6",
+         Respuesta : $("#res_p3_29_6").val()
+         },
+         {
+         Pregunta: "29. Edad_7",
+         Respuesta : $("#res_p3_29_7").val()
+         },
+         {
+         Pregunta: "29. Edad_8",
+         Respuesta : $("#res_p3_29_8").val()
+         },
+         {
+         Pregunta: "30. Sexo_1",
+         Respuesta : $("#res_p3_30_1").val()
+         },
+         {
+         Pregunta: "30. Sexo_2",
+         Respuesta : $("#res_p3_30_2").val()
+         },
+         {
+         Pregunta: "30. Sexo_3",
+         Respuesta : $("#res_p3_30_3").val()
+         },
+         {
+         Pregunta: "30. Sexo_4",
+         Respuesta : $("#res_p3_30_4").val()
+         },
+         {
+         Pregunta: "30. Sexo_5",
+         Respuesta : $("#res_p3_30_5").val()
+         },
+         {
+         Pregunta: "30. Sexo_6",
+         Respuesta : $("#res_p3_30_6").val()
+         },
+         {
+         Pregunta: "30. Sexo_7",
+         Respuesta : $("#res_p3_30_7").val()
+         },
+         {
+         Pregunta: "30. Sexo_8",
+         Respuesta : $("#res_p3_30_8").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_1",
+         Respuesta : $("#res_p3_31_1").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_2",
+         Respuesta : $("#res_p3_31_2").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_3",
+         Respuesta : $("#res_p3_31_3").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_4",
+         Respuesta : $("#res_p3_31_4").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_5",
+         Respuesta : $("#res_p3_31_5").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_6",
+         Respuesta : $("#res_p3_31_6").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_7",
+         Respuesta : $("#res_p3_31_7").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_8",
+         Respuesta : $("#res_p3_31_8").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_1",
+         Respuesta : $("#res_p3_32_1").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_2",
+         Respuesta : $("#res_p3_32_2").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_3",
+         Respuesta : $("#res_p3_32_3").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_4",
+         Respuesta : $("#res_p3_32_4").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_5",
+         Respuesta : $("#res_p3_32_5").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_6",
+         Respuesta : $("#res_p3_32_6").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_7",
+         Respuesta : $("#res_p3_32_7").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_8",
+         Respuesta : $("#res_p3_32_8").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 5 con Exito");
+    }
+    function downloadCSVMod6(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "27. Nombres_1",
+         Respuesta : $("#res_p3_27_1").val()
+         },
+         {
+         Pregunta: "27. Nombres_2",
+         Respuesta : $("#res_p3_27_2").val()
+         },
+         {
+         Pregunta: "27. Nombres_3",
+         Respuesta : $("#res_p3_27_3").val()
+         },
+         {
+         Pregunta: "27. Nombres_4",
+         Respuesta : $("#res_p3_27_4").val()
+         },
+         {
+         Pregunta: "27. Nombres_5",
+         Respuesta : $("#res_p3_27_5").val()
+         },
+         {
+         Pregunta: "27. Nombres_6",
+         Respuesta : $("#res_p3_27_6").val()
+         },
+         {
+         Pregunta: "27. Nombres_7",
+         Respuesta : $("#res_p3_27_7").val()
+         },
+         {
+         Pregunta: "27. Nombres_8",
+         Respuesta : $("#res_p3_27_8").val()
+         },
+         {
+         Pregunta: "28. Apellidos_1",
+         Respuesta : $("#res_p3_28_1").val()
+         },
+         {
+         Pregunta: "28. Apellidos_2",
+         Respuesta : $("#res_p3_28_2").val()
+         },
+         {
+         Pregunta: "28. Apellidos_3",
+         Respuesta : $("#res_p3_28_3").val()
+         },
+         {
+         Pregunta: "28. Apellidos_4",
+         Respuesta : $("#res_p3_28_4").val()
+         },
+         {
+         Pregunta: "28. Apellidos_5",
+         Respuesta : $("#res_p3_28_5").val()
+         },
+         {
+         Pregunta: "28. Apellidos_6",
+         Respuesta : $("#res_p3_28_6").val()
+         },
+         {
+         Pregunta: "28. Apellidos_7",
+         Respuesta : $("#res_p3_28_7").val()
+         },
+         {
+         Pregunta: "28. Apellidos_8",
+         Respuesta : $("#res_p3_28_8").val()
+         },
+         {
+         Pregunta: "29. Edad_1",
+         Respuesta : $("#res_p3_29_1").val()
+         },
+         {
+         Pregunta: "29. Edad_2",
+         Respuesta : $("#res_p3_29_2").val()
+         },
+         {
+         Pregunta: "29. Edad_3",
+         Respuesta : $("#res_p3_29_3").val()
+         },
+         {
+         Pregunta: "29. Edad_4",
+         Respuesta : $("#res_p3_29_4").val()
+         },
+         {
+         Pregunta: "29. Edad_5",
+         Respuesta : $("#res_p3_29_5").val()
+         },
+         {
+         Pregunta: "29. Edad_6",
+         Respuesta : $("#res_p3_29_6").val()
+         },
+         {
+         Pregunta: "29. Edad_7",
+         Respuesta : $("#res_p3_29_7").val()
+         },
+         {
+         Pregunta: "29. Edad_8",
+         Respuesta : $("#res_p3_29_8").val()
+         },
+         {
+         Pregunta: "30. Sexo_1",
+         Respuesta : $("#res_p3_30_1").val()
+         },
+         {
+         Pregunta: "30. Sexo_2",
+         Respuesta : $("#res_p3_30_2").val()
+         },
+         {
+         Pregunta: "30. Sexo_3",
+         Respuesta : $("#res_p3_30_3").val()
+         },
+         {
+         Pregunta: "30. Sexo_4",
+         Respuesta : $("#res_p3_30_4").val()
+         },
+         {
+         Pregunta: "30. Sexo_5",
+         Respuesta : $("#res_p3_30_5").val()
+         },
+         {
+         Pregunta: "30. Sexo_6",
+         Respuesta : $("#res_p3_30_6").val()
+         },
+         {
+         Pregunta: "30. Sexo_7",
+         Respuesta : $("#res_p3_30_7").val()
+         },
+         {
+         Pregunta: "30. Sexo_8",
+         Respuesta : $("#res_p3_30_8").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_1",
+         Respuesta : $("#res_p3_31_1").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_2",
+         Respuesta : $("#res_p3_31_2").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_3",
+         Respuesta : $("#res_p3_31_3").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_4",
+         Respuesta : $("#res_p3_31_4").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_5",
+         Respuesta : $("#res_p3_31_5").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_6",
+         Respuesta : $("#res_p3_31_6").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_7",
+         Respuesta : $("#res_p3_31_7").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_8",
+         Respuesta : $("#res_p3_31_8").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_1",
+         Respuesta : $("#res_p3_32_1").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_2",
+         Respuesta : $("#res_p3_32_2").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_3",
+         Respuesta : $("#res_p3_32_3").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_4",
+         Respuesta : $("#res_p3_32_4").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_5",
+         Respuesta : $("#res_p3_32_5").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_6",
+         Respuesta : $("#res_p3_32_6").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_7",
+         Respuesta : $("#res_p3_32_7").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_8",
+         Respuesta : $("#res_p3_32_8").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 6 con Exito");
+    }
+    function downloadCSVMod7(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "27. Nombres_1",
+         Respuesta : $("#res_p3_27_1").val()
+         },
+         {
+         Pregunta: "27. Nombres_2",
+         Respuesta : $("#res_p3_27_2").val()
+         },
+         {
+         Pregunta: "27. Nombres_3",
+         Respuesta : $("#res_p3_27_3").val()
+         },
+         {
+         Pregunta: "27. Nombres_4",
+         Respuesta : $("#res_p3_27_4").val()
+         },
+         {
+         Pregunta: "27. Nombres_5",
+         Respuesta : $("#res_p3_27_5").val()
+         },
+         {
+         Pregunta: "27. Nombres_6",
+         Respuesta : $("#res_p3_27_6").val()
+         },
+         {
+         Pregunta: "27. Nombres_7",
+         Respuesta : $("#res_p3_27_7").val()
+         },
+         {
+         Pregunta: "27. Nombres_8",
+         Respuesta : $("#res_p3_27_8").val()
+         },
+         {
+         Pregunta: "28. Apellidos_1",
+         Respuesta : $("#res_p3_28_1").val()
+         },
+         {
+         Pregunta: "28. Apellidos_2",
+         Respuesta : $("#res_p3_28_2").val()
+         },
+         {
+         Pregunta: "28. Apellidos_3",
+         Respuesta : $("#res_p3_28_3").val()
+         },
+         {
+         Pregunta: "28. Apellidos_4",
+         Respuesta : $("#res_p3_28_4").val()
+         },
+         {
+         Pregunta: "28. Apellidos_5",
+         Respuesta : $("#res_p3_28_5").val()
+         },
+         {
+         Pregunta: "28. Apellidos_6",
+         Respuesta : $("#res_p3_28_6").val()
+         },
+         {
+         Pregunta: "28. Apellidos_7",
+         Respuesta : $("#res_p3_28_7").val()
+         },
+         {
+         Pregunta: "28. Apellidos_8",
+         Respuesta : $("#res_p3_28_8").val()
+         },
+         {
+         Pregunta: "29. Edad_1",
+         Respuesta : $("#res_p3_29_1").val()
+         },
+         {
+         Pregunta: "29. Edad_2",
+         Respuesta : $("#res_p3_29_2").val()
+         },
+         {
+         Pregunta: "29. Edad_3",
+         Respuesta : $("#res_p3_29_3").val()
+         },
+         {
+         Pregunta: "29. Edad_4",
+         Respuesta : $("#res_p3_29_4").val()
+         },
+         {
+         Pregunta: "29. Edad_5",
+         Respuesta : $("#res_p3_29_5").val()
+         },
+         {
+         Pregunta: "29. Edad_6",
+         Respuesta : $("#res_p3_29_6").val()
+         },
+         {
+         Pregunta: "29. Edad_7",
+         Respuesta : $("#res_p3_29_7").val()
+         },
+         {
+         Pregunta: "29. Edad_8",
+         Respuesta : $("#res_p3_29_8").val()
+         },
+         {
+         Pregunta: "30. Sexo_1",
+         Respuesta : $("#res_p3_30_1").val()
+         },
+         {
+         Pregunta: "30. Sexo_2",
+         Respuesta : $("#res_p3_30_2").val()
+         },
+         {
+         Pregunta: "30. Sexo_3",
+         Respuesta : $("#res_p3_30_3").val()
+         },
+         {
+         Pregunta: "30. Sexo_4",
+         Respuesta : $("#res_p3_30_4").val()
+         },
+         {
+         Pregunta: "30. Sexo_5",
+         Respuesta : $("#res_p3_30_5").val()
+         },
+         {
+         Pregunta: "30. Sexo_6",
+         Respuesta : $("#res_p3_30_6").val()
+         },
+         {
+         Pregunta: "30. Sexo_7",
+         Respuesta : $("#res_p3_30_7").val()
+         },
+         {
+         Pregunta: "30. Sexo_8",
+         Respuesta : $("#res_p3_30_8").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_1",
+         Respuesta : $("#res_p3_31_1").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_2",
+         Respuesta : $("#res_p3_31_2").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_3",
+         Respuesta : $("#res_p3_31_3").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_4",
+         Respuesta : $("#res_p3_31_4").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_5",
+         Respuesta : $("#res_p3_31_5").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_6",
+         Respuesta : $("#res_p3_31_6").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_7",
+         Respuesta : $("#res_p3_31_7").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_8",
+         Respuesta : $("#res_p3_31_8").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_1",
+         Respuesta : $("#res_p3_32_1").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_2",
+         Respuesta : $("#res_p3_32_2").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_3",
+         Respuesta : $("#res_p3_32_3").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_4",
+         Respuesta : $("#res_p3_32_4").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_5",
+         Respuesta : $("#res_p3_32_5").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_6",
+         Respuesta : $("#res_p3_32_6").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_7",
+         Respuesta : $("#res_p3_32_7").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_8",
+         Respuesta : $("#res_p3_32_8").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 7 con Exito");
+    }
+    function downloadCSVMod8(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "27. Nombres_1",
+         Respuesta : $("#res_p3_27_1").val()
+         },
+         {
+         Pregunta: "27. Nombres_2",
+         Respuesta : $("#res_p3_27_2").val()
+         },
+         {
+         Pregunta: "27. Nombres_3",
+         Respuesta : $("#res_p3_27_3").val()
+         },
+         {
+         Pregunta: "27. Nombres_4",
+         Respuesta : $("#res_p3_27_4").val()
+         },
+         {
+         Pregunta: "27. Nombres_5",
+         Respuesta : $("#res_p3_27_5").val()
+         },
+         {
+         Pregunta: "27. Nombres_6",
+         Respuesta : $("#res_p3_27_6").val()
+         },
+         {
+         Pregunta: "27. Nombres_7",
+         Respuesta : $("#res_p3_27_7").val()
+         },
+         {
+         Pregunta: "27. Nombres_8",
+         Respuesta : $("#res_p3_27_8").val()
+         },
+         {
+         Pregunta: "28. Apellidos_1",
+         Respuesta : $("#res_p3_28_1").val()
+         },
+         {
+         Pregunta: "28. Apellidos_2",
+         Respuesta : $("#res_p3_28_2").val()
+         },
+         {
+         Pregunta: "28. Apellidos_3",
+         Respuesta : $("#res_p3_28_3").val()
+         },
+         {
+         Pregunta: "28. Apellidos_4",
+         Respuesta : $("#res_p3_28_4").val()
+         },
+         {
+         Pregunta: "28. Apellidos_5",
+         Respuesta : $("#res_p3_28_5").val()
+         },
+         {
+         Pregunta: "28. Apellidos_6",
+         Respuesta : $("#res_p3_28_6").val()
+         },
+         {
+         Pregunta: "28. Apellidos_7",
+         Respuesta : $("#res_p3_28_7").val()
+         },
+         {
+         Pregunta: "28. Apellidos_8",
+         Respuesta : $("#res_p3_28_8").val()
+         },
+         {
+         Pregunta: "29. Edad_1",
+         Respuesta : $("#res_p3_29_1").val()
+         },
+         {
+         Pregunta: "29. Edad_2",
+         Respuesta : $("#res_p3_29_2").val()
+         },
+         {
+         Pregunta: "29. Edad_3",
+         Respuesta : $("#res_p3_29_3").val()
+         },
+         {
+         Pregunta: "29. Edad_4",
+         Respuesta : $("#res_p3_29_4").val()
+         },
+         {
+         Pregunta: "29. Edad_5",
+         Respuesta : $("#res_p3_29_5").val()
+         },
+         {
+         Pregunta: "29. Edad_6",
+         Respuesta : $("#res_p3_29_6").val()
+         },
+         {
+         Pregunta: "29. Edad_7",
+         Respuesta : $("#res_p3_29_7").val()
+         },
+         {
+         Pregunta: "29. Edad_8",
+         Respuesta : $("#res_p3_29_8").val()
+         },
+         {
+         Pregunta: "30. Sexo_1",
+         Respuesta : $("#res_p3_30_1").val()
+         },
+         {
+         Pregunta: "30. Sexo_2",
+         Respuesta : $("#res_p3_30_2").val()
+         },
+         {
+         Pregunta: "30. Sexo_3",
+         Respuesta : $("#res_p3_30_3").val()
+         },
+         {
+         Pregunta: "30. Sexo_4",
+         Respuesta : $("#res_p3_30_4").val()
+         },
+         {
+         Pregunta: "30. Sexo_5",
+         Respuesta : $("#res_p3_30_5").val()
+         },
+         {
+         Pregunta: "30. Sexo_6",
+         Respuesta : $("#res_p3_30_6").val()
+         },
+         {
+         Pregunta: "30. Sexo_7",
+         Respuesta : $("#res_p3_30_7").val()
+         },
+         {
+         Pregunta: "30. Sexo_8",
+         Respuesta : $("#res_p3_30_8").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_1",
+         Respuesta : $("#res_p3_31_1").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_2",
+         Respuesta : $("#res_p3_31_2").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_3",
+         Respuesta : $("#res_p3_31_3").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_4",
+         Respuesta : $("#res_p3_31_4").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_5",
+         Respuesta : $("#res_p3_31_5").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_6",
+         Respuesta : $("#res_p3_31_6").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_7",
+         Respuesta : $("#res_p3_31_7").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_8",
+         Respuesta : $("#res_p3_31_8").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_1",
+         Respuesta : $("#res_p3_32_1").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_2",
+         Respuesta : $("#res_p3_32_2").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_3",
+         Respuesta : $("#res_p3_32_3").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_4",
+         Respuesta : $("#res_p3_32_4").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_5",
+         Respuesta : $("#res_p3_32_5").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_6",
+         Respuesta : $("#res_p3_32_6").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_7",
+         Respuesta : $("#res_p3_32_7").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_8",
+         Respuesta : $("#res_p3_32_8").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 8 con Exito");
+    }
+    function downloadCSVMod9(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "27. Nombres_1",
+         Respuesta : $("#res_p3_27_1").val()
+         },
+         {
+         Pregunta: "27. Nombres_2",
+         Respuesta : $("#res_p3_27_2").val()
+         },
+         {
+         Pregunta: "27. Nombres_3",
+         Respuesta : $("#res_p3_27_3").val()
+         },
+         {
+         Pregunta: "27. Nombres_4",
+         Respuesta : $("#res_p3_27_4").val()
+         },
+         {
+         Pregunta: "27. Nombres_5",
+         Respuesta : $("#res_p3_27_5").val()
+         },
+         {
+         Pregunta: "27. Nombres_6",
+         Respuesta : $("#res_p3_27_6").val()
+         },
+         {
+         Pregunta: "27. Nombres_7",
+         Respuesta : $("#res_p3_27_7").val()
+         },
+         {
+         Pregunta: "27. Nombres_8",
+         Respuesta : $("#res_p3_27_8").val()
+         },
+         {
+         Pregunta: "28. Apellidos_1",
+         Respuesta : $("#res_p3_28_1").val()
+         },
+         {
+         Pregunta: "28. Apellidos_2",
+         Respuesta : $("#res_p3_28_2").val()
+         },
+         {
+         Pregunta: "28. Apellidos_3",
+         Respuesta : $("#res_p3_28_3").val()
+         },
+         {
+         Pregunta: "28. Apellidos_4",
+         Respuesta : $("#res_p3_28_4").val()
+         },
+         {
+         Pregunta: "28. Apellidos_5",
+         Respuesta : $("#res_p3_28_5").val()
+         },
+         {
+         Pregunta: "28. Apellidos_6",
+         Respuesta : $("#res_p3_28_6").val()
+         },
+         {
+         Pregunta: "28. Apellidos_7",
+         Respuesta : $("#res_p3_28_7").val()
+         },
+         {
+         Pregunta: "28. Apellidos_8",
+         Respuesta : $("#res_p3_28_8").val()
+         },
+         {
+         Pregunta: "29. Edad_1",
+         Respuesta : $("#res_p3_29_1").val()
+         },
+         {
+         Pregunta: "29. Edad_2",
+         Respuesta : $("#res_p3_29_2").val()
+         },
+         {
+         Pregunta: "29. Edad_3",
+         Respuesta : $("#res_p3_29_3").val()
+         },
+         {
+         Pregunta: "29. Edad_4",
+         Respuesta : $("#res_p3_29_4").val()
+         },
+         {
+         Pregunta: "29. Edad_5",
+         Respuesta : $("#res_p3_29_5").val()
+         },
+         {
+         Pregunta: "29. Edad_6",
+         Respuesta : $("#res_p3_29_6").val()
+         },
+         {
+         Pregunta: "29. Edad_7",
+         Respuesta : $("#res_p3_29_7").val()
+         },
+         {
+         Pregunta: "29. Edad_8",
+         Respuesta : $("#res_p3_29_8").val()
+         },
+         {
+         Pregunta: "30. Sexo_1",
+         Respuesta : $("#res_p3_30_1").val()
+         },
+         {
+         Pregunta: "30. Sexo_2",
+         Respuesta : $("#res_p3_30_2").val()
+         },
+         {
+         Pregunta: "30. Sexo_3",
+         Respuesta : $("#res_p3_30_3").val()
+         },
+         {
+         Pregunta: "30. Sexo_4",
+         Respuesta : $("#res_p3_30_4").val()
+         },
+         {
+         Pregunta: "30. Sexo_5",
+         Respuesta : $("#res_p3_30_5").val()
+         },
+         {
+         Pregunta: "30. Sexo_6",
+         Respuesta : $("#res_p3_30_6").val()
+         },
+         {
+         Pregunta: "30. Sexo_7",
+         Respuesta : $("#res_p3_30_7").val()
+         },
+         {
+         Pregunta: "30. Sexo_8",
+         Respuesta : $("#res_p3_30_8").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_1",
+         Respuesta : $("#res_p3_31_1").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_2",
+         Respuesta : $("#res_p3_31_2").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_3",
+         Respuesta : $("#res_p3_31_3").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_4",
+         Respuesta : $("#res_p3_31_4").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_5",
+         Respuesta : $("#res_p3_31_5").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_6",
+         Respuesta : $("#res_p3_31_6").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_7",
+         Respuesta : $("#res_p3_31_7").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_8",
+         Respuesta : $("#res_p3_31_8").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_1",
+         Respuesta : $("#res_p3_32_1").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_2",
+         Respuesta : $("#res_p3_32_2").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_3",
+         Respuesta : $("#res_p3_32_3").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_4",
+         Respuesta : $("#res_p3_32_4").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_5",
+         Respuesta : $("#res_p3_32_5").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_6",
+         Respuesta : $("#res_p3_32_6").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_7",
+         Respuesta : $("#res_p3_32_7").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_8",
+         Respuesta : $("#res_p3_32_8").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 9 con Exito");
+    }
+    function downloadCSVMod10(args) {
+        var data, filename, link;
+
+        var stockData = [
+         {
+         Pregunta: "27. Nombres_1",
+         Respuesta : $("#res_p3_27_1").val()
+         },
+         {
+         Pregunta: "27. Nombres_2",
+         Respuesta : $("#res_p3_27_2").val()
+         },
+         {
+         Pregunta: "27. Nombres_3",
+         Respuesta : $("#res_p3_27_3").val()
+         },
+         {
+         Pregunta: "27. Nombres_4",
+         Respuesta : $("#res_p3_27_4").val()
+         },
+         {
+         Pregunta: "27. Nombres_5",
+         Respuesta : $("#res_p3_27_5").val()
+         },
+         {
+         Pregunta: "27. Nombres_6",
+         Respuesta : $("#res_p3_27_6").val()
+         },
+         {
+         Pregunta: "27. Nombres_7",
+         Respuesta : $("#res_p3_27_7").val()
+         },
+         {
+         Pregunta: "27. Nombres_8",
+         Respuesta : $("#res_p3_27_8").val()
+         },
+         {
+         Pregunta: "28. Apellidos_1",
+         Respuesta : $("#res_p3_28_1").val()
+         },
+         {
+         Pregunta: "28. Apellidos_2",
+         Respuesta : $("#res_p3_28_2").val()
+         },
+         {
+         Pregunta: "28. Apellidos_3",
+         Respuesta : $("#res_p3_28_3").val()
+         },
+         {
+         Pregunta: "28. Apellidos_4",
+         Respuesta : $("#res_p3_28_4").val()
+         },
+         {
+         Pregunta: "28. Apellidos_5",
+         Respuesta : $("#res_p3_28_5").val()
+         },
+         {
+         Pregunta: "28. Apellidos_6",
+         Respuesta : $("#res_p3_28_6").val()
+         },
+         {
+         Pregunta: "28. Apellidos_7",
+         Respuesta : $("#res_p3_28_7").val()
+         },
+         {
+         Pregunta: "28. Apellidos_8",
+         Respuesta : $("#res_p3_28_8").val()
+         },
+         {
+         Pregunta: "29. Edad_1",
+         Respuesta : $("#res_p3_29_1").val()
+         },
+         {
+         Pregunta: "29. Edad_2",
+         Respuesta : $("#res_p3_29_2").val()
+         },
+         {
+         Pregunta: "29. Edad_3",
+         Respuesta : $("#res_p3_29_3").val()
+         },
+         {
+         Pregunta: "29. Edad_4",
+         Respuesta : $("#res_p3_29_4").val()
+         },
+         {
+         Pregunta: "29. Edad_5",
+         Respuesta : $("#res_p3_29_5").val()
+         },
+         {
+         Pregunta: "29. Edad_6",
+         Respuesta : $("#res_p3_29_6").val()
+         },
+         {
+         Pregunta: "29. Edad_7",
+         Respuesta : $("#res_p3_29_7").val()
+         },
+         {
+         Pregunta: "29. Edad_8",
+         Respuesta : $("#res_p3_29_8").val()
+         },
+         {
+         Pregunta: "30. Sexo_1",
+         Respuesta : $("#res_p3_30_1").val()
+         },
+         {
+         Pregunta: "30. Sexo_2",
+         Respuesta : $("#res_p3_30_2").val()
+         },
+         {
+         Pregunta: "30. Sexo_3",
+         Respuesta : $("#res_p3_30_3").val()
+         },
+         {
+         Pregunta: "30. Sexo_4",
+         Respuesta : $("#res_p3_30_4").val()
+         },
+         {
+         Pregunta: "30. Sexo_5",
+         Respuesta : $("#res_p3_30_5").val()
+         },
+         {
+         Pregunta: "30. Sexo_6",
+         Respuesta : $("#res_p3_30_6").val()
+         },
+         {
+         Pregunta: "30. Sexo_7",
+         Respuesta : $("#res_p3_30_7").val()
+         },
+         {
+         Pregunta: "30. Sexo_8",
+         Respuesta : $("#res_p3_30_8").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_1",
+         Respuesta : $("#res_p3_31_1").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_2",
+         Respuesta : $("#res_p3_31_2").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_3",
+         Respuesta : $("#res_p3_31_3").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_4",
+         Respuesta : $("#res_p3_31_4").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_5",
+         Respuesta : $("#res_p3_31_5").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_6",
+         Respuesta : $("#res_p3_31_6").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_7",
+         Respuesta : $("#res_p3_31_7").val()
+         },
+         {
+         Pregunta: "31. ¿Cuál es su parentesco con el productor?_8",
+         Respuesta : $("#res_p3_31_8").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_1",
+         Respuesta : $("#res_p3_32_1").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_2",
+         Respuesta : $("#res_p3_32_2").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_3",
+         Respuesta : $("#res_p3_32_3").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_4",
+         Respuesta : $("#res_p3_32_4").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_5",
+         Respuesta : $("#res_p3_32_5").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_6",
+         Respuesta : $("#res_p3_32_6").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_7",
+         Respuesta : $("#res_p3_32_7").val()
+         },
+         {
+         Pregunta: "32. ¿Cuál es su estado civil actualmente?_8",
+         Respuesta : $("#res_p3_32_8").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 10 con Exito");
     }
 
 
