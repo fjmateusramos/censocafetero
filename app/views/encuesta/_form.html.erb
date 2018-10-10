@@ -239,9 +239,14 @@
       </tbody>
     </table>
   </div>
-  <div class="col-md-12 text-center">
+  <div class="row">
+  <div class="col-md-6 text-center">
   <a class="btn btn-primary btn-lg" style="color: #fff; margin-top: 10px;" id="Siguiente_modulo1">Siguiente</a>
-  </div>  
+  </div>
+  <div class="col-md-6 text-center" style="color: #fff; margin-top: 10px;>
+  <a onclick='downloadCSVMod1({ filename: "CensoAgropecuario.csv" });' class="btn btn-primary btn-lg" style="color: #fff;">Guardar Parcial Modulo1</a>
+  </div> 
+  </div> 
   <br>  
 </div>
 
@@ -7280,7 +7285,10 @@
     var minutos = fecha.getMinutes();
     var segundos = fecha.getSeconds();
 
-    document.getElementById("res_cod_encuesta").value =horas+""+minutos+""+segundos;
+    codigo = horas+""+minutos+""+segundos;
+
+    document.getElementById("res_cod_encuesta").value =codigo;
+
 
     $('#Iniciar_Encuesta').click(function(){
       $('#Seccion_Encabezado').addClass('hidden');
@@ -7316,8 +7324,8 @@
       }else if ($('#res_p1_11').val() == ""){
         alert("El valor del Relación del encuestado con el productor esta vacio");                     
       }else{
-        $('#Seccion_Modulo1').addClass('hidden');
-        $('#Seccion_Modulo2').removeClass('hidden');
+          $('#Seccion_Modulo1').addClass('hidden');
+          $('#Seccion_Modulo2').removeClass('hidden');
       }
     });
     $('#Siguiente_modulo2').click(function(){
@@ -17798,18 +17806,251 @@
           document.getElementById("res_p10_t3_g_d").value = "";
           }
       });
+}); 
+
+    function convertArrayOfObjectsToCSV(args) {
+        var result, ctr, keys, columnDelimiter, lineDelimiter, data;
+ 
+        data = args.data || null;
+        if (data == null || !data.length) {
+            return null;
+        }
+ 
+        columnDelimiter = args.columnDelimiter || ',';
+        lineDelimiter = args.lineDelimiter || '\n';
+ 
+        keys = Object.keys(data[0]);
+ 
+        result = '';
+        result += keys.join(columnDelimiter);
+        result += lineDelimiter;
+ 
+        data.forEach(function(item) {
+            ctr = 0;
+            keys.forEach(function(key) {
+                if (ctr > 0) result += columnDelimiter;
+ 
+                result += item[key];
+                ctr++;
+            });
+            result += lineDelimiter;
+        });
+ 
+        return result;
+    }
+
+    function downloadCSVMod1(args) {
+        var data, filename, link;
+
+        var municipio = "";
+
+        if($("#res_p1_2_Antioquia").val().length != 0 ){
+          municipio = $("#res_p1_2_Antioquia").val();
+        }
+        if($("#res_p1_2_Boyaca").val().length != 0){
+          municipio = $("#res_p1_2_Boyaca").val();
+        }
+        if($("#res_p1_2_Caldas").val().length != 0){
+          municipio = $("#res_p1_2_Caldas").val();
+        }
+        if($("#res_p1_2_Caqueta").val().length != 0){
+          municipio = $("#res_p1_2_Caqueta").val();
+        }
+        if($("#res_p1_2_Casanare").val().length != 0){
+          municipio = $("#res_p1_2_Casanare").val();
+        }
+        if($("#res_p1_2_Cundinamarca").val().length != 0){
+          municipio = $("#res_p1_2_Cundinamarca").val();
+        }
+        if($("#res_p1_2_Cesar").val().length != 0){
+          municipio = $("#res_p1_2_Cesar").val();
+        }
+        if($("#res_p1_2_Guajira").val().length != 0){
+          municipio = $("#res_p1_2_Guajira").val();
+        }
+        if($("#res_p1_2_Huila").val().length != 0){
+          municipio = $("#res_p1_2_Huila").val();
+        }
+        if($("#res_p1_2_Meta").val().length != 0){
+          municipio = $("#res_p1_2_Meta").val();
+        }
+        if($("#res_p1_2_Magdalena").val().length != 0){
+          municipio = $("#res_p1_2_Magdalena").val();
+        }
+        if($("#res_p1_2_Nariño").val().length != 0){
+          municipio = $("#res_p1_2_Nariño").val();
+        }
+        if($("#res_p1_2_NorteSantander").val().length != 0){
+          municipio = $("#res_p1_2_NorteSantander").val();
+        }
+        if($("#res_p1_2_Quindio").val().length != 0){
+          municipio = $("#res_p1_2_Quindio").val();
+        }
+        if($("#res_p1_2_Risaralda").val().length != 0){
+          municipio = $("#res_p1_2_Risaralda").val();
+        }
+        if($("#res_p1_2_Santander").val().length != 0){
+          municipio = $("#res_p1_2_Santander").val();
+        }
+        if($("#res_p1_2_Tolima").val().length != 0){
+          municipio = $("#res_p1_2_Tolima").val();
+        }
+
+        if (municipio.length == 0) {
+          alert("El campo municipio está vacio");
+          return;
+        }
+
+        var stockData = [
+         {
+         Pregunta: "1. Departamento",
+         Respuesta : $("#res_p1_1").val()
+         },
+         {
+         Pregunta: "2. Municipio",
+         Respuesta : municipio
+         },
+         {
+         Pregunta: "3.  Zona",
+         Respuesta : $("#res_p1_3").val()
+         },
+         {
+         Pregunta: "4.  Barrio, centro poblado o vereda",
+         Respuesta : $("#res_p1_4").val()
+         },
+         {
+         Pregunta: "5.  Dirección de la vivienda o nombre de la finca",
+         Respuesta : $("#res_p1_5").val()
+         },
+         {
+         Pregunta: "6.  Código SICA de la finca",
+         Respuesta : $("#res_p1_6").val()
+         },
+         {
+         Pregunta: "7.  Nombre del productor",
+         Respuesta : $("#res_p1_7").val()
+         },
+         {
+         Pregunta: "8.  Identificación del productor",
+         Respuesta : $("#res_p1_8").val()
+         },
+         {
+         Pregunta: "9.  Celular del Productor",
+         Respuesta : $("#res_p1_9a").val()
+         },
+         {
+         Pregunta: "9a.  Celular de quien responde la encuesta",
+         Respuesta : $("#res_p1_9b").val()
+         },
+         {
+         Pregunta: "10.  Nombre de quien responde la encuesta",
+         Respuesta : $("#res_p1_10").val()
+         },
+         {
+         Pregunta: "11.  Relación del encuestado con el productor:",
+         Respuesta : $("#res_p1_11").val()
+         },
+         {
+         Pregunta: "11.  Otra. ¿Cual?",
+         Respuesta : $("#res_p1_11_otra").val()
+         },
+         {
+         Pregunta: "12.  ¿El productor reside en la finca?",
+         Respuesta : $("#res_p1_12a").val()
+         },
+         {
+         Pregunta: "12b_Id Finca_1",
+         Respuesta : $("#res_p1_12b1_1").val()
+         },
+         {
+         Pregunta: "12b_Area en café_1",
+         Respuesta : $("#res_p1_12b1_2").val()
+         },
+         {
+         Pregunta: "12b_Area en uso agricola_1",
+         Respuesta : $("#res_p1_12b1_3").val()
+         },
+         {
+         Pregunta: "12b_Area en uso pecuario_1",
+         Respuesta : $("#res_p1_12b1_5").val()
+         },
+         {
+         Pregunta: "12b_Area total_1",
+         Respuesta : $("#res_p1_12b1_6").val()
+         },
+         {
+         Pregunta: "12b_Tenencia_1",
+         Respuesta : $("#res_p1_12b1_7").val()
+         },
+         {
+         Pregunta: "12b_Id Finca_2",
+         Respuesta : $("#res_p1_12b2_1").val()
+         },
+         {
+         Pregunta: "12b_Area en café_2",
+         Respuesta : $("#res_p1_12b2_2").val()
+         },
+         {
+         Pregunta: "12b_Area en uso agricola_2",
+         Respuesta : $("#res_p1_12b2_3").val()
+         },
+         {
+         Pregunta: "12b_Area en uso pecuario_2",
+         Respuesta : $("#res_p1_12b2_5").val()
+         },
+         {
+         Pregunta: "12b_Area total_2",
+         Respuesta : $("#res_p1_12b2_6").val()
+         },
+         {
+         Pregunta: "12b_Tenencia_2",
+         Respuesta : $("#res_p1_12b2_7").val()
+         },
+         {
+         Pregunta: "12b_Id Finca_3",
+         Respuesta : $("#res_p1_12b3_1").val()
+         },
+         {
+         Pregunta: "12b_Area en café_3",
+         Respuesta : $("#res_p1_12b3_2").val()
+         },
+         {
+         Pregunta: "12b_Area en uso agricola_3",
+         Respuesta : $("#res_p1_12b3_3").val()
+         },
+         {
+         Pregunta: "12b_Area en uso pecuario_3",
+         Respuesta : $("#res_p1_12b3_5").val()
+         },
+         {
+         Pregunta: "12b_Area total_3",
+         Respuesta : $("#res_p1_12b3_6").val()
+         },
+         {
+         Pregunta: "12b_Tenencia_3",
+         Respuesta : $("#res_p1_12b3_7").val()
+         },
+        ];
+
+          var csv = convertArrayOfObjectsToCSV({
+            data: stockData
+          });
+          if (csv == null) return;
+   
+          filename = codigo + args.filename || 'export.csv';
+   
+          if (!csv.match(/^data:text\/csv/i)) {
+              csv = 'data:text/csv;charset=utf-8,' + csv;
+          }
+          data = encodeURI(csv);
+   
+          link = document.createElement('a');
+          link.setAttribute('href', data);
+          link.setAttribute('download', filename);
+          link.click();
+          alert("Modulo encuesta 1 con Exito");
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-});
 
 </script>
