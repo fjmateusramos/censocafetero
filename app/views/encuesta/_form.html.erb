@@ -8855,7 +8855,7 @@
 
           numero1 = parseInt(num1) + parseInt(num2) +  parseInt(num3);
 
-          if (numero >= numero1) {
+          if (numero <= numero1) {
             alert("El valor de la Area total es menor a la suma de las otras áreas");
             document.getElementById("res_p1_12b1_2").value = "";
           }
@@ -8902,7 +8902,7 @@
 
           numero1 = parseInt(num1) + parseInt(num2) +  parseInt(num3);
 
-          if (numero >= numero1) {
+          if (numero <= numero1) {
             alert("El valor de la Area total de la finca # 2 es menor a la suma de las otras áreas");
             document.getElementById("res_p1_12b2_2").value = "";
           }
@@ -8941,14 +8941,14 @@
           alert("El valor de la Area total finca # 3 " + numero + " no es un número");
           document.getElementById("res_p1_12b3_2").value = "";
           }
-          
+
           num1 = $('#res_p1_12b3_3').val();
           num2 = $('#res_p1_12b3_5').val();
           num3 = $('#res_p1_12b3_6').val();
 
           numero1 = parseInt(num1) + parseInt(num2) +  parseInt(num3);
 
-          if (numero >= numero1) {
+          if (numero <= numero1) {
             alert("El valor de la Area total de la finca # 3 es menor a la suma de las otras áreas");
             document.getElementById("res_p1_12b3_2").value = "";
           }
