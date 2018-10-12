@@ -1057,7 +1057,7 @@
               <div class="field" id="div_p4_36_8">
                 <%= f.select :p4_36_8, ["Moverse o caminar", "Usar sus brazos o manos", "Ver, a pesar de usar lentes o gafas", "Oir, aún con aparatos especiales", "Hablar", "Entender o aprender", "Problemas mentales o emocionales", "Otra limitación"],{:include_blank => true}, {class: "form-control", id:"res_p4_36_8"}%>
               <div class="field hidden" id="div_p2_36o_8"><p>¿Cual?</p>
-              <%= f.text_field :p4_36o_8, {class: "form-control", id:"res_p4_36_8"} %>
+              <%= f.text_field :p4_36o_8, {class: "form-control", id:"res_p4_36o_8"} %>
               </div>
               </div>
             </td>
@@ -1652,7 +1652,7 @@
                 <%= f.select :p4_42c_3, ["Heridas", "Lesiones músculo-artículares", "Golpes", "Quemaduras", "Fracturas", "Intoxicación por químicos", "Amputación", "Lesiones oculares", "Envenenamiento por plantas, animales", "Alergias", "Muerte", "Otra"], {:include_blank => true}, {class: "form-control", id:"res_p4_42c_3"}%>
                 </div>
                 <div class="field text-center hidden" id="div_p4_42co_3"><P>Otro. ¿Cual?</P>
-                <%= f.text_field :p4_42co_3, {class: "form-control", id:"res_p4_41co_2"}%>
+                <%= f.text_field :p4_42co_3, {class: "form-control", id:"res_p4_41co_4"}%>
                 </div>
               </div>
             </td> 
@@ -1669,7 +1669,7 @@
             <td id="persona_5_20">
               <div class="field" style="margin-left: 10px;">
                 <div class= "field" id="div_p4_42c_5">
-                <%= f.select :p4_42c_5, ["Heridas", "Lesiones músculo-artículares", "Golpes", "Quemaduras", "Fracturas", "Intoxicación por químicos", "Amputación", "Lesiones oculares", "Envenenamiento por plantas, animales", "Alergias", "Muerte", "Otra"], {:include_blank => true}, {class: "form-control", id:"res_p4_42c_3"}%>
+                <%= f.select :p4_42c_5, ["Heridas", "Lesiones músculo-artículares", "Golpes", "Quemaduras", "Fracturas", "Intoxicación por químicos", "Amputación", "Lesiones oculares", "Envenenamiento por plantas, animales", "Alergias", "Muerte", "Otra"], {:include_blank => true}, {class: "form-control", id:"res_p4_42c_5"}%>
                 </div>
                 <div class="field text-center hidden" id="div_p4_42co_5"><P>Otro. ¿Cual?</P>
                 <%= f.text_field :p4_42co_5, {class: "form-control", id:"res_p4_41co_5"}%>
@@ -18932,12 +18932,40 @@
          Respuesta : $("#res_p4_37_7").val()
          },
          {
-         Pregunta: "37. En general, usted diría que la salud de... es:(salud, se refiere a la habilidad para adaptarse a los desafios físicos, mentales o sociales que la vida les ofrece)",
+         Pregunta: "37. En general, usted diría que la salud de... es:(salud, se refiere a la habilidad para adaptarse a los desafios físicos, mentales o sociales que la vida les ofrece)_8",
          Respuesta : $("#res_p4_37_8").val()
          },
          {
-         Pregunta: "38. ¿La persona consume regularmente?",
-         Respuesta : $("#res_p4_39_1").val()
+         Pregunta: "38. ¿La persona consume regularmente?_1",
+         Respuesta : $("#p4_38_1_1").is(':checked')+","+$("#p4_38_1_2").is(':checked')+","+$("#p4_38_1_3").is(':checked')+","+$("#p4_38_1_4").is(':checked')
+         },
+         {
+         Pregunta: "38. ¿La persona consume regularmente?_2",
+         Respuesta : $("#p4_38_2_1").is(':checked')+","+$("#p4_38_2_2").is(':checked')+","+$("#p4_38_2_3").is(':checked')+","+$("#p4_38_2_4").is(':checked')
+         },
+         {
+         Pregunta: "38. ¿La persona consume regularmente?_3",
+         Respuesta : $("#p4_38_3_1").is(':checked')+","+$("#p4_38_3_2").is(':checked')+","+$("#p4_38_3_3").is(':checked')+","+$("#p4_38_3_4").is(':checked')
+         },
+         {
+         Pregunta: "38. ¿La persona consume regularmente?_4",
+         Respuesta : $("#p4_38_4_1").is(':checked')+","+$("#p4_38_4_2").is(':checked')+","+$("#p4_38_4_3").is(':checked')+","+$("#p4_38_4_4").is(':checked')
+         },
+         {
+         Pregunta: "38. ¿La persona consume regularmente?_5",
+         Respuesta : $("#p4_38_5_1").is(':checked')+","+$("#p4_38_5_2").is(':checked')+","+$("#p4_38_5_3").is(':checked')+","+$("#p4_38_5_4").is(':checked')
+         },
+         {
+         Pregunta: "38. ¿La persona consume regularmente?_6",
+         Respuesta : $("#p4_38_6_1").is(':checked')+","+$("#p4_38_6_2").is(':checked')+","+$("#p4_38_6_3").is(':checked')+","+$("#p4_38_6_4").is(':checked')
+         },
+         {
+         Pregunta: "38. ¿La persona consume regularmente?_7",
+         Respuesta : $("#p4_38_7_1").is(':checked')+","+$("#p4_38_7_2").is(':checked')+","+$("#p4_38_7_3").is(':checked')+","+$("#p4_38_7_4").is(':checked')
+         },
+         {
+         Pregunta: "38. ¿La persona consume regularmente?_8",
+         Respuesta : $("#p4_38_8_1").is(':checked')+","+$("#p4_38_8_2").is(':checked')+","+$("#p4_38_8_3").is(':checked')+","+$("#p4_38_8_4").is(':checked')
          },
          {
          Pregunta: "39. ¿Durante los últimos doce meses ...tuvo que ser hospitalizado?_1",
