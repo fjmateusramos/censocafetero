@@ -6825,23 +6825,27 @@
     <div class= "field row col-md-6" id="div_p9_14" style="margin-left: 5px;">
       <%= f.label :p9_14, "14.  ¿En qué actividades de la finca para el aprendizaje los vincula?" %>
 
-    <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="p9_14">
-  <label class="form-check-label" for="p9_14">Llevar registros y organización del mapa de su finca</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p9_14">
-  <label class="form-check-label" for="p9_14">Apoyo en el manejo de semilleros y almácigos de café</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p9_14">
-  <label class="form-check-label" for="p9_14">Acompañamiento en la labor de recolección</label>
-  <p></p>
-  <input class="form-check-input" type="checkbox" value="" id="p9_14">
-  <label class="form-check-label" for="p9_14">Otra</label>
-  </div>
-    <div class="field col-md-4" id="div_p9_14o">
-      <%= f.label :p9_14o, "¿Cual?" %>
-      <%= f.text_field :p9_14o, {class: "form-control", id:"res_p14_o"} %>
-      </div>
+        <div>
+        <%= check_box_tag 'encuestum[p9_14][]', 'Llevar registros y organización del mapa de su finca',checked('Llevar registros y organización del mapa de su finca'), id: 'p2_9_14_1' %>
+        <%= label_tag '5b', 'Llevar registros y organización del mapa de su finca' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p9_14][]', 'Apoyo en el manejo de semilleros y almácigos de café',checked('Apoyo en el manejo de semilleros y almácigos de café'), id: 'p2_9_14_2' %>
+        <%= label_tag '5b', 'Apoyo en el manejo de semilleros y almácigos de café' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p9_14][]', 'Acompañamiento en la labor de recolección',checked('Acompañamiento en la labor de recolección'), id: 'p2_9_14_3' %>
+        <%= label_tag '5b', 'Acompañamiento en la labor de recolección' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p9_14][]', 'Otra',checked('Otra'), id: 'p2_9_14_4' %>
+        <%= label_tag '5b', 'Otra' %>
+        </div>
+
+        <div class="field" id="div_p9_14o">
+          <%= f.label :p9_14o, "¿Cual?" %>
+          <%= f.text_field :p9_14o, {class: "form-control", id:"res_p14_o"} %>
+        </div>
   </div>
 
   <div class="field col-md-12" id="div_p9_15">
@@ -6949,9 +6953,9 @@
     </tr>
     <tr>
       <th scope="row">Otro, Cual?</th>
-      <td><%= f.text_field :p9_17a_13, {class: "form-control", id:"res_p9_17a_14"}%></td>
-      <td class="text-center"><%= f.radio_button :p9_17b_13, {class: "form-control", id:"res_p9_17b_14"}%></td>
-      <td class="text-center"><%= f.radio_button :p9_17c_13, {class: "form-control", id:"res_p9_17c_14"}%></td>
+      <td><%= f.text_field :p9_17a_13_otra, {class: "form-control", id:"res_p9_17a_14"}%></td>
+      <td class="text-center"><%= f.radio_button :p9_17b_13_otra, {class: "form-control", id:"res_p9_17b_14"}%></td>
+      <td class="text-center"><%= f.radio_button :p9_17c_13_otra, {class: "form-control", id:"res_p9_17c_14"}%></td>
     </tr>
   </tbody>
 </table>
@@ -17970,13 +17974,6 @@
           if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
           alert("El valor de la pregunta Costo total en 2017 " + numero + " no es un número");
           document.getElementById("res_p10_t2_f2_5").value = "";
-          }
-      });
-      $('#res_p10_t2_gx').change(function(){
-          var numero = $('#res_p10_t2_gx').val();
-          if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
-          alert("El valor de la pregunta Número de meses en el año " + numero + " no es un número");
-          document.getElementById("res_p10_t2_gx").value = "";
           }
       });
       $('#res_p10_t2_g1_5').change(function(){

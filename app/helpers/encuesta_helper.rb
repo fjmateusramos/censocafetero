@@ -44,6 +44,7 @@ module EncuestaHelper
       @encuestum.p7_94_7.nil? ? false : @encuestum.p7_94_7.match(area1)
       @encuestum.p7_92_1.nil? ? false : @encuestum.p7_92_1.match(area1)
       @encuestum.p7_94_1.nil? ? false : @encuestum.p7_94_1.match(area1)
+      @encuestum.p9_14.nil? ? false : @encuestum.p9_14.match(area1)
 
 	end
 

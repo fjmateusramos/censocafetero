@@ -44,6 +44,7 @@ class Encuestum < ApplicationRecord
 	  self.p7_94_7.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_7")
 	  self.p7_92_8.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_8")
 	  self.p7_94_8.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_8")
+	  self.p9_14.gsub!(/[\[\]\"]/, "") if attribute_present?("p9_14")
 
 	end
 end
