@@ -2632,6 +2632,15 @@
 <% end %>
 
 <script type="text/javascript">
+
+  var fecha= new Date()
+
+    var horas= fecha.getHours();
+    var minutos = fecha.getMinutes();
+    var segundos = fecha.getSeconds();
+
+    codigo = horas+""+minutos+""+segundos;
+
   $('#Siguiente_modulo11').click(function(){
       $('#Seccion_Modulo11').addClass('hidden');
       $('#Seccion_Modulo12').removeClass('hidden');
