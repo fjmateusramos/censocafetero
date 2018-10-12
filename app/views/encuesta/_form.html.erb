@@ -8837,18 +8837,25 @@
       });   
 
       $('#res_p1_12b1_2').change(function(){
-          var numero = $('#res_p1_12b1_2').val();
+          var numero = 0;
+          var num1 = 0;
+          var num2 = 0;
+          var num3 = 0;
+          var numero1 = 0;
+
+          numero = $('#res_p1_12b1_2').val();
+
           if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
           alert("El valor de la Area total finca # 1 " + numero + " no es un número");
           document.getElementById("res_p1_12b1_2").value = "";
           }
-          var num1 = $('#res_p1_12b1_3').val();
-          var num2 = $('#res_p1_12b1_5').val();
-          var num3 = $('#res_p1_12b1_6').val();
+          num1 = $('#res_p1_12b1_3').val();
+          num2 = $('#res_p1_12b1_5').val();
+          num3 = $('#res_p1_12b1_6').val();
 
-          var numero1 = num1 + num2 + num3; 
+          numero1 = parseInt(num1) + parseInt(num2) +  parseInt(num3);
 
-          if (numero < numero1) {
+          if (numero >= numero1) {
             alert("El valor de la Area total es menor a la suma de las otras áreas");
             document.getElementById("res_p1_12b1_2").value = "";
           }
@@ -8877,18 +8884,25 @@
           }
       }); 
       $('#res_p1_12b2_2').change(function(){
-          var numero = $('#res_p1_12b2_2').val();
+
+          var numero = 0;
+          var num1 = 0;
+          var num2 = 0;
+          var num3 = 0;
+          var numero1 = 0;
+
+          numero = $('#res_p1_12b2_2').val();
           if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
           alert("El valor de la Area total finca # 2 " + numero + " no es un número");
           document.getElementById("res_p1_12b2_2").value = "";
           }
-          var num1 = $('#res_p1_12b2_3').val();
-          var num2 = $('#res_p1_12b2_5').val();
-          var num3 = $('#res_p1_12b2_6').val();
+          num1 = $('#res_p1_12b2_3').val();
+          num2 = $('#res_p1_12b2_5').val();
+          num3 = $('#res_p1_12b2_6').val();
 
-          var numero1 = num1 + num2 + num3; 
+          numero1 = parseInt(num1) + parseInt(num2) +  parseInt(num3);
 
-          if (numero < numero1) {
+          if (numero >= numero1) {
             alert("El valor de la Area total de la finca # 2 es menor a la suma de las otras áreas");
             document.getElementById("res_p1_12b2_2").value = "";
           }
@@ -8915,18 +8929,25 @@
           }
       }); 
       $('#res_p1_12b3_2').change(function(){
-          var numero = $('#res_p1_12b3_2').val();
+
+          var numero = 0;
+          var num1 = 0;
+          var num2 = 0;
+          var num3 = 0;
+          var numero1 = 0;
+
+          numero = $('#res_p1_12b3_2').val();
           if (!/^([0-9])*[.]?[0-9]*$/.test(numero)){
           alert("El valor de la Area total finca # 3 " + numero + " no es un número");
           document.getElementById("res_p1_12b3_2").value = "";
           }
-          var num1 = $('#res_p1_12b3_3').val();
-          var num2 = $('#res_p1_12b3_5').val();
-          var num3 = $('#res_p1_12b3_6').val();
+          num1 = $('#res_p1_12b3_3').val();
+          num2 = $('#res_p1_12b3_5').val();
+          num3 = $('#res_p1_12b3_6').val();
 
-          var numero1 = num1 + num2 + num3; 
+          numero1 = parseInt(num1) + parseInt(num2) +  parseInt(num3);
 
-          if (numero < numero1) {
+          if (numero >= numero1) {
             alert("El valor de la Area total de la finca # 3 es menor a la suma de las otras áreas");
             document.getElementById("res_p1_12b3_2").value = "";
           }
