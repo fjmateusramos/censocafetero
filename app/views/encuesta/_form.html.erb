@@ -271,7 +271,7 @@
   <div class="row col-md-12">
     <div class="field col-md-2" id="div_p2_13">
       <%= f.label :p2_13, "13.  Tipo de Vivienda" %>
-      <%= f.select :p2_13, ["Casa", "Apartamento", "Cuarto(s) en inquilinato", "Cuarto(s) en otra estructura", "Otro"],{:include_blank => true}, {class: "form-control", id:"res_p1_12b3_7"}%>
+      <%= f.select :p2_13, ["Casa", "Apartamento", "Cuarto(s) en inquilinato", "Cuarto(s) en otra estructura", "Otro"],{:include_blank => true}, {class: "form-control", id:"res_p2_13"}%>
     </div>
     <div class="field col-md-4" id="div_p2_14">
       <%= f.label :p2_14, "14.  Material predominante de los pisos de la vivienda" %>
@@ -482,10 +482,6 @@
       </div>
       <div>
       <%= check_box_tag 'encuestum[p2_26][]', 'DVD',checked('DVD'), id: 'p2_26_15' %>
-      <%= label_tag '5b', 'DVD' %>
-      </div>
-      <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'DVD',checked('DVD'), id: 'p2_26_16' %>
       <%= label_tag '5b', 'DVD' %>
       </div>
       <div>
@@ -18475,11 +18471,11 @@
          },
          {
          Pregunta: "25.  ¿Que energía combustible utilizan principalmente para cocinar?",
-         Respuesta : $("#res_p2_24").val()
+         Respuesta : $("#p2_25_1").is(':checked')+","+$("#p2_25_2").is(':checked')+","+$("#p2_25_3").is(':checked')+","+$("#p2_25_4").is(':checked')+","+$("#p2_25_5").is(':checked')+","+$("#p2_25_6").is(':checked')
          },
          {
          Pregunta: "26.  ¿Cuáles de los siguienes bienes posee este hogar?",
-         Respuesta : $("#res_p2_24").val()
+         Respuesta : $("#p2_26_1").is(':checked')+","+$("#p2_26_2").is(':checked')+","+$("#p2_26_3").is(':checked')+","+$("#p2_26_4").is(':checked')+","+$("#p2_26_5").is(':checked')+","+$("#p2_26_6").is(':checked')+","+$("#p2_26_7").is(':checked')+","+$("#p2_26_8").is(':checked')+","+$("#p2_26_9").is(':checked')+","+$("#p2_26_10").is(':checked')+","+$("#p2_26_11").is(':checked')+","+$("#p2_26_12").is(':checked')+","+$("#p2_26_13").is(':checked')+","+$("#p2_26_14").is(':checked')+","+$("#p2_26_15").is(':checked')+","+$("#p2_26_17").is(':checked')+","+$("#p2_26_18").is(':checked')+","+$("#p2_26_19").is(':checked')+","+$("#p2_26_20").is(':checked')+","+$("#p2_26_21").is(':checked')+","+$("#p2_26_22").is(':checked')+","+$("#p2_26_23").is(':checked')+","+$("#p2_26_24").is(':checked')+","+$("#p2_26_25").is(':checked')+","+$("#p2_26_6").is(':checked')
          },
         ];
 
