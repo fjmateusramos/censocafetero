@@ -24,7 +24,6 @@ class Encuesta1sController < ApplicationController
   # POST /encuesta1s
   # POST /encuesta1s.json
   def create
-    @encuesta1 = Encuestum.encuesta1s.new encuesta1_params
     @encuesta1 = Encuesta1.new(encuesta1_params)
 
     respond_to do |format|

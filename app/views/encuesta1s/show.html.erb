@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
+<br>
+<br>
+<h2>Encuesta guardada con exito</h2>
 
-<p>
-  <strong>Encuesta:</strong>
-  <%= @encuesta1.encuesta %>
-</p>
-
-<%= link_to 'Edit', edit_encuesta1_path(@encuesta1) %> |
-<%= link_to 'Back', encuesta1s_path %>
+<div class="btn btn-primary btn-md col-md-4">
+      <%= link_to 'Editar', edit_encuestum_path(@encuesta1) , {class: "btn btn-primary btn-lg", id:"#Guardar_Sin_Internet"} %>
+</div>
