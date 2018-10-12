@@ -397,106 +397,136 @@
   <div class="col-md-12 row">
       <div class="field col-md-6" id="div_p2_25">
         <%= f.label :p2_25, "25.  ¿Que energía combustible utilizan principalmente para cocinar?" %>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="p2_26">
-          <label class="form-check-label" for="p2_26">Electricidad</label>
-          <p></p>
-          <input class="form-check-input" type="checkbox" value="" id="p2_26">
-          <label class="form-check-label" for="p2_26">Gas natural conectado a red pública</label>
-          <p></p>
-          <input class="form-check-input" type="checkbox" value="" id="p2_26">
-          <label class="form-check-label" for="p2_26">Gas propano (en cilindro o pipeta)</label>
-          <p></p>
-          <input class="form-check-input" type="checkbox" value="" id="p2_26">
-          <label class="form-check-label" for="p2_26">Gas producido en la finca</label>
-          <p></p>
-          <input class="form-check-input" type="checkbox" value="" id="p2_26">
-          <label class="form-check-label" for="p2_26">Keresene, petróleo, gasolina, cocinol, alcohol</label>
-          <p></p>
-          <input class="form-check-input" type="checkbox" value="" id="p2_26">
-          <label class="form-check-label" for="p2_26">Leña, madera, carbón de leña</label>
-          <p></p>
-          <input class="form-check-input" type="checkbox" value="" id="p2_26">
-          <label class="form-check-label" for="p2_26">Carbón mineral</label>
+        <div>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Electricidad',checked('Electricidad'), id: 'p2_25_1' %>
+        <%= label_tag '5b', 'Electricidad' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Gas propano (en cilindro o pipeta)',checked('Gas propano (en cilindro o pipeta)'), id: 'p2_25_2' %>
+        <%= label_tag '5b', 'Gas propano (en cilindro o pipeta)' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Gas producido en la finca',checked('Gas producido en la finca'), id: 'p2_25_3' %>
+        <%= label_tag '5b', 'Gas producido en la finca' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Keresene, petróleo, gasolina, cocinol, alcohol',checked('Leña, madera, carbón de leña'), id: 'p2_25_4' %>
+        <%= label_tag '5b', 'Keresene, petróleo, gasolina, cocinol, alcohol' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Leña, madera, carbón de leña',checked('Leña, madera, carbón de leña'), id: 'p2_25_4' %>
+        <%= label_tag '5b', 'Leña, madera, carbón de leña' %>
+        </div>
+        <div>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Carbón mineral',checked('Carbón mineral'), id: 'p2_25_5' %>
+        <%= label_tag '5b', 'Carbón mineral' %>
         </div>
       </div>
     <div class= "field col-md-6" id="div_p2_26">
       <%= f.label :p2_26, "26.  ¿Cuáles de los siguienes bienes posee este hogar?" %>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Máquina lavadora de ropa</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Nevera o enfriador</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Licuadora</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Equipo de sonido</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Estufa eléctrica o a gas</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Horno eléctrico o a gas</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Horno microondas</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Aspiradora y/o brilladora</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Calentador de agua (eléctrico o a gas) o ducha eléctrica</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Estufa ecoeficiente</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Aire acondicionado o ventilador</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Televisor a color</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Servicio de televisión por cable o parabólica</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Computador para uso del hogar</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">DVD</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Servicio de Internet</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Celular con plan de datos</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Cámara de video</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Cámara fotográfica digital</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Bicicleta</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Motocicleta</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Carro particular</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Caballo o animal de carga</label>
-        <p></p>
-        <input class="form-check-input" type="checkbox" value="" id="p2_26">
-        <label class="form-check-label" for="p2_26">Casa, apartamento o finca de recreo</label>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Máquina lavadora de ropa',checked('Máquina lavadora de ropa'), id: 'p2_26_1' %>
+      <%= label_tag '5b', 'Máquina lavadora de ropa' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Nevera o enfriador',checked('Nevera o enfriador'), id: 'p2_26_2' %>
+      <%= label_tag '5b', 'Nevera o enfriador' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Licuadora',checked('Licuadora'), id: 'p2_26_3' %>
+      <%= label_tag '5b', 'Licuadora' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Equipo de sonido',checked('Equipo de sonido'), id: 'p2_26_4' %>
+      <%= label_tag '5b', 'Equipo de sonido' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Estufa eléctrica o a gas',checked('Estufa eléctrica o a gas'), id: 'p2_26_5' %>
+      <%= label_tag '5b', 'Estufa eléctrica o a gas' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Horno eléctrico o a gas',checked('Horno eléctrico o a gas'), id: 'p2_26_6' %>
+      <%= label_tag '5b', 'Horno eléctrico o a gas' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Horno microondas',checked('Horno microondas'), id: 'p2_26_7' %>
+      <%= label_tag '5b', 'Horno microondas' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Aspiradora y/o brilladora',checked('Aspiradora y/o brilladora'), id: 'p2_26_8' %>
+      <%= label_tag '5b', 'Aspiradora y/o brilladora' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Calentador de agua (eléctrico o a gas) o ducha eléctrica',checked('Calentador de agua (eléctrico o a gas) o ducha eléctrica'), id: 'p2_26_9' %>
+      <%= label_tag '5b', 'Calentador de agua (eléctrico o a gas) o ducha eléctrica' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Estufa ecoeficiente',checked('Estufa ecoeficiente'), id: 'p2_26_10' %>
+      <%= label_tag '5b', 'Estufa ecoeficiente' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Aire acondicionado o ventilador',checked('Aire acondicionado o ventilador'), id: 'p2_26_11' %>
+      <%= label_tag '5b', 'Aire acondicionado o ventilador' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Televisor a color',checked('Televisor a color'), id: 'p2_26_12' %>
+      <%= label_tag '5b', 'Televisor a color' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Servicio de televisión por cable o parabólica',checked('Servicio de televisión por cable o parabólica'), id: 'p2_26_13' %>
+      <%= label_tag '5b', 'Servicio de televisión por cable o parabólica' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Computador para uso del hogar',checked('Computador para uso del hogar'), id: 'p2_26_14' %>
+      <%= label_tag '5b', 'Computador para uso del hogar' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'DVD',checked('DVD'), id: 'p2_26_15' %>
+      <%= label_tag '5b', 'DVD' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'DVD',checked('DVD'), id: 'p2_26_16' %>
+      <%= label_tag '5b', 'DVD' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Servicio de Internet',checked('Servicio de Internet'), id: 'p2_26_17' %>
+      <%= label_tag '5b', 'Servicio de Internet' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.',checked('Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.'), id: 'p2_26_18' %>
+      <%= label_tag '5b', 'Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Celular con plan de datos',checked('Celular con plan de datos'), id: 'p2_26_19' %>
+      <%= label_tag '5b', 'Celular con plan de datos' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Cámara de video',checked('Cámara de video'), id: 'p2_26_20' %>
+      <%= label_tag '5b', 'Cámara de video' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Cámara fotográfica digital',checked('Cámara fotográfica digital'), id: 'p2_26_21' %>
+      <%= label_tag '5b', 'Cámara fotográfica digital' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Bicicleta',checked('Bicicleta'), id: 'p2_26_22' %>
+      <%= label_tag '5b', 'Bicicleta' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Motocicleta',checked('Motocicleta'), id: 'p2_26_23' %>
+      <%= label_tag '5b', 'Motocicleta' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Carro particular',checked('Carro particular'), id: 'p2_26_24' %>
+      <%= label_tag '5b', 'Carro particular' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Caballo o animal de carga',checked('Caballo o animal de carga'), id: 'p2_26_25' %>
+      <%= label_tag '5b', 'Caballo o animal de carga' %>
+      </div>
+      <div>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Casa, apartamento o finca de recreo',checked('Casa, apartamento o finca de recreo'), id: 'p2_26_26' %>
+      <%= label_tag '5b', 'Casa, apartamento o finca de recreo' %>
       </div>
     </div>
   </div>  
