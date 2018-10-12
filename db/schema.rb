@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_12_001815) do
+ActiveRecord::Schema.define(version: 2018_10_12_033931) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,21 +38,18 @@ ActiveRecord::Schema.define(version: 2018_10_12_001815) do
     t.string "p1_12b1_1"
     t.string "p1_12b1_2"
     t.string "p1_12b1_3"
-    t.string "p1_12b1_4"
     t.string "p1_12b1_5"
     t.string "p1_12b1_6"
     t.string "p1_12b1_7"
     t.string "p1_12b2_1"
     t.string "p1_12b2_2"
     t.string "p1_12b2_3"
-    t.string "p1_12b2_4"
     t.string "p1_12b2_5"
     t.string "p1_12b2_6"
     t.string "p1_12b2_7"
     t.string "p1_12b3_1"
     t.string "p1_12b3_2"
     t.string "p1_12b3_3"
-    t.string "p1_12b3_4"
     t.string "p1_12b3_5"
     t.string "p1_12b3_6"
     t.string "p1_12b3_7"
