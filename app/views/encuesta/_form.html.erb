@@ -338,7 +338,7 @@
             </div>
             <td>
               <div id="div_p2_16_5c">
-                <%= f.select :p2_16_5c, ["1","2","3","4","5","6","7"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_5b"}%>
+                <%= f.select :p2_16_5c, ["1","2","3","4","5","6","7"],{:include_blank => true}, {class: "form-control", id:"res_p2_16_5c"}%>
                 <p>Veces por semana</p>
               </div>  
             </td>
@@ -414,19 +414,19 @@
         <%= label_tag '5b', 'Keresene, petroleo, gasolina, cocinol, alcohol' %>
         </div>
         <div>
-        <%= check_box_tag 'encuestum[p2_25][]', 'Leña, madera, carbon de leña',checked('Leña, madera, carbon de leña'), id: 'p2_25_4' %>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Leña, madera, carbon de leña',checked('Leña, madera, carbon de leña'), id: 'p2_25_5' %>
         <%= label_tag '5b', 'Leña, madera, carbon de leña' %>
         </div>
         <div>
-        <%= check_box_tag 'encuestum[p2_25][]', 'Carbon mineral',checked('Carbon mineral'), id: 'p2_25_5' %>
+        <%= check_box_tag 'encuestum[p2_25][]', 'Carbon mineral',checked('Carbon mineral'), id: 'p2_25_6' %>
         <%= label_tag '5b', 'Carbon mineral' %>
         </div>
       </div>
     <div class= "field col-md-6" id="div_p2_26">
       <%= f.label :p2_26, "26.  ¿Cuales de los siguienes bienes posee este hogar?" %>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Máquina lavadora de ropa',checked('Máquina lavadora de ropa'), id: 'p2_26_1' %>
-      <%= label_tag '5b', 'Máquina lavadora de ropa' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Maquina lavadora de ropa',checked('Maquina lavadora de ropa'), id: 'p2_26_1' %>
+      <%= label_tag '5b', 'Maquina lavadora de ropa' %>
       </div>
       <div>
       <%= check_box_tag 'encuestum[p2_26][]', 'Nevera o enfriador',checked('Nevera o enfriador'), id: 'p2_26_2' %>
@@ -441,12 +441,12 @@
       <%= label_tag '5b', 'Equipo de sonido' %>
       </div>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Estufa eléctrica o a gas',checked('Estufa eléctrica o a gas'), id: 'p2_26_5' %>
-      <%= label_tag '5b', 'Estufa eléctrica o a gas' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Estufa electrica o a gas',checked('Estufa electrica o a gas'), id: 'p2_26_5' %>
+      <%= label_tag '5b', 'Estufa electrica o a gas' %>
       </div>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Horno eléctrico o a gas',checked('Horno eléctrico o a gas'), id: 'p2_26_6' %>
-      <%= label_tag '5b', 'Horno eléctrico o a gas' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Horno electrico o a gas',checked('Horno electrico o a gas'), id: 'p2_26_6' %>
+      <%= label_tag '5b', 'Horno electrico o a gas' %>
       </div>
       <div>
       <%= check_box_tag 'encuestum[p2_26][]', 'Horno microondas',checked('Horno microondas'), id: 'p2_26_7' %>
@@ -457,8 +457,8 @@
       <%= label_tag '5b', 'Aspiradora y/o brilladora' %>
       </div>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Calentador de agua (eléctrico o a gas) o ducha eléctrica',checked('Calentador de agua (eléctrico o a gas) o ducha eléctrica'), id: 'p2_26_9' %>
-      <%= label_tag '5b', 'Calentador de agua (eléctrico o a gas) o ducha eléctrica' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Calentador de agua (electrico o a gas) o ducha electrica',checked('Calentador de agua (electrico o a gas) o ducha electrica'), id: 'p2_26_9' %>
+      <%= label_tag '5b', 'Calentador de agua (electrico o a gas) o ducha eléctrica' %>
       </div>
       <div>
       <%= check_box_tag 'encuestum[p2_26][]', 'Estufa ecoeficiente',checked('Estufa ecoeficiente'), id: 'p2_26_10' %>
@@ -473,8 +473,8 @@
       <%= label_tag '5b', 'Televisor a color' %>
       </div>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Servicio de televisión por cable o parabólica',checked('Servicio de televisión por cable o parabólica'), id: 'p2_26_13' %>
-      <%= label_tag '5b', 'Servicio de televisión por cable o parabólica' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Servicio de televsion por cable o parabolica',checked('Servicio de televsion por cable o parabolica'), id: 'p2_26_13' %>
+      <%= label_tag '5b', 'Servicio de televsion por cable o parabolica' %>
       </div>
       <div>
       <%= check_box_tag 'encuestum[p2_26][]', 'Computador para uso del hogar',checked('Computador para uso del hogar'), id: 'p2_26_14' %>
@@ -489,20 +489,20 @@
       <%= label_tag '5b', 'Servicio de Internet' %>
       </div>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.',checked('Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.'), id: 'p2_26_18' %>
-      <%= label_tag '5b', 'Consolas para juegos electrónicos:Play Station, Nintendos, X-box, Gameboy, etc.' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Consolas para juegos electronicos:Play Station, Nintendos, X-box, Gameboy, etc.',checked('Consolas para juegos electronicos:Play Station, Nintendos, X-box, Gameboy, etc.'), id: 'p2_26_18' %>
+      <%= label_tag '5b', 'Consolas para juegos electronicos:Play Station, Nintendos, X-box, Gameboy, etc.' %>
       </div>
       <div>
       <%= check_box_tag 'encuestum[p2_26][]', 'Celular con plan de datos',checked('Celular con plan de datos'), id: 'p2_26_19' %>
       <%= label_tag '5b', 'Celular con plan de datos' %>
       </div>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Cámara de video',checked('Cámara de video'), id: 'p2_26_20' %>
-      <%= label_tag '5b', 'Cámara de video' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Camara de video',checked('Camara de video'), id: 'p2_26_20' %>
+      <%= label_tag '5b', 'Camara de video' %>
       </div>
       <div>
-      <%= check_box_tag 'encuestum[p2_26][]', 'Cámara fotográfica digital',checked('Cámara fotográfica digital'), id: 'p2_26_21' %>
-      <%= label_tag '5b', 'Cámara fotográfica digital' %>
+      <%= check_box_tag 'encuestum[p2_26][]', 'Camara fotografica digital',checked('Camara fotografica digital'), id: 'p2_26_21' %>
+      <%= label_tag '5b', 'Camara fotografica digital' %>
       </div>
       <div>
       <%= check_box_tag 'encuestum[p2_26][]', 'Bicicleta',checked('Bicicleta'), id: 'p2_26_22' %>
