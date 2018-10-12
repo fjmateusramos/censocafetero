@@ -4678,42 +4678,42 @@
           <th scope="row">69 ¿Para realizar este trabajo tiene algún tipo de contrato?</th>
             <td id="persona_1_62">
               <div class="field" id="div_p7_69_1">
-                <%= f.select :p7_68_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_1"}%>
+                <%= f.select :p7_69_1, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_1"}%>
               </div>
             </td>  
             <td id="persona_2_62">
               <div class="field" id="div_p7_69_2">
-                <%= f.select :p7_68_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_2"}%>
+                <%= f.select :p7_69_2, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_2"}%>
               </div>
             </td>  
             <td id="persona_3_62">
               <div class="field" id="div_p7_69_3">
-                <%= f.select :p7_68_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_3"}%>
+                <%= f.select :p7_69_3, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_3"}%>
               </div>
             </td>  
             <td id="persona_4_62">
               <div class="field" id="div_p7_69_4">
-                <%= f.select :p7_68_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_4"}%>
+                <%= f.select :p7_69_4, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_4"}%>
               </div>
             </td>  
             <td id="persona_5_62">
               <div class="field" id="div_p7_69_5">
-                <%= f.select :p7_68_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_5"}%>
+                <%= f.select :p7_69_5, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_5"}%>
               </div>
             </td>  
             <td id="persona_6_62">
               <div class="field" id="div_p7_69_6">
-                <%= f.select :p7_68_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_6"}%>
+                <%= f.select :p7_69_6, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_6"}%>
               </div>
             </td>  
             <td id="persona_7_62">
               <div class="field" id="div_p7_69_7">
-                <%= f.select :p7_68_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_7"}%>
+                <%= f.select :p7_69_7, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_7"}%>
               </div>
             </td>  
             <td id="persona_8_62">
               <div class="field" id="div_p7_69_8">
-                <%= f.select :p7_68_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_8"}%>
+                <%= f.select :p7_69_8, ["Si", "No"],{:include_blank => true}, {class: "form-control", id:"res_p7_69_8"}%>
               </div>         
             </td>
           </tr>
@@ -5029,7 +5029,7 @@
                 <%= f.select :p7_74a_8, ["Si","No", "NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_74a_8"} %>
               </div>
               <div class="field hidden" id="div_p7_74b_8"><p class="font-italic">Valor estimado mensual</p>
-               <%= f.text_field :p7_74b_8, {class: "form-control", id:"res_p7_7ab_8"} %>
+               <%= f.text_field :p7_74b_8, {class: "form-control", id:"res_p7_7b_8"} %>
               </div>   
             </td>
           </tr> 
@@ -5115,7 +5115,7 @@
                 <%= f.select :p7_76a_2, ["Si","No", "NS/NR"], {:include_blank => true} ,{class: "form-control", id:"res_p7_76a_2"} %>
               </div>
               <div class="field hidden" id="div_p7_76b_2"><p class="font-italic">Valor estimado mensual</p>
-                <%= f.text_field :p7_76b_2, {class: "form-control", id:"res_p7_73a_1"} %>
+                <%= f.text_field :p7_76b_2, {class: "form-control", id:"res_p7_73b_1"} %>
               </div>
             </td>  
             <td id="persona_3_692">
@@ -6027,145 +6027,161 @@
           <th scope="row">92. ¿Está afiliado actualmente a ...?</th>
             <td id="persona_1_708">
               <div class="field" id="div_p7_92_1">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_1">
-                  <label class="form-check-label" for="p7_92_1">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_1">
-                  <label class="form-check-label" for="p7_92_1">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_1">
-                  <label class="form-check-label" for="p7_92_1"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_1">
-                  <label class="form-check-label" for="p7_92_1"> Ninguna de las anteriores</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_1][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_1_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_1][]', 'BEPS',checked('BEPS'), id: 'p7_92_1_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_1][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_1_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_1][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_1_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
+                </div>
               </div> 
             </td>  
             <td id="persona_2_708">
               <div class="field" id="div_p7_92_2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_2">
-                  <label class="form-check-label" for="p7_92_2">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_2">
-                  <label class="form-check-label" for="p7_92_2">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_2">
-                  <label class="form-check-label" for="p7_92_2"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_2">
-                  <label class="form-check-label" for="p7_92_2"> Ninguna de las anteriores</label>
-                  <p></p>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_2][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_2_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_2][]', 'BEPS',checked('BEPS'), id: 'p7_92_2_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_2][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_2_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_2][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_2_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
                 </div>  
               </div>
             </td>  
             <td id="persona_3_708">
               <div class="field" id="div_p7_92_3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_3">
-                  <label class="form-check-label" for="p7_92_3">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_3">
-                  <label class="form-check-label" for="p7_92_3">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_3">
-                  <label class="form-check-label" for="p7_92_3"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_3">
-                  <label class="form-check-label" for="p7_92_3"> Ninguna de las anteriores</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_3][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_3_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_3][]', 'BEPS',checked('BEPS'), id: 'p7_92_3_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_3][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_3_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_3][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_3_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
+                </div> 
               </div>
             </td>  
             <td id="persona_4_708">
               <div class="field" id="div_p7_92_4">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_4">
-                  <label class="form-check-label" for="p7_92_4">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_4">
-                  <label class="form-check-label" for="p7_92_4">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_4">
-                  <label class="form-check-label" for="p7_92_4"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_4">
-                  <label class="form-check-label" for="p7_92_4"> Ninguna de las anteriores</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_4][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_4_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_4][]', 'BEPS',checked('BEPS'), id: 'p7_92_4_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_4][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_4_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_4][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_4_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
+                </div> 
               </div>
             </td>  
             <td id="persona_5_708">
               <div class="field" id="div_p7_92_5">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_5">
-                  <label class="form-check-label" for="p7_92_5">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_5">
-                  <label class="form-check-label" for="p7_92_5">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_5">
-                  <label class="form-check-label" for="p7_92_5"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_5">
-                  <label class="form-check-label" for="p7_92_5"> Ninguna de las anteriores</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_5][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_5_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_5][]', 'BEPS',checked('BEPS'), id: 'p7_92_5_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_5][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_5_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_5][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_5_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
+                </div> 
               </div>
             </td>  
             <td id="persona_6_708">
               <div class="field" id="div_p7_92_6">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_6">
-                  <label class="form-check-label" for="p7_92_6">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_6">
-                  <label class="form-check-label" for="p7_92_6">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_6">
-                  <label class="form-check-label" for="p7_92_6"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_6">
-                  <label class="form-check-label" for="p7_92_6"> Ninguna de las anteriores</label>
-                  <p></p>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_6][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_6_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_6][]', 'BEPS',checked('BEPS'), id: 'p7_92_6_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_6][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_6_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_6][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_6_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
                 </div>  
               </div>
             </td>  
             <td id="persona_7_708">
               <div class="field" id="p7_92_7">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_7">
-                  <label class="form-check-label" for="p7_92_7">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_7">
-                  <label class="form-check-label" for="p7_92_7">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_7">
-                  <label class="form-check-label" for="p7_92_7"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_7">
-                  <label class="form-check-label" for="p7_92_7"> Ninguna de las anteriores</label>
-                  <p></p>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_7][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_7_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_7][]', 'BEPS',checked('BEPS'), id: 'p7_92_7_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_7][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_7_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_7][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_7_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
                 </div>  
               </div>
             </td>  
             <td id="persona_8_708">
               <div class="field" id="div_p7_92_8">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_8">
-                  <label class="form-check-label" for="p7_92_8">Fondo de pensiones</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_8">
-                  <label class="form-check-label" for="p7_92_8">BEPS</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_8">
-                  <label class="form-check-label" for="p7_92_8"> Ya es pensionado</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_92_8">
-                  <label class="form-check-label" for="p7_92_8"> Ninguna de las anteriores</label>
-                  <p></p>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_8][]', 'Fondo de pensiones',checked('Fondo de pensiones'), id: 'p7_92_8_1' %>
+                <%= label_tag '5b', 'Fondo de pensiones' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_8][]', 'BEPS',checked('BEPS'), id: 'p7_92_8_2' %>
+                <%= label_tag '5b', 'BEPS' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_8][]', 'Ya es pensionado',checked('Ya es pensionado'), id: 'p7_92_8_3' %>
+                <%= label_tag '5b', 'Ya es pensionado' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_92_8][]', 'Ninguna de las anteriores',checked('Ninguna de las anteriores'), id: 'p7_92_8_4' %>
+                <%= label_tag '5b', 'Ninguna de las anteriores' %>
                 </div>  
               </div>  
             </td>
@@ -6266,169 +6282,193 @@
           <th scope="row">94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?</th>
             <td id="persona_1_710">
               <div class="field" id="div_p7_94_1">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_1">
-                  <label class="form-check-label" for="p7_94_1">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_1">
-                  <label class="form-check-label" for="p7_94_1">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_1">
-                  <label class="form-check-label" for="p7_94_1"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_1">
-                  <label class="form-check-label" for="p7_94_1"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_1">
-                  <label class="form-check-label" for="p7_94_1"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_1][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_1_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_1][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_1_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_1][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_1_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_1][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_1_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_1][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_1_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
+                </div> 
               </div> 
             </td>  
             <td id="persona_2_710">
               <div class="field" id="div_p7_94_2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_2">
-                  <label class="form-check-label" for="p7_94_2">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_2">
-                  <label class="form-check-label" for="p7_94_2">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_2">
-                  <label class="form-check-label" for="p7_94_2"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_2">
-                  <label class="form-check-label" for="p7_94_2"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_2">
-                  <label class="form-check-label" for="p7_94_2"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_2][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_2_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_2][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_2_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_2][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_2_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_2][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_2_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_2][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_2_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
+                </div>    
               </div> 
             </td>  
             <td id="persona_3_710">
               <div class="field" id="div_p7_94_3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_3">
-                  <label class="form-check-label" for="p7_94_3">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_3">
-                  <label class="form-check-label" for="p7_94_3">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_3">
-                  <label class="form-check-label" for="p7_94_3"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_3">
-                  <label class="form-check-label" for="p7_94_3"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_3">
-                  <label class="form-check-label" for="p7_94_3"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_3][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_3_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_3][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_3_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_3][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_3_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_3][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_3_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_3][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_3_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
+                </div>    
               </div> 
             </td>  
             <td id="persona_4_710">
               <div class="field" id="div_p7_94_4">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_4">
-                  <label class="form-check-label" for="p7_94_4">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_4">
-                  <label class="form-check-label" for="p7_94_4">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_4">
-                  <label class="form-check-label" for="p7_94_4"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_4">
-                  <label class="form-check-label" for="p7_94_4"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_4">
-                  <label class="form-check-label" for="p7_94_4"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_4][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_4_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_4][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_4_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_4][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_4_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_4][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_4_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_4][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_4_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
+                </div>   
               </div> 
             </td>  
             <td id="persona_5_710">
               <div class="field" id="div_p7_94_5">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_5">
-                  <label class="form-check-label" for="p7_94_5">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_5">
-                  <label class="form-check-label" for="p7_94_5">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_5">
-                  <label class="form-check-label" for="p7_94_5"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_5">
-                  <label class="form-check-label" for="p7_94_5"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_5">
-                  <label class="form-check-label" for="p7_94_5"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
-                </div>  
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_5][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_5_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_5][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_5_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_5][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_5_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_5][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_5_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_5][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_5_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
+                </div>   
               </div> 
             </td>  
             <td id="persona_6_710">
               <div class="field" id="div_p7_94_6">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_6">
-                  <label class="form-check-label" for="p7_94_6">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_6">
-                  <label class="form-check-label" for="p7_94_6">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_6">
-                  <label class="form-check-label" for="p7_94_6"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_6">
-                  <label class="form-check-label" for="p7_94_6"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_6">
-                  <label class="form-check-label" for="p7_94_6"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_6][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_6_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_6][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_6_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_6][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_6_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_6][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_6_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_6][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_6_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
                 </div>  
               </div> 
             </td>  
             <td id="persona_7_710">
                <div class="field" id="div_p7_94_7">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_7">
-                  <label class="form-check-label" for="p7_94_7">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_7">
-                  <label class="form-check-label" for="p7_94_7">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_7">
-                  <label class="form-check-label" for="p7_94_7"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_7">
-                  <label class="form-check-label" for="p7_94_7"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_7">
-                  <label class="form-check-label" for="p7_94_7"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_7][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_7_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_7][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_7_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_7][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_7_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_7][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_7_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_7][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_7_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
                 </div>  
               </div> 
             </td>  
             <td id="persona_8_710">
               <div class="field" id="div_p7_94_8">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_8">
-                  <label class="form-check-label" for="p7_94_8">Preparación de alimentos</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_8">
-                  <label class="form-check-label" for="p7_94_8">Labores de aseo de la vivienda</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_8">
-                  <label class="form-check-label" for="p7_94_8"> Lavado y arreglo de ropa</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_8">
-                  <label class="form-check-label" for="p7_94_8"> Lavado de utensilios de cocina</label>
-                  <p></p>
-                  <input class="form-check-input" type="checkbox" value="" id="p7_94_8">
-                  <label class="form-check-label" for="p7_94_8"> Apoyo en tareas escolares a otros miembros del hogar</label>
-                  <p></p>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_8][]', 'Preparación de alimentos',checked('Preparación de alimentos'), id: 'p7_94_8_1' %>
+                <%= label_tag '5b', 'Preparación de alimentos' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_8][]', 'Labores de aseo de la vivienda',checked('Labores de aseo de la vivienda'), id: 'p7_94_8_2' %>
+                <%= label_tag '5b', 'Labores de aseo de la vivienda' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_8][]', 'Lavado y arreglo de ropa',checked('Lavado y arreglo de ropa'), id: 'p7_94_8_3' %>
+                <%= label_tag '5b', 'Lavado y arreglo de ropa' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_8][]', 'Lavado de utensilios de cocina',checked('Lavado de utensilios de cocina'), id: 'p7_94_8_4' %>
+                <%= label_tag '5b', 'Lavado de utensilios de cocina' %>
+                </div>
+                <div>
+                <%= check_box_tag 'encuestum[p7_94_8][]', 'Apoyo en tareas escolares a otros miembros del hogar',checked('Apoyo en tareas escolares a otros miembros del hogar'), id: 'p7_94_8_5' %>
+                <%= label_tag '5b', 'Apoyo en tareas escolares a otros miembros del hogar' %>
                 </div>  
               </div> 
             </td>
@@ -21301,11 +21341,1286 @@
          Pregunta: "69. Para realizar este trabajo ... tiene algún tipo de contrato",
          Respuesta : $("#res_p7_69_8").val()
          },
-
-
-
-        
-         
+         {
+         Pregunta: "70. El contrato es verbal o escrito_1",
+         Respuesta : $("#res_p7_70_1").val()
+         },
+         {
+         Pregunta: "70. El contrato es verbal o escrito_2",
+         Respuesta : $("#res_p7_70_2").val()
+         },
+         {
+         Pregunta: "70. El contrato es verbal o escrito_3",
+         Respuesta : $("#res_p7_70_3").val()
+         },
+         {
+         Pregunta: "70. El contrato es verbal o escrito_4",
+         Respuesta : $("#res_p7_70_4").val()
+         },
+         {
+         Pregunta: "70. El contrato es verbal o escrito_5",
+         Respuesta : $("#res_p7_70_5").val()
+         },
+         {
+         Pregunta: "70. El contrato es verbal o escrito_6",
+         Respuesta : $("#res_p7_70_6").val()
+         },
+         {
+         Pregunta: "70. El contrato es verbal o escrito_7",
+         Respuesta : $("#res_p7_70_7").val()
+         },
+         {
+         Pregunta: "70. El contrato es verbal o escrito_8",
+         Respuesta : $("#res_p7_70_8").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_1",
+         Respuesta : $("#res_p7_71a_1").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_2",
+         Respuesta : $("#res_p7_71a_2").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_3",
+         Respuesta : $("#res_p7_71a_3").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_4",
+         Respuesta : $("#res_p7_71a_4").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_5",
+         Respuesta : $("#res_p7_71a_5").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_6",
+         Respuesta : $("#res_p7_71a_6").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_7",
+         Respuesta : $("#res_p7_71a_7").val()
+         },
+         {
+         Pregunta: "71. El contrato de trabajo es_8",
+         Respuesta : $("#res_p7_71a_8").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_1",
+         Respuesta : $("#res_p7_71b_1").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_2",
+         Respuesta : $("#res_p7_71b_2").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_3",
+         Respuesta : $("#res_p7_71b_3").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_4",
+         Respuesta : $("#res_p7_71b_4").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_5",
+         Respuesta : $("#res_p7_71b_5").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_6",
+         Respuesta : $("#res_p7_71b_6").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_7",
+         Respuesta : $("#res_p7_71b_7").val()
+         },
+         {
+         Pregunta: "71. Número_de_Meses_8",
+         Respuesta : $("#res_p7_71b_8").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_1",
+         Respuesta : $("#res_p7_72_1").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_2",
+         Respuesta : $("#res_p7_72_2").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_3",
+         Respuesta : $("#res_p7_72_3").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_4",
+         Respuesta : $("#res_p7_72_4").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_5",
+         Respuesta : $("#res_p7_72_5").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_6",
+         Respuesta : $("#res_p7_72_6").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_7",
+         Respuesta : $("#res_p7_72_7").val()
+         },
+         {
+         Pregunta: "72. Cuánto tiempo lleva Número trabajando en esta empresa, de meses negocio, industria, firma o finca de manera continua_8",
+         Respuesta : $("#res_p7_72_8").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_1",
+         Respuesta : $("#res_p7_73a_1").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_2",
+         Respuesta : $("#res_p7_73a_2").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_3",
+         Respuesta : $("#res_p7_73a_3").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_4",
+         Respuesta : $("#res_p7_73a_4").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_5",
+         Respuesta : $("#res_p7_73a_5").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_6",
+         Respuesta : $("#res_p7_73a_6").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_7",
+         Respuesta : $("#res_p7_73a_7").val()
+         },
+         {
+         Pregunta: "73. Cuánto dinero ganó EL MES PASADO en este empleo? (incluya propinas y comisiones y excluya horas extras, viáticos y pagos en especie_8",
+         Respuesta : $("#res_p7_73a_8").val()
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_1",
+         Respuesta : $("#res_p7_73b_1").is(':checked')
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_2",
+         Respuesta : $("#res_p7_73b_2").is(':checked')
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_3",
+         Respuesta : $("#res_p7_73b_3").is(':checked')
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_4",
+         Respuesta : $("#res_p7_73b_4").is(':checked')
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_5",
+         Respuesta : $("#res_p7_73b_5").is(':checked')
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_6",
+         Respuesta : $("#res_p7_73b_6").is(':checked')
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_7",
+         Respuesta : $("#res_p7_73b_7").is(':checked')
+         },
+         {
+         Pregunta: "73. No_Sabe_No_Responde_8",
+         Respuesta : $("#res_p7_73b_8").is(':checked')
+         },
+         {
+         Pregunta: "74. Alimentos_1",
+         Respuesta : $("#res_p7_74a_1").val()
+         },
+         {
+         Pregunta: "74. Alimentos_2",
+         Respuesta : $("#res_p7_74a_2").val()
+         },
+         {
+         Pregunta: "74. Alimentos_3",
+         Respuesta : $("#res_p7_74a_3").val()
+         },
+         {
+         Pregunta: "74. Alimentos_4",
+         Respuesta : $("#res_p7_74a_4").val()
+         },
+         {
+         Pregunta: "74. Alimentos_5",
+         Respuesta : $("#res_p7_74a_5").val()
+         },
+         {
+         Pregunta: "74. Alimentos_6",
+         Respuesta : $("#res_p7_74a_5").val()
+         },
+         {
+         Pregunta: "74. Alimentos_7",
+         Respuesta : $("#res_p7_74a_6").val()
+         },
+         {
+         Pregunta: "74. Alimentos_8",
+         Respuesta : $("#res_p7_74a_8").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_1",
+         Respuesta : $("#res_p7_74b_1").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_2",
+         Respuesta : $("#res_p7_74b_2").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_3",
+         Respuesta : $("#res_p7_74b_3").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_4",
+         Respuesta : $("#res_p7_74b_4").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_5",
+         Respuesta : $("#res_p7_74b_5").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_6",
+         Respuesta : $("#res_p7_74b_6").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_7",
+         Respuesta : $("#res_p7_74b_7").val()
+         },
+         {
+         Pregunta: "74. Alimentos_Valor_8",
+         Respuesta : $("#res_p7_74b_8").val()
+         },
+         {
+         Pregunta: "75. Vivienda_1",
+         Respuesta : $("#res_p7_75a_1").val()
+         },
+         {
+         Pregunta: "75. Vivienda_2",
+         Respuesta : $("#res_p7_75a_2").val()
+         },
+         {
+         Pregunta: "75. Vivienda_3",
+         Respuesta : $("#res_p7_75a_3").val()
+         },
+         {
+         Pregunta: "75. Vivienda_4",
+         Respuesta : $("#res_p7_75a_4").val()
+         },
+         {
+         Pregunta: "75. Vivienda_5",
+         Respuesta : $("#res_p7_75a_5").val()
+         },
+         {
+         Pregunta: "75. Vivienda_6",
+         Respuesta : $("#res_p7_75a_6").val()
+         },
+         {
+         Pregunta: "75. Vivienda_7",
+         Respuesta : $("#res_p7_75a_7").val()
+         },
+         {
+         Pregunta: "75. Vivienda_8",
+         Respuesta : $("#res_p7_75a_8").val()
+         },
+         {
+         Pregunta: "75. Vivienda_Valor_1",
+         Respuesta : $("#res_p7_75b_1").val()
+         },
+         {
+         Pregunta: "75. Vivienda_Valor_2",
+         Respuesta : $("#res_p7_75b_2").val()
+         },
+         {
+         Pregunta: "75. Vivienda_Valor_3",
+         Respuesta : $("#res_p7_75b_3").val()
+         },
+         {
+         Pregunta: "75. Vivienda_Valor_4",
+         Respuesta : $("#res_p7_75b_4").val()
+         },
+         {
+         Pregunta: "75. Vivienda_Valor_5",
+         Respuesta : $("#res_p7_75b_5").val()
+         },
+         {
+         Pregunta: "75. Vivienda_Valor_6",
+         Respuesta : $("#res_p7_75b_6").val()
+         },
+         {
+         Pregunta: "75. Vivienda_Valor_7",
+         Respuesta : $("#res_p7_75b_7").val()
+         },
+         {
+         Pregunta: "75. Vivienda_8",
+         Respuesta : $("#res_p7_75b_8").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_1",
+         Respuesta : $("#res_p7_76a_1").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_2",
+         Respuesta : $("#res_p7_76a_2").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_3",
+         Respuesta : $("#res_p7_76a_3").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_4",
+         Respuesta : $("#res_p7_76a_4").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_5",
+         Respuesta : $("#res_p7_76a_5").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_6",
+         Respuesta : $("#res_p7_76a_6").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_7",
+         Respuesta : $("#res_p7_76a_7").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_8",
+         Respuesta : $("#res_p7_76a_8").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_1",
+         Respuesta : $("#res_p7_76b_1").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_2",
+         Respuesta : $("#res_p7_76b_2").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_3",
+         Respuesta : $("#res_p7_76b_3").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_4",
+         Respuesta : $("#res_p7_76b_4").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_5",
+         Respuesta : $("#res_p7_76b_5").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_6",
+         Respuesta : $("#res_p7_76b_6").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_7",
+         Respuesta : $("#res_p7_76b_7").val()
+         },
+         {
+         Pregunta: "76. Otros_Ingresos_Especie_valor_8",
+         Respuesta : $("#res_p7_76b_8").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_1",
+         Respuesta : $("#res_p7_77a_1").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_2",
+         Respuesta : $("#res_p7_77a_2").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_3",
+         Respuesta : $("#res_p7_77a_3").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_4",
+         Respuesta : $("#res_p7_77a_4").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_5",
+         Respuesta : $("#res_p7_77a_5").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_6",
+         Respuesta : $("#res_p7_77a_6").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_7",
+         Respuesta : $("#res_p7_77a_7").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_8",
+         Respuesta : $("#res_p7_77a_8").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_1",
+         Respuesta : $("#res_p7_77b_1").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_2",
+         Respuesta : $("#res_p7_77b_2").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_3",
+         Respuesta : $("#res_p7_77b_3").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_4",
+         Respuesta : $("#res_p7_77b_4").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_5",
+         Respuesta : $("#res_p7_77b_5").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_6",
+         Respuesta : $("#res_p7_77b_6").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_7",
+         Respuesta : $("#res_p7_77b_7").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Valor_8",
+         Respuesta : $("#res_p7_77b_8").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_1",
+         Respuesta : $("#res_p7_77b_11").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_2",
+         Respuesta : $("#res_p7_77b_22").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_3",
+         Respuesta : $("#res_p7_77b_33").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_4",
+         Respuesta : $("#res_p7_77b_44").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_5",
+         Respuesta : $("#res_p7_77b_55").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_6",
+         Respuesta : $("#res_p7_77b_66").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_7",
+         Respuesta : $("#res_p7_77b_77").val()
+         },
+         {
+         Pregunta: "77. Horas_Extra_Horas_8",
+         Respuesta : $("#res_p7_77b_88").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_1",
+         Respuesta : $("#res_p7_78a_1").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_2",
+         Respuesta : $("#res_p7_78a_2").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_3",
+         Respuesta : $("#res_p7_78a_3").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_4",
+         Respuesta : $("#res_p7_78a_4").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_5",
+         Respuesta : $("#res_p7_78a_5").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_6",
+         Respuesta : $("#res_p7_78a_6").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_7",
+         Respuesta : $("#res_p7_78a_7").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_8",
+         Respuesta : $("#res_p7_78a_8").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_1",
+         Respuesta : $("#res_p7_78b_1").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_2",
+         Respuesta : $("#res_p7_78b_2").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_3",
+         Respuesta : $("#res_p7_78b_3").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_4",
+         Respuesta : $("#res_p7_78b_4").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_5",
+         Respuesta : $("#res_p7_78b_5").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_6",
+         Respuesta : $("#res_p7_78b_6").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_7",
+         Respuesta : $("#res_p7_78b_7").val()
+         },
+         {
+         Pregunta: "78. Subsidio_Alimentacion_Valor_8",
+         Respuesta : $("#res_p7_78b_8").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_1",
+         Respuesta : $("#res_p7_79a_1").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_2",
+         Respuesta : $("#res_p7_79a_2").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_3",
+         Respuesta : $("#res_p7_79a_3").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_4",
+         Respuesta : $("#res_p7_79a_4").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_5",
+         Respuesta : $("#res_p7_79a_5").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_6",
+         Respuesta : $("#res_p7_79a_6").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_7",
+         Respuesta : $("#res_p7_79a_7").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_8",
+         Respuesta : $("#res_p7_79a_8").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_valor_1",
+         Respuesta : $("#res_p7_79b_1").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_valor_2",
+         Respuesta : $("#res_p7_79b_2").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_valor_3",
+         Respuesta : $("#res_p7_79b_3").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_valor_4",
+         Respuesta : $("#res_p7_79b_4").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_valor_5",
+         Respuesta : $("#res_p7_79b_5").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_valor_6",
+         Respuesta : $("#res_p7_79b_6").val()
+         },
+         {
+         Pregunta: "79. Auxilio_de_transporte_valor_7",
+         Respuesta : $("#res_p7_79b_7").val()
+         },
+         {
+         Pregunta: "79. Subsidio_familiar_valor_8",
+         Respuesta : $("#res_p7_79b_8").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_1",
+         Respuesta : $("#res_p7_80a_1").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_2",
+         Respuesta : $("#res_p7_80a_2").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_3",
+         Respuesta : $("#res_p7_80a_3").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_4",
+         Respuesta : $("#res_p7_80a_4").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_5",
+         Respuesta : $("#res_p7_80a_5").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_6",
+         Respuesta : $("#res_p7_80a_6").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_7",
+         Respuesta : $("#res_p7_80a_7").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_8",
+         Respuesta : $("#res_p7_80a_8").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_1",
+         Respuesta : $("#res_p7_80b_1").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_2",
+         Respuesta : $("#res_p7_80b_2").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_3",
+         Respuesta : $("#res_p7_80b_3").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_4",
+         Respuesta : $("#res_p7_80b_4").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_5",
+         Respuesta : $("#res_p7_80b_5").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_6",
+         Respuesta : $("#res_p7_80b_6").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_7",
+         Respuesta : $("#res_p7_80b_7").val()
+         },
+         {
+         Pregunta: "80. Subsidio_familiar_valor_8",
+         Respuesta : $("#res_p7_80b_8").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_1",
+         Respuesta : $("#res_p7_81a_1").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_2",
+         Respuesta : $("#res_p7_81a_2").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_3",
+         Respuesta : $("#res_p7_81a_3").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_4",
+         Respuesta : $("#res_p7_81a_4").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_5",
+         Respuesta : $("#res_p7_81a_5").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_6",
+         Respuesta : $("#res_p7_81a_6").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_7",
+         Respuesta : $("#res_p7_81a_7").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_Valor_8",
+         Respuesta : $("#res_p7_81a_8").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_1",
+         Respuesta : $("#res_p7_81b_1").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_2",
+         Respuesta : $("#res_p7_81b_2").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_3",
+         Respuesta : $("#res_p7_81b_3").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_4",
+         Respuesta : $("#res_p7_81b_4").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_5",
+         Respuesta : $("#res_p7_81b_5").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_6",
+         Respuesta : $("#res_p7_81b_6").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_7",
+         Respuesta : $("#res_p7_81b_7").val()
+         },
+         {
+         Pregunta: "81. Cuál fue la ganancia neta o los ingresos netos de ... en esa actividad, negocio, profesión o finca el AÑO PASADO_8",
+         Respuesta : $("#res_p7_81b_8").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibió_1",
+         Respuesta : $("#res_p7_82_1").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibio_2",
+         Respuesta : $("#res_p7_82_2").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibio_3",
+         Respuesta : $("#res_p7_82_3").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibio_4",
+         Respuesta : $("#res_p7_82_4").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibio_5",
+         Respuesta : $("#res_p7_82_5").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibio_6",
+         Respuesta : $("#res_p7_82_6").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibio_7",
+         Respuesta : $("#res_p7_82_7").val()
+         },
+         {
+         Pregunta: "82. A cuántos meses Número de meses corresponde lo que recibio_8",
+         Respuesta : $("#res_p7_82_8").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresoś_1",
+         Respuesta : $("#res_p7_83a_1").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_2",
+         Respuesta : $("#res_p7_83a_2").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_3",
+         Respuesta : $("#res_p7_83a_3").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_4",
+         Respuesta : $("#res_p7_83a_4").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_5",
+         Respuesta : $("#res_p7_83a_5").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_6",
+         Respuesta : $("#res_p7_83a_6").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_7",
+         Respuesta : $("#res_p7_83a_7").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_8",
+         Respuesta : $("#res_p7_83a_8").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_1",
+         Respuesta : $("#res_p7_83b_1").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_2",
+         Respuesta : $("#res_p7_83b_2").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_3",
+         Respuesta : $("#res_p7_83b_3").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_4",
+         Respuesta : $("#res_p7_83b_4").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_5",
+         Respuesta : $("#res_p7_83b_5").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_6",
+         Respuesta : $("#res_p7_83b_6").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_7",
+         Respuesta : $("#res_p7_83b_7").val()
+         },
+         {
+         Pregunta: "83. Ademásdesuocupaciónuoficio principal, ¿el mes pasado tuvo otros trabajos o negocios por los cuales recibió ingresos_Valor_8",
+         Respuesta : $("#res_p7_83b_8").val()
+         },
+         {
+         Pregunta: "84. Horas_1",
+         Respuesta : $("#res_p7_84_1").val()
+         },
+         {
+         Pregunta: "84. Horas_2",
+         Respuesta : $("#res_p7_84_2").val()
+         },
+         {
+         Pregunta: "84. Horas_3",
+         Respuesta : $("#res_p7_84_3").val()
+         },
+         {
+         Pregunta: "84. Horas_4",
+         Respuesta : $("#res_p7_84_4").val()
+         },
+         {
+         Pregunta: "84. Horas_5",
+         Respuesta : $("#res_p7_84_5").val()
+         },
+         {
+         Pregunta: "84. Horas_5_6",
+         Respuesta : $("#res_p7_84_6").val()
+         },
+         {
+         Pregunta: "84. Horas_5_7",
+         Respuesta : $("#res_p7_84_7").val()
+         },
+         {
+         Pregunta: "84. Horas_5_8",
+         Respuesta : $("#res_p7_84_8").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_1",
+         Respuesta : $("#res_p7_85_1").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_2",
+         Respuesta : $("#res_p7_85_2").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_3",
+         Respuesta : $("#res_p7_85_3").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_4",
+         Respuesta : $("#res_p7_85_4").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_5",
+         Respuesta : $("#res_p7_85_5").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_6",
+         Respuesta : $("#res_p7_85_6").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_7",
+         Respuesta : $("#res_p7_85_7").val()
+         },
+         {
+         Pregunta: "85. En las ÚLTIMAS CUATRO SEMANAS, ¿...hizo alguna diligencia para conseguir un trabajo o instalar un negocio_8",
+         Respuesta : $("#res_p7_85_8").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_1",
+         Respuesta : $("#res_p7_86_1").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_2",
+         Respuesta : $("#res_p7_86_2").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_3",
+         Respuesta : $("#res_p7_86_3").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_4",
+         Respuesta : $("#res_p7_86_4").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_5",
+         Respuesta : $("#res_p7_86_5").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_6",
+         Respuesta : $("#res_p7_86_6").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_7",
+         Respuesta : $("#res_p7_86_7").val()
+         },
+         {
+         Pregunta: "86. Estaba_Disponible_8",
+         Respuesta : $("#res_p7_86_8").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_1",
+         Respuesta : $("#res_p7_87a_1").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_2",
+         Respuesta : $("#res_p7_87a_2").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_3",
+         Respuesta : $("#res_p7_87a_3").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_4",
+         Respuesta : $("#res_p7_87a_4").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_5",
+         Respuesta : $("#res_p7_87a_5").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_6",
+         Respuesta : $("#res_p7_87a_6").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_7",
+         Respuesta : $("#res_p7_87a_7").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_8",
+         Respuesta : $("#res_p7_87a_8").val()
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_1",
+         Respuesta : $("#res_p7_87b_1").is(':checked')
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_2",
+         Respuesta : $("#res_p7_87b_2").is(':checked')
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_3",
+         Respuesta : $("#res_p7_87b_3").is(':checked')
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_4",
+         Respuesta : $("#res_p7_87b_4").is(':checked')
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_5",
+         Respuesta : $("#res_p7_87b_5").is(':checked')
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_6",
+         Respuesta : $("#res_p7_87b_6").is(':checked')
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_7",
+         Respuesta : $("#res_p7_87b_7").is(':checked')
+         },
+         {
+         Pregunta: "87. Semana_Buscando_Trabajo_NSNR_8",
+         Respuesta : $("#res_p7_87b_8").is(':checked')
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_1",
+         Respuesta : $("#res_p7_88_1").val()
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_2",
+         Respuesta : $("#res_p7_88_2").val()
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_3",
+         Respuesta : $("#res_p7_88_3").val()
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_4",
+         Respuesta : $("#res_p7_88_4").val()
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_5",
+         Respuesta : $("#res_p7_88_5").val()
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_6",
+         Respuesta : $("#res_p7_88_6").val()
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_7",
+         Respuesta : $("#res_p7_88_7").val()
+         },
+         {
+         Pregunta: "88. ha buscado trabajo por primera vez o había trabajado antes, por lo menos durante dos semanas consecutivas_8",
+         Respuesta : $("#res_p7_88_8").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_1",
+         Respuesta : $("#res_p7_89_1").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_2",
+         Respuesta : $("#res_p7_89_2").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_3",
+         Respuesta : $("#res_p7_89_3").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_4",
+         Respuesta : $("#res_p7_89_4").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_5",
+         Respuesta : $("#res_p7_89_5").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_6",
+         Respuesta : $("#res_p7_89_6").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_7",
+         Respuesta : $("#res_p7_89_7").val()
+         },
+         {
+         Pregunta: "89. Trabajó la semana pasada en un negocio por UNA HORA o MÁS, de forma remunerada?_8",
+         Respuesta : $("#res_p7_89_8").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_1",
+         Respuesta : $("#res_p7_90_1").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_2",
+         Respuesta : $("#res_p7_90_2").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_3",
+         Respuesta : $("#res_p7_90_3").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_4",
+         Respuesta : $("#res_p7_90_4").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_5",
+         Respuesta : $("#res_p7_90_5").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_6",
+         Respuesta : $("#res_p7_90_6").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_7",
+         Respuesta : $("#res_p7_90_7").val()
+         },
+         {
+         Pregunta: "90. rabajó la semana pasada en un negocio por UNA HORA o MÁS, sin que le pagaran?_8",
+         Respuesta : $("#res_p7_90_8").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_1",
+         Respuesta : $("#res_p7_91a_1").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_2",
+         Respuesta : $("#res_p7_91a_2").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_3",
+         Respuesta : $("#res_p7_91a_3").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_4",
+         Respuesta : $("#res_p7_91a_4").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_5",
+         Respuesta : $("#res_p7_91a_5").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_6",
+         Respuesta : $("#res_p7_91a_6").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_7",
+         Respuesta : $("#res_p7_91a_7").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_8",
+         Respuesta : $("#res_p7_91a_8").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_1",
+         Respuesta : $("#res_p7_91b_1").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_2",
+         Respuesta : $("#res_p7_91b_2").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_3",
+         Respuesta : $("#res_p7_91b_3").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_4",
+         Respuesta : $("#res_p7_91b_4").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_5",
+         Respuesta : $("#res_p7_91b_5").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_6",
+         Respuesta : $("#res_p7_91b_6").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_7",
+         Respuesta : $("#res_p7_91b_7").val()
+         },
+         {
+         Pregunta: "91. El mes pasado ... recibió: ¿algún ingreso por concepto de trabajo?_valor_8",
+         Respuesta : $("#res_p7_91b_8").val()
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_1",
+         Respuesta : $("#p7_92_1_1").is(':checked')+","+$("#p7_92_1_2").is(':checked')+","+$("#p7_92_1_3").is(':checked')+","+$("#p7_92_1_4").is(':checked')
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_2",
+         Respuesta : $("#p7_92_2_1").is(':checked')+","+$("#p7_92_2_2").is(':checked')+","+$("#p7_92_2_3").is(':checked')+","+$("#p7_92_2_4").is(':checked')
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_3",
+         Respuesta : $("#p7_92_3_1").is(':checked')+","+$("#p7_92_3_2").is(':checked')+","+$("#p7_92_3_3").is(':checked')+","+$("#p7_92_3_4").is(':checked')
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_4",
+         Respuesta : $("#p7_92_4_1").is(':checked')+","+$("#p7_92_4_2").is(':checked')+","+$("#p7_92_4_3").is(':checked')+","+$("#p7_92_4_4").is(':checked')
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_5",
+         Respuesta : $("#p7_92_5_1").is(':checked')+","+$("#p7_92_5_2").is(':checked')+","+$("#p7_92_5_3").is(':checked')+","+$("#p7_92_5_4").is(':checked')
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_6",
+         Respuesta : $("#p7_92_6_1").is(':checked')+","+$("#p7_92_6_2").is(':checked')+","+$("#p7_92_6_3").is(':checked')+","+$("#p7_92_6_4").is(':checked')
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_7",
+         Respuesta : $("#p7_92_7_1").is(':checked')+","+$("#p7_92_7_2").is(':checked')+","+$("#p7_92_7_3").is(':checked')+","+$("#p7_92_7_4").is(':checked')
+         },
+         {
+         Pregunta: "92. Está afiliado actualmente a_8",
+         Respuesta : $("#p7_92_8_1").is(':checked')+","+$("#p7_92_8_2").is(':checked')+","+$("#p7_92_8_3").is(':checked')+","+$("#p7_92_8_4").is(':checked')
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_1",
+         Respuesta : $("#res_p7_93a_1").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_2",
+         Respuesta : $("#res_p7_93a_2").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_3",
+         Respuesta : $("#res_p7_93a_3").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_4",
+         Respuesta : $("#res_p7_93a_4").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_5",
+         Respuesta : $("#res_p7_93a_5").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_6",
+         Respuesta : $("#res_p7_93a_6").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_7",
+         Respuesta : $("#res_p7_93a_7").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral?_8",
+         Respuesta : $("#res_p7_93a_8").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_1",
+         Respuesta : $("#res_p7_93b_1").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_2",
+         Respuesta : $("#res_p7_93b_2").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_3",
+         Respuesta : $("#res_p7_93b_3").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_4",
+         Respuesta : $("#res_p7_93b_4").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_5",
+         Respuesta : $("#res_p7_93b_5").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_6",
+         Respuesta : $("#res_p7_93b_6").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_7",
+         Respuesta : $("#res_p7_93b_7").val()
+         },
+         {
+         Pregunta: "93. ¿Cuenta con algún seguro de riesgo laboral_Valor?_8",
+         Respuesta : $("#res_p7_93b_8").val()
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_1",
+         Respuesta : $("#p7_94_1_1").is(':checked')+","+$("#p7_94_1_2").is(':checked')+","+$("#p7_94_1_3").is(':checked')+","+$("#p7_94_1_4").is(':checked')+","+$("#p7_94_1_5").is(':checked')
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_2",
+         Respuesta : $("#p7_94_2_1").is(':checked')+","+$("#p7_94_2_2").is(':checked')+","+$("#p7_94_2_3").is(':checked')+","+$("#p7_94_2_4").is(':checked')+","+$("#p7_94_2_5").is(':checked')
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_3",
+         Respuesta : $("#p7_94_3_1").is(':checked')+","+$("#p7_94_3_2").is(':checked')+","+$("#p7_94_3_3").is(':checked')+","+$("#p7_94_3_4").is(':checked')+","+$("#p7_94_3_5").is(':checked')
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_4",
+         Respuesta : $("#p7_94_4_1").is(':checked')+","+$("#p7_94_4_2").is(':checked')+","+$("#p7_94_4_3").is(':checked')+","+$("#p7_94_4_4").is(':checked')+","+$("#p7_94_4_5").is(':checked')
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_5",
+         Respuesta : $("#p7_94_5_1").is(':checked')+","+$("#p7_94_5_2").is(':checked')+","+$("#p7_94_5_3").is(':checked')+","+$("#p7_94_5_4").is(':checked')+","+$("#p7_94_5_5").is(':checked')
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_6",
+         Respuesta : $("#p7_94_6_1").is(':checked')+","+$("#p7_94_6_2").is(':checked')+","+$("#p7_94_6_3").is(':checked')+","+$("#p7_94_6_4").is(':checked')+","+$("#p7_94_6_5").is(':checked')
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_7",
+         Respuesta : $("#p7_94_7_1").is(':checked')+","+$("#p7_94_7_2").is(':checked')+","+$("#p7_94_7_3").is(':checked')+","+$("#p7_94_7_4").is(':checked')+","+$("#p7_94_7_5").is(':checked')
+         },
+         {
+         Pregunta: "94. ¿Independientemente de su actividad principal, ¿Cuáles de las siguientes acciones realiza cada miembro dentro del hogar?_8",
+         Respuesta : $("#p7_94_8_1").is(':checked')+","+$("#p7_94_8_2").is(':checked')+","+$("#p7_94_8_3").is(':checked')+","+$("#p7_94_8_4").is(':checked')+","+$("#p7_94_8_5").is(':checked')
+         },
         ];
 
           var csv = convertArrayOfObjectsToCSV({

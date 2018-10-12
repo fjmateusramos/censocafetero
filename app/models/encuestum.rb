@@ -28,5 +28,22 @@ class Encuestum < ApplicationRecord
 	  self.p7_68_7.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_68_7")
 	  self.p7_65_8.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_65_8")
 	  self.p7_68_8.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_68_8")
+	  self.p7_92_1.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_1")
+	  self.p7_94_1.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_1")
+	  self.p7_92_2.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_2")
+	  self.p7_94_2.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_2")
+	  self.p7_92_3.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_3")
+	  self.p7_94_3.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_3")
+	  self.p7_92_4.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_4")
+	  self.p7_94_4.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_4")
+	  self.p7_92_5.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_5")
+	  self.p7_94_5.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_5")
+	  self.p7_92_6.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_6")
+	  self.p7_94_6.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_6")
+	  self.p7_92_7.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_7")
+	  self.p7_94_7.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_7")
+	  self.p7_92_8.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_92_8")
+	  self.p7_94_8.gsub!(/[\[\]\"]/, "") if attribute_present?("p7_94_8")
+
 	end
 end

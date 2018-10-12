@@ -28,6 +28,23 @@ module EncuestaHelper
       @encuestum.p7_68_7.nil? ? false : @encuestum.p7_68_7.match(area1)
       @encuestum.p7_65_8.nil? ? false : @encuestum.p7_65_8.match(area1)
       @encuestum.p7_68_8.nil? ? false : @encuestum.p7_68_8.match(area1)
+      @encuestum.p7_92_1.nil? ? false : @encuestum.p7_92_1.match(area1)
+      @encuestum.p7_94_1.nil? ? false : @encuestum.p7_94_1.match(area1)
+      @encuestum.p7_92_2.nil? ? false : @encuestum.p7_92_2.match(area1)
+      @encuestum.p7_94_2.nil? ? false : @encuestum.p7_94_2.match(area1)
+      @encuestum.p7_92_3.nil? ? false : @encuestum.p7_92_3.match(area1)
+      @encuestum.p7_94_3.nil? ? false : @encuestum.p7_94_3.match(area1)
+      @encuestum.p7_92_4.nil? ? false : @encuestum.p7_92_4.match(area1)
+      @encuestum.p7_94_4.nil? ? false : @encuestum.p7_94_4.match(area1)
+      @encuestum.p7_92_5.nil? ? false : @encuestum.p7_92_5.match(area1)
+      @encuestum.p7_94_5.nil? ? false : @encuestum.p7_94_5.match(area1)
+      @encuestum.p7_92_6.nil? ? false : @encuestum.p7_92_6.match(area1)
+      @encuestum.p7_94_6.nil? ? false : @encuestum.p7_94_6.match(area1)
+      @encuestum.p7_92_7.nil? ? false : @encuestum.p7_92_7.match(area1)
+      @encuestum.p7_94_7.nil? ? false : @encuestum.p7_94_7.match(area1)
+      @encuestum.p7_92_1.nil? ? false : @encuestum.p7_92_1.match(area1)
+      @encuestum.p7_94_1.nil? ? false : @encuestum.p7_94_1.match(area1)
+
 	end
 
 
