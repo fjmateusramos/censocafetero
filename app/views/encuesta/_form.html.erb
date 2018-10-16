@@ -61,7 +61,22 @@
    <%= f.text_field :codigo, {class: "form-control", id:"res_cod_encuesta"}%>
   </div>
   </div>
+  <div class="row col-md-12">
+    <div class="col-md-4" id="">
+      <%= f.label :encuestador , "Encuestador" %>
+      <%= f.select :encuestador, ["Demetrio de Jesus Muñoz Suarez","Irma Isabel Bejarano Ramos","Jorge Eliecer Henao Martinez","Jorge William Hernandez Hernandez","Laura Tatiana Garcia Ramirez","Manuel Felipe Reyes","Richar Zuñiga Pulido","Elisa Alvarado Cadena","Jesus Enrique Monje Perez","Uriel Arguello Guzman","Diana Paola Burbano","Elizabeth Reyna Velasquez Arciniegas","Maria Mercedes Mera Noguera","Nohora Elena Sañudo Pulistar","Maria Cristina Fajardo Martinez","Kamila Andrea Alba Rodas","Karen Juliana Carvajal Camacho","Victor Torres","Janeth Sanchez","María Camila Ángel Vallejo","Valentina de los Ángeles Carvajal Ocampo","Fabian Mesa"],{:include_blank => true}, {class: "form-control", id:"res_encuestador"}%>
+      </div>
+      <div class="col-md-4" id="">
+        <%= f.label :supervisor , "Supervisor" %>
+      <%= f.select :supervisor, ["Demetrio de Jesus Muñoz Suarez","Dario Eugenio Saldarriaga Fernandez","Lina Marcela Coronado Herrera","Ricardo Fenner Lopez Calvachi","Maria Cristina Fajardo Martinez","Victor Torres","Janeth Sanchez","Fabian Mesa"],{:include_blank => true}, {class: "form-control", id:"res_supervisor"}%>
+      </div>
+      <div class="col-md-4" id="">
+        <%= f.label :coordinador , "Coordinador" %>
+      <%= f.select :coordinador, ["Angela Prieto Jimenez","Lorena Guantiva Mahecha","Eliana Galindo Jimenez"],{:include_blank => true}, {class: "form-control", id:"res_coordinador"}%>
+      </div>
+  </div>  
 </div>
+
 
 <div class="col-md-12 hidden" id="Seccion_Modulo1">
   <div class="alert alert-secondary" role="alert" style="margin-left: 10px; margin-right: 10px; margin-bottom: 20px; margin-top: 20px;">MODULO 1. Datos de identificacion (la ubicacion de la vivienda corresponde al sitio de residencia habitual del hogar del productor)
@@ -18335,6 +18350,18 @@
 
         var stockData = [
          {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
+         {
          Pregunta: "1. Departamento",
          Respuesta : $("#res_p1_1").val()
          },
@@ -18546,6 +18573,18 @@
         }
 
         var stockData = [
+         {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
          {
          Pregunta: "1. Departamento",
          Respuesta : $("#res_p1_1").val()
@@ -18858,6 +18897,18 @@
         }
 
         var stockData = [
+         {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
          {
          Pregunta: "1. Departamento",
          Respuesta : $("#res_p1_1").val()
@@ -19362,6 +19413,18 @@
         }
 
         var stockData = [
+         {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
          {
          Pregunta: "1. Departamento",
          Respuesta : $("#res_p1_1").val()
@@ -20442,6 +20505,18 @@
         }
 
         var stockData = [
+         {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
          {
          Pregunta: "1. Departamento",
          Respuesta : $("#res_p1_1").val()
@@ -22097,6 +22172,18 @@
         }
 
         var stockData = [
+         {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
          {
          Pregunta: "1. Departamento",
          Respuesta : $("#res_p1_1").val()
@@ -24520,6 +24607,18 @@
         }
 
         var stockData = [
+         {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
          {
          Pregunta: "1. Departamento",
          Respuesta : $("#res_p1_1").val()
@@ -28767,6 +28866,18 @@
           }
 
           var stockData = [
+           {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
            {
            Pregunta: "1. Departamento",
            Respuesta : $("#res_p1_1").val()
@@ -33138,6 +33249,18 @@
         }
 
         var stockData = [
+           {
+           Pregunta: "Encuestador",
+           Respuesta : $("#res_encuestador").val()
+           },
+           {
+           Pregunta: "Supervisor",
+           Respuesta : $("#res_supervisor").val()
+           },
+           {
+           Pregunta: "Coordinador",
+           Respuesta : $("#res_coordinador").val()
+           },
            {
            Pregunta: "1. Departamento",
            Respuesta : $("#res_p1_1").val()
@@ -37777,6 +37900,18 @@
         }
 
         var stockData = [
+         {
+         Pregunta: "Encuestador",
+         Respuesta : $("#res_encuestador").val()
+         },
+         {
+         Pregunta: "Supervisor",
+         Respuesta : $("#res_supervisor").val()
+         },
+         {
+         Pregunta: "Coordinador",
+         Respuesta : $("#res_coordinador").val()
+         },
          {
            Pregunta: "1. Departamento",
            Respuesta : $("#res_p1_1").val()
