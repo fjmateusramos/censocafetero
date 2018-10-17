@@ -15,6 +15,7 @@ class EncuestaController < ApplicationController
   # GET /encuesta/new
   def new
     @encuestum = Encuestum.new
+    @encuesta1 = Encuesta1.new
   end
 
   # GET /encuesta/1/edit
@@ -33,6 +34,20 @@ class EncuestaController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @encuestum.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def create_encuesta1
+    @encuesta1 = Encuesta1.new(encuesta1_params)
+
+    respond_to do |format|
+      if @encuesta1.save
+        format.html { redirect_to @encuesta1, notice: 'Encuesta1 was successfully created.' }
+        format.json { render :show, status: :created, location: @encuesta1 }
+      else
+        format.html { render :new }
+        format.json { render json: @encuesta1.errors, status: :unprocessable_entity }
       end
     end
   end

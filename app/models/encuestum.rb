@@ -1,5 +1,7 @@
 class Encuestum < ApplicationRecord
 
+	has_and_belongs_to_many :encuesta1s
+
 	before_save do
 	  self.p2_25.gsub!(/[\[\]\"]/, "") if attribute_present?("p2_25")
 	  self.p2_26.gsub!(/[\[\]\"]/, "") if attribute_present?("p2_26")
